@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Relatório didático sobre os componentes do circuito de bypass cardiopulmonar: tubos, reservatório venoso, bombas arteriais, trocador de calor, oxigenador e filtro arterial">
+    <meta name="keywords" content="bypass cardiopulmonar, CEC, circuito de CEC, máquina coração-pulmão, oxigenador, bomba centrífuga, anestesia cardíaca">
+    <title>Componentes do Circuito de CEC - Biblioteca de Anestesiologia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f7f7f7;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(247, 247, 247, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .back-link {
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: #555;
+            font-weight: 500;
+            text-decoration: none;
+            background: #e8e8e8;
+        }
+
+        .back-link:hover {
+            background: #3059ef;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Layout Principal */
+        .main-container {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            gap: 30px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 280px;
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar-title {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #282d54;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3059ef;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 12px;
+        }
+
+        .sidebar-nav a {
+            color: #555;
+            text-decoration: none;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: all 0.3s;
+            font-size: 0.95em;
+        }
+
+        .sidebar-nav a:hover {
+            background: #f0f4ff;
+            color: #3059ef;
+            transform: translateX(5px);
+        }
+
+        .sidebar-nav a.active {
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            color: white;
+            font-weight: 600;
+        }
+
+        /* Conteúdo Principal */
+        .content {
+            flex: 1;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h1 {
+            font-size: 2.2em;
+            color: #282d54;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .content h2 {
+            font-size: 1.7em;
+            color: #282d54;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3059ef;
+        }
+
+        .content h3 {
+            font-size: 1.3em;
+            color: #3059ef;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            color: #444;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .content ul {
+            margin: 20px 0;
+            padding-left: 30px;
+            color: #444;
+        }
+
+        .content ul li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, #fff5e6 0%, #ffe6cc 100%);
+            border-left: 5px solid #f59e0b;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .highlight-box strong {
+            color: #c2410c;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        .highlight-box p {
+            color: #78350f;
+            margin-bottom: 8px;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: linear-gradient(135deg, #e6f3ff 0%, #cce7ff 100%);
+            border-left: 5px solid #3059ef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .info-box strong {
+            color: #1e40af;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        .info-box p {
+            color: #1e3a8a;
+            margin-bottom: 8px;
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border-left: 5px solid #ef4444;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .warning-box strong {
+            color: #991b1b;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        .warning-box p {
+            color: #7f1d1d;
+            margin-bottom: 8px;
+        }
+
+        /* Estilos do Circuito Gráfico Interativo */
+        .circuit-section {
+            background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 16px;
+            padding: 40px;
+            margin: 40px 0;
+            border: 3px solid #dee2e6;
+        }
+
+        .circuit-title {
+            font-size: 1.8em;
+            color: #282d54;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .cec-circuit {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16/10;
+            background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 16px;
+            border: 2px solid #dee2e6;
+            padding: 40px;
+            margin: 0 auto 30px;
+        }
+
+        /* Componentes do circuito */
+        .circuit-component {
+            position: absolute;
+            background: white;
+            border-radius: 10px;
+            padding: 12px 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 3px solid;
+            font-weight: 600;
+            font-size: 0.85em;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .circuit-component::after {
+            content: '🔍';
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 0.7em;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .circuit-component:hover {
+            transform: scale(1.1) translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+            z-index: 20;
+        }
+
+        .circuit-component:hover::after {
+            opacity: 0.6;
+        }
+
+        .circuit-component:active {
+            transform: scale(1.05);
+        }
+
+        .circuit-component .component-tooltip {
+            position: absolute;
+            bottom: 110%;
+            left: 50%;
+            transform: translateX(-50%) scale(0);
+            background: rgba(40, 45, 84, 0.95);
+            color: white;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            font-weight: 500;
+            white-space: nowrap;
+            transition: all 0.3s;
+            pointer-events: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .circuit-component:hover .component-tooltip {
+            transform: translateX(-50%) scale(1);
+        }
+
+        /* Posicionamento dos componentes */
+        .comp-heart {
+            top: 8%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-color: #dc2626;
+            color: #dc2626;
+            font-size: 1em;
+            padding: 16px 24px;
+        }
+
+        .comp-reservoir {
+            bottom: 35%;
+            left: 8%;
+            border-color: #6b7280;
+            color: #6b7280;
+        }
+
+        .comp-oxygenator {
+            bottom: 35%;
+            left: 25%;
+            border-color: #0891b2;
+            color: #0891b2;
+        }
+
+        .comp-pump {
+            bottom: 22%;
+            left: 40%;
+            border-color: #f59e0b;
+            color: #f59e0b;
+        }
+
+        .comp-root-vent {
+            bottom: 22%;
+            left: 53%;
+            border-color: #f59e0b;
+            color: #f59e0b;
+        }
+
+        .comp-lv-vent {
+            bottom: 22%;
+            left: 66%;
+            border-color: #f59e0b;
+            color: #f59e0b;
+        }
+
+        .comp-heat-exchanger {
+            bottom: 38%;
+            right: 8%;
+            border-color: #8b5cf6;
+            color: #8b5cf6;
+        }
+
+        .comp-cardioplegia {
+            bottom: 8%;
+            right: 8%;
+            border-color: #dc2626;
+            color: #dc2626;
+        }
+
+        .comp-alf {
+            top: 35%;
+            left: 5%;
+            border-color: #059669;
+            color: #059669;
+        }
+
+        .comp-potassium {
+            bottom: 38%;
+            right: 30%;
+            border-color: #7c3aed;
+            color: #7c3aed;
+            font-size: 0.8em;
+        }
+
+        /* Linhas do circuito SVG */
+        .circuit-svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .circuit-line {
+            fill: none;
+            stroke-width: 4;
+            opacity: 0.9;
+        }
+
+        .venous-line {
+            stroke: #3b82f6;
+        }
+
+        .arterial-line {
+            stroke: #dc2626;
+            stroke-dasharray: 8, 4;
+        }
+
+        .cardioplegia-line {
+            stroke: #dc2626;
+        }
+
+        .oxygenated-line {
+            stroke: #f59e0b;
+        }
+
+        /* Animação de fluxo */
+        @keyframes flow-pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.6;
+            }
+        }
+
+        .animated-flow {
+            animation: flow-pulse 2s ease-in-out infinite;
+        }
+
+        /* Legenda do circuito */
+        .circuit-legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        .legend-color {
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            flex-shrink: 0;
+        }
+
+        .legend-text {
+            font-size: 0.85em;
+            color: #334155;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            max-width: 1400px;
+            margin: 30px auto;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+        }
+
+        /* Responsividade */
+        @media (max-width: 1024px) {
+            .main-container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                position: static;
+                margin-bottom: 20px;
+            }
+
+            .sidebar-nav {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 10px;
+            }
+
+            .sidebar-nav li {
+                margin-bottom: 0;
+            }
+
+            .circuit-section {
+                padding: 20px;
+            }
+
+            .cec-circuit {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 25px;
+            }
+
+            .content h1 {
+                font-size: 1.8em;
+            }
+
+            .content h2 {
+                font-size: 1.4em;
+            }
+
+            .content h3 {
+                font-size: 1.15em;
+            }
+
+            .nav-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .sidebar-nav {
+                grid-template-columns: 1fr;
+            }
+
+            .circuit-component {
+                font-size: 0.7em;
+                padding: 8px 10px;
+            }
+
+            .circuit-legend {
+                grid-template-columns: 1fr;
+            }
+
+            .circuit-title {
+                font-size: 1.4em;
+            }
+
+            .comp-heart {
+                font-size: 0.85em;
+                padding: 12px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
+        <div class="nav-content">
+            <div class="logo">📚 Biblioteca de Anestesiologia</div>
+            <a href="cirurgia-cardiaca.html" class="back-link" aria-label="Voltar para Cirurgia Cardíaca">← Voltar</a>
+        </div>
+    </nav>
+
+    <!-- Container Principal -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" role="complementary" aria-label="Navegação do documento">
+            <h2 class="sidebar-title">Navegação</h2>
+            <nav>
+                <ul class="sidebar-nav">
+                    <li><a href="#introducao">1.0 Introdução à CEC</a></li>
+                    <li><a href="#visualizacao">1.5 Visualização do Circuito</a></li>
+                    <li><a href="#componentes">2.0 Componentes do Circuito</a></li>
+                    <li><a href="#tubos">2.1 Tubos Sanguíneos</a></li>
+                    <li><a href="#reservatorio">2.2 Reservatório Venoso</a></li>
+                    <li><a href="#bombas">2.3 Bombas Arteriais</a></li>
+                    <li><a href="#trocador">2.4 Trocador de Calor</a></li>
+                    <li><a href="#oxigenador">2.5 Oxigenador</a></li>
+                    <li><a href="#filtro">2.6 Filtro da Linha Arterial</a></li>
+                    <li><a href="#conclusao">3.0 Conclusão</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="content" role="main">
+            <h1>Componentes do Circuito de Bypass Cardiopulmonar (CEC)</h1>
+
+            <!-- Seção 1.0 -->
+            <section id="introducao">
+                <h2>1.0 Introdução à Circulação Extracorpórea e seu Circuito</h2>
+                
+                <p>Bem-vindos a esta discussão focada em um dos pilares da circulação extracorpórea (CEC). Para o anestesiologista, o conhecimento aprofundado do circuito de CEC, popularmente conhecido como <b>máquina coração-pulmão</b>, não é apenas um diferencial técnico, mas uma exigência fundamental para a segurança do paciente. A familiaridade com cada componente, suas funções, limitações e riscos associados é crucial para a condução segura de qualquer procedimento que utilize bypass cardiopulmonar. Esta expertise nos permite antecipar e prevenir complicações, gerenciar crises intraoperatórias e, fundamentalmente, colaborar de forma eficaz com a equipe cirúrgica e o perfusionista. Lembrem-se sempre que a <b>comunicação e o trabalho em equipe são de suma importância</b> para a condução segura da CEC.</p>
+
+                <p>Antes de dissecarmos o circuito, é imperativo que todos tenhamos clareza sobre seu objetivo central.</p>
+
+                <div class="highlight-box">
+                    <strong>Objetivo da CEC:</strong>
+                    <p>O objetivo da CEC é fornecer troca gasosa adequada, entrega de oxigênio e fluxo sanguíneo sistêmico com pressão de perfusão adequada, minimizando os efeitos deletérios do bypass.</p>
+                </div>
+
+                <p>Com base neste objetivo, vamos visualizar o caminho que o sangue percorre. O fluxo geral é o seguinte: o sangue venoso é drenado do átrio direito do paciente, por gravidade, para um <b>reservatório venoso</b>. Deste ponto, uma <b>bomba arterial</b> impulsiona o sangue através de um <b>oxigenador</b>, que também funciona como um <b>trocador de calor</b>, realizando as trocas gasosas e ajustando a temperatura corporal. Em seguida, o sangue agora oxigenado e na temperatura desejada passa por um <b>filtro de linha arterial</b> como medida de segurança final, antes de ser retornado ao paciente, tipicamente na aorta ascendente. Esta visão geral servirá de base para a análise detalhada de cada um desses componentes essenciais.</p>
+            </section>
+
+            <!-- Seção 1.5 - Visualização do Circuito -->
+            <section id="visualizacao">
+                <h2 style="margin-top: 50px;">1.5 Visualização Interativa do Circuito de CEC</h2>
+                
+                <p style="margin-bottom: 20px;">Antes de detalharmos cada componente, é fundamental compreender visualmente como todos os elementos do circuito estão conectados e como o sangue flui através deste sistema integrado. O diagrama interativo abaixo ilustra a configuração completa do circuito de CEC.</p>
+
+                <div class="info-box" style="margin-bottom: 30px;">
+                    <strong>🖱️ Diagrama Interativo:</strong>
+                    <p><b>Passe o mouse</b> sobre cada componente para ver uma descrição rápida. <b>Clique no componente</b> para ser direcionado automaticamente à seção detalhada que explica aquele elemento específico do circuito. Esta navegação interativa facilita o estudo integrado entre visualização e conteúdo teórico.</p>
+                </div>
+
+                <div class="circuit-section">
+                    <div class="cec-circuit">
+                        <!-- SVG para linhas do circuito -->
+                        <svg class="circuit-svg" viewBox="0 0 1200 600" preserveAspectRatio="none">
+                            <!-- Drenagem venosa (Azul) -->
+                            <path class="circuit-line venous-line animated-flow" 
+                                  d="M 600 120 L 600 250 L 150 250" />
+                            
+                            <!-- Saída do reservatório para oxigenador -->
+                            <path class="circuit-line venous-line" 
+                                  d="M 150 340 L 150 380 L 290 380" />
+                            
+                            <!-- Oxigenador para bomba arterial -->
+                            <path class="circuit-line oxygenated-line" 
+                                  d="M 350 380 L 500 380" />
+                            
+                            <!-- Bomba para trocador de calor -->
+                            <path class="circuit-line oxygenated-line" 
+                                  d="M 540 380 L 700 380 L 1000 380" />
+                            
+                            <!-- Trocador de calor de volta ao paciente -->
+                            <path class="circuit-line arterial-line animated-flow" 
+                                  d="M 1050 340 L 1050 200 L 700 200 L 700 120" />
+                            
+                            <!-- Linha de cardioplegia -->
+                            <path class="circuit-line cardioplegia-line" 
+                                  d="M 1050 500 L 1050 450 L 900 450 L 900 200 L 800 200 L 800 120" />
+                            
+                            <!-- ALF -->
+                            <path class="circuit-line arterial-line" 
+                                  d="M 100 280 L 80 280 L 80 180 L 550 180 L 550 120" />
+                            
+                            <!-- Potássio -->
+                            <path class="circuit-line" style="stroke: #7c3aed; stroke-dasharray: 4, 4;" 
+                                  d="M 850 340 L 850 380" />
+                        </svg>
+
+                        <!-- Componentes do circuito -->
+                        <div class="circuit-component comp-heart">
+                            <div class="component-tooltip">👆 Clique para ler sobre o circuito de CEC</div>
+                            ❤️ Paciente<br><small style="font-size:0.7em;">(Coração em Bypass)</small>
+                        </div>
+
+                        <div class="circuit-component comp-reservoir">
+                            <div class="component-tooltip">👆 Clique para ler sobre Reservatório Venoso</div>
+                            Reservatório
+                        </div>
+
+                        <div class="circuit-component comp-oxygenator">
+                            <div class="component-tooltip">👆 Clique para ler sobre Oxigenador</div>
+                            Oxigenador
+                        </div>
+
+                        <div class="circuit-component comp-pump">
+                            <div class="component-tooltip">👆 Clique para ler sobre Bombas Arteriais</div>
+                            Bomba<br>Principal
+                        </div>
+
+                        <div class="circuit-component comp-root-vent">
+                            <div class="component-tooltip">👆 Clique para ler sobre Bombas e Vents</div>
+                            Root<br>Vent
+                        </div>
+
+                        <div class="circuit-component comp-lv-vent">
+                            <div class="component-tooltip">👆 Clique para ler sobre Bombas e Vents</div>
+                            LV<br>Vent
+                        </div>
+
+                        <div class="circuit-component comp-heat-exchanger">
+                            <div class="component-tooltip">👆 Clique para ler sobre Trocador de Calor</div>
+                            Trocador<br>de Calor
+                        </div>
+
+                        <div class="circuit-component comp-cardioplegia">
+                            <div class="component-tooltip">👆 Clique para ler sobre proteção miocárdica</div>
+                            Cardioplegia
+                        </div>
+
+                        <div class="circuit-component comp-alf">
+                            <div class="component-tooltip">👆 Clique para ler sobre Filtro da Linha Arterial</div>
+                            ALF
+                        </div>
+
+                        <div class="circuit-component comp-potassium">
+                            <div class="component-tooltip">👆 Clique para ler sobre o circuito de CEC</div>
+                            K⁺
+                        </div>
+                    </div>
+
+                    <!-- Legenda do circuito -->
+                    <div class="circuit-legend">
+                        <div class="legend-item" style="border-left-color: #3b82f6;">
+                            <div class="legend-color" style="background: #3b82f6;"></div>
+                            <span class="legend-text">Linha Venosa (Sangue desoxigenado)</span>
+                        </div>
+                        <div class="legend-item" style="border-left-color: #dc2626;">
+                            <div class="legend-color" style="background: #dc2626; border: 2px dashed white;"></div>
+                            <span class="legend-text">Linha Arterial (Retorno ao paciente)</span>
+                        </div>
+                        <div class="legend-item" style="border-left-color: #f59e0b;">
+                            <div class="legend-color" style="background: #f59e0b;"></div>
+                            <span class="legend-text">Sangue Oxigenado (Pós-oxigenador)</span>
+                        </div>
+                        <div class="legend-item" style="border-left-color: #dc2626;">
+                            <div class="legend-color" style="background: #dc2626;"></div>
+                            <span class="legend-text">Linha de Cardioplegia</span>
+                        </div>
+                        <div class="legend-item" style="border-left-color: #059669;">
+                            <div class="legend-color" style="background: #059669;"></div>
+                            <span class="legend-text">Filtro de Linha Arterial (ALF)</span>
+                        </div>
+                        <div class="legend-item" style="border-left-color: #7c3aed;">
+                            <div class="legend-color" style="background: #7c3aed;"></div>
+                            <span class="legend-text">Aditivos (Potássio, medicações)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-box" style="margin-top: 30px;">
+                    <strong>💡 Dica Didática:</strong>
+                    <p>Acompanhe o fluxo do sangue no diagrama acima enquanto lê as próximas seções. Esta visualização integrada facilitará a compreensão de como cada componente se relaciona com o sistema como um todo e qual o papel específico de cada elemento na manutenção da perfusão durante a cirurgia cardíaca.</p>
+                </div>
+            </section>
+
+            <!-- Seção 2.0 -->
+            <section id="componentes">
+                <h2>2.0 Análise Detalhada dos Componentes do Circuito de CEC</h2>
+            </section>
+
+            <!-- Seção 2.1 -->
+            <section id="tubos">
+                <h3>2.1 Tubos Sanguíneos</h3>
+                
+                <p>Os tubos do circuito de CEC são os conduítes que integram todos os componentes, formando um sistema coeso. Eles representam a primeira e mais extensa superfície não fisiológica com a qual o sangue entra em contato, um fato de imensa importância fisiopatológica. Compreender as implicações desse contato é o primeiro passo para entender a cascata de eventos adversos que a CEC pode desencadear.</p>
+
+                <ul>
+                    <li><strong>Função Primária:</strong> Atuam como o meio de transporte do sangue entre o paciente e os vários componentes da <b>máquina coração-pulmão</b>, garantindo um fluxo contínuo e estéril.</li>
+                    <li><strong>Implicação Fisiopatológica:</strong> A exposição do sangue a estas <b>superfícies estranhas</b> é um gatilho primário para a ativação das cascatas <b>inflamatória</b> e de <b>coagulação</b>. Este é um evento adverso central da CEC, que tentamos mitigar, mas nunca conseguimos eliminar completamente, e que está na raiz de muitas complicações pós-operatórias.</li>
+                </ul>
+
+                <p>Após deixar o paciente através das cânulas venosas, os tubos conduzem o sangue ao primeiro grande componente do circuito: o reservatório venoso.</p>
+            </section>
+
+            <!-- Seção 2.2 -->
+            <section id="reservatorio">
+                <h3>2.2 Reservatório Venoso</h3>
+                
+                <p>O reservatório venoso funciona como o ponto de coleta inicial para todo o sangue drenado do paciente. Ele atua como um buffer de volume crucial para o circuito, garantindo que a bomba arterial tenha um suprimento constante de sangue para impulsionar, o que é fundamental para a segurança e estabilidade hemodinâmica durante a CEC. É também neste ponto que o sangue recuperado da aspiração do campo cirúrgico (<i>cardiotomy suction</i>) — uma fonte importante de hemólise e de ativadores inflamatórios — é frequentemente reintroduzido, tornando o reservatório um ponto de mistura para sangue "ativado" que retorna ao paciente.</p>
+
+                <ul>
+                    <li><strong>Mecanismo de Drenagem:</strong> O sangue flui do paciente para o reservatório por <b>drenagem gravitacional</b>, um princípio simples, porém vital, que depende da diferença de altura entre o paciente e o reservatório.</li>
+                    <li><strong>Função Crítica:</strong> Sua função principal é acumular o retorno venoso, servindo como um tanque de equilíbrio antes que o sangue seja ativamente impulsionado pela bomba arterial.</li>
+                </ul>
+
+                <div class="warning-box">
+                    <strong>Considerações de Segurança:</strong>
+                    <p>A maioria dos circuitos utiliza reservatórios de casca dura (<i>hard-shell</i>), que devem ser equipados com um <b>sensor de nível</b>. Este dispositivo é essencial para prevenir o esvaziamento completo do reservatório, um evento que levaria à aspiração de ar para a linha arterial e a uma <b>embolia gasosa maciça</b>, uma das complicações mais catastróficas da CEC.</p>
+                </div>
+
+                <p>A partir do reservatório, o sangue é movido pelo componente motriz do circuito, a bomba arterial.</p>
+            </section>
+
+            <!-- Seção 2.3 -->
+            <section id="bombas">
+                <h3>2.3 Bombas Arteriais</h3>
+                
+                <p>A bomba arterial é um dispositivo que tem a função de substituir a função do coração durante a CEC. É este componente que gera o fluxo sanguíneo sistêmico e a pressão de perfusão para todos os órgãos do paciente durante o procedimento. O <b>débito da bomba</b>, controlado pelo perfusionista, torna-se o "débito cardíaco" do paciente durante o bypass.</p>
+
+                <ul>
+                    <li><strong>Tipos de Bomba:</strong> Existem principalmente dois tipos: as <b>bombas centrífugas</b>, que geram fluxo através de um cone giratório, e as <b>bombas de roletes</b>, que comprimem o tubo para impulsionar o sangue.</li>
+                </ul>
+
+                <h4 style="color: #3059ef; font-size: 1.15em; margin-top: 25px; margin-bottom: 15px;">Bomba de Roletes (Roller Pump)</h4>
+
+                <div class="info-box">
+                    <strong>Mecanismo de Funcionamento (A Analogia da "Ordenha"):</strong>
+                    <p>Imagine que você está segurando uma mangueira flexível com água. Se você apertar a mangueira com os dedos e deslizar a mão para frente, a água é empurrada.</p>
+                    <p>A bomba de rolete faz exatamente isso: ela possui dois "braços" com roletes na ponta que giram dentro de um compartimento curvado. Esses roletes <b>comprimem (ocluem)</b> o tubo plástico contra a parede e o "ordenham", empurrando o sangue para frente de forma contínua.</p>
+                    <p>É chamada de <b>bomba de deslocamento positivo</b>: a cada volta completa, ela empurra uma quantidade exata e fixa de sangue, independente da resistência do paciente.</p>
+                </div>
+
+                <ul>
+                    <li><strong>Vantagens:</strong>
+                        <ul style="margin-top: 10px;">
+                            <li><b>Previsibilidade:</b> É fácil calcular o fluxo. Se a bomba gira a X rotações, você sabe exatamente quanto sangue está indo para o paciente.</li>
+                            <li><b>Simplicidade e Custo:</b> É mecanicamente simples, robusta e geralmente mais barata.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Desvantagens:</strong>
+                        <ul style="margin-top: 10px;">
+                            <li><b>Trauma ao Sangue:</b> O ato de "esmagar" o tubo repetidamente traumatiza as células do sangue, causando hemólise (quebra das hemácias).</li>
+                            <li><b>"Spallation" (Desgaste):</b> O atrito contínuo desgasta o tubo plástico por dentro, podendo liberar micropartículas de plástico (microêmbolos) na circulação.</li>
+                            <li><b>Perigo de Pressão:</b> Se alguém pinçar a linha de saída acidentalmente, a bomba continua empurrando com força infinita, podendo explodir as conexões do circuito.</li>
+                            <li><b>Embolia Gasosa:</b> Se entrar ar no circuito, a bomba não se importa; ela empurrará esse ar maciço para dentro do paciente, o que é gravíssimo.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="warning-box">
+                    <strong>Precauções:</strong>
+                    <p>Exige sensores automáticos que desligam a bomba imediatamente se detectarem pressão muito alta ou bolhas de ar na linha.</p>
+                </div>
+
+                <h4 style="color: #3059ef; font-size: 1.15em; margin-top: 25px; margin-bottom: 15px;">Bomba Centrífuga</h4>
+
+                <div class="info-box">
+                    <strong>Mecanismo de Funcionamento (A Analogia do "Redemoinho"):</strong>
+                    <p>Imagine um liquidificador (sem as lâminas cortantes) ou um ventilador girando muito rápido. Ele cria um vórtice (redemoinho) que joga o fluido para as bordas.</p>
+                    <p>A bomba centrífuga usa um cone ou aletas de plástico liso dentro de um compartimento. Um ímã gira esse cone em alta velocidade (acoplamento magnético), criando um <b>vórtice</b> que suga o sangue pelo centro e o arremessa para a saída lateral por força centrífuga.</p>
+                    <p>Ela é <b>não oclusiva</b>: nada aperta o tubo; o sangue flui pela energia do movimento (cinética).</p>
+                </div>
+
+                <ul>
+                    <li><strong>Vantagens:</strong>
+                        <ul style="margin-top: 10px;">
+                            <li><b>Suavidade:</b> Como não há esmagamento do tubo, ela causa menos trauma ao sangue (menos hemólise) e preserva melhor as plaquetas e fatores de coagulação.</li>
+                            <li><b>Segurança contra Pressão:</b> Se a linha de saída for fechada, o sangue apenas "gira em falso" dentro da bomba; a pressão não sobe infinitamente e o circuito não explode.</li>
+                            <li><b>Segurança contra Ar:</b> Se entrar muito ar, a bomba "para de funcionar" (o ar quebra o vórtice). O ar fica preso no centro e não é empurrado para o paciente, agindo como uma barreira de segurança natural.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Desvantagens:</strong>
+                        <ul style="margin-top: 10px;">
+                            <li><b>Fluxo Variável:</b> O fluxo depende da pressão do paciente (pós-carga). Se a pressão arterial do paciente subir, o fluxo da bomba cai, mesmo mantendo a mesma rotação. É obrigatório usar um fluxômetro para saber quanto sangue está passando.</li>
+                            <li><b>Risco de Fluxo Retrógrado:</b> Como a bomba não aperta o tubo (é aberta), se ela parar de girar ou girar muito devagar, o sangue do paciente pode <b>voltar</b> (drenar do paciente para a máquina), causando exsanguinação se não houver vigilância.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="warning-box">
+                    <strong>Precauções:</strong>
+                    <p>É obrigatório o uso de uma <b>válvula unidirecional</b> ou um <b>clamp eletrônico</b> na linha arterial. Se a bomba parar, esse mecanismo fecha a linha para impedir que o sangue do paciente volte para o reservatório.</p>
+                </div>
+
+                <ul style="margin-top: 25px;">
+                    <li><strong>Fluxo Não Pulsátil vs. Pulsátil:</strong> Uma das principais alterações fisiológicas introduzidas pela CEC é que a maioria dos circuitos gera <b>fluxo não pulsátil</b>. Embora exista um debate contínuo sobre os benefícios do fluxo pulsátil, esta alteração pode impactar a microcirculação, o fluxo linfático e a perfusão de órgãos-alvo. Mesmo com a controvérsia, a prática com fluxo não pulsátil é comum e eficaz na grande maioria dos casos.</li>
+                    <li><strong>Segurança e Backup:</strong> Duas medidas de segurança são críticas. Ao usar uma bomba centrífuga, é necessário um método para <b>evitar o fluxo retrógrado</b>, pois, se a bomba parar, o sangue pode fluir de volta da aorta para o circuito. Para as bombas de roletes, <b>manivelas manuais</b> devem estar imediatamente disponíveis para permitir a operação manual em caso de falha de energia elétrica.</li>
+                </ul>
+
+                <p>O sangue impulsionado pela bomba passa em seguida por componentes que condicionam suas propriedades físicas e químicas, começando pelo trocador de calor.</p>
+            </section>
+
+            <!-- Seção 2.4 -->
+            <section id="trocador">
+                <h3>2.4 Trocador de Calor</h3>
+                
+                <p>O trocador de calor é o componente responsável pelo gerenciamento térmico do paciente. Ele nos permite induzir <b>hipotermia</b> e, posteriormente, realizar o <b>reaquecimento</b> controlado. Essa manipulação da temperatura é uma ferramenta poderosa; a hipotermia oferece proteção orgânica, mas o reaquecimento, se mal conduzido, acarreta riscos significativos.</p>
+
+                <ul>
+                    <li><strong>Função Primária:</strong> Controlar ativamente a temperatura do sangue que circula pelo circuito, aquecendo-o ou resfriando-o conforme a necessidade clínica.</li>
+                    <li><strong>Objetivo da Hipotermia:</strong> A indução de <b>hipotermia</b> diminui o <b>consumo de oxigênio</b> e a <b>taxa metabólica</b> de todo o corpo. Isso confere um grau significativo de proteção aos órgãos, especialmente o cérebro e o coração, durante os períodos de baixo fluxo ou parada circulatória.</li>
+                </ul>
+
+                <div class="warning-box">
+                    <strong>Riscos do Reaquecimento:</strong>
+                    <p>O <b>aquecimento excessivo e rápido</b> deve ser evitado a todo custo. Isso previne a saída de gás da solução sanguínea, que pode formar bolhas e causar <b>embolia</b>, e evita o superaquecimento do cérebro, com potencial <b>dano neurológico</b>.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>Parâmetros de Segurança:</strong>
+                    <p>Existem diretrizes estritas para a gestão da temperatura. A temperatura do sangue na linha arterial <b>nunca deve exceder 37,5°C</b>. Adicionalmente, para prevenir a formação de embolia gasosa por saída de gás da solução durante a manipulação térmica, dois gradientes de temperatura são críticos e <b>nenhum deve exceder 10°C</b>: o gradiente entre a temperatura da água no trocador de calor e a do sangue, e o gradiente entre o sangue na saída arterial e na entrada venosa do oxigenador.</p>
+                </div>
+
+                <p>Intimamente integrado ao trocador de calor, está o componente que realiza a função pulmonar: o oxigenador.</p>
+            </section>
+
+            <!-- Seção 2.5 -->
+            <section id="oxigenador">
+                <h3>2.5 Oxigenador</h3>
+                
+                <p>O oxigenador é o "pulmão artificial" do circuito de CEC. Seu papel é vital e espelha um dos objetivos primários da CEC: manter a troca gasosa adequada enquanto os pulmões do paciente estão excluídos da circulação.</p>
+
+                <ul>
+                    <li><strong>Função Principal:</strong> Os oxigenadores modernos são de <b>membrana</b>, compostos por milhares de fibras ocas que permitem a <b>troca gasosa</b> por difusão: oxigênio é adicionado ao sangue e dióxido de carbono é removido.</li>
+                    <li><strong>Administração de Anestésicos:</strong> Oxigenadores de membrana de fibra oca de polipropileno microporoso permitem a passagem de <b>anestésicos voláteis</b>. Isso nos dá a capacidade de manter a anestesia inalatória durante a CEC, administrando o agente diretamente no fluxo de gás fresco (<i>sweep gas</i>) do oxigenador. É importante notar que anestésicos voláteis não atravessam oxigenadores de membrana de difusão de polimetilpenteno (PMP).</li>
+                    <li><strong>Monitorização:</strong> É essencial monitorar o <b>gás de exaustão</b> do oxigenador. A análise deste gás nos permite confirmar o fluxo de oxigênio para o circuito, estimar a PaCO₂ arterial do paciente e determinar a profundidade da anestesia pela concentração do agente volátil expirado.</li>
+                </ul>
+
+                <div class="warning-box">
+                    <strong>Falha do Componente:</strong>
+                    <p>A <b>falha do oxigenador</b>, embora rara, é uma emergência grave que pode se manifestar como hipoxemia arterial refratária. A única solução é a intervenção imediata da equipe para a troca do componente.</p>
+                </div>
+
+                <p>Após ser oxigenado, o sangue prossegue para o último componente de segurança antes de retornar ao paciente: o filtro da linha arterial.</p>
+            </section>
+
+            <!-- Seção 2.6 -->
+            <section id="filtro">
+                <h3>2.6 Filtro da Linha Arterial</h3>
+                
+                <p>O filtro da linha arterial é uma barreira de segurança final e indispensável. Seu propósito é mitigar o risco de embolia, uma das principais causas de disfunção orgânica pós-CEC. Os microêmbolos que ele captura, sejam gasosos ou particulados, são uma causa primária de disfunção cerebral e lesão renal aguda, duas das complicações mais temidas que buscamos prevenir.</p>
+
+                <ul>
+                    <li><strong>Objetivo Primário:</strong> O filtro é projetado para capturar <b>microêmbolos gasosos e particulados</b> (pequenos coágulos, agregados celulares ou debris) que possam ter se formado ou sido introduzidos no circuito.</li>
+                    <li><strong>Padrão de Segurança:</strong> O uso de um <b>filtro de linha arterial</b> é um padrão de segurança universalmente empregado durante os procedimentos de CEC.</li>
+                </ul>
+
+                <div class="warning-box">
+                    <strong>Limitação Importante:</strong>
+                    <p>É crucial que todos compreendam esta ressalva: <b>nenhum</b> dos sistemas de CEC atualmente disponíveis remove todos os êmbolos. Portanto, apesar da presença do filtro, a vigilância para minimizar a introdução de ar e debris no circuito é uma responsabilidade constante de toda a equipe.</p>
+                </div>
+
+                <p>Este componente finaliza a preparação do sangue antes de seu retorno seguro ao paciente, completando o ciclo da circulação extracorpórea.</p>
+            </section>
+
+            <!-- Seção 3.0 -->
+            <section id="conclusao">
+                <h2>3.0 Conclusão: A Integração dos Componentes para a Segurança do Paciente</h2>
+                
+                <p>Como vimos, o circuito de CEC é mais do que uma simples montagem de tubos e máquinas; é um sistema de suporte à vida complexo, onde cada componente funciona como um elo em uma cadeia. Devemos enxergar o circuito não apenas por suas funções mecânicas, mas também pelos riscos inerentes que cada etapa apresenta: o contato inicial com os <b>tubos</b> que desencadeia a inflamação, o risco de <b>embolia gasosa</b> por um baixo nível no reservatório, as alterações hemodinâmicas do fluxo <b>não pulsátil</b> da bomba, o perigo de <b>dano neurológico</b> por um reaquecimento inadequado, e a ameaça constante de <b>microêmbolos</b> que o filtro arterial mitiga, mas não elimina.</p>
+
+                <div class="highlight-box">
+                    <strong>Mensagem Final:</strong>
+                    <p>A maestria deste circuito é a nossa principal ferramenta para prevenir a disfunção orgânica pós-operatória. O conhecimento detalhado da função e das medidas de segurança de cada peça do circuito é, portanto, uma responsabilidade fundamental do <b>anestesiologista cardíaco</b>. O sucesso da CEC, e em última instância, o bem-estar do nosso paciente, depende de uma equipe colaborativa, vigilante, bem treinada e, acima de tudo, comunicativa.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Biblioteca de Anestesiologia - MedTech</p>
+        <p style="margin-top: 10px; opacity: 0.7;">Conteúdo baseado em evidências científicas atualizadas</p>
+    </footer>
+
+    <!-- Script para navegação ativa -->
+    <script>
+        // Smooth scroll e marca link ativo
+        const navLinks = document.querySelectorAll('.sidebar-nav a');
+        const sections = document.querySelectorAll('section');
+
+        // Smooth scroll
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Marca link ativo durante scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Interatividade do circuito de CEC
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mapeamento entre componentes do circuito e seções do texto
+            const componentSectionMap = {
+                'comp-heart': 'introducao',
+                'comp-reservoir': 'reservatorio',
+                'comp-oxygenator': 'oxigenador',
+                'comp-pump': 'bombas',
+                'comp-root-vent': 'bombas',  // Vents são discutidos junto com bombas
+                'comp-lv-vent': 'bombas',    // Vents são discutidos junto com bombas
+                'comp-heat-exchanger': 'trocador',
+                'comp-cardioplegia': 'introducao',  // Cardioplegia mencionada na introdução
+                'comp-alf': 'filtro',
+                'comp-potassium': 'introducao'  // Potássio mencionado em contexto geral
+            };
+            
+            // Adicionar click nos componentes para navegar até a seção correspondente
+            const components = document.querySelectorAll('.circuit-component');
+            
+            components.forEach(component => {
+                component.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Identificar qual componente foi clicado
+                    let targetSection = null;
+                    for (let className in componentSectionMap) {
+                        if (this.classList.contains(className)) {
+                            targetSection = componentSectionMap[className];
+                            break;
+                        }
+                    }
+                    
+                    // Navegar até a seção correspondente com scroll suave
+                    if (targetSection) {
+                        const section = document.getElementById(targetSection);
+                        if (section) {
+                            // Adicionar efeito visual de feedback
+                            this.style.transform = 'scale(1.15)';
+                            setTimeout(() => {
+                                this.style.transform = '';
+                            }, 200);
+                            
+                            // Scroll suave até a seção
+                            section.scrollIntoView({ 
+                                behavior: 'smooth', 
+                                block: 'start' 
+                            });
+                            
+                            // Destacar temporariamente a seção de destino
+                            section.style.transition = 'background-color 0.5s';
+                            const originalBg = section.style.backgroundColor;
+                            section.style.backgroundColor = 'rgba(48, 89, 239, 0.05)';
+                            
+                            setTimeout(() => {
+                                section.style.backgroundColor = originalBg;
+                            }, 2000);
+                        }
+                    }
+                });
+                
+                // Adicionar cursor pointer para indicar que é clicável
+                component.style.cursor = 'pointer';
+            });
+
+            // Animação de entrada dos componentes
+            const circuitComponents = document.querySelectorAll('.circuit-component');
+            circuitComponents.forEach((comp, index) => {
+                comp.style.opacity = '0';
+                comp.style.transform = 'scale(0.8)';
+                
+                setTimeout(() => {
+                    comp.style.transition = 'all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                    comp.style.opacity = '1';
+                    comp.style.transform = 'scale(1)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
+

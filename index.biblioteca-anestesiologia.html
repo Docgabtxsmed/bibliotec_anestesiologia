@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Anestesiologia - Academia MedTech</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #282d54 0%, #3059ef 50%, #48638b 100%);
+            min-height: 100vh;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(247, 247, 247, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-link {
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: #555;
+            font-weight: 500;
+            border: none;
+            background: none;
+        }
+
+        .nav-link:hover {
+            background: #e8e8e8;
+            color: #3059ef;
+        }
+
+        .nav-link.active {
+            background: #3059ef;
+            color: white;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .page-title {
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .page-subtitle {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .component-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .component-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        .card-thumbnail {
+            height: 200px;
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-thumbnail::after {
+            content: 'Clique para visualizar';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.3em;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .component-card:hover .card-thumbnail::after {
+            opacity: 1;
+        }
+
+        .card-info {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #282d54;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .card-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: #e8eaf6;
+            color: #3059ef;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+
+        /* Seções */
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        /* About Section */
+        .about-content {
+            background: rgba(247, 247, 247, 0.98);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .about-content h2 {
+            color: #282d54;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95em;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .page-title {
+                font-size: 2em;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="medtech-logo.jpg" alt="MedTech Logo" class="logo-img">
+                📚 Biblioteca de Anestesiologia - Academia MedTech
+            </div>
+            <div class="nav-links">
+                <button class="nav-link active" onclick="showSection('gallery')">Galeria</button>
+                <button class="nav-link" onclick="showSection('about')">Sobre</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container Principal -->
+    <div class="container">
+        <!-- Seção Galeria -->
+        <div id="gallery-section" class="section active">
+            <h1 class="page-title">Biblioteca para Aprendizagem em Anestesiologia</h1>
+            <p class="page-subtitle">Conteúdos visuais interativos, resumos científicos, questões comentadas e flashcards para estudo em anestesiologia baseados em evidências atualizadas</p>
+
+            <!-- Grid de Especialidades -->
+            <div class="gallery-grid">
+                <!-- Card Transplante Hepático -->
+                <div class="component-card" onclick="window.location.href='transplante-hepatico.html'">
+                    <div class="card-thumbnail">🏥</div>
+                    <div class="card-info">
+                        <h3 class="card-title">Transplante Hepático</h3>
+                        <p class="card-description">Manejo anestésico complexo em transplantes hepáticos.</p>
+                        <div class="card-tags">
+                            <span class="tag">HPS/POPH</span>
+                            <span class="tag">Coagulopatia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Cirurgia Cardíaca -->
+                <div class="component-card" onclick="window.location.href='cirurgia-cardiaca.html'">
+                    <div class="card-thumbnail">❤️</div>
+                    <div class="card-info">
+                        <h3 class="card-title">Cirurgia Cardíaca</h3>
+                        <p class="card-description">Fisiopatologia da CEC, proteção miocárdica, manejo hemodinâmico e complicações em cirurgia cardíaca.</p>
+                        <div class="card-tags">
+                            <span class="tag">CEC</span>
+                            <span class="tag">Bypass</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Cirurgia Torácica -->
+                <div class="component-card" onclick="alert('Em breve!')">
+                    <div class="card-thumbnail">🫁</div>
+                    <div class="card-info">
+                        <h3 class="card-title">Cirurgia Torácica</h3>
+                        <p class="card-description">Técnicas anestésicas em cirurgias torácicas, ventilação unipulmonar e manejo de via aérea difícil.</p>
+                        <div class="card-tags">
+                            <span class="tag">Ventilação</span>
+                            <span class="tag">Via Aérea</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Cirurgia Plástica -->
+                <div class="component-card" onclick="alert('Em breve!')">
+                    <div class="card-thumbnail">✨</div>
+                    <div class="card-info">
+                        <h3 class="card-title">Cirurgia Plástica</h3>
+                        <p class="card-description">Protocolos anestésicos em procedimentos estéticos e reconstrutivos, controle de náuseas e analgesia.</p>
+                        <div class="card-tags">
+                            <span class="tag">Analgesia</span>
+                            <span class="tag">PONV</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Cirurgia Pediátrica -->
+                <div class="component-card" onclick="alert('Em breve!')">
+                    <div class="card-thumbnail">👶</div>
+                    <div class="card-info">
+                        <h3 class="card-title">Cirurgia Pediátrica</h3>
+                        <p class="card-description">Particularidades do manejo anestésico pediátrico, farmacologia e fisiologia em diferentes faixas etárias.</p>
+                        <div class="card-tags">
+                            <span class="tag">Pediatria</span>
+                            <span class="tag">Farmacologia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Ventilação Mecânica -->
+                <div class="component-card" onclick="alert('Em breve!')">
+                    <div class="card-thumbnail">💨</div>
+                    <div class="card-info">
+                        <h3 class="card-title">Ventilação Mecânica</h3>
+                        <p class="card-description">Modos ventilatórios, ventilação protetora, manejo de SDRA e otimização da mecânica respiratória.</p>
+                        <div class="card-tags">
+                            <span class="tag">Modos</span>
+                            <span class="tag">SDRA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Neurocirurgia -->
+                <div class="component-card" onclick="alert('Em breve!')">
+                    <div class="card-thumbnail">🧠</div>
+                    <div class="card-info">
+                        <h3 class="card-title">Neurocirurgia</h3>
+                        <p class="card-description">Neuroanestesia, proteção cerebral, controle da PIC e monitorização neurofisiológica.</p>
+                        <div class="card-tags">
+                            <span class="tag">Neuroproteção</span>
+                            <span class="tag">PIC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Cirurgia Cardíaca -->
+                <div class="component-card" onclick="alert('Em breve!')">
+                    <div class="card-thumbnail">❤️</div>
+                    <div class="card-info">
+                        <h3 class="card-title">Cirurgia Cardíaca</h3>
+                        <p class="card-description">Manejo hemodinâmico avançado, CEC e proteção miocárdica em cirurgias cardíacas.</p>
+                        <div class="card-tags">
+                            <span class="tag">Hemodinâmica</span>
+                            <span class="tag">CEC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Bucomaxilofacial -->
+                <div class="component-card" onclick="alert('Em breve!')">
+                    <div class="card-thumbnail">🦷</div>
+                    <div class="card-info">
+                        <h3 class="card-title">Cirurgia Bucomaxilofacial</h3>
+                        <p class="card-description">Técnicas anestésicas em cirurgias de face, via aérea compartilhada e intubação nasotraqueal.</p>
+                        <div class="card-tags">
+                            <span class="tag">Via Aérea</span>
+                            <span class="tag">Face</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Choque e Monitorização -->
+                <div class="component-card" onclick="alert('Em breve!')">
+                    <div class="card-thumbnail">📊</div>
+                    <div class="card-info">
+                        <h3 class="card-title">Choque e Monitorização Hemodinâmica</h3>
+                        <p class="card-description">Fisiopatologia do choque, ressuscitação guiada por metas e monitorização hemodinâmica avançada.</p>
+                        <div class="card-tags">
+                            <span class="tag">Choque</span>
+                            <span class="tag">Ressuscitação</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Anestesia Ambulatorial -->
+                <div class="component-card" onclick="alert('Em breve!')">
+                    <div class="card-thumbnail">🚶</div>
+                    <div class="card-info">
+                        <h3 class="card-title">Anestesia Ambulatorial</h3>
+                        <p class="card-description">Protocolos para procedimentos ambulatoriais, fast-track e critérios de alta hospitalar segura.</p>
+                        <div class="card-tags">
+                            <span class="tag">Ambulatorial</span>
+                            <span class="tag">Fast-track</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção Sobre -->
+        <div id="about-section" class="section">
+            <div class="about-content">
+                <h2>📖 Sobre o Projeto</h2>
+                <p>
+                    Bem-vindo à <strong>Biblioteca de Anestesiologia</strong>, um projeto dedicado a transformar conhecimento científico em conteúdo visual moderno e didático.
+                </p>
+                <p>
+                    Desenvolvida pela <strong>Academia MedTech - Medicina Perioperatória e Tecnologia</strong>, esta plataforma oferece recursos visuais de alta qualidade baseados em evidências científicas atualizadas.
+                </p>
+                <p>
+                    Nosso objetivo é facilitar o aprendizado e a consulta rápida de informações essenciais em anestesiologia, transformando tabelas e dados complexos em componentes interativos e visualmente atraentes.
+                </p>
+                <h2 style="margin-top: 30px;">🎯 Metodologia</h2>
+                <p>
+                    Cada componente é cuidadosamente elaborado a partir de bibliografias de referência internacional, mantendo rigor científico e apresentação didática. As cores são utilizadas estrategicamente para facilitar a compreensão de critérios diagnósticos e escalas de gravidade.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 Biblioteca de Anestesiologia - Academia MedTech</p>
+            <p style="margin-top: 10px; opacity: 0.7;">Medicina Perioperatória e Tecnologia</p>
+        </footer>
+    </div>
+
+    <script>
+        // Navegação entre seções
+        function showSection(section) {
+            // Remove active de todos os links
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            
+            // Adiciona active ao link clicado
+            event.target.classList.add('active');
+            
+            // Mostra/esconde seções
+            document.getElementById('gallery-section').classList.toggle('active', section === 'gallery');
+            document.getElementById('about-section').classList.toggle('active', section === 'about');
+        }
+
+        // Animação de entrada dos cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.component-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'all 0.6s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 80);
+            });
+        });
+    </script>
+</body>
+</html>

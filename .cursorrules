@@ -1,0 +1,21 @@
+Sempre que gerar código HTML ou CSS para este projeto de Anestesiologia, siga estas regras:
+
+1. ACESSIBILIDADE (A11y):
+   - Use HTML Semântico (main, section, article, nav).
+   - Garanta contraste de cores adequado para leitura em ambientes hospitalares.
+   - Todo campo de entrada (input) deve ter um <label> associado.
+   - Imagens de diagramas médicos devem ter alt text descritivo.
+   - Garanta que a navegação seja possível via teclado (foco visível).
+
+2. SEO MÉDICO:
+   - Use uma hierarquia lógica de cabeçalhos (H1 para o título do tema, H2 para subtemas).
+   - Sugira Meta Tags descritivas para cada nova página.
+   - Utilize Schema.org (JSON-LD) para "MedicalWebPage" ou "EducationEvent" onde aplicável.
+
+3. ESTILO:
+   - Use um design limpo e profissional (estilo acadêmico/médico).
+   - O código deve ser responsivo (Mobile-first).
+NORMAS DE FORMATAÇÃO HTML:
+- Para subtítulos e títulos de seção dentro de cards, use sempre a tag <strong>.
+- Para negritos dentro de frases e parágrafos (inline), use sempre a tag <b>.
+- Nunca envolva tags de negrito em <div> ou <p> extras que possam causar quebras de linha.

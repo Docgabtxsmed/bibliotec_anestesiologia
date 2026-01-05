@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisiopatologia da CEC - Biblioteca de Anestesiologia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f7f7f7;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(247, 247, 247, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .back-link {
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: #555;
+            font-weight: 500;
+            text-decoration: none;
+            background: #e8e8e8;
+        }
+
+        .back-link:hover {
+            background: #3059ef;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Layout Principal */
+        .main-container {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            gap: 30px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 280px;
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar-title {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #282d54;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3059ef;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 12px;
+        }
+
+        .sidebar-nav a {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.95em;
+            display: block;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+
+        .sidebar-nav a:hover,
+        .sidebar-nav a.active {
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            color: white;
+            transform: translateX(5px);
+        }
+
+        /* Content Area */
+        .content {
+            flex: 1;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-header {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #e2e8f0;
+        }
+
+        .content-title {
+            font-size: 2.2em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .content-subtitle {
+            font-size: 1.1em;
+            color: #666;
+            font-weight: 400;
+        }
+
+        /* Seções */
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #282d54;
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            color: white;
+            border-radius: 10px;
+        }
+
+        .subsection-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #3059ef;
+            margin: 25px 0 15px 0;
+            padding-left: 15px;
+            border-left: 4px solid #3059ef;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            color: #444;
+            text-align: justify;
+        }
+
+        /* Listas */
+        .section ul {
+            margin: 20px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .section ul li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            color: #444;
+        }
+
+        .section ul li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3059ef;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* Boxes de Destaque */
+        .highlight-box {
+            margin: 25px 0;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid;
+        }
+
+        .highlight-box.info {
+            background: #e8f0fe;
+            border-color: #3059ef;
+        }
+
+        .highlight-box.warning {
+            background: #fef3c7;
+            border-color: #f59e0b;
+        }
+
+        .highlight-box.success {
+            background: #d1fae5;
+            border-color: #059669;
+        }
+
+        .highlight-box.danger {
+            background: #fee2e2;
+            border-color: #dc2626;
+        }
+
+        .highlight-box p {
+            margin: 0;
+        }
+
+        .highlight-box strong {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        /* Nested Lists */
+        .nested-list {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 1024px) {
+            .main-container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                position: relative;
+                top: 0;
+            }
+
+            .sidebar-nav {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .sidebar-nav li {
+                margin: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 25px;
+            }
+
+            .content-title {
+                font-size: 1.8em;
+            }
+
+            .section-title {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">🫀 Fisiopatologia da CEC</div>
+            <a href="cirurgia-cardiaca.html" class="back-link">← Voltar</a>
+        </div>
+    </nav>
+
+    <!-- Container Principal -->
+    <div class="main-container">
+        <!-- Sidebar de Navegação -->
+        <aside class="sidebar">
+            <h3 class="sidebar-title">Navegação</h3>
+            <ul class="sidebar-nav">
+                <li><a href="#hemodinamicas" class="active">1. Alterações Hemodinâmicas</a></li>
+                <li><a href="#hematologicas">2. Alterações Hematológicas</a></li>
+                <li><a href="#inflamatoria">3. Resposta ao Estresse e Inflamatória</a></li>
+                <li><a href="#microcirculacao">4. Alterações na Microcirculação</a></li>
+                <li><a href="#orgaos">5. Alterações de Órgãos Específicos</a></li>
+                <li><a href="#snc">5.1 Sistema Nervoso Central</a></li>
+                <li><a href="#renal">5.2 Lesão Renal</a></li>
+                <li><a href="#miocardica">5.3 Lesão Miocárdica</a></li>
+                <li><a href="#pulmonar">5.4 Lesão Pulmonar</a></li>
+                <li><a href="#gi">5.5 Efeitos GI e Hepáticos</a></li>
+            </ul>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="content">
+            <!-- Header -->
+            <div class="content-header">
+                <h1 class="content-title">Fisiologia do Bypass Cardiopulmonar</h1>
+                <p class="content-subtitle">Um Resumo Didático sobre a Fisiopatologia da Circulação Extracorpórea</p>
+            </div>
+
+            <!-- Seção 1: Alterações Hemodinâmicas -->
+            <section id="hemodinamicas" class="section">
+                <h2 class="section-title">1.0 Alterações Hemodinâmicas</h2>
+                
+                <p>A instalação da circulação extracorpórea (CEC) desencadeia um conjunto de alterações hemodinâmicas profundas e imediatas, que representam a consequência mais central da substituição da função cardiopulmonar nativa. Para o anestesiologista, a compreensão e a antecipação dessas mudanças são de importância estratégica, pois o manejo proativo da pressão arterial, do fluxo sanguíneo e da resistência vascular é fundamental para garantir a perfusão orgânica adequada e mitigar a lesão de órgãos-alvo durante o procedimento.</p>
+
+                <div class="highlight-box info">
+                    <strong>Padrão Bifásico da Resposta Hemodinâmica</strong>
+                    <p>A resposta hemodinâmica à CEC classicamente segue um padrão bifásico com alterações características em cada fase.</p>
+                </div>
+
+                <h3 class="subsection-title">Fase Inicial</h3>
+                <p>Imediatamente após o início da CEC, observa-se uma queda na <b>PRESSÃO ARTERIAL MÉDIA (PAM)</b> e na <b>RESISTÊNCIA VASCULAR SISTÊMICA (RVS)</b>. Este efeito é multifatorial:</p>
+                <ul>
+                    <li>Hemodiluição abrupta das <b>CATECOLAMINAS</b> circulantes devido ao volume do prime do circuito</li>
+                    <li>Isquemia tecidual temporária</li>
+                    <li>Alterações nos níveis de cálcio e magnésio no fluido do prime</li>
+                </ul>
+
+                <h3 class="subsection-title">Progressão da CEC</h3>
+                <p>À medida que a CEC avança, a tendência se inverte, com um aumento gradual e constante da PAM e da RVS, assumindo que o fluxo da bomba seja mantido constante. Vários mecanismos contribuem para essa vasoconstrição progressiva:</p>
+                <ul>
+                    <li>Diminuição da área de secção transversa vascular pelo fechamento de porções da microvasculatura</li>
+                    <li><b>HIPOTERMIA</b></li>
+                    <li>Aumento nos níveis de <b>CATECOLAMINAS</b> endógenas, <b>ARGININA VASOPRESSINA (AVP)</b>, <b>ENDOTELINA</b> e <b>ANGIOTENSINA II</b></li>
+                    <li>Aumento da <b>VISCOSIDADE</b> sanguínea, tanto pela hipotermia quanto pela hemoconcentração</li>
+                </ul>
+
+                <h3 class="subsection-title">Eventos Transitórios</h3>
+                <p>Este padrão de aumento progressivo da RVS pode ser interrompido por eventos específicos:</p>
+                <ul>
+                    <li>A infusão de soluções de <b>CARDIOPLEGIA</b> pode causar quedas transitórias na RVS e na PAM</li>
+                    <li>A reperfusão do coração após a remoção do clampe aórtico leva a uma diminuição da RVS, à medida que metabólitos acumulados, notavelmente a <b>ADENOSINA</b> (um potente vasodilatador), são "lavados" da circulação coronária para a circulação sistêmica</li>
+                </ul>
+
+                <div class="highlight-box warning">
+                    <strong>Redistribuição de Fluxo em Baixo Débito</strong>
+                    <p>Em cenários de baixo fluxo total durante a CEC, ocorre uma redistribuição hierárquica que visa preservar os órgãos vitais. A perfusão para a pele e os músculos é a primeira a ser reduzida, seguida pelo fluxo para os órgãos esplâncnicos e, posteriormente, o fluxo renal. A perfusão cerebral é a última a ser comprometida, sendo reduzida apenas em estados de fluxo extremamente baixos.</p>
+                </div>
+
+                <h3 class="subsection-title">Fluxo Pulsátil vs Não Pulsátil</h3>
+                <p>Um ponto de debate clássico é a questão do FLUXO PULSÁTIL versus NÃO PULSÁTIL. Teoricamente, o fluxo pulsátil transmite mais energia para a microcirculação, o que poderia melhorar a perfusão tecidual, o fluxo linfático e atenuar respostas neuroendócrinas adversas. No entanto, os dados clínicos são conflitantes e insuficientes para suportar uma recomendação universal.</p>
+
+                <div class="highlight-box success">
+                    <strong>Recomendação Atual</strong>
+                    <p>As diretrizes europeias recentes recomendam o uso de fluxo pulsátil em pacientes de alto risco para desfechos pulmonares e renais adversos.</p>
+                </div>
+            </section>
+
+            <!-- Seção 2: Alterações Hematológicas -->
+            <section id="hematologicas" class="section">
+                <h2 class="section-title">2.0 Alterações Hematológicas</h2>
+                
+                <p>O contato do sangue com as superfícies não fisiológicas do circuito de CEC, combinado com a hemodiluição e as mudanças de temperatura, deflagra uma série de alterações hematológicas. Para o anestesiologista, a compreensão desses efeitos é clinicamente imperativa, pois eles são a principal razão para as complexas estratégias de manejo da coagulação, otimização da oxigenação e estratégias transfusionais que definem a anestesia cardíaca.</p>
+
+                <h3 class="subsection-title">Leucócitos</h3>
+                <p>A CEC afeta primariamente os <b>NEUTRÓFILOS (PMNs)</b>:</p>
+                <ul>
+                    <li>Logo após o início do bypass, há uma queda acentuada nos PMNs circulantes devido ao seu sequestro em leitos vasculares, como o pulmonar</li>
+                    <li>Com o reaquecimento, os níveis de PMNs aumentam drasticamente, resultando em uma <b>NEUTROFILIA</b> de rebote, alimentada pela liberação de neutrófilos da circulação pulmonar e de células mais jovens da medula óssea</li>
+                </ul>
+
+                <h3 class="subsection-title">Proteínas Plasmáticas</h3>
+                <div class="highlight-box danger">
+                    <strong>Desnaturação de Proteínas</strong>
+                    <p>A exposição das proteínas plasmáticas às interfaces gás-líquido no oxigenador e no reservatório causa <b>DESNATURAÇÃO DE PROTEÍNAS</b>. Este processo pode alterar a função enzimática, promover a liberação de lipídios e alterar as membranas dos glóbulos vermelhos, contribuindo para a disfunção microcirculatória.</p>
+                </div>
+
+                <h3 class="subsection-title">Hemodiluição e Pressão Oncótica</h3>
+                <p>A <b>HEMODILUIÇÃO</b>, causada pelo prime assanguíneo do circuito, leva a uma queda na concentração de proteínas plasmáticas e, consequentemente, na <b>PRESSÃO COLOIDE OSMÓTICA (PCO)</b>.</p>
+                <ul>
+                    <li>A necessidade de adicionar coloides ao prime para mitigar essa queda é controversa</li>
+                    <li>Paradoxalmente, embora a hemodiluição reduza a capacidade de transporte de oxigênio por unidade de volume de sangue, ela também diminui a viscosidade sanguínea</li>
+                    <li>Essa redução na viscosidade pode, em alguns casos, melhorar o fluxo na microcirculação a ponto de aumentar a oferta total de oxigênio aos tecidos</li>
+                </ul>
+
+                <h3 class="subsection-title">Eletrólitos</h3>
+                <p>Flutuações iônicas são comuns durante a CEC:</p>
+                <ul>
+                    <li>Os níveis de <b>CÁLCIO</b> ionizado e <b>MAGNÉSIO</b> frequentemente caem</li>
+                    <li>O <b>POTÁSSIO</b> pode variar amplamente, influenciado por fatores como o uso de diuréticos, catecolaminas, soluções de cardioplegia ricas em potássio e a presença de disfunção renal</li>
+                </ul>
+            </section>
+
+            <!-- Seção 3: Resposta ao Estresse e Inflamatória -->
+            <section id="inflamatoria" class="section">
+                <h2 class="section-title">3.0 Resposta ao Estresse e Inflamatória</h2>
+                
+                <p>A cirurgia cardíaca com CEC induz inevitavelmente uma resposta ao estresse metabólico-endócrino (REMIT) e uma resposta inflamatória sistêmica (SIRS) interligadas. Essa ativação fisiopatológica pode variar desde manifestações leves e autolimitadas, como febre, até uma cascata descontrolada que leva à disfunção de múltiplos órgãos e à morte.</p>
+
+                <h3 class="subsection-title">Resposta ao Estresse (REMIT)</h3>
+                <p>A CEC provoca uma exacerbação acentuada da resposta ao estresse cirúrgico. Isso se manifesta por grandes aumentos nos níveis circulantes de:</p>
+                <ul>
+                    <li><b>EPINEFRINA</b></li>
+                    <li><b>NOREPINEFRINA</b></li>
+                    <li><b>ARGININA VASOPRESSINA (AVP)</b></li>
+                    <li><b>HORMÔNIO ADRENOCORTICOTRÓFICO</b></li>
+                    <li><b>CORTISOL</b></li>
+                    <li><b>HORMÔNIO DO CRESCIMENTO</b></li>
+                    <li><b>GLUCAGON</b></li>
+                </ul>
+
+                <div class="highlight-box warning">
+                    <strong>Consequências Metabólicas</strong>
+                    <p>Essas elevações hormonais podem afetar adversamente os padrões de fluxo sanguíneo regional e aumentar o consumo de oxigênio miocárdico. A <b>HIPERGLICEMIA</b> é uma consequência invariavelmente encontrada, resultante da combinação de diminuição da produção de insulina, resistência à insulina, aumento da glicogenólise e gliconeogênese, e administração de glicose.</p>
+                </div>
+
+                <h3 class="subsection-title">Resposta Inflamatória Sistêmica (SIRS)</h3>
+                <p>A SIRS em CEC representa uma ativação não fisiológica do sistema imune inato. Os principais gatilhos incluem:</p>
+                <ul>
+                    <li>Exposição do sangue a superfícies estranhas do circuito</li>
+                    <li>Lesão de isquemia-reperfusão</li>
+                    <li>Liberação de endotoxinas do trato gastrointestinal</li>
+                </ul>
+
+                <h3 class="subsection-title">Mediadores Inflamatórios</h3>
+                <p>Uma vez desencadeada, a resposta inflamatória se propaga através de uma complexa cascata:</p>
+                <ul>
+                    <li>Ativação do SISTEMA DO COMPLEMENTO</li>
+                    <li>Liberação de CITOCINAS (com efeitos tanto pró quanto anti-inflamatórios)</li>
+                    <li>Produção aumentada de ÓXIDO NÍTRICO (NO), que contribui para a vasodilatação e aumento da permeabilidade vascular</li>
+                    <li>Liberação de LEUCOTRIENOS, que são potentes vasoconstritores</li>
+                </ul>
+
+                <h3 class="subsection-title">Espectro Clínico</h3>
+                <div class="highlight-box danger">
+                    <strong>Manifestações da SIRS</strong>
+                    <p>As manifestações clínicas da SIRS pós-CEC abrangem um largo espectro:</p>
+                    <ul>
+                        <li>Forma branda: febre e leucocitose</li>
+                        <li>Casos graves: taquicardia, diminuição da RVS e aumento da permeabilidade capilar</li>
+                        <li>Extremo grave: DISFUNÇÃO DE MÚLTIPLOS ÓRGÃOS (MODS) e, raramente, morte</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Seção 4: Alterações na Microcirculação -->
+            <section id="microcirculacao" class="section">
+                <h2 class="section-title">4.0 Alterações na Microcirculação e Perfusão Tecidual</h2>
+                
+                <p>A microcirculação é a via final comum onde as agressões sistêmicas da CEC se manifestam como lesão orgânica. As alterações hemodinâmicas, hematológicas e inflamatórias convergem para causar disfunção neste nível crítico, resultando em má distribuição do fluxo sanguíneo, edema tecidual e hipóxia celular, que são a base da disfunção orgânica pós-operatória.</p>
+
+                <h3 class="subsection-title">Forças de Starling e Edema</h3>
+                <p>A CEC desloca o equilíbrio das FORÇAS DE STARLING, favorecendo o acúmulo de fluido no espaço intersticial. Vários fatores contribuem para isso:</p>
+                <ul>
+                    <li>A permeabilidade da membrana capilar aumenta devido à resposta inflamatória</li>
+                    <li>A pressão oncótica plasmática cai devido à hemodiluição</li>
+                    <li>O fluxo linfático é prejudicado pela imobilidade, falta de fluxo pulsátil e perda da pressão intratorácica negativa</li>
+                </ul>
+
+                <h3 class="subsection-title">Glicocálix Endotelial</h3>
+                <div class="highlight-box danger">
+                    <strong>Lesão do Glicocálix</strong>
+                    <p>O GLICOCÁLIX ENDOTELIAL (EG), uma camada que reveste o interior dos capilares, desempenha um papel crítico na regulação da permeabilidade vascular. Durante a CEC, ocorre a destruição e o desprendimento ("shredding") do EG. Essa lesão aumenta drasticamente a permeabilidade capilar, sendo um dos principais contribuintes para o edema e a SÍNDROME DO EXTRAVASAMENTO CAPILAR.</p>
+                </div>
+
+                <h3 class="subsection-title">Obstrução Microvascular</h3>
+                <p>A perfusão tecidual também é comprometida pela obstrução física da microcirculação:</p>
+                <ul>
+                    <li>O "clumping" de PMNs ativados pode bloquear pequenos vasos</li>
+                    <li>MICROÊMBOLOS, tanto gasosos (ar) quanto particulados (lipídios, agregados de fibrina), que entram no circuito, podem alojar-se na microvasculatura, causando isquemia focal</li>
+                </ul>
+            </section>
+
+            <!-- Seção 5: Alterações de Órgãos Específicos -->
+            <section id="orgaos" class="section">
+                <h2 class="section-title">5.0 Alterações de Órgãos Específicos</h2>
+                
+                <p>Embora a CEC seja um insulto sistêmico, suas consequências clínicas mais significativas se manifestam de forma distinta em sistemas de órgãos específicos. Essas complicações são as principais fontes de morbidade, aumento do tempo de internação e mortalidade no período pós-operatório.</p>
+            </section>
+
+            <!-- 5.1 Sistema Nervoso Central -->
+            <section id="snc" class="section">
+                <h2 class="section-title">5.1 Sistema Nervoso Central</h2>
+                
+                <p>A disfunção cerebral é uma complicação frequente e temida após a CEC, variando desde déficits neurocognitivos sutis e transitórios até eventos catastróficos como o acidente vascular cerebral (AVC). Sua etiologia é multifatorial, envolvendo hipoperfusão, macro e microembolia e a resposta inflamatória sistêmica.</p>
+
+                <h3 class="subsection-title">5.1.1 Delirium Pós-Operatório (DPO)</h3>
+                <div class="highlight-box warning">
+                    <strong>Definição e Prevalência</strong>
+                    <p>O DPO é um distúrbio agudo da atenção e da cognição. Sua incidência após cirurgia cardíaca varia de 8% a 55% e está fortemente correlacionada com a IDADE AVANÇADA:</p>
+                    <ul>
+                        <li>0% em pacientes < 50 anos</li>
+                        <li>54% em pacientes > 80 anos</li>
+                    </ul>
+                </div>
+
+                <p><strong>Fatores de Risco:</strong></p>
+                <ul>
+                    <li>Idade avançada (principal fator)</li>
+                    <li>Doença cerebrovascular pré-existente</li>
+                    <li>Duração prolongada da cirurgia</li>
+                    <li>Manutenção de uma PAM mais baixa durante a CEC</li>
+                </ul>
+
+                <p><strong>Implicações Clínicas:</strong> O DPO está associado a um aumento significativo da morbidade, do tempo de internação e dos custos. É um dos preditores mais fortes de declínio cognitivo e funcional a longo prazo.</p>
+
+                <h3 class="subsection-title">5.1.2 Disfunção Cognitiva Pós-Operatória (DCPO)</h3>
+                <p><strong>Definição e Prevalência:</strong> A DCPO refere-se a um declínio em domínios cognitivos como memória ou função executiva. A sua trajetória é preocupante:</p>
+                <ul>
+                    <li>19% no pré-operatório</li>
+                    <li>43% em até 4 dias após a cirurgia</li>
+                    <li>39% em até 1 mês</li>
+                    <li>25% em até 4 meses</li>
+                    <li>19% em 6 meses</li>
+                    <li>39% entre 3 a 5 anos após o procedimento</li>
+                </ul>
+
+                <p><strong>Fatores Contribuintes:</strong></p>
+                <ul>
+                    <li>Resposta INFLAMATÓRIA sistêmica</li>
+                    <li>EMBOLIZAÇÃO (gasosa e particulada) para o cérebro</li>
+                    <li>Disfunção endotelial generalizada</li>
+                    <li>Ocorrência de DPO no pós-operatório imediato</li>
+                </ul>
+
+                <h3 class="subsection-title">5.1.3 Acidente Vascular Cerebral (AVC)</h3>
+                <div class="highlight-box danger">
+                    <strong>Incidência e Fisiopatologia</strong>
+                    <p>A incidência de AVC clinicamente aparente após cirurgia de revascularização miocárdica (CRM) isolada é de aproximadamente 1.4%. A sua origem é multifatorial:</p>
+                    <ul>
+                        <li>HIPOPERFUSÃO cerebral</li>
+                        <li>MACROÊMBOLOS (ateroma da aorta, ar)</li>
+                        <li>MICROÊMBOLOS</li>
+                    </ul>
+                </div>
+
+                <p><strong>Fatores de Risco:</strong></p>
+                <ul>
+                    <li>Idade avançada</li>
+                    <li>ATEROMA DE AORTA</li>
+                    <li>Fibrilação atrial perioperatória</li>
+                    <li>Cirurgias de urgência</li>
+                </ul>
+
+                <h3 class="subsection-title">5.1.4 Convulsões</h3>
+                <div class="highlight-box warning">
+                    <strong>Incidência e Fisiopatologia</strong>
+                    <p>As convulsões pós-operatórias estão fortemente associadas ao uso de agentes ANTIFIBRINOLÍTICOS, especialmente o ÁCIDO TRANEXÂMICO (TXA). O risco é dose-dependente:</p>
+                    <ul>
+                        <li>0.2% sem TXA</li>
+                        <li>1.2% a 1.8% com doses de 6 g</li>
+                    </ul>
+                </div>
+
+                <p><strong>Outros Fatores de Risco:</strong></p>
+                <ul>
+                    <li>Parada circulatória com hipotermia profunda</li>
+                    <li>Cirurgias de câmara aberta</li>
+                </ul>
+
+                <h3 class="subsection-title">5.1.5 Neuropatia</h3>
+                <p><strong>Tipos e Causas:</strong> Neuropatias periféricas são comuns e geralmente relacionadas a fatores mecânicos:</p>
+                <ul>
+                    <li>NEUROPATIA ULNAR: posicionamento do paciente ou afastamento excessivo do esterno</li>
+                    <li>LESÃO DO PLEXO BRAQUIAL: posicionamento inadequado</li>
+                    <li>Lesão do nervo frênico</li>
+                </ul>
+            </section>
+
+            <!-- 5.2 Lesão Renal -->
+            <section id="renal" class="section">
+                <h2 class="section-title">5.2 Lesão Renal</h2>
+                
+                <p>A Lesão Renal Aguda Associada à Cirurgia Cardíaca (CSA-AKI) é uma complicação comum, com uma incidência de 15% a 30%. É um preditor independente de aumento da morbimortalidade. Clinicamente, mesmo pequenas elevações de creatinina no pós-operatório não devem ser subestimadas, pois são marcadores prognósticos independentes.</p>
+
+                <h3 class="subsection-title">Fatores Contribuintes</h3>
+                <p>A fisiopatologia é multifatorial:</p>
+                <ul>
+                    <li>Resposta INFLAMATÓRIA</li>
+                    <li>Lesão de isquemia/reperfusão</li>
+                    <li>EMBOLIZAÇÃO</li>
+                    <li>HIPOTENSÃO</li>
+                    <li>Efeitos nefrotóxicos da HEMÓLISE</li>
+                    <li>Impacto de moléculas associadas a danos (ex: hemoglobina, mioglobina, ácido úrico)</li>
+                </ul>
+
+                <h3 class="subsection-title">Fatores de Risco</h3>
+                <div class="highlight-box warning">
+                    <strong>Fatores Pré-operatórios:</strong>
+                    <ul>
+                        <li>Cirurgia cardíaca prévia</li>
+                        <li>Idade avançada</li>
+                        <li>Diabetes mellitus</li>
+                        <li>Baixa fração de ejeção</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box danger">
+                    <strong>Fator Intraoperatório Crítico:</strong>
+                    <p>Manutenção de uma baixa OFERTA DE OXIGÊNIO sistêmica (<280 mL/min/m²) durante a CEC</p>
+                </div>
+            </section>
+
+            <!-- 5.3 Lesão Miocárdica -->
+            <section id="miocardica" class="section">
+                <h2 class="section-title">5.3 Lesão Miocárdica</h2>
+                
+                <p>O ATORDOAMENTO MIOCÁRDICO (MYOCARDIAL STUNNING) é uma disfunção mecânica do miocárdio, geralmente reversível, que ocorre após curtos períodos de isquemia durante o pinçamento aórtico, mesmo na presença de estratégias de proteção. Estratégias adequadas de proteção miocárdica são fundamentais para minimizar essa lesão.</p>
+
+                <h3 class="subsection-title">Princípios da Proteção Miocárdica</h3>
+                <div class="highlight-box success">
+                    <strong>Fundamentos da Proteção</strong>
+                    <p>A proteção do miocárdio baseia-se na redução drástica da sua demanda metabólica durante o período isquêmico:</p>
+                    <ul>
+                        <li>A indução de parada cardíaca (assistolia) e a HIPOTERMIA podem reduzir o CONSUMO DE OXIGÊNIO MIOCÁRDICO (MVO2) em até 90%</li>
+                        <li>A infusão de soluções de CARDIOPLEGIA é essencial para induzir a parada cardíaca e proteger o miocárdio contra os efeitos deletérios da lesão de isquemia e reperfusão</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 5.4 Lesão Pulmonar -->
+            <section id="pulmonar" class="section">
+                <h2 class="section-title">5.4 Lesão Pulmonar</h2>
+                
+                <p>As complicações pulmonares são uma causa significativa de morbidade. O espectro varia desde uma queda na relação PaO2/FiO2 até a SÍNDROME DO DESCONFORTO RESPIRATÓRIO AGUDO (SDRA/ARDS), que tem uma incidência de 0.4% a 3% e uma mortalidade associada de 15% a 70%.</p>
+
+                <h3 class="subsection-title">Etiologias Múltiplas</h3>
+                <p>A lesão pulmonar pós-CEC é resultado de uma combinação de insultos:</p>
+                <ul>
+                    <li>Resposta INFLAMATÓRIA sistêmica</li>
+                    <li>ISQUEMIA E REPERFUSÃO pulmonar devido à ausência de fluxo na artéria pulmonar</li>
+                    <li>Falência do coração esquerdo com edema pulmonar hidrostático</li>
+                    <li>ATELECTASIA resultante da ausência de ventilação mecânica</li>
+                    <li>Lesão mecânica direta e transfusão de hemoderivados</li>
+                </ul>
+            </section>
+
+            <!-- 5.5 Efeitos GI -->
+            <section id="gi" class="section">
+                <h2 class="section-title">5.5 Efeitos Gastrointestinais, Esplâncnicos e Hepáticos</h2>
+                
+                <p>As complicações gastrointestinais (GI) são relativamente incomuns (incidência média de ~1.2%, com uma faixa de 0.3% a 6.1%). No entanto, quando ocorrem, estão associadas a uma ALTA MORBIDADE E MORTALIDADE (mortalidade média de ~34%, com uma faixa de 9% a 87%).</p>
+
+                <div class="highlight-box danger">
+                    <strong>Isquemia Esplâncnica</strong>
+                    <p>A ISQUEMIA ESPLÂNCNICA é a causa presumida, sendo resultado da combinação de:</p>
+                    <ul>
+                        <li>Hemodinâmica anormal (baixo fluxo, baixa PAM)</li>
+                        <li>SIRS</li>
+                        <li>Microêmbolos</li>
+                    </ul>
+                </div>
+
+                <h3 class="subsection-title">Principais Complicações</h3>
+                <ul>
+                    <li>SANGRAMENTO GI (~33% das complicações GI)</li>
+                    <li>ISQUEMIA MESENTÉRICA (13%)</li>
+                    <li>COLECISTITE (9%)</li>
+                    <li>PANCREATITE (3%)</li>
+                    <li>INSUFICIÊNCIA HEPÁTICA (2%)</li>
+                </ul>
+
+                <h3 class="subsection-title">Hiperbilirrubinemia</h3>
+                <div class="highlight-box warning">
+                    <strong>Prevalência e Prognóstico</strong>
+                    <p>A hiperbilirrubinemia pós-operatória é encontrada em aproximadamente 25% dos pacientes e também está associada ao aumento da mortalidade.</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        // Smooth scroll para navegação
+        document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Atualiza active
+                    document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        // Atualiza navegação baseado no scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('.section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.sidebar-nav a').forEach(a => {
+                a.classList.remove('active');
+                if (a.getAttribute('href') === `#${current}`) {
+                    a.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

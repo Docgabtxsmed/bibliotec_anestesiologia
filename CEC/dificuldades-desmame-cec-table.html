@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dificuldades de Desmame da CEC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #282d54 0%, #3059ef 50%, #48638b 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .component-wrapper {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .title {
+            font-size: 2.5em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            font-weight: 300;
+        }
+
+        /* Grid de categorias */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            transition: all 0.3s;
+            border: 3px solid;
+            position: relative;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Cores por categoria */
+        .category-card.surgical { border-color: #dc2626; }
+        .category-card.ventricular { border-color: #f59e0b; }
+        .category-card.vasoplegic { border-color: #8b5cf6; }
+        .category-card.lvot { border-color: #059669; }
+
+        .category-header {
+            padding: 25px;
+            color: white;
+            position: relative;
+        }
+
+        .category-card.surgical .category-header { 
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%); 
+        }
+        .category-card.ventricular .category-header { 
+            background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%); 
+        }
+        .category-card.vasoplegic .category-header { 
+            background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%); 
+        }
+        .category-card.lvot .category-header { 
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%); 
+        }
+
+        .category-name {
+            font-size: 1.4em;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .category-type {
+            font-size: 0.9em;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        .incidence-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.85em;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .category-body {
+            padding: 25px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 0.8em;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #64748b;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .diagnostic-criteria {
+            background: #f1f5f9;
+            border-left: 4px solid #3059ef;
+            border-radius: 8px;
+            padding: 12px 15px;
+        }
+
+        .criterion-item {
+            font-size: 0.9em;
+            color: #334155;
+            line-height: 1.7;
+            margin-bottom: 6px;
+        }
+
+        .criterion-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .criterion-item strong {
+            color: #1e293b;
+            font-weight: 700;
+        }
+
+        /* Risk factors */
+        .risk-factors {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            border-radius: 8px;
+            padding: 12px 15px;
+        }
+
+        .risk-item {
+            font-size: 0.85em;
+            color: #78350f;
+            line-height: 1.6;
+            margin-bottom: 5px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .risk-item::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #f59e0b;
+            font-weight: bold;
+        }
+
+        .risk-item:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Treatment options */
+        .treatment-section {
+            background: #d1fae5;
+            border-left: 4px solid #10b981;
+            border-radius: 8px;
+            padding: 12px 15px;
+        }
+
+        .treatment-category {
+            margin-bottom: 12px;
+        }
+
+        .treatment-category:last-child {
+            margin-bottom: 0;
+        }
+
+        .treatment-title {
+            font-size: 0.85em;
+            font-weight: 700;
+            color: #065f46;
+            margin-bottom: 6px;
+        }
+
+        .treatment-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .treatment-item {
+            font-size: 0.85em;
+            color: #064e3b;
+            line-height: 1.6;
+            margin-bottom: 4px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .treatment-item::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        /* Severity indicators */
+        .severity-low {
+            background: #d1fae5;
+            color: #065f46;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .severity-medium {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .severity-high {
+            background: #fee2e2;
+            color: #991b1b;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        /* Tabela comparativa */
+        .comparison-table {
+            margin-top: 40px;
+            background: #f8f9fa;
+            border-radius: 16px;
+            padding: 30px;
+            border: 2px solid #dee2e6;
+        }
+
+        .table-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #282d54;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .table-grid {
+            display: grid;
+            grid-template-columns: 150px repeat(4, 1fr);
+            gap: 1px;
+            background: #cbd5e1;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .table-header {
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            color: white;
+            padding: 15px 12px;
+            font-weight: 700;
+            font-size: 0.85em;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .table-row-header {
+            background: #e2e8f0;
+            color: #1e293b;
+            padding: 12px;
+            font-weight: 700;
+            font-size: 0.8em;
+            display: flex;
+            align-items: center;
+        }
+
+        .table-cell {
+            background: white;
+            padding: 12px;
+            font-size: 0.8em;
+            color: #475569;
+            line-height: 1.5;
+        }
+
+        /* Legenda abreviaturas */
+        .abbreviations {
+            margin-top: 30px;
+            padding: 25px;
+            background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+            border-radius: 16px;
+            border-left: 6px solid #3059ef;
+        }
+
+        .abbr-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #282d54;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .abbr-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 10px;
+        }
+
+        .abbr-item {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 0.85em;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        .abbr-item strong {
+            color: #3059ef;
+            font-weight: 700;
+            margin-right: 5px;
+        }
+
+        .abbr-item span {
+            color: #475569;
+        }
+
+        /* Clinical pearls */
+        .clinical-pearls {
+            margin-top: 30px;
+            padding: 25px;
+            background: #fef3c7;
+            border-radius: 16px;
+            border-left: 6px solid #f59e0b;
+        }
+
+        .pearls-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #92400e;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pearl-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-left: 3px solid #f59e0b;
+        }
+
+        .pearl-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .pearl-item h4 {
+            color: #92400e;
+            font-size: 0.95em;
+            margin-bottom: 6px;
+        }
+
+        .pearl-item p {
+            color: #78350f;
+            font-size: 0.85em;
+            line-height: 1.6;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .component-wrapper {
+                padding: 20px;
+            }
+
+            .title {
+                font-size: 1.8em;
+            }
+
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .table-grid {
+                display: block;
+            }
+
+            .table-header,
+            .table-row-header,
+            .table-cell {
+                display: block;
+                border-bottom: 1px solid #cbd5e1;
+            }
+
+            .abbr-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="component-wrapper">
+        <div class="header">
+            <h1 class="title">Dificuldades de Desmame da CEC</h1>
+            <p class="subtitle">Características e Modalidades de Tratamento</p>
+        </div>
+
+        <!-- Grid de Categorias -->
+        <div class="categories-grid">
+            
+            <!-- Falha Cirúrgica ou Técnica -->
+            <div class="category-card surgical">
+                <div class="category-header">
+                    <div class="incidence-badge">2-6%</div>
+                    <div class="category-name">Falha Cirúrgica ou Técnica</div>
+                    <div class="category-type">Surgical or Technical Failure</div>
+                </div>
+                <div class="category-body">
+                    
+                    <div class="section">
+                        <div class="section-title">🔍 CRITÉRIOS DIAGNÓSTICOS</div>
+                        <div class="diagnostic-criteria">
+                            <div class="criterion-item">
+                                <strong>ETE:</strong> Regurgitação ou estenose valvar
+                            </div>
+                            <div class="criterion-item">
+                                <strong>•</strong> Incompatibilidade paciente-prótese
+                            </div>
+                            <div class="criterion-item">
+                                <strong>•</strong> Leak paraprotético
+                            </div>
+                            <div class="criterion-item">
+                                <strong>•</strong> Shunt intracardíaco
+                            </div>
+                            <div class="criterion-item">
+                                <strong>•</strong> Enxerto vascular ocluído
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title">⚠️ FATORES DE RISCO</div>
+                        <div class="risk-factors">
+                            <div class="risk-item">Experiência e qualificação da equipe/operador</div>
+                            <div class="risk-item">Baixo volume cirúrgico</div>
+                            <div class="risk-item">Doença extensa, anatomia difícil</div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title">💊 TRATAMENTO ESPECÍFICO</div>
+                        <div class="treatment-section">
+                            <div class="treatment-category">
+                                <div class="treatment-title">Reoperação</div>
+                                <ul class="treatment-list">
+                                    <li class="treatment-item">Reparo secundário ou troca valvar</li>
+                                    <li class="treatment-item">Fechamento de shunt</li>
+                                    <li class="treatment-item">Bypass coronariano adicional</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disfunção Ventricular -->
+            <div class="category-card ventricular">
+                <div class="category-header">
+                    <div class="incidence-badge">15-40%</div>
+                    <div class="category-name">Disfunção Ventricular</div>
+                    <div class="category-type">Ventricular Dysfunction</div>
+                </div>
+                <div class="category-body">
+                    
+                    <div class="section">
+                        <div class="section-title">🔍 CRITÉRIOS DIAGNÓSTICOS</div>
+                        <div class="diagnostic-criteria">
+                            <div class="criterion-item">
+                                <strong>1. ETE:</strong> ↓ Contratilidade de VE e VD, VE e VD dilatados, ↓ Relaxamento
+                            </div>
+                            <div class="criterion-item">
+                                <strong>2. Hemodinâmica:</strong> ↓ DC e ↓ PAM
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title">⚠️ FATORES DE RISCO</div>
+                        <div class="risk-factors">
+                            <div class="risk-item">Idade (>65 anos), sexo feminino</div>
+                            <div class="risk-item">ICC, baixa FEVE</div>
+                            <div class="risk-item">Disfunção diastólica do VE</div>
+                            <div class="risk-item">Diabetes, IM, DPOC</div>
+                            <div class="risk-item">eGFR <60 mL/min</div>
+                            <div class="risk-item">DAC extensa, lesão de TCE</div>
+                            <div class="risk-item">Reoperação, emergência, procedimento combinado</div>
+                            <div class="risk-item">CEC prolongada</div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title">💊 TRATAMENTO ESPECÍFICO</div>
+                        <div class="treatment-section">
+                            <div class="treatment-category">
+                                <div class="treatment-title">1. Drogas</div>
+                                <ul class="treatment-list">
+                                    <li class="treatment-item">Agonistas adrenérgicos (dobutamina, epinefrina, dopamina)</li>
+                                    <li class="treatment-item">Inibidores de fosfodiesterase (milrinona)</li>
+                                    <li class="treatment-item">Sensibilizador de cálcio (levosimendan)</li>
+                                    <li class="treatment-item">Vasodilatadores sistêmicos (NTG, NPS)</li>
+                                    <li class="treatment-item">Vasodilatadores pulmonares (NO, PGI₂)</li>
+                                </ul>
+                            </div>
+                            <div class="treatment-category">
+                                <div class="treatment-title">2. Suporte Eletromecânico</div>
+                                <ul class="treatment-list">
+                                    <li class="treatment-item">Marca-passo biventricular</li>
+                                    <li class="treatment-item">Balão intra-aórtico</li>
+                                    <li class="treatment-item">Oxigenação por membrana extracorpórea</li>
+                                    <li class="treatment-item">Dispositivo de assistência ventricular</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Síndrome Vasoplégica -->
+            <div class="category-card vasoplegic">
+                <div class="category-header">
+                    <div class="incidence-badge">4-20%</div>
+                    <div class="category-name">Síndrome Vasoplégica</div>
+                    <div class="category-type">Vasoplegic Syndrome</div>
+                </div>
+                <div class="category-body">
+                    
+                    <div class="section">
+                        <div class="section-title">🔍 CRITÉRIOS DIAGNÓSTICOS</div>
+                        <div class="diagnostic-criteria">
+                            <div class="criterion-item">
+                                <strong>1. ETE:</strong> Contratilidade ventricular preservada
+                            </div>
+                            <div class="criterion-item">
+                                <strong>2. Hemodinâmica:</strong> ↑ ou DC normal e ↓ PAM
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title">⚠️ FATORES DE RISCO</div>
+                        <div class="risk-factors">
+                            <div class="risk-item">Terapia pré-operatória com IECA ou antagonista de angiotensina II</div>
+                            <div class="risk-item">Betabloqueadores, heparina</div>
+                            <div class="risk-item">Alto EuroScore</div>
+                            <div class="risk-item">CEC prolongada</div>
+                            <div class="risk-item">Baixa FEVE (<35%)</div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title">💊 TRATAMENTO ESPECÍFICO</div>
+                        <div class="treatment-section">
+                            <div class="treatment-category">
+                                <div class="treatment-title">Vasopressores</div>
+                                <ul class="treatment-list">
+                                    <li class="treatment-item">Fenilefrina</li>
+                                    <li class="treatment-item">Norepinefrina</li>
+                                    <li class="treatment-item">Terlipressina</li>
+                                    <li class="treatment-item">Azul de metileno</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Obstrução do TSVE -->
+            <div class="category-card lvot">
+                <div class="category-header">
+                    <div class="incidence-badge">5-10%</div>
+                    <div class="category-name">Obstrução TSVE</div>
+                    <div class="category-type">Left Ventricular Outflow Tract Obstruction</div>
+                </div>
+                <div class="category-body">
+                    
+                    <div class="section">
+                        <div class="section-title">🔍 CRITÉRIOS DIAGNÓSTICOS</div>
+                        <div class="diagnostic-criteria">
+                            <div class="criterion-item">
+                                <strong>ETE:</strong> Movimento anterior sistólico do folheto anterior mitral
+                            </div>
+                            <div class="criterion-item">
+                                <strong>•</strong> Hipertrofia septal do VE
+                            </div>
+                            <div class="criterion-item">
+                                <strong>•</strong> Gradiente de pressão no TSVE
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title">⚠️ FATORES DE RISCO</div>
+                        <div class="risk-factors">
+                            <div class="risk-item">Valva mitral mixomatosa</div>
+                            <div class="risk-item">VE hiperdinâmico</div>
+                            <div class="risk-item">Curta distância entre ponto de coaptação MV e septo do VE</div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title">💊 TRATAMENTO ESPECÍFICO</div>
+                        <div class="treatment-section">
+                            <div class="treatment-category">
+                                <div class="treatment-title">1. Tratamento Médico</div>
+                                <ul class="treatment-list">
+                                    <li class="treatment-item">Expansão volêmica</li>
+                                    <li class="treatment-item">Descontinuar inotrópicos</li>
+                                    <li class="treatment-item">Betabloqueadores</li>
+                                </ul>
+                            </div>
+                            <div class="treatment-category">
+                                <div class="treatment-title">2. Tratamento Cirúrgico</div>
+                                <ul class="treatment-list">
+                                    <li class="treatment-item">Ressecção do abaulamento septal</li>
+                                    <li class="treatment-item">Reparo ou troca da valva mitral</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tabela Comparativa Resumida -->
+        <div class="comparison-table">
+            <h2 class="table-title">📊 Comparação Rápida das Categorias</h2>
+            <div class="table-grid">
+                <div class="table-header" style="grid-column: 1;">Aspecto</div>
+                <div class="table-header">Falha Técnica</div>
+                <div class="table-header">Disfunção Ventricular</div>
+                <div class="table-header">Síndrome Vasoplégica</div>
+                <div class="table-header">Obstrução TSVE</div>
+
+                <div class="table-row-header">Incidência</div>
+                <div class="table-cell"><span class="severity-low">2-6%</span></div>
+                <div class="table-cell"><span class="severity-high">15-40%</span></div>
+                <div class="table-cell"><span class="severity-medium">4-20%</span></div>
+                <div class="table-cell"><span class="severity-medium">5-10%*</span></div>
+
+                <div class="table-row-header">Principal Diagnóstico</div>
+                <div class="table-cell">ETE: Lesão estrutural</div>
+                <div class="table-cell">↓ Contratilidade no ETE</div>
+                <div class="table-cell">Contratilidade preservada</div>
+                <div class="table-cell">SAM no ETE</div>
+
+                <div class="table-row-header">Hemodinâmica</div>
+                <div class="table-cell">Variável</div>
+                <div class="table-cell">↓ DC e ↓ PAM</div>
+                <div class="table-cell">↑ DC, ↓ PAM</div>
+                <div class="table-cell">Gradiente em TSVE</div>
+
+                <div class="table-row-header">Tratamento Primário</div>
+                <div class="table-cell">Reoperação</div>
+                <div class="table-cell">Inotrópicos + Suporte mecânico</div>
+                <div class="table-cell">Vasopressores</div>
+                <div class="table-cell">Volume + β-bloqueador</div>
+            </div>
+            <p style="font-size: 0.8em; color: #64748b; margin-top: 15px;">* Após cirurgia de valva mitral</p>
+        </div>
+
+        <!-- Clinical Pearls -->
+        <div class="clinical-pearls">
+            <h3 class="pearls-title">💎 Pérolas Clínicas</h3>
+            
+            <div class="pearl-item">
+                <h4>🎯 Abordagem Diagnóstica Sistemática</h4>
+                <p>Use sempre o ETE para diferenciar as causas. A hemodinâmica sozinha pode ser enganosa - o padrão de contratilidade no ETE é fundamental para guiar o tratamento.</p>
+            </div>
+
+            <div class="pearl-item">
+                <h4>⚡ Disfunção Ventricular é a Mais Comum</h4>
+                <p>Com incidência de 15-40%, a disfunção ventricular é a causa mais frequente de dificuldade de desmame. Otimize a proteção miocárdica durante a CEC para prevenir.</p>
+            </div>
+
+            <div class="pearl-item">
+                <h4>🔄 Síndrome Vasoplégica: Reconheça o Paradoxo</h4>
+                <p>DC normal ou aumentado + PAM baixa + contratilidade preservada = vasoplegia. Inotrópicos não ajudam - use vasopressores puros!</p>
+            </div>
+
+            <div class="pearl-item">
+                <h4>⚠️ Obstrução TSVE: Cuidado com Inotrópicos</h4>
+                <p>Em SAM pós-plastia mitral, inotrópicos PIORAM o quadro. Tratamento é anti-intuitivo: volume + β-bloqueadores para reduzir contratilidade.</p>
+            </div>
+
+            <div class="pearl-item">
+                <h4>🏥 Prevenção é a Melhor Estratégia</h4>
+                <p>Fatores de risco como CEC prolongada, baixa FEVE e procedimentos complexos devem ser identificados no pré-operatório para otimizar estratégias de proteção.</p>
+            </div>
+        </div>
+
+        <!-- Abreviações -->
+        <div class="abbreviations">
+            <h3 class="abbr-title">📚 Glossário de Abreviações</h3>
+            <div class="abbr-grid">
+                <div class="abbr-item">
+                    <strong>CAD:</strong> <span>Coronary Artery Disease (DAC)</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>CHF:</strong> <span>Congestive Heart Failure (ICC)</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>CO:</strong> <span>Cardiac Output (DC)</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>COPD:</strong> <span>Chronic Obstructive Pulmonary Disease (DPOC)</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>CPB:</strong> <span>Cardiopulmonary Bypass (CEC)</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>eGFR:</strong> <span>Estimated Glomerular Filtration Rate (TFGe)</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>IECA:</strong> <span>Inibidor da Enzima Conversora de Angiotensina</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>LV:</strong> <span>Left Ventricle (VE - Ventrículo Esquerdo)</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>LVEF:</strong> <span>Left Ventricular Ejection Fraction (FEVE)</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>MAP:</strong> <span>Mean Arterial Pressure (PAM)</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>MI:</strong> <span>Myocardial Infarction (IM)</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>MV:</strong> <span>Mitral Valve (Valva Mitral)</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>NPS:</strong> <span>Nitroprussiato de Sódio</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>NTG:</strong> <span>Nitroglicerina</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>PGI₂:</strong> <span>Prostaciclina</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>RV:</strong> <span>Right Ventricle (VD - Ventrículo Direito)</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>SAM:</strong> <span>Systolic Anterior Motion (Movimento Anterior Sistólico)</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>TCE:</strong> <span>Tronco Coronariano Esquerdo</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>TEE:</strong> <span>Transesophageal Echocardiography (ETE)</span>
+                </div>
+                <div class="abbr-item">
+                    <strong>TSVE:</strong> <span>Trato de Saída do Ventrículo Esquerdo (LVOT)</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Animação de entrada
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.category-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 150);
+            });
+
+            // Animação da tabela
+            const table = document.querySelector('.comparison-table');
+            if (table) {
+                setTimeout(() => {
+                    table.style.opacity = '0';
+                    table.style.transform = 'translateY(30px)';
+                    table.style.transition = 'all 0.8s ease';
+                    setTimeout(() => {
+                        table.style.opacity = '1';
+                        table.style.transform = 'translateY(0)';
+                    }, 100);
+                }, cards.length * 150);
+            }
+        });
+    </script>
+</body>
+</html>

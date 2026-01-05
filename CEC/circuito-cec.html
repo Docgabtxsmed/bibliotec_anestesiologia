@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuito de Circulação Extracorpórea (CEC)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #282d54 0%, #3059ef 50%, #48638b 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .component-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .title {
+            font-size: 2.5em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            font-weight: 300;
+        }
+
+        .cec-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        .cec-circuit {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16/10;
+            background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 20px;
+            border: 3px solid #dee2e6;
+            padding: 40px;
+        }
+
+        /* Componentes do circuito */
+        .component {
+            position: absolute;
+            background: white;
+            border-radius: 12px;
+            padding: 15px 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 3px solid;
+            font-weight: 600;
+            font-size: 0.9em;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .component:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+            z-index: 20;
+        }
+
+        .component .tooltip {
+            position: absolute;
+            bottom: 105%;
+            left: 50%;
+            transform: translateX(-50%) scale(0);
+            background: rgba(40, 45, 84, 0.95);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 0.85em;
+            font-weight: 500;
+            white-space: nowrap;
+            transition: all 0.3s;
+            pointer-events: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .component:hover .tooltip {
+            transform: translateX(-50%) scale(1);
+        }
+
+        /* Coração/Paciente */
+        .heart {
+            top: 8%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-color: #dc2626;
+            color: #dc2626;
+            font-size: 1.1em;
+            padding: 20px 30px;
+        }
+
+        /* Reservatório */
+        .reservoir {
+            bottom: 35%;
+            left: 8%;
+            border-color: #6b7280;
+            color: #6b7280;
+        }
+
+        /* Oxigenador */
+        .oxygenator {
+            bottom: 35%;
+            left: 25%;
+            border-color: #0891b2;
+            color: #0891b2;
+        }
+
+        /* Bombas */
+        .pump {
+            bottom: 22%;
+            left: 40%;
+            border-color: #f59e0b;
+            color: #f59e0b;
+        }
+
+        /* Root Vent */
+        .root-vent {
+            bottom: 22%;
+            left: 53%;
+            border-color: #f59e0b;
+            color: #f59e0b;
+        }
+
+        /* LV Vent */
+        .lv-vent {
+            bottom: 22%;
+            left: 66%;
+            border-color: #f59e0b;
+            color: #f59e0b;
+        }
+
+        /* Trocador de Calor */
+        .heat-exchanger {
+            bottom: 38%;
+            right: 8%;
+            border-color: #8b5cf6;
+            color: #8b5cf6;
+        }
+
+        /* Cardioplegia */
+        .cardioplegia {
+            bottom: 8%;
+            right: 8%;
+            border-color: #dc2626;
+            color: #dc2626;
+        }
+
+        /* ALF (Filtro de Linha Arterial) */
+        .alf {
+            top: 35%;
+            left: 5%;
+            border-color: #059669;
+            color: #059669;
+        }
+
+        /* Potássio */
+        .potassium {
+            bottom: 38%;
+            right: 30%;
+            border-color: #7c3aed;
+            color: #7c3aed;
+            font-size: 0.85em;
+        }
+
+        /* Linhas do circuito */
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .circuit-line {
+            fill: none;
+            stroke-width: 4;
+            opacity: 0.9;
+        }
+
+        .arterial-line {
+            stroke: #dc2626;
+            stroke-dasharray: 8, 4;
+        }
+
+        .venous-line {
+            stroke: #3b82f6;
+        }
+
+        .cardioplegia-line {
+            stroke: #dc2626;
+        }
+
+        .oxygenated-line {
+            stroke: #f59e0b;
+        }
+
+        /* Setas */
+        .arrow {
+            fill: none;
+            stroke-width: 3;
+        }
+
+        /* Legenda */
+        .legend {
+            margin-top: 40px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 16px;
+            border: 2px solid #dee2e6;
+        }
+
+        .legend-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #282d54;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        .legend-color {
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            flex-shrink: 0;
+        }
+
+        .legend-text {
+            font-size: 0.9em;
+            color: #334155;
+            font-weight: 500;
+        }
+
+        /* Descrições técnicas */
+        .technical-info {
+            margin-top: 30px;
+            padding: 25px;
+            background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+            border-radius: 16px;
+            border-left: 6px solid #3059ef;
+        }
+
+        .info-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #282d54;
+            margin-bottom: 15px;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            padding: 10px 0;
+            color: #1e293b;
+            font-size: 0.95em;
+            line-height: 1.6;
+            border-bottom: 1px solid rgba(48, 89, 239, 0.1);
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+
+        .info-list li strong {
+            color: #3059ef;
+            font-weight: 600;
+        }
+
+        /* Animações */
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.6;
+            }
+        }
+
+        .animated-flow {
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .component-wrapper {
+                padding: 20px;
+            }
+
+            .title {
+                font-size: 1.8em;
+            }
+
+            .component {
+                font-size: 0.75em;
+                padding: 10px 12px;
+            }
+
+            .legend-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cec-circuit {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="component-wrapper">
+        <div class="header">
+            <h1 class="title">Circuito de Circulação Extracorpórea (CEC)</h1>
+            <p class="subtitle">Componentes e Fluxo Sanguíneo Durante Cirurgia Cardíaca</p>
+        </div>
+
+        <div class="cec-container">
+            <div class="cec-circuit">
+                <!-- SVG para linhas do circuito -->
+                <svg viewBox="0 0 1200 600" preserveAspectRatio="none">
+                    <!-- Drenagem venosa (Azul) -->
+                    <path class="circuit-line venous-line animated-flow" 
+                          d="M 600 120 L 600 250 L 150 250" />
+                    
+                    <!-- Saída do reservatório para oxigenador -->
+                    <path class="circuit-line venous-line" 
+                          d="M 150 340 L 150 380 L 290 380" />
+                    
+                    <!-- Oxigenador para bomba arterial -->
+                    <path class="circuit-line oxygenated-line" 
+                          d="M 350 380 L 500 380" />
+                    
+                    <!-- Bomba para trocador de calor -->
+                    <path class="circuit-line oxygenated-line" 
+                          d="M 540 380 L 700 380 L 1000 380" />
+                    
+                    <!-- Trocador de calor de volta ao paciente -->
+                    <path class="circuit-line arterial-line animated-flow" 
+                          d="M 1050 340 L 1050 200 L 700 200 L 700 120" />
+                    
+                    <!-- Linha de cardioplegia -->
+                    <path class="circuit-line cardioplegia-line" 
+                          d="M 1050 500 L 1050 450 L 900 450 L 900 200 L 800 200 L 800 120" />
+                    
+                    <!-- ALF -->
+                    <path class="circuit-line arterial-line" 
+                          d="M 100 280 L 80 280 L 80 180 L 550 180 L 550 120" />
+                    
+                    <!-- Potássio -->
+                    <path class="circuit-line" style="stroke: #7c3aed; stroke-dasharray: 4, 4;" 
+                          d="M 850 340 L 850 380" />
+                </svg>
+
+                <!-- Componentes do circuito -->
+                <div class="component heart">
+                    <div class="tooltip">Paciente - Interface cardíaca com 4 cânulas</div>
+                    ❤️ Paciente<br><small style="font-size:0.75em;">(Coração em Bypass)</small>
+                </div>
+
+                <div class="component reservoir">
+                    <div class="tooltip">Armazena sangue venoso antes da oxigenação</div>
+                    Reservatório
+                </div>
+
+                <div class="component oxygenator">
+                    <div class="tooltip">Oxigena e remove CO₂ do sangue</div>
+                    Oxigenador
+                </div>
+
+                <div class="component pump">
+                    <div class="tooltip">Bomba de sucção arterial principal</div>
+                    Bomba<br>Principal
+                </div>
+
+                <div class="component root-vent">
+                    <div class="tooltip">Vent de raiz aórtica</div>
+                    Root<br>Vent
+                </div>
+
+                <div class="component lv-vent">
+                    <div class="tooltip">Vent de ventrículo esquerdo</div>
+                    LV<br>Vent
+                </div>
+
+                <div class="component heat-exchanger">
+                    <div class="tooltip">Controla temperatura do sangue (hipotermia/normotermia)</div>
+                    Trocador<br>de Calor
+                </div>
+
+                <div class="component cardioplegia">
+                    <div class="tooltip">Sistema de cardioplegia para proteção miocárdica</div>
+                    Cardioplegia
+                </div>
+
+                <div class="component alf">
+                    <div class="tooltip">Arterial Line Filter - Filtra microêmbolos</div>
+                    ALF
+                </div>
+
+                <div class="component potassium">
+                    <div class="tooltip">Adição de potássio para cardioplegia</div>
+                    K⁺
+                </div>
+            </div>
+        </div>
+
+        <!-- Legenda -->
+        <div class="legend">
+            <h2 class="legend-title">Legenda do Circuito</h2>
+            <div class="legend-grid">
+                <div class="legend-item" style="border-left-color: #3b82f6;">
+                    <div class="legend-color" style="background: #3b82f6;"></div>
+                    <span class="legend-text">Linha Venosa (Sangue desoxigenado)</span>
+                </div>
+                <div class="legend-item" style="border-left-color: #dc2626;">
+                    <div class="legend-color" style="background: #dc2626; border: 2px dashed white;"></div>
+                    <span class="legend-text">Linha Arterial (Retorno ao paciente)</span>
+                </div>
+                <div class="legend-item" style="border-left-color: #f59e0b;">
+                    <div class="legend-color" style="background: #f59e0b;"></div>
+                    <span class="legend-text">Sangue Oxigenado (Pós-oxigenador)</span>
+                </div>
+                <div class="legend-item" style="border-left-color: #dc2626;">
+                    <div class="legend-color" style="background: #dc2626;"></div>
+                    <span class="legend-text">Linha de Cardioplegia</span>
+                </div>
+                <div class="legend-item" style="border-left-color: #059669;">
+                    <div class="legend-color" style="background: #059669;"></div>
+                    <span class="legend-text">Filtro de Linha Arterial (ALF)</span>
+                </div>
+                <div class="legend-item" style="border-left-color: #7c3aed;">
+                    <div class="legend-color" style="background: #7c3aed;"></div>
+                    <span class="legend-text">Aditivos (Potássio, medicações)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Informações Técnicas -->
+        <div class="technical-info">
+            <h3 class="info-title">⚙️ Componentes e Funções Principais</h3>
+            <ul class="info-list">
+                <li>
+                    <strong>Drenagem Venosa:</strong> Sangue desoxigenado é drenado por gravidade ou sucção assistida das cavas (átrio direito) para o reservatório através de cânulas venosas.
+                </li>
+                <li>
+                    <strong>Reservatório Venoso:</strong> Armazena temporariamente o sangue venoso, permitindo ajustes de volume e servindo como interface de segurança. Capacidade típica: 1000-3000 mL.
+                </li>
+                <li>
+                    <strong>Oxigenador (Membrana):</strong> Realiza troca gasosa - adiciona O₂ e remove CO₂ do sangue, substituindo a função pulmonar durante a CEC.
+                </li>
+                <li>
+                    <strong>Bomba Arterial:</strong> Bomba de rolete ou centrífuga que impulsiona o sangue oxigenado de volta ao paciente. Fluxo típico: 2.2-2.4 L/min/m².
+                </li>
+                <li>
+                    <strong>Trocador de Calor:</strong> Integrado ao oxigenador, permite indução de hipotermia (18-34°C) para proteção cerebral e reaquecimento controlado.
+                </li>
+                <li>
+                    <strong>ALF (Arterial Line Filter):</strong> Filtra microêmbolos gasosos e particulados antes do retorno arterial, reduzindo risco de AVC e complicações embólicas.
+                </li>
+                <li>
+                    <strong>Cardioplegia:</strong> Sistema separado para infundir solução cardioplégica (rica em K⁺) que induz parada cardíaca e protege o miocárdio durante a cirurgia. Pode ser anterógrada (raiz aórtica) ou retrógrada (seio coronário).
+                </li>
+                <li>
+                    <strong>Vents (Root/LV):</strong> Succionadores que previnem distensão ventricular, removem ar e sangue que retornam ao coração durante a CEC, protegendo o miocárdio.
+                </li>
+            </ul>
+        </div>
+
+        <div class="technical-info" style="margin-top: 20px; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-left-color: #f59e0b;">
+            <h3 class="info-title">⚠️ Conceitos Críticos em CEC</h3>
+            <ul class="info-list">
+                <li>
+                    <strong>Hemodiluição:</strong> Priming do circuito (1000-1500 mL) causa diluição do sangue, reduzindo Hb e fatores de coagulação - requer monitorização rigorosa.
+                </li>
+                <li>
+                    <strong>Resposta Inflamatória:</strong> Contato sangue-superfície artificial ativa complemento, citocinas e resposta inflamatória sistêmica (SIRS).
+                </li>
+                <li>
+                    <strong>Anticoagulação:</strong> Heparina sistêmica (ACT >480s) é essencial para prevenir trombose no circuito. Revertida com protamina ao final.
+                </li>
+                <li>
+                    <strong>Proteção de Órgãos:</strong> Fluxo adequado (>2.0 L/min/m²), pressão de perfusão (PAM 50-80 mmHg) e temperatura controlada são cruciais para prevenir isquemia.
+                </li>
+                <li>
+                    <strong>Desmame da CEC:</strong> Processo gradual de transferência das funções cardiopulmonares de volta ao paciente, requer coordenação entre cirurgião e anestesiologista.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Adicionar interatividade aos componentes
+        document.querySelectorAll('.component').forEach(component => {
+            component.addEventListener('click', function() {
+                const tooltip = this.querySelector('.tooltip');
+                if (tooltip) {
+                    alert(tooltip.textContent);
+                }
+            });
+        });
+
+        // Animação de entrada
+        document.addEventListener('DOMContentLoaded', function() {
+            const components = document.querySelectorAll('.component');
+            components.forEach((comp, index) => {
+                comp.style.opacity = '0';
+                comp.style.transform = 'scale(0.8)';
+                
+                setTimeout(() => {
+                    comp.style.transition = 'all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                    comp.style.opacity = '1';
+                    comp.style.transform = 'scale(1)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>

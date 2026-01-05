@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mnemônico CVP - Desmame da CEC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #282d54 0%, #3059ef 50%, #48638b 100%);
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(247, 247, 247, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            margin-bottom: 40px;
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .back-link {
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: #555;
+            font-weight: 500;
+            text-decoration: none;
+            background: #e8e8e8;
+        }
+
+        .back-link:hover {
+            background: #3059ef;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .page-container {
+            padding: 0 20px 40px;
+        }
+
+        .component-wrapper {
+            max-width: 1400px;
+            margin: 0 auto 40px;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .title {
+            font-size: 2.5em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        /* Mnemônico destacado */
+        .mnemonic-display {
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            padding: 30px;
+            border-radius: 16px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 24px rgba(48, 89, 239, 0.3);
+        }
+
+        .mnemonic-letters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .mnemonic-letter {
+            background: white;
+            color: #3059ef;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            font-weight: 900;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+        }
+
+        .mnemonic-letter:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .mnemonic-separator {
+            color: white;
+            font-size: 2.5em;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        .mnemonic-description {
+            text-align: center;
+            color: white;
+            font-size: 1.1em;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        /* Grid de elementos */
+        .elements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .element-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            transition: all 0.3s;
+            border: 3px solid;
+            position: relative;
+        }
+
+        .element-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Cores por categoria - Sistema CCCC-VVP */
+        .element-card.c-group { border-color: #dc2626; }
+        .element-card.v-group { border-color: #059669; }
+        .element-card.p-group { border-color: #8b5cf6; }
+
+        .element-header {
+            padding: 25px;
+            color: white;
+            position: relative;
+        }
+
+        .element-card.c-group .element-header {
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+        }
+
+        .element-card.v-group .element-header {
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+        }
+
+        .element-card.p-group .element-header {
+            background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+        }
+
+        .element-letter {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            font-weight: 900;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .element-name {
+            font-size: 1.6em;
+            font-weight: 700;
+            margin-bottom: 8px;
+            padding-right: 60px;
+        }
+
+        .element-subtitle {
+            font-size: 0.95em;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        .element-body {
+            padding: 25px;
+        }
+
+        .parameter-section {
+            margin-bottom: 20px;
+        }
+
+        .parameter-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .parameter-label {
+            font-size: 0.8em;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #64748b;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .parameter-content {
+            background: #f1f5f9;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid;
+        }
+
+        .element-card.c-group .parameter-content { border-left-color: #dc2626; }
+        .element-card.v-group .parameter-content { border-left-color: #059669; }
+        .element-card.p-group .parameter-content { border-left-color: #8b5cf6; }
+
+        .parameter-value {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+
+        .parameter-details {
+            font-size: 0.9em;
+            color: #475569;
+            line-height: 1.6;
+        }
+
+        .parameter-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .parameter-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 0.9em;
+            color: #334155;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .parameter-list li:last-child {
+            border-bottom: none;
+        }
+
+        .parameter-list li::before {
+            content: '✓';
+            color: #10b981;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        /* Ícones de categoria */
+        .category-icon {
+            font-size: 1.2em;
+        }
+
+        /* Clinical context */
+        .clinical-context {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-left: 6px solid #f59e0b;
+        }
+
+        .context-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #92400e;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .context-content {
+            color: #78350f;
+            font-size: 1em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .context-highlight {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .context-highlight strong {
+            color: #f59e0b;
+            font-weight: 700;
+        }
+
+        /* Quick reference table */
+        .quick-reference {
+            background: #f8f9fa;
+            border-radius: 16px;
+            padding: 30px;
+            margin-top: 40px;
+            border: 2px solid #dee2e6;
+        }
+
+        .reference-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #282d54;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .reference-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .reference-item {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3059ef;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .reference-item h4 {
+            color: #3059ef;
+            font-size: 1em;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .reference-item p {
+            color: #475569;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        /* Citation */
+        .citation {
+            margin-top: 30px;
+            padding: 20px;
+            background: #e0e7ff;
+            border-radius: 12px;
+            border-left: 4px solid #6366f1;
+        }
+
+        .citation-text {
+            font-size: 0.85em;
+            color: #312e81;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .component-wrapper {
+                padding: 20px;
+            }
+
+            .title {
+                font-size: 1.8em;
+            }
+
+            .mnemonic-letter {
+                width: 50px;
+                height: 50px;
+                font-size: 1.8em;
+            }
+
+            .elements-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .reference-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-content {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .logo {
+                font-size: 1.2em;
+            }
+
+            .page-container {
+                padding: 0 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">📋 Mnemônico CVP</div>
+            <a href="cirurgia-cardiaca.html" class="back-link">← Voltar à Cirurgia Cardíaca</a>
+        </div>
+    </nav>
+
+    <!-- Container Principal -->
+    <div class="page-container">
+    <div class="component-wrapper">
+        <div class="header">
+            <h1 class="title">Mnemônico para Desmame da CEC</h1>
+            <p class="subtitle">Por Morris, Romanoff e Royster</p>
+        </div>
+
+        <!-- Mnemônico em destaque -->
+        <div class="mnemonic-display">
+            <div class="mnemonic-letters">
+                <div class="mnemonic-letter">C</div>
+                <div class="mnemonic-letter">C</div>
+                <div class="mnemonic-letter">C</div>
+                <div class="mnemonic-letter">C</div>
+                <div class="mnemonic-letter">C</div>
+                <div class="mnemonic-separator">-</div>
+                <div class="mnemonic-letter">V</div>
+                <div class="mnemonic-letter">V</div>
+                <div class="mnemonic-letter">V</div>
+                <div class="mnemonic-letter">V</div>
+                <div class="mnemonic-separator">-</div>
+                <div class="mnemonic-letter">P</div>
+                <div class="mnemonic-letter">P</div>
+                <div class="mnemonic-letter">P</div>
+                <div class="mnemonic-letter">P</div>
+                <div class="mnemonic-letter">P</div>
+                <div class="mnemonic-letter">P</div>
+            </div>
+            <div class="mnemonic-description">
+                <strong>6 Cs</strong> (Cold, Conduction, Contractility, Cells, Calcium, Coagulation) + 
+                <strong>4 Vs</strong> (Ventilation, Visualization, Volume, Vaporizer) + 
+                <strong>6 Ps</strong> (Predictors, Pressure, Pressors, Pacer, Potassium, Protamine)
+            </div>
+        </div>
+
+        <!-- Contexto Clínico -->
+        <div class="clinical-context">
+            <h3 class="context-title">🎯 Contexto Clínico</h3>
+            <p class="context-content">
+                O mnemônico <strong>CVP</strong> fornece uma abordagem sistemática e completa para o desmame bem-sucedido da circulação extracorpórea (CEC). Cada elemento deve ser otimizado ANTES de tentar o desmame para maximizar as chances de sucesso e minimizar complicações.
+            </p>
+            <div class="context-highlight">
+                <strong>Princípio Fundamental:</strong> O desmame da CEC deve ser um processo planejado e sistemático, não uma tentativa empírica. Verifique cada um dos elementos do mnemônico antes de iniciar o desmame.
+            </div>
+        </div>
+
+        <!-- Grid de Elementos -->
+        <div class="elements-grid">
+            
+            <!-- COLD (Temperatura) -->
+            <div class="element-card c-group">
+                <div class="element-header">
+                    <div class="element-letter">C</div>
+                    <div class="element-name">Cold</div>
+                    <div class="element-subtitle">Temperatura</div>
+                </div>
+                <div class="element-body">
+                    <div class="parameter-section">
+                        <div class="parameter-label">🌡️ OBJETIVO</div>
+                        <div class="parameter-content">
+                            <div class="parameter-value">Normotermia</div>
+                            <div class="parameter-details">
+                                Paciente deve estar aquecido e normoterme antes do desmame. Hipotermia residual compromete função miocárdica e aumenta consumo de O₂ durante o reaquecimento pós-desmame.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameter-section">
+                        <div class="parameter-label">📊 PARÂMETROS</div>
+                        <div class="parameter-content">
+                            <ul class="parameter-list">
+                                <li>Temperatura central 36 - 37°C</li>
+                                <li>Evitar reaquecimento muito rápido (gradiente <10°C)</li>
+                                <li>Temperatura do sangue na CEC monitorada</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONDUCTION (Condução) -->
+            <div class="element-card c-group">
+                <div class="element-header">
+                    <div class="element-letter">C</div>
+                    <div class="element-name">Conduction</div>
+                    <div class="element-subtitle">Condução Elétrica</div>
+                </div>
+                <div class="element-body">
+                    <div class="parameter-section">
+                        <div class="parameter-label">⚡ OBJETIVO</div>
+                        <div class="parameter-content">
+                            <div class="parameter-value">Ritmo Cardíaco Adequado, FC = 80 - 100 bpm</div>
+                            <div class="parameter-details">
+                                Ritmo sinusal ou marcapasso em frequência apropriada. A condução AV adequada é essencial para sincronização atrioventricular e otimização do débito cardíaco.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameter-section">
+                        <div class="parameter-label">📊 PARÂMETROS</div>
+                        <div class="parameter-content">
+                            <ul class="parameter-list">
+                                <li>Ritmo sinusal ou marcapasso funcional</li>
+                                <li>FC 80-100 bpm (ideal para pós-CEC)</li>
+                                <li>Sem bloqueios AV de alto grau</li>
+                                <li>Cardioversão se FA/Flutter persistente</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTRACTILITY (Contratilidade) -->
+            <div class="element-card c-group">
+                <div class="element-header">
+                    <div class="element-letter">C</div>
+                    <div class="element-name">Contractility</div>
+                    <div class="element-subtitle">Contratilidade Miocárdica</div>
+                </div>
+                <div class="element-body">
+                    <div class="parameter-section">
+                        <div class="parameter-label">💪 OBJETIVO</div>
+                        <div class="parameter-content">
+                            <div class="parameter-value">Função Ventricular Adequada</div>
+                            <div class="parameter-details">
+                                Contratilidade ventricular suficiente para manter débito cardíaco adequado. A contratilidade deve ser estimado pelo ETER ou pelo catéter de artéria pulmonar. que guiam a terapia inotrópica.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameter-section">
+                        <div class="parameter-label">📊 PARÂMETROS</div>
+                        <div class="parameter-content">
+                            <ul class="parameter-list">
+                                <li>ETE: Avaliação visual da contratilidade biventricular</li>
+                                <li>Considerar inotrópicos se disfunção (epinefrina, dobutamina, milrinone...)</li>
+                                <li>Excluir SAM (movimento anterior sistólico)</li>
+                                <li>Verificar competência valvar no ETE</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CELLS (Células) -->
+            <div class="element-card c-group">
+                <div class="element-header">
+                    <div class="element-letter">C</div>
+                    <div class="element-name">Cells</div>
+                    <div class="element-subtitle">Capacidade de Transporte de O₂</div>
+                </div>
+                <div class="element-body">
+                    <div class="parameter-section">
+                        <div class="parameter-label">🔴 OBJETIVO</div>
+                        <div class="parameter-content">
+                            <div class="parameter-value">Hematócrito Adequado</div>
+                            <div class="parameter-details">
+                                Hemoglobina/hematócrito suficiente para suportar oferta adequada de oxigênio aos tecidos após o desmame. Considerar transfusão se muito baixo.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameter-section">
+                        <div class="parameter-label">📊 PARÂMETROS</div>
+                        <div class="parameter-content">
+                            <ul class="parameter-list">
+                                <li>Hematócrito ≥24-28% (ideal >25%)</li>
+                                <li>Considerar transfusão de hemácias se Hb <7-8 g/dL</li>
+                                <li>Pacientes com doença coronariana: alvo mais alto</li>
+                                <li>Ultrafiltração para hemoconcentração se necessário</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cálcio -->
+            <div class="element-card c-group">
+                <div class="element-header">
+                    <div class="element-letter">C</div>
+                    <div class="element-name">Cálcio</div>
+                    <div class="element-subtitle">Fundamental para cntratilidade miocárdica e da musculatura lisa vascular</div>
+                </div>
+                <div class="element-body">
+                    <div class="parameter-section">
+                        <div class="parameter-label">🔴 OBJETIVO</div>
+                        <div class="parameter-content">
+                            <div class="parameter-value">Cálcio ionizado normal</div>
+                            <div class="parameter-details">
+                                O cálcio deve estar prontamente disponível para tratar hipocalcemia e hipercalemia. O cálcio inoizado deve ser mensurado após o reaquecimento para terapia direcionada. Os valores geralmente estão reduzidos devido à hemodiluição, quelação pelo citrato, mudanças ácido-básicas e infusão de albumina.  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameter-section">
+                        <div class="parameter-label">📊 PARÂMETROS</div>
+                        <div class="parameter-content">
+                            <ul class="parameter-list">
+                                <li>Cálcio ionizado 1,1-1,3 mmol/L</li>
+                                <li>Acidose: aumenta os níveis de cálcio inoizado</li>
+                                <li>Alcalose: diminui a fração livre de cálcio</li>
+                                <li>O uso de cálcio de forma desnecessária pode promover espasmo coronariano e artodoamento miocardíaco</li>
+                                <li>Para reduzir esse risco, só deve ser administrado após a reperfusão</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COAGULTION-->
+            <div class="element-card c-group">
+                <div class="element-header">
+                    <div class="element-letter">C</div>
+                    <div class="element-name">Coagulação</div>
+                    <div class="element-subtitle">TCA, Testes viscoelásticos </div>
+                </div>
+                <div class="element-body">
+                    <div class="parameter-section">
+                        <div class="parameter-label">🔴 OBJETIVO</div>
+                        <div class="parameter-content">
+                            <div class="parameter-value">Hemostasia adequada</div>
+                            <div class="parameter-details">
+                                Atentar a pacientes de alto risco de coagulopatía. A avaliação da função plaquetária pode ser util em pacientes em uso de antiagregantes. 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameter-section">
+                        <div class="parameter-label">🚨 Pacientes de Alto Risco para coagulopatia</div>
+                        <div class="parameter-content">
+                            <ul class="parameter-list">
+                                <li>CEC Prolongada</li>
+                                <li>Hipotermia Extrema</li>
+                                <li>DRC</li>
+                                <li>Parada circulatória total</li>
+                                <li>DRC</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VENTILATION (Ventilação) -->
+            <div class="element-card v-group">
+                <div class="element-header">
+                    <div class="element-letter">V</div>
+                    <div class="element-name">Ventilation</div>
+                    <div class="element-subtitle">Ventilação Pulmonar</div>
+                </div>
+                <div class="element-body">
+                    <div class="parameter-section">
+                        <div class="parameter-label">🫁 OBJETIVO</div>
+                        <div class="parameter-content">
+                            <div class="parameter-value">Pulmões Totalmente Expandidos</div>
+                            <div class="parameter-details">
+                                Durante o desmame da CEC, a drenagem venosa é gradualmente ocluída e o fluxo da artéria pulmonar é restabelecido. A ventilação e oxigenação deve ser gradualmente reestabelecida. Recomenda-se a re-insuflação manual com pressões de pico de aproximadamente 30 cmH2O. Deve-se ter atenção caso tenha sido realizado enxerto da artéria mamária interna, que pode distender durante a reeninsuflação pulmonar
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameter-section">
+                        <div class="parameter-label">📊 PARÂMETROS</div>
+                        <div class="parameter-content">
+                            <ul class="parameter-list">
+                                <li>FiO₂ inicial 100%, ajustar após desmame</li>
+                                <li>Visualização: pulmões expandidos simetricamente</li>
+                                <li>Aspirar secreções se necessário</li>
+                                <li>SpO₂ >95%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Visualização-->
+             <div class="element-card v-group">
+                <div class="element-header">
+                    <div class="element-letter">V</div>
+                    <div class="element-name">Visualização</div>
+                    <div class="element-subtitle">Visualização do Coração</div>
+                </div>
+                <div class="element-body">
+                    <div class="parameter-section">
+                        <div class="parameter-label">👁️ OBJETIVO</div>
+                        <div class="parameter-content">
+                            <div class="parameter-value">Avaliação Visual Completa do Coração</div>
+                            <div class="parameter-details">
+                                Visualização direta do coração no campo cirúrgico (câmaras direitas visíveis) e através do ETE para estimar contratilidade global e regional. Avaliar o grau de enchimento das câmaras (hipovolêmico, euvolêmico ou distendido).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameter-section">
+                        <div class="parameter-label">📊 AVALIAÇÕES</div>
+                        <div class="parameter-content">
+                            <ul class="parameter-list">
+                                <li> ETE: Contratilidade global e regional biventricular</li>
+                                <li> Enchimento: Avaliar se hipovolêmico, euvolêmico ou distendido</li>
+                                <li> Ar residual: Verificação final de ar nas câmaras cardíacas</li>
+                                <li> Campo cirúrgico: Visualização direta das câmaras direitas</li>
+                                <li> Função valvar: Avaliar competência e gradientes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VOLUME (Volume) -->
+            <div class="element-card v-group">
+                <div class="element-header">
+                    <div class="element-letter">V</div>
+                    <div class="element-name">Volume</div>
+                    <div class="element-subtitle">Expansores de Volume</div>
+                </div>
+                <div class="element-body">
+                    <div class="parameter-section">
+                        <div class="parameter-label">💧 OBJETIVO</div>
+                        <div class="parameter-content">
+                            <div class="parameter-value">Pré-carga Adequada</div>
+                            <div class="parameter-details">
+                                Volume intravascular otimizado para garantir enchimento ventricular adequado. Guiar por pressões de enchimento e visualização ventricular no ETE.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameter-section">
+                        <div class="parameter-label">📊 PARÂMETROS</div>
+                        <div class="parameter-content">
+                            <ul class="parameter-list">
+                                <li>ETE: Visualizar tamanho das câmaras ventriculares</li>
+                                <li>PVC 8-12 mmHg</li>
+                                <li>PAOP (pressão capilar) 10-15 mmHg</li>
+                                <li>Evitar hipervolemia (distensão ventricular)</li>
+                                <li>Administrar volume gradualmente do reservatório da CEC</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VAPORIZER (Vaporizador) -->
+            <div class="element-card v-group">
+                <div class="element-header">
+                    <div class="element-letter">V</div>
+                    <div class="element-name">Vaporizer</div>
+                    <div class="element-subtitle">Anestésicos Voláteis</div>
+                </div>
+                <div class="element-body">
+                    <div class="parameter-section">
+                        <div class="parameter-label">💨 OBJETIVO</div>
+                        <div class="parameter-content">
+                            <div class="parameter-value">Reinstituir Anestesia Inalatória</div>
+                            <div class="parameter-details">
+                                Se agentes voláteis foram usados durante a CEC para garantir ausência de consciência ou controle da pressão arterial, deve-se reiniciar uma dose baixa imediatamente após o desmame.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameter-section">
+                        <div class="parameter-label">⚠️ CONSIDERAÇÕES</div>
+                        <div class="parameter-content">
+                            <ul class="parameter-list">
+                                <li>Todos os agentes voláteis diminuem contratilidade e pressão arterial</li>
+                                <li>Esses efeitos podem confundir o diagnóstico diferencial de hipotensão</li>
+                                <li>Podem mascarar disfunção miocárdica durante o desmame</li>
+                                <li>Usar doses baixas inicialmente</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PREDICTORS (Preditores) -->
+            <div class="element-card p-group">
+                <div class="element-header">
+                    <div class="element-letter">P</div>
+                    <div class="element-name">Predictors</div>
+                    <div class="element-subtitle">Preditores de Desfecho Adverso</div>
+                </div>
+                <div class="element-body">
+                    <div class="parameter-section">
+                        <div class="parameter-label">📈 OBJETIVO</div>
+                        <div class="parameter-content">
+                            <div class="parameter-value">Identificar Fatores de Risco</div>
+                            <div class="parameter-details">
+                                Estar ciente dos preditores de desfecho cardiovascular adverso. Baixa fração de ejeção pré-operatória e CEC prolongada frequentemente predizem dificuldade no desmame e necessidade de suporte inotrópico.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameter-section">
+                        <div class="parameter-label">⚠️ FATORES DE RISCO</div>
+                        <div class="parameter-content">
+                            <ul class="parameter-list">
+                                <li>Baixa fração de ejeção pré-operatória</li>
+                                <li>CEC prolongada</li>
+                                <li>Cirurgia de emergência em síndrome coronariana aguda (stunning miocárdico)</li>
+                                <li>Reparo cirúrgico inadequado (revascularização incompleta)</li>
+                                <li>Isquemia persistente</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRESSURE (Pressão) -->
+            <div class="element-card p-group">
+                <div class="element-header">
+                    <div class="element-letter">P</div>
+                    <div class="element-name">Pressure</div>
+                    <div class="element-subtitle">Pressão Arterial</div>
+                </div>
+                <div class="element-body">
+                    <div class="parameter-section">
+                        <div class="parameter-label">📊 OBJETIVO</div>
+                        <div class="parameter-content">
+                            <div class="parameter-value">Monitorização Acurada da PA</div>
+                            <div class="parameter-details">
+                                Calibração e rezeramento devem ser realizados antes do início do desmame da CEC. Qualquer discrepância entre a pressão arterial distal (geralmente radial) e a pressão aórtica central deve ser reconhecida.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameter-section">
+                        <div class="parameter-label">📊 PARÂMETROS</div>
+                        <div class="parameter-content">
+                            <ul class="parameter-list">
+                                <li>Calibrar e zerar antes do desmame</li>
+                                <li>Reconhecer discrepâncias entre PA radial e central</li>
+                                <li>Considerar cânula aórtica temporária se necessário</li>
+                                <li>Cânula arterial femoral para monitorização acurada</li>
+                                <li>PAM alvo: 60-80 mmHg</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRESSORS (Vasopressores) -->
+            <div class="element-card p-group">
+                <div class="element-header">
+                    <div class="element-letter">P</div>
+                    <div class="element-name">Pressors</div>
+                    <div class="element-subtitle">Vasopressores e Inotrópicos</div>
+                </div>
+                <div class="element-body">
+                    <div class="parameter-section">
+                        <div class="parameter-label">💊 OBJETIVO</div>
+                        <div class="parameter-content">
+                            <div class="parameter-value">Drogas Imediatamente Disponíveis</div>
+                            <div class="parameter-details">
+                                Vasopressores e agentes inotrópicos devem estar imediatamente disponíveis. Um vasodilatador (nitroglicerina, nicardipina ou nitroprussiato) também deve estar prontamente disponível.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameter-section">
+                        <div class="parameter-label">📋 DROGAS ESSENCIAIS</div>
+                        <div class="parameter-content">
+                            <ul class="parameter-list">
+                                <li><strong>Vasopressores:</strong> Norepinefrina, fenilefrina, vasopressina</li>
+                                <li><strong>Inotrópicos:</strong> Epinefrina, dobutamina, milrinona</li>
+                                <li><strong>Vasodilatadores:</strong> Nitroglicerina, nicardipina, nitroprussiato</li>
+                                <li>Preparar infusões antes do desmame</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PACER (Marcapasso) -->
+            <div class="element-card p-group">
+                <div class="element-header">
+                    <div class="element-letter">P</div>
+                    <div class="element-name">Pacer</div>
+                    <div class="element-subtitle">Marcapasso Temporário</div>
+                </div>
+                <div class="element-body">
+                    <div class="parameter-section">
+                        <div class="parameter-label">⚡ OBJETIVO</div>
+                        <div class="parameter-content">
+                            <div class="parameter-value">Marcapasso Prontamente Disponível</div>
+                            <div class="parameter-details">
+                                Um marcapasso externo deve estar prontamente disponível para todos os pacientes. O pacing é frequentemente necessário para tratar bradicardia. Em pacientes com bloqueio cardíaco, idealmente utiliza-se marcapasso sequencial AV para manter o "atrial kick".
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameter-section">
+                        <div class="parameter-label">📊 INDICAÇÕES</div>
+                        <div class="parameter-content">
+                            <ul class="parameter-list">
+                                <li>Bradicardia sintomática ou FC <80 bpm</li>
+                                <li>Bloqueio AV de terceiro grau</li>
+                                <li>Bloqueios de condução de alto grau</li>
+                                <li>Preferir pacing AV sequencial quando possível</li>
+                                <li>Manter "atrial kick" em pacientes com baixa complacência do VE</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POTASSIUM (Potássio) -->
+            <div class="element-card p-group">
+                <div class="element-header">
+                    <div class="element-letter">P</div>
+                    <div class="element-name">Potassium</div>
+                    <div class="element-subtitle">Eletrólitos Séricos</div>
+                </div>
+                <div class="element-body">
+                    <div class="parameter-section">
+                        <div class="parameter-label">⚗️ OBJETIVO</div>
+                        <div class="parameter-content">
+                            <div class="parameter-value">Normalizar Eletrólitos</div>
+                            <div class="parameter-details">
+                                Hipocalemia pode contribuir para arritmias, e hipercalemia pode resultar em anormalidades de condução. O cálcio ionizado geralmente é verificado. Magnésio (2-4g) é administrado antes do término da CEC.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameter-section">
+                        <div class="parameter-label">📊 ALVOS</div>
+                        <div class="parameter-content">
+                            <ul class="parameter-list">
+                                <li><strong>K⁺:</strong> 4,0-5,0 mEq/L</li>
+                                <li><strong>Ca²⁺ ionizado:</strong> >1,0 mmol/L (ideal 1,1-1,3)</li>
+                                <li><strong>Mg²⁺:</strong> Administrar 2-4g antes do término da CEC</li>
+                                <li>Corrigir distúrbios antes do desmame</li>
+                                <li>Limiar baixo para administrar cálcio adicional</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROTAMINE (Protamina) -->
+            <div class="element-card p-group">
+                <div class="element-header">
+                    <div class="element-letter">P</div>
+                    <div class="element-name">Protamine</div>
+                    <div class="element-subtitle">Reversão da Anticoagulação</div>
+                </div>
+                <div class="element-body">
+                    <div class="parameter-section">
+                        <div class="parameter-label">💉 OBJETIVO</div>
+                        <div class="parameter-content">
+                            <div class="parameter-value">Disponibilidade e Segurança</div>
+                            <div class="parameter-details">
+                                Muitas instituições exigem que a protamina seja embalada de forma única ou mantida em área separada para garantir que não seja administrada prematuramente (administração durante CEC em curso é erro desastroso). Deve levar apenas alguns momentos para recuperar quando acordado que é hora de reverter anticoagulação.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameter-section">
+                        <div class="parameter-label">⚠️ CONSIDERAÇÕES</div>
+                        <div class="parameter-content">
+                            <ul class="parameter-list">
+                                <li>Armazenar em local separado e seguro</li>
+                                <li>Embalagem única para evitar confusão</li>
+                                <li>NUNCA administrar durante CEC em curso</li>
+                                <li>Acordo entre cirurgião, anestesista e perfusionista antes da administração</li>
+                                <li>Verificar TCA após administração</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Referência Rápida -->
+        <div class="quick-reference">
+            <h2 class="reference-title">📋 Checklist Pré-Desmame da CEC</h2>
+            <div class="reference-grid">
+                <div class="reference-item">
+                    <h4>✓ Temperatura (Cold)</h4>
+                    <p>Normotérmico (36-37°C central)</p>
+                </div>
+                <div class="reference-item">
+                    <h4>✓ Condução (Conduction)</h4>
+                    <p>Ritmo sinusal ou MP, FC 80-100</p>
+                </div>
+                <div class="reference-item">
+                    <h4>✓ Contratilidade (Contractility)</h4>
+                    <p>ETE: função biventricular adequada</p>
+                </div>
+                <div class="reference-item">
+                    <h4>✓ Células (Cells)</h4>
+                    <p>Ht ≥24-28%, considerar transfusão</p>
+                </div>
+                <div class="reference-item">
+                    <h4>✓ Cálcio (Calcium)</h4>
+                    <p>Ca²⁺ ionizado 1,1-1,3 mmol/L</p>
+                </div>
+                <div class="reference-item">
+                    <h4>✓ Coagulação (Coagulation)</h4>
+                    <p>TCA, ROTEM/TEG se alto risco</p>
+                </div>
+                <div class="reference-item">
+                    <h4>✓ Ventilação (Ventilation)</h4>
+                    <p>Pulmões expandidos, SpO₂ >95%</p>
+                </div>
+                <div class="reference-item">
+                    <h4>✓ Visualização (Visualization)</h4>
+                    <p>ETE: câmaras, ar residual, função</p>
+                </div>
+                <div class="reference-item">
+                    <h4>✓ Volume (Volume)</h4>
+                    <p>Pré-carga adequada, PVC 8-12 mmHg</p>
+                </div>
+                <div class="reference-item">
+                    <h4>✓ Vaporizador (Vaporizer)</h4>
+                    <p>Dose baixa de volátil se utilizado</p>
+                </div>
+                <div class="reference-item">
+                    <h4>✓ Preditores (Predictors)</h4>
+                    <p>Identificar fatores de risco</p>
+                </div>
+                <div class="reference-item">
+                    <h4>✓ Pressão (Pressure)</h4>
+                    <p>PAM 60-80 mmHg, calibração OK</p>
+                </div>
+                <div class="reference-item">
+                    <h4>✓ Pressores (Pressors)</h4>
+                    <p>Inotrópicos/vasopressores prontos</p>
+                </div>
+                <div class="reference-item">
+                    <h4>✓ Marcapasso (Pacer)</h4>
+                    <p>MP externo disponível</p>
+                </div>
+                <div class="reference-item">
+                    <h4>✓ Potássio (Potassium)</h4>
+                    <p>K⁺ 4-5 mEq/L, Mg²⁺ administrado</p>
+                </div>
+                <div class="reference-item">
+                    <h4>✓ Protamina (Protamine)</h4>
+                    <p>Disponível, aguardando consenso</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Citação -->
+        <div class="citation">
+            <p class="citation-text">
+                <strong>Fonte:</strong> Morris IR, Romanoff ME, Royster RL. "The postcardiopulmonary bypass period: weaning to ICU transport." 
+                In: Hensley FA, Martin DE, Gravlee GP, eds. A Practical Approach to Cardiac Anesthesia. 
+                Lippincott Williams & Wilkins, 2008:349-360.
+            </p>
+        </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Animação de entrada
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animação das letras do mnemônico
+            const letters = document.querySelectorAll('.mnemonic-letter');
+            letters.forEach((letter, index) => {
+                letter.style.opacity = '0';
+                letter.style.transform = 'scale(0) rotate(-180deg)';
+                
+                setTimeout(() => {
+                    letter.style.transition = 'all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                    letter.style.opacity = '1';
+                    letter.style.transform = 'scale(1) rotate(0deg)';
+                }, index * 100);
+            });
+
+            // Animação dos cards
+            const cards = document.querySelectorAll('.element-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 800 + (index * 100));
+            });
+        });
+
+        // Efeito de pulso nas letras ao passar o mouse
+        document.querySelectorAll('.element-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                const letter = this.querySelector('.element-letter');
+                letter.style.transform = 'scale(1.2)';
+                setTimeout(() => {
+                    letter.style.transform = 'scale(1)';
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>

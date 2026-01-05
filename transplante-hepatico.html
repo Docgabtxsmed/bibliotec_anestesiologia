@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transplante Hepático - Biblioteca de Anestesiologia</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #282d54 0%, #3059ef 50%, #48638b 100%);
+            min-height: 100vh;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(247, 247, 247, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .back-link {
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: #555;
+            font-weight: 500;
+            text-decoration: none;
+            background: #e8e8e8;
+        }
+
+        .back-link:hover {
+            background: #3059ef;
+            color: white;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .page-header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .page-title {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .page-subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .component-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .component-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        .card-thumbnail {
+            height: 180px;
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5em;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-thumbnail::after {
+            content: 'Clique para visualizar';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.35em;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .component-card:hover .card-thumbnail::after {
+            opacity: 1;
+        }
+
+        .card-info {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #282d54;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 1200px;
+            max-height: 90vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-header {
+            padding: 20px 30px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f9fa;
+        }
+
+        .modal-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #282d54;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 2em;
+            cursor: pointer;
+            color: #888;
+            transition: color 0.3s;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .close-btn:hover {
+            color: #3059ef;
+            background: #f0f0f0;
+        }
+
+        .modal-body {
+            padding: 0;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .component-container {
+            min-height: 400px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .page-title {
+                font-size: 2em;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-content {
+                max-height: 95vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo" onclick="window.location.href='biblioteca-anestesiologia.html'">
+                📚 Biblioteca de Anestesiologia
+            </div>
+            <div class="nav-links">
+                <a href="biblioteca-anestesiologia.html" class="back-link">← Voltar para Galeria</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container Principal -->
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">🏥 Transplante Hepático</h1>
+            <p class="page-subtitle">Conteúdos Visuais Baseados em Evidências</p>
+        </div>
+
+        <!-- Grid de Componentes -->
+        <div class="gallery-grid">
+            <!-- HPS e POPH -->
+            <div class="component-card" onclick="openComponent('hps-poph')">
+                <div class="card-thumbnail">🫁</div>
+                <div class="card-info">
+                    <h3 class="card-title">SÍNDROME HEPATOPULMONAR e HIPERTANSÃO PORTO-PULMONAR</h3>
+                    <p class="card-description">Critérios diagnósticos e estadiamento de gravidade da Síndrome Hepatopulmonar e Hipertensão Portopulmonar.</p>
+                </div>
+            </div>
+
+            <!-- Hemostasia -->
+            <div class="component-card" onclick="openComponent('hemostasia')">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #48638b 0%, #282d54 100%);">⚖️</div>
+                <div class="card-info">
+                    <h3 class="card-title">Hemostasia em Doença Hepática</h3>
+                    <p class="card-description">Equilíbrio entre fatores anti-hemostáticos e pró-hemostáticos na doença hepática crônica.</p>
+                </div>
+            </div>
+
+            <!-- Alterações Hemodinâmicas -->
+            <div class="component-card" onclick="openComponent('hemodinamica')">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #36c8e0 0%, #3059ef 100%);">🫀</div>
+                <div class="card-info">
+                    <h3 class="card-title">Alterações Hemodinâmicas na Cirrose</h3>
+                    <p class="card-description">Alterações hemodinâmicas sistêmicas na doença hepática cirrótica.</p>
+                </div>
+            </div>
+
+            <!-- Questões Comentadas -->
+            <div class="component-card" onclick="openComponent('questoes')">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #282d54 0%, #48638b 100%);">📝</div>
+                <div class="card-info">
+                    <h3 class="card-title">Questões Comentadas</h3>
+                    <p class="card-description">Quiz interativo com gabarito comentado sobre transplante hepático.</p>
+                </div>
+            </div>
+
+            <!-- Resumo Transplante Hepático -->
+            <div class="component-card" onclick="window.location.href='resumo-transplante.html'">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);">📚</div>
+                <div class="card-info">
+                    <h3 class="card-title">Resumo Transplante Hepático</h3>
+                    <p class="card-description">Guia completo de fisiopatologia, avaliação e manejo anestésico no transplante hepático.</p>
+                </div>
+            </div>
+
+            <!-- Flashcards Anki -->
+            <div class="component-card" onclick="window.location.href='flashcards-anki.html'">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #48638b 0%, #282d54 100%);">🎴</div>
+                <div class="card-info">
+                    <h3 class="card-title">Flashcards</h3>
+                    <p class="card-description">Sistema de repetição espaçada com 30 cards sobre fisiopatologia e manejo do transplante.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>© 2026 Biblioteca de Anestesiologia - MedTech</p>
+            <p style="margin-top: 10px; opacity: 0.7;">Conteúdo baseado em evidências científicas atualizadas</p>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title" class="modal-title"></h2>
+                <button class="close-btn" onclick="closeModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-component" class="component-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Modal
+        function openComponent(componentId) {
+            const modal = document.getElementById('modal');
+            const modalComponent = document.getElementById('modal-component');
+            const modalTitle = document.getElementById('modal-title');
+            
+            modalComponent.innerHTML = '';
+            
+            if (componentId === 'hps-poph') {
+                modalTitle.textContent = 'HPS e POPH - Critérios Diagnósticos e Estadiamento';
+                loadHPSPOPH();
+            } else if (componentId === 'hemostasia') {
+                modalTitle.textContent = 'Hemostasia em Doença Hepática Crônica';
+                loadHemostasia();
+            } else if (componentId === 'hemodinamica') {
+                modalTitle.textContent = 'Alterações Hemodinâmicas na Doença Hepática Cirrótica';
+                loadHemodinamica();
+            } else if (componentId === 'questoes') {
+                modalTitle.textContent = 'Questões Comentadas - Transplante Hepático';
+                loadQuestoes();
+            }
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Fechar ao clicar fora
+        document.getElementById('modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // ESC para fechar
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Componente HPS/POPH com React
+        function loadHPSPOPH() {
+            const container = document.getElementById('modal-component');
+            const root = document.createElement('div');
+            root.id = 'hps-poph-root';
+            container.appendChild(root);
+
+            const HPSPOPHComponent = () => {
+                const [activeTab, setActiveTab] = React.useState('HPS');
+
+                const hpsData = {
+                    title: "Síndrome Hepatopulmonar",
+                    criteria: [
+                        "Presença de doença hepática",
+                        "Evidência de dilatações vasculares intrapulmonares (IPVDs) e/ou shunting",
+                        "P(A-a) O₂ gradiente ≥15 mm Hg (ou >20 mm Hg se idade ≥65)"
+                    ],
+                    stages: [
+                        { name: "Leve", value: "≥80 mm Hg", color: "bg-green-100 border-green-400 text-green-800" },
+                        { name: "Moderado", value: "60-79 mm Hg", color: "bg-yellow-100 border-yellow-400 text-yellow-800" },
+                        { name: "Grave", value: "50-59 mm Hg", color: "bg-red-100 border-red-400 text-red-800" }
+                    ],
+                    parameter: "PaO₂"
+                };
+
+                const pophData = {
+                    title: "Hipertensão Portopulmonar",
+                    criteria: [
+                        "Presença de hipertensão portal",
+                        "mPAP >25 mm Hg",
+                        "PCWP <15 mm Hg",
+                        "PVR >240 dynes/cm⁵"
+                    ],
+                    stages: [
+                        { name: "Leve", value: ">25-<35 mm Hg", color: "bg-green-100 border-green-400 text-green-800" },
+                        { name: "Moderado", value: "≥35-<45 mm Hg", color: "bg-yellow-100 border-yellow-400 text-yellow-800" },
+                        { name: "Grave", value: "≥45 mm Hg", color: "bg-red-100 border-red-400 text-red-800" }
+                    ],
+                    parameter: "mPAP"
+                };
+
+                const currentData = activeTab === 'HPS' ? hpsData : pophData;
+
+                return React.createElement('div', { className: 'p-8' },
+                    React.createElement('div', { className: 'max-w-5xl mx-auto' },
+                        // Tabs
+                        React.createElement('div', { className: 'flex gap-4 mb-8' },
+                            React.createElement('button', {
+                                onClick: () => setActiveTab('HPS'),
+                                className: `flex-1 py-4 px-6 rounded-xl font-semibold text-lg transition-all ${
+                                    activeTab === 'HPS'
+                                        ? 'text-white shadow-lg'
+                                        : 'bg-white text-gray-600 hover:bg-gray-50'
+                                }`,
+                                style: activeTab === 'HPS' ? { background: 'linear-gradient(135deg, #3059ef 0%, #48638b 100%)' } : {}
+                            }, '🫁 Síndrome Hepatopulmonar'),
+                            React.createElement('button', {
+                                onClick: () => setActiveTab('POPH'),
+                                className: `flex-1 py-4 px-6 rounded-xl font-semibold text-lg transition-all ${
+                                    activeTab === 'POPH'
+                                        ? 'text-white shadow-lg'
+                                        : 'bg-white text-gray-600 hover:bg-gray-50'
+                                }`,
+                                style: activeTab === 'POPH' ? { background: 'linear-gradient(135deg, #282d54 0%, #36c8e0 100%)' } : {}
+                            }, '❤️ Hipertensão Portopulmonar')
+                        ),
+                        
+                        // Content
+                        React.createElement('div', { className: 'bg-white rounded-2xl shadow-xl p-8' },
+                            // Criteria
+                            React.createElement('div', { className: 'mb-10' },
+                                React.createElement('h2', { 
+                                    className: `text-2xl font-bold mb-6 pb-4 border-b-2`,
+                                    style: { borderColor: activeTab === 'HPS' ? '#3059ef' : '#36c8e0', color: activeTab === 'HPS' ? '#3059ef' : '#282d54' }
+                                }, '⚠️ Critérios Diagnósticos'),
+                                React.createElement('div', { className: 'space-y-4' },
+                                    ...currentData.criteria.map((criterion, index) =>
+                                        React.createElement('div', {
+                                            key: index,
+                                            className: `p-4 rounded-lg border-l-4`,
+                                            style: {
+                                                backgroundColor: activeTab === 'HPS' ? '#eff6ff' : '#f0fdfa',
+                                                borderColor: activeTab === 'HPS' ? '#3059ef' : '#36c8e0'
+                                            }
+                                        },
+                                            React.createElement('div', { className: 'flex gap-3' },
+                                                React.createElement('span', {
+                                                    className: `font-bold text-lg`,
+                                                    style: { color: activeTab === 'HPS' ? '#3059ef' : '#282d54' }
+                                                }, `${index + 1}.`),
+                                                React.createElement('span', { className: 'text-gray-700 text-lg' }, criterion)
+                                            )
+                                        )
+                                    )
+                                )
+                            ),
+                            
+                            // Stages
+                            React.createElement('div', null,
+                                React.createElement('h2', {
+                                    className: `text-2xl font-bold mb-6 pb-4 border-b-2`,
+                                    style: { borderColor: activeTab === 'HPS' ? '#3059ef' : '#36c8e0', color: activeTab === 'HPS' ? '#3059ef' : '#282d54' }
+                                }, `📊 Estadiamento por ${currentData.parameter}`),
+                                React.createElement('div', { className: 'space-y-4' },
+                                    ...currentData.stages.map((stage, index) =>
+                                        React.createElement('div', {
+                                            key: index,
+                                            className: `${stage.color} border-2 rounded-xl p-6 transition-all hover:shadow-lg`
+                                        },
+                                            React.createElement('div', { className: 'flex justify-between items-center' },
+                                                React.createElement('div', { className: 'flex items-center gap-4' },
+                                                    React.createElement('div', {
+                                                        className: `w-12 h-12 rounded-full ${stage.color} border-2 flex items-center justify-center font-bold text-xl`
+                                                    }, index + 1),
+                                                    React.createElement('div', null,
+                                                        React.createElement('div', { className: 'text-2xl font-bold' }, stage.name),
+                                                        React.createElement('div', { className: 'text-gray-600 text-sm mt-1' }, currentData.parameter)
+                                                    )
+                                                ),
+                                                React.createElement('div', { className: 'text-3xl font-bold' }, stage.value)
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        ),
+                        
+                        // Footer
+                        React.createElement('div', { className: 'mt-6 text-center text-sm text-gray-500' },
+                            React.createElement('p', null, 'Modificado de Raevens S. Recent advances in the management of hepatopulmonary syndrome and portopulmonary hypertension.'),
+                            React.createElement('p', { className: 'italic' }, 'Acta Gastroenterol Belg. 2021;84(1):95–99.')
+                        )
+                    )
+                );
+            };
+
+            ReactDOM.render(React.createElement(HPSPOPHComponent), root);
+        }
+
+        // Componente Hemostasia
+        function loadHemostasia() {
+            const container = document.getElementById('modal-component');
+            
+            container.innerHTML = `
+                <style>
+                    .hemostasis-container {
+                        padding: 40px;
+                        max-width: 1400px;
+                        margin: 0 auto;
+                    }
+
+                    .hemostasis-header {
+                        text-align: center;
+                        margin-bottom: 50px;
+                    }
+
+                    .hemostasis-header h2 {
+                        font-size: 2rem;
+                        font-weight: bold;
+                        color: #282d54;
+                        margin-bottom: 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 15px;
+                    }
+
+                    .hemostasis-header p {
+                        font-size: 1.125rem;
+                        color: #64748b;
+                    }
+
+                    .equilibrium-section {
+                        background: white;
+                        border-radius: 20px;
+                        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                        padding: 40px;
+                        margin-bottom: 50px;
+                    }
+
+                    .equilibrium-header {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 20px;
+                    }
+
+                    .equilibrium-header h3 {
+                        font-size: 1.3rem;
+                        font-weight: bold;
+                        color: #334155;
+                    }
+
+                    .equilibrium-bar {
+                        position: relative;
+                        height: 64px;
+                        background: linear-gradient(to right, #fecaca, #fef3c7, #bbf7d0);
+                        border-radius: 12px;
+                        border: 4px solid #cbd5e1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 20px;
+                    }
+
+                    .equilibrium-label {
+                        width: 140px;
+                        background: white;
+                        border: 4px solid #334155;
+                        border-radius: 8px;
+                        padding: 10px 20px;
+                        text-align: center;
+                        font-weight: bold;
+                        color: #1e293b;
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                        z-index: 10;
+                    }
+
+                    .equilibrium-footer {
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+
+                    .equilibrium-footer p {
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                        color: #334155;
+                    }
+
+                    .content-grid {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 40px;
+                        margin-bottom: 40px;
+                    }
+
+                    .column h3 {
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        color: #282d54;
+                        text-align: center;
+                        margin-bottom: 30px;
+                    }
+
+                    .category-card {
+                        border-radius: 12px;
+                        padding: 24px;
+                        margin-bottom: 20px;
+                        border: 2px solid;
+                        transition: all 0.3s;
+                    }
+
+                    .category-card:hover {
+                        transform: translateY(-4px);
+                        box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+                    }
+
+                    .category-card.rose {
+                        background-color: #ffe4e6;
+                        border-color: #fda4af;
+                    }
+
+                    .category-card.rose:hover {
+                        background-color: #fecdd3;
+                    }
+
+                    .category-card.emerald {
+                        background-color: #d1fae5;
+                        border-color: #6ee7b7;
+                    }
+
+                    .category-card.emerald:hover {
+                        background-color: #a7f3d0;
+                    }
+
+                    .category-card.blue {
+                        background-color: #dbeafe;
+                        border-color: #93c5fd;
+                    }
+
+                    .category-card.blue:hover {
+                        background-color: #bfdbfe;
+                    }
+
+                    .category-title {
+                        font-size: 1.125rem;
+                        font-weight: bold;
+                        margin-bottom: 15px;
+                    }
+
+                    .category-title.rose {
+                        color: #9f1239;
+                    }
+
+                    .category-title.emerald {
+                        color: #065f46;
+                    }
+
+                    .category-title.blue {
+                        color: #1e3a8a;
+                    }
+
+                    .category-items {
+                        color: #334155;
+                        list-style: none;
+                        padding-left: 0;
+                    }
+
+                    .category-items li {
+                        font-size: 0.95rem;
+                        line-height: 1.75;
+                        margin-bottom: 8px;
+                    }
+
+                    .footer-section {
+                        text-align: center;
+                        margin-top: 40px;
+                        padding: 20px;
+                        color: #64748b;
+                        font-size: 0.875rem;
+                    }
+
+                    .footer-section p {
+                        margin-bottom: 8px;
+                    }
+
+                    @media (max-width: 768px) {
+                        .content-grid {
+                            grid-template-columns: 1fr;
+                        }
+
+                        .equilibrium-header {
+                            flex-direction: column;
+                            gap: 10px;
+                        }
+
+                        .hemostasis-container {
+                            padding: 20px;
+                        }
+                    }
+                </style>
+
+                <div class="hemostasis-container">
+                    <!-- Header -->
+                    <div class="hemostasis-header">
+                        <h2>
+                            <span>⚖️</span>
+                            <span>Hemostasia em Doença Hepática Crônica</span>
+                        </h2>
+                        <p>Equilíbrio entre fatores anti-hemostáticos e pró-hemostáticos</p>
+                    </div>
+
+                    <!-- Equilibrium Section -->
+                    <div class="equilibrium-section">
+                        <div class="equilibrium-header">
+                            <h3>Fatores Anti-hemostáticos</h3>
+                            <h3>Fatores Pró-hemostáticos</h3>
+                        </div>
+                        <div class="equilibrium-bar">
+                            <div class="equilibrium-label">Equilíbrio</div>
+                        </div>
+                        <div class="equilibrium-footer">
+                            <p>Hemostasia normal</p>
+                        </div>
+                    </div>
+
+                    <!-- Main Content Grid -->
+                    <div class="content-grid">
+                        <!-- Left Column - Anti-hemostatic -->
+                        <div class="column">
+                            <h3>Fatores Anti-hemostáticos</h3>
+
+                            <!-- Primary Hemostasis -->
+                            <div class="category-card rose">
+                                <div class="category-title rose">
+                                    <span>Hemostasia primária</span>
+                                </div>
+                                <ul class="category-items">
+                                    <li>• <strong>Trombocitopenia</strong></li>
+                                    <li>• Função <b>plaquetária</b> anormal</li>
+                                    <li>• Diminuição da produção de <b>trombopoietina</b></li>
+                                    <li>• Aumento da produção de <b>óxido nítrico</b> e <b>prostaciclina</b></li>
+                                </ul>
+                            </div>
+
+                            <!-- Coagulation -->
+                            <div class="category-card emerald">
+                                <div class="category-title emerald">
+                                    <span>Coagulação</span>
+                                </div>
+                                <ul class="category-items">
+                                    <li>• Baixos níveis dos <strong>fatores II, V, VII, IX, X e XI</strong></li>
+                                    <li>• Deficiência de <strong>vitamina K</strong></li>
+                                    <li>• <strong>Disfibrinogenemia</strong></li>
+                                </ul>
+                            </div>
+
+                            <!-- Fibrinolysis -->
+                            <div class="category-card blue">
+                                <div class="category-title blue">
+                                    <span>Fibrinólise</span>
+                                </div>
+                                <ul class="category-items">
+                                    <li>• Baixos níveis de <b>α₂-antiplasmina</b>, <b>fator XIII</b> e <b>TAFI</b></li>
+                                    <li>• Nível elevado de <strong>t-PA</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Right Column - Pro-hemostatic -->
+                        <div class="column">
+                            <h3>Fatores Pró-hemostáticos</h3>
+
+                            <!-- Pro-hemostatic 1 -->
+                            <div class="category-card rose">
+                                <div class="category-title rose">
+                                    <span>Fatores pró-hemostáticos</span>
+                                </div>
+                                <ul class="category-items">
+                                    <li>• Nível elevado do <strong>fator de von Willebrand</strong></li>
+                                    <li>• Baixo nível de <strong>ADAMTS 13</strong></li>
+                                </ul>
+                            </div>
+
+                            <!-- Pro-hemostatic 2 -->
+                            <div class="category-card emerald">
+                                <div class="category-title emerald">
+                                    <span>Fatores pró-hemostáticos</span>
+                                </div>
+                                <ul class="category-items">
+                                    <li>• Nível elevado do <strong>fator VIII</strong></li>
+                                    <li>• Baixos níveis de <strong>proteína C</strong>, <strong>proteína S</strong>, <strong>antitrombina</strong> e <strong>cofator II da heparina</strong></li>
+                                    <li>• <strong>Trombofilia hereditária</strong></li>
+                                </ul>
+                            </div>
+
+                            <!-- Pro-hemostatic 3 -->
+                            <div class="category-card blue">
+                                <div class="category-title blue">
+                                    <span>Fatores pró-hemostáticos</span>
+                                </div>
+                                <ul class="category-items">
+                                    <li>• Baixo nível de <strong>plasminogênio</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="footer-section">
+                        <p>
+                            <strong>TAFI:</strong> thrombin-activatable fibrinolysis inhibitor; 
+                            <strong>t-PA:</strong> tissue plasminogen activator
+                        </p>
+                        <p style="font-style: italic;">
+                            From Tripodi A, Mannucci PM. The coagulopathy of chronic liver disease. N Engl J Med. 2011;365(2):147–156.
+                        </p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Componente Alterações Hemodinâmicas
+        function loadHemodinamica() {
+            const container = document.getElementById('modal-component');
+            
+            container.innerHTML = `
+                <style>
+                    .hemodynamic-container {
+                        padding: 40px;
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+                    }
+
+                    .hemodynamic-header {
+                        text-align: center;
+                        margin-bottom: 50px;
+                    }
+
+                    .hemodynamic-header h2 {
+                        font-size: 2rem;
+                        font-weight: bold;
+                        color: #282d54;
+                        margin-bottom: 10px;
+                    }
+
+                    .hemodynamic-subtitle {
+                        font-size: 1.1rem;
+                        color: #64748b;
+                        font-style: italic;
+                    }
+
+                    .section-card {
+                        background: white;
+                        border-radius: 16px;
+                        padding: 30px;
+                        margin-bottom: 25px;
+                        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+                        border-left: 6px solid;
+                        transition: all 0.3s;
+                    }
+
+                    .section-card:hover {
+                        transform: translateX(5px);
+                        box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+                    }
+
+                    .section-card.blue {
+                        border-color: #3059ef;
+                    }
+
+                    .section-card.teal {
+                        border-color: #36c8e0;
+                    }
+
+                    .section-card.purple {
+                        border-color: #8b5cf6;
+                    }
+
+                    .section-card.red {
+                        border-color: #ef4444;
+                    }
+
+                    .section-card.orange {
+                        border-color: #f97316;
+                    }
+
+                    .section-card.green {
+                        border-color: #10b981;
+                    }
+
+                    .section-header {
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        margin-bottom: 20px;
+                        padding-bottom: 15px;
+                        border-bottom: 2px solid #e2e8f0;
+                    }
+
+                    .section-icon {
+                        font-size: 2.5rem;
+                        filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+                    }
+
+                    .section-title {
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                        color: #1e293b;
+                    }
+
+                    .section-content {
+                        margin-left: 0;
+                    }
+
+                    .item-list {
+                        list-style: none;
+                        padding: 0;
+                    }
+
+                    .item-list li {
+                        padding: 12px 20px;
+                        margin-bottom: 10px;
+                        background: #f8fafc;
+                        border-radius: 10px;
+                        color: #334155;
+                        font-size: 1rem;
+                        line-height: 1.6;
+                        border-left: 4px solid #cbd5e1;
+                        transition: all 0.2s;
+                    }
+
+                    .item-list li:hover {
+                        background: #e2e8f0;
+                        border-left-color: #3059ef;
+                        transform: translateX(5px);
+                    }
+
+                    .nested-list {
+                        list-style: none;
+                        padding-left: 0;
+                        margin-top: 10px;
+                    }
+
+                    .nested-list li {
+                        padding: 8px 15px;
+                        margin-bottom: 8px;
+                        background: white;
+                        border-radius: 8px;
+                        font-size: 0.95rem;
+                        border-left: 3px solid #94a3b8;
+                    }
+
+                    .arrow-icon {
+                        color: #3059ef;
+                        font-weight: bold;
+                        margin-right: 8px;
+                    }
+
+                    .decrease-icon {
+                        color: #ef4444;
+                        margin-right: 8px;
+                    }
+
+                    .increase-icon {
+                        color: #10b981;
+                        margin-right: 8px;
+                    }
+
+                    .normal-icon {
+                        color: #f59e0b;
+                        margin-right: 8px;
+                    }
+
+                    @media (max-width: 768px) {
+                        .hemodynamic-container {
+                            padding: 20px;
+                        }
+
+                        .section-header {
+                            flex-direction: column;
+                            text-align: center;
+                        }
+
+                        .section-icon {
+                            font-size: 2rem;
+                        }
+                    }
+                </style>
+
+                <div class="hemodynamic-container">
+                    <!-- Header -->
+                    <div class="hemodynamic-header">
+                        <h2>🫀 Alterações Hemodinâmicas na Doença Hepática Cirrótica</h2>
+                        <p class="hemodynamic-subtitle">Alterações sistêmicas complexas na cirrose hepática</p>
+                    </div>
+
+                    <!-- Resistência Vascular Sistêmica Diminuída -->
+                    <div class="section-card blue">
+                        <div class="section-header">
+                            <span class="section-icon">🔻</span>
+                            <h3 class="section-title">Resistência Vascular Sistêmica Diminuída</h3>
+                        </div>
+                        <div class="section-content">
+                            <ul class="item-list">
+                                <li>
+                                    <span class="decrease-icon">↓</span>
+                                    <strong>Vasodilatação periférica</strong>
+                                </li>
+                                <li>
+                                    <span class="decrease-icon">↓</span>
+                                    <strong>Shunting arteriovenoso</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Redirecionamento do Fluxo Sanguíneo -->
+                    <div class="section-card teal">
+                        <div class="section-header">
+                            <span class="section-icon">🔄</span>
+                            <h3 class="section-title">Redirecionamento do Fluxo Sanguíneo</h3>
+                        </div>
+                        <div class="section-content">
+                            <ul class="item-list">
+                                <li>
+                                    <span class="increase-icon">↑</span>
+                                    <strong>Fluxo sanguíneo aumentado:</strong>
+                                    <ul class="nested-list">
+                                        <li><span class="arrow-icon">→</span> Pulmonar</li>
+                                        <li><span class="arrow-icon">→</span> Esplâncnico</li>
+                                        <li><span class="arrow-icon">→</span> Muscular</li>
+                                        <li><span class="arrow-icon">→</span> Cutâneo</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="decrease-icon">↓</span>
+                                    <strong>Fluxo da veia porta para o fígado diminuído</strong>
+                                </li>
+                                <li>
+                                    <span class="normal-icon">↔</span>
+                                    <strong>Fluxo da artéria hepática normal ou aumentado</strong>
+                                </li>
+                                <li>
+                                    <span class="normal-icon">↔</span>
+                                    <strong>Fluxo sanguíneo renal normal ou diminuído</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Volume Sanguíneo Aumentado -->
+                    <div class="section-card purple">
+                        <div class="section-header">
+                            <span class="section-icon">💧</span>
+                            <h3 class="section-title">Volume Sanguíneo Aumentado</h3>
+                        </div>
+                        <div class="section-content">
+                            <ul class="item-list">
+                                <li>
+                                    <span class="decrease-icon">↓</span>
+                                    <strong>Albumina sérica diminuída</strong>
+                                </li>
+                                <li>
+                                    <span class="decrease-icon">↓</span>
+                                    <strong>Pressão oncótica plasmática diminuída</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Débito Cardíaco Aumentado -->
+                    <div class="section-card red">
+                        <div class="section-header">
+                            <span class="section-icon">❤️</span>
+                            <h3 class="section-title">Débito Cardíaco Aumentado</h3>
+                        </div>
+                        <div class="section-content">
+                            <ul class="item-list">
+                                <li>
+                                    <span class="increase-icon">↑</span>
+                                    <strong>Cardiomiopatia aparente apesar do débito aumentado</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Diferença de O2 Arteriovenosa -->
+                    <div class="section-card orange">
+                        <div class="section-header">
+                            <span class="section-icon">🔬</span>
+                            <h3 class="section-title">Conteúdo de O₂ Arteriovenoso</h3>
+                        </div>
+                        <div class="section-content">
+                            <ul class="item-list">
+                                <li>
+                                    <span class="decrease-icon">↓</span>
+                                    <strong>Diferença de O₂ arteriovenosa diminuída</strong>
+                                </li>
+                                <li>
+                                    <span class="increase-icon">↑</span>
+                                    <strong>Conteúdo venoso de O₂ aumentado</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Responsividade às Catecolaminas -->
+                    <div class="section-card green">
+                        <div class="section-header">
+                            <span class="section-icon">⚡</span>
+                            <h3 class="section-title">Responsividade às Catecolaminas</h3>
+                        </div>
+                        <div class="section-content">
+                            <ul class="item-list">
+                                <li>
+                                    <span class="decrease-icon">↓</span>
+                                    <strong>Responsividade diminuída às catecolaminas</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div style="text-align: center; margin-top: 40px; padding: 20px; color: #64748b; font-size: 0.875rem;">
+                        <p><strong>BOX 52-3</strong></p>
+                        <p style="font-style: italic; margin-top: 8px;">
+                            Hemodynamic Derangements in Cirrhotic Liver Disease
+                        </p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Componente Questões Comentadas
+        function loadQuestoes() {
+            const container = document.getElementById('modal-component');
+            
+            const questoes = [
+                {
+                    numero: 1,
+                    total: 6,
+                    enunciado: "Um paciente de 59 anos, com diagnóstico de cirrose hepática por hepatite C e álcool (escore de MELD-Na 24), é admitido para avaliação pré-transplante hepático. Ao exame, apresenta-se com pressão arterial de 98/50 mmHg, frequência cardíaca de 102 bpm e um sopro sistólico ejetivo. O ecocardiograma transtorácico revela uma fração de ejeção do ventrículo esquerdo (FEVE) de 70%, débito cardíaco indexado de 4.5 L/min/m², mas com disfunção diastólica grau II e prolongamento do intervalo QTc. Qual é a interpretação fisiopatológica mais precisa desses achados e sua principal implicação para o manejo anestésico intraoperatório?",
+                    alternativas: [
+                        { letra: "A", texto: "Os achados representam um estado cardiovascular compensado, onde a principal preocupação anestésica será a prevenção de bradicardia, dado o prolongamento do intervalo QTc.", correta: false },
+                        { letra: "B", texto: "O paciente apresenta um quadro clássico de cardiomiopatia cirrótica, caracterizado por circulação hiperdinâmica em repouso com disfunção diastólica, implicando em alto risco de insuficiência cardíaca aguda se submetido a sobrecarga volêmica ou aumento súbito da pós-carga.", correta: true },
+                        { letra: "C", texto: "A combinação de baixo tônus vascular e alto débito cardíaco é um mecanismo protetor contra a lesão renal, minimizando a necessidade de vasopressores no intraoperatório.", correta: false },
+                        { letra: "D", texto: "A FEVE elevada e o alto débito indicam uma reserva miocárdica robusta, sugerindo que o paciente tolerará bem as flutuações hemodinâmicas e a reposição volêmica agressiva durante a cirurgia.", correta: false }
+                    ],
+                    explicacao: "Este quadro paradoxal de alto débito com reserva contrátil limitada e um ventrículo \"rígido\" (disfunção diastólica) torna o coração extremamente vulnerável às mudanças hemodinâmicas do transplante, especialmente a reperfusão."
+                },
+                {
+                    numero: 2,
+                    total: 6,
+                    enunciado: "Durante um transplante hepático de doador vivo (hepatectomia direita no doador), o anestesiologista opta por uma estratégia de manutenção com sevoflurano. Qual é a principal consideração teórica sobre o uso de sevoflurano em cirurgias hepáticas e qual a conclusão da literatura apresentada nas fontes sobre sua segurança clínica em transplantes renais (que pode ser extrapolada)?",
+                    alternativas: [
+                        { letra: "A", texto: "A preocupação teórica é a nefrotoxicidade pelos metabólitos Composto A e íon fluoreto, mas grandes estudos e meta-análises não demonstraram disfunção de enxerto renal, sugerindo segurança clínica.", correta: true },
+                        { letra: "B", texto: "O sevoflurano causa vasodilatação hepática excessiva, levando ao sequestro de volume no leito esplâncnico e instabilidade hemodinâmica.", correta: false },
+                        { letra: "C", texto: "O sevoflurano é o agente de escolha, pois comprovadamente aumenta o fluxo sanguíneo da artéria hepática mais do que o propofol.", correta: false },
+                        { letra: "D", texto: "O sevoflurano deve ser evitado devido à nefrotoxicidade direta de seus metabólitos, o que contraindica seu uso em cirurgias de transplante.", correta: false }
+                    ],
+                    explicacao: "As fontes mencionam especificamente a preocupação com o Composto A e o fluoreto, mas concluem, com base em uma meta-análise de 41 ensaios, que o sevoflurano é seguro e não causa disfunção renal pós-operatória em comparação com outros anestésicos."
+                },
+                {
+                    numero: 3,
+                    total: 6,
+                    enunciado: "Um paciente de 45 anos, submetido a um transplante renal de doador falecido, apresenta Doença Renal em Estágio Terminal (DRET) secundária a diabetes mellitus. Durante a avaliação pré-anestésica, o potássio sérico é de 6,2 mEq/L, com alterações no ECG (ondas T apiculadas). A última sessão de hemodiálise foi há 36 horas. Qual é a conduta anestésica mais apropriada em relação ao bloqueio neuromuscular para a sequência rápida de intubação?",
+                    alternativas: [
+                        { letra: "A", texto: "Utilizar rocurônio em dose elevada (1,2 mg/kg), pois oferece um início de ação rápido, evitando o risco de hipercalemia induzida pela succinilcolina.", correta: true },
+                        { letra: "B", texto: "Administrar succinilcolina na dose de 1,5 mg/kg, pois seu rápido início de ação é crucial e o aumento do potássio é clinicamente insignificante.", correta: false },
+                        { letra: "C", texto: "Utilizar cisatracúrio, pois sua eliminação de Hofmann é ideal, e proceder com a intubação sem aguardar o tempo total de latência.", correta: false },
+                        { letra: "D", texto: "Administrar pancurônio, pois sua longa duração de ação é benéfica para o procedimento e ele não afeta o potássio sérico.", correta: false }
+                    ],
+                    explicacao: "O rocurônio é a escolha segura para sequência rápida de intubação neste cenário, pois não afeta os níveis de potássio. A dose elevada garante um início de ação comparável ao da succinilcolina."
+                },
+                {
+                    numero: 4,
+                    total: 6,
+                    enunciado: "Durante a fase de dissecção (pré-anepática) de um transplante hepático em um paciente com MELD 35 e ascite refratária, a equipe cirúrgica solicita manutenção de uma Pressão Venosa Central (PVC) baixa para minimizar o sangramento. Contudo, o paciente apresenta disfunção renal crônica pré-operatória (Síndrome Hepatorrenal tipo 2). Qual é o principal conflito de objetivos e o risco associado a essa estratégia de PVC baixa neste cenário específico?",
+                    alternativas: [
+                        { letra: "A", texto: "A estratégia de PVC baixa conflita com a necessidade de manter a perfusão renal adequada, aumentando o risco de lesão renal aguda (LRA) pós-operatória.", correta: true },
+                        { letra: "B", texto: "O principal risco é a instabilidade hemodinâmica severa, pois a PVC baixa inviabiliza o uso de vasopressores como a norepinefrina.", correta: false },
+                        { letra: "C", texto: "A PVC baixa é ideal, pois a Síndrome Hepatorrenal é uma condição funcional que se resolverá com o transplante, independentemente do manejo hídrico intraoperatório.", correta: false },
+                        { letra: "D", texto: "A PVC baixa aumenta o risco de embolia aérea venosa, mas é a estratégia padrão-ouro para reduzir a necessidade de transfusão em todos os pacientes.", correta: false }
+                    ],
+                    explicacao: "Pacientes com disfunção renal prévia são particularmente vulneráveis à hipovolemia, e a manutenção de uma PVC baixa para reduzir o sangramento pode comprometer criticamente o fluxo sanguíneo renal."
+                },
+                {
+                    numero: 5,
+                    total: 6,
+                    enunciado: "Um paciente de 58 anos, com diagnóstico de cirrose por Doença Hepática Gordurosa Não Alcoólica (DHGNA) e MELD-Na de 32, está programado para transplante hepático. A avaliação pré-operatória revela uma gasometria arterial em ar ambiente com PaO₂ de 58 mmHg e um ecocardiograma com contraste (microbolhas) que demonstra a passagem tardia (> 3 ciclos cardíacos) de bolhas para as câmaras esquerdas. Qual é o diagnóstico mais provável e a principal implicação anestésica intraoperatória relacionada à oxigenação?",
+                    alternativas: [
+                        { letra: "A", texto: "Tromboembolismo pulmonar crônico, exigindo anticoagulação plena e possível embolectomia antes do transplante.", correta: false },
+                        { letra: "B", texto: "Síndrome Hepatopulmonar (SHP), o que implica que a hipoxemia pode piorar com a ventilação com pressão positiva e que o transplante é a única terapia curativa.", correta: true },
+                        { letra: "C", texto: "Cardiomiopatia cirrótica com disfunção diastólica, causando edema pulmonar e hipoxemia, necessitando de restrição hídrica rigorosa.", correta: false },
+                        { letra: "D", texto: "Hipertensão Portopulmonar (HPP) grave, indicando a necessidade de uso profilático de óxido nítrico inalatório para prevenir falência de VD.", correta: false }
+                    ],
+                    explicacao: "A SHP é caracterizada por vasodilatações vasculares intrapulmonares, resultando em shunt e hipoxemia, confirmada pelo teste de microbolhas tardio. O transplante hepático é o único tratamento definitivo."
+                },
+                {
+                    numero: 6,
+                    total: 6,
+                    enunciado: "Durante um transplante hepático, na fase neo-hepática, imediatamente após a reperfusão do enxerto, o paciente desenvolve hipotensão arterial severa (PAM 45 mmHg), bradicardia (FC 40 bpm) e um aumento súbito da pressão da artéria pulmonar. A gasometria arterial revela K⁺ = 7.1 mEq/L e acidose metabólica grave. Além do suporte vasopressor, qual é a medida farmacológica prioritária para tratar a causa subjacente da instabilidade cardiovascular?",
+                    alternativas: [
+                        { letra: "A", texto: "Administração de azul de metileno para reverter a vasoplegia associada à síndrome pós-reperfusão.", correta: false },
+                        { letra: "B", texto: "Infusão rápida de albumina a 5% para expandir o volume intravascular e melhorar o retorno venoso.", correta: false },
+                        { letra: "C", texto: "Administração de Furosemida em altas doses para promover a caliurese e reduzir rapidamente os níveis de potássio.", correta: false },
+                        { letra: "D", texto: "Administração intravenosa de cloreto de cálcio para estabilização da membrana miocárdica contra os efeitos da hipercalemia.", correta: true }
+                    ],
+                    explicacao: "O cálcio antagoniza diretamente os efeitos da hipercalemia no miocárdio, estabilizando a membrana celular e restaurando o potencial de ação, sendo a medida mais crítica para prevenir uma parada cardíaca."
+                }
+            ];
+
+            let currentQuestion = 0;
+            let userAnswers = new Array(questoes.length).fill(null);
+            let showingAnswer = new Array(questoes.length).fill(false);
+
+            function renderQuestion() {
+                const q = questoes[currentQuestion];
+                const answered = userAnswers[currentQuestion] !== null;
+                const showing = showingAnswer[currentQuestion];
+                
+                container.innerHTML = `
+                    <style>
+                        .quiz-container {
+                            padding: 40px;
+                            max-width: 1000px;
+                            margin: 0 auto;
+                            background: #f8fafc;
+                        }
+
+                        .quiz-header {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-bottom: 30px;
+                            padding-bottom: 20px;
+                            border-bottom: 2px solid #e2e8f0;
+                        }
+
+                        .question-counter {
+                            font-size: 1rem;
+                            color: #64748b;
+                            font-weight: 600;
+                        }
+
+                        .progress-bar {
+                            flex: 1;
+                            height: 8px;
+                            background: #e2e8f0;
+                            border-radius: 10px;
+                            margin: 0 20px;
+                            overflow: hidden;
+                        }
+
+                        .progress-fill {
+                            height: 100%;
+                            background: linear-gradient(90deg, #3059ef, #36c8e0);
+                            width: ${((currentQuestion + 1) / questoes.length) * 100}%;
+                            transition: width 0.3s;
+                        }
+
+                        .question-card {
+                            background: white;
+                            border-radius: 16px;
+                            padding: 35px;
+                            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+                            margin-bottom: 30px;
+                        }
+
+                        .question-text {
+                            font-size: 1.15rem;
+                            line-height: 1.8;
+                            color: #1e293b;
+                            margin-bottom: 30px;
+                        }
+
+                        .alternatives-list {
+                            list-style: none;
+                            padding: 0;
+                        }
+
+                        .alternative-item {
+                            background: #f8fafc;
+                            border: 2px solid #e2e8f0;
+                            border-radius: 12px;
+                            padding: 20px;
+                            margin-bottom: 15px;
+                            cursor: pointer;
+                            transition: all 0.3s;
+                            display: flex;
+                            gap: 15px;
+                        }
+
+                        .alternative-item:hover:not(.selected):not(.disabled) {
+                            background: #eff6ff;
+                            border-color: #3059ef;
+                            transform: translateX(5px);
+                        }
+
+                        .alternative-item.selected {
+                            background: #dbeafe;
+                            border-color: #3059ef;
+                        }
+
+                        .alternative-item.correct {
+                            background: #d1fae5;
+                            border-color: #10b981;
+                        }
+
+                        .alternative-item.incorrect {
+                            background: #fee2e2;
+                            border-color: #ef4444;
+                        }
+
+                        .alternative-item.disabled {
+                            cursor: not-allowed;
+                            opacity: 0.7;
+                        }
+
+                        .alternative-letter {
+                            font-weight: bold;
+                            font-size: 1.2rem;
+                            color: #282d54;
+                            min-width: 30px;
+                        }
+
+                        .alternative-text {
+                            flex: 1;
+                            font-size: 1rem;
+                            line-height: 1.6;
+                            color: #334155;
+                        }
+
+                        .answer-section {
+                            background: #d1fae5;
+                            border-left: 4px solid #10b981;
+                            border-radius: 12px;
+                            padding: 25px;
+                            margin-top: 25px;
+                        }
+
+                        .answer-header {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            margin-bottom: 15px;
+                        }
+
+                        .answer-icon {
+                            font-size: 1.5rem;
+                        }
+
+                        .answer-title {
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            color: #065f46;
+                        }
+
+                        .answer-explanation {
+                            font-size: 1rem;
+                            line-height: 1.7;
+                            color: #1e293b;
+                        }
+
+                        .button-group {
+                            display: flex;
+                            gap: 15px;
+                            justify-content: space-between;
+                            margin-top: 30px;
+                        }
+
+                        .nav-buttons {
+                            display: flex;
+                            gap: 15px;
+                        }
+
+                        .btn {
+                            padding: 12px 24px;
+                            border-radius: 10px;
+                            font-weight: 600;
+                            cursor: pointer;
+                            transition: all 0.3s;
+                            border: none;
+                            font-size: 1rem;
+                        }
+
+                        .btn-primary {
+                            background: linear-gradient(135deg, #3059ef, #36c8e0);
+                            color: white;
+                        }
+
+                        .btn-primary:hover {
+                            transform: translateY(-2px);
+                            box-shadow: 0 6px 20px rgba(48, 89, 239, 0.3);
+                        }
+
+                        .btn-secondary {
+                            background: #e2e8f0;
+                            color: #282d54;
+                        }
+
+                        .btn-secondary:hover {
+                            background: #cbd5e1;
+                        }
+
+                        .btn:disabled {
+                            opacity: 0.5;
+                            cursor: not-allowed;
+                        }
+
+                        @media (max-width: 768px) {
+                            .quiz-container {
+                                padding: 20px;
+                            }
+
+                            .question-card {
+                                padding: 20px;
+                            }
+
+                            .button-group {
+                                flex-direction: column;
+                            }
+
+                            .nav-buttons {
+                                width: 100%;
+                            }
+                        }
+                    </style>
+
+                    <div class="quiz-container">
+                        <div class="quiz-header">
+                            <span class="question-counter">${q.numero} / ${q.total}</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <span class="question-counter">${Math.round(((currentQuestion + 1) / questoes.length) * 100)}%</span>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-text">${q.enunciado}</div>
+                            
+                            <ul class="alternatives-list">
+                                ${q.alternativas.map((alt, index) => {
+                                    let className = 'alternative-item';
+                                    if (answered && showing) {
+                                        className += ' disabled';
+                                        if (alt.correta) {
+                                            className += ' correct';
+                                        } else if (userAnswers[currentQuestion] === index && !alt.correta) {
+                                            className += ' incorrect';
+                                        }
+                                    } else if (userAnswers[currentQuestion] === index) {
+                                        className += ' selected';
+                                    }
+                                    
+                                    return `
+                                        <li class="${className}" onclick="${!showing ? `selectAnswer(${index})` : ''}">
+                                            <span class="alternative-letter">${alt.letra}.</span>
+                                            <span class="alternative-text">${alt.texto}</span>
+                                        </li>
+                                    `;
+                                }).join('')}
+                            </ul>
+
+                            ${showing ? `
+                                <div class="answer-section">
+                                    <div class="answer-header">
+                                        <span class="answer-icon">✓</span>
+                                        <span class="answer-title">Isso mesmo!</span>
+                                    </div>
+                                    <div class="answer-explanation">${q.explicacao}</div>
+                                </div>
+                            ` : ''}
+                        </div>
+
+                        <div class="button-group">
+                            <div class="nav-buttons">
+                                <button class="btn btn-secondary" onclick="previousQuestion()" ${currentQuestion === 0 ? 'disabled' : ''}>
+                                    ← Anterior
+                                </button>
+                                <button class="btn btn-secondary" onclick="nextQuestion()" ${currentQuestion === questoes.length - 1 ? 'disabled' : ''}>
+                                    Próxima →
+                                </button>
+                            </div>
+                            <button class="btn btn-primary" onclick="toggleAnswer()" ${!answered ? 'disabled' : ''}>
+                                ${showing ? 'Ocultar Gabarito' : 'Revelar Gabarito'}
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }
+
+            window.selectAnswer = function(index) {
+                userAnswers[currentQuestion] = index;
+                renderQuestion();
+            };
+
+            window.toggleAnswer = function() {
+                showingAnswer[currentQuestion] = !showingAnswer[currentQuestion];
+                renderQuestion();
+            };
+
+            window.nextQuestion = function() {
+                if (currentQuestion < questoes.length - 1) {
+                    currentQuestion++;
+                    renderQuestion();
+                }
+            };
+
+            window.previousQuestion = function() {
+                if (currentQuestion > 0) {
+                    currentQuestion--;
+                    renderQuestion();
+                }
+            };
+
+            renderQuestion();
+        }
+
+        // Animação de entrada dos cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.component-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'all 0.6s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 150);
+            });
+        });
+    </script>
+</body>
+</html>

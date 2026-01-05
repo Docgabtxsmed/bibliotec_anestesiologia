@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasopressores e Inotrópicos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #282d54 0%, #3059ef 50%, #48638b 100%);
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(247, 247, 247, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            margin-bottom: 40px;
+        }
+
+        .nav-content {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #dc2626 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .back-link {
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: #555;
+            font-weight: 500;
+            text-decoration: none;
+            background: #e8e8e8;
+        }
+
+        .back-link:hover {
+            background: #3059ef;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .component-wrapper {
+            max-width: 1600px;
+            margin: 0 auto 40px;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .page-container {
+            padding: 0 20px 40px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .title {
+            font-size: 2.5em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            font-weight: 300;
+        }
+
+        /* Tabs para categorização */
+        .tabs-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tab-button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 10px;
+            background: #e8e8e8;
+            color: #555;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.95em;
+        }
+
+        .tab-button:hover {
+            background: #d0d0d0;
+            transform: translateY(-2px);
+        }
+
+        .tab-button.active {
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(48, 89, 239, 0.3);
+        }
+
+        /* Grid de cards de drogas */
+        .drugs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .drug-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            transition: all 0.3s;
+            border: 3px solid transparent;
+            position: relative;
+        }
+
+        .drug-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Cores por classe */
+        .drug-card.vasopressor { border-color: #dc2626; }
+        .drug-card.inotrope { border-color: #5406ba41; }
+        .drug-card.mixed { border-color: #8b5cf6; }
+        .drug-card.vasodilator { border-color: #059669; }
+
+        .drug-header {
+            padding: 20px;
+            color: white;
+            position: relative;
+        }
+
+        .drug-card.vasopressor .drug-header { background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%); }
+        .drug-card.inotrope .drug-header { background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%); }
+        .drug-card.mixed .drug-header { background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%); }
+        .drug-card.vasodilator .drug-header { background: linear-gradient(135deg, #059669 0%, #10b981 100%); }
+
+        .drug-name {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .drug-class {
+            font-size: 0.85em;
+            opacity: 0.95;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .drug-body {
+            padding: 20px;
+        }
+
+        .dose-section {
+            margin-bottom: 20px;
+        }
+
+        .dose-label {
+            font-size: 0.75em;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #64748b;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .dose-value {
+            background: #f1f5f9;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            color: #1e293b;
+            border-left: 4px solid #3059ef;
+            margin-bottom: 8px;
+        }
+
+        .dose-value.bolus {
+            border-left-color: #dc2626;
+        }
+
+        .dose-value.infusion {
+            border-left-color: #f59e0b;
+        }
+
+        .dose-range {
+            font-size: 0.85em;
+            color: #64748b;
+            margin-top: 4px;
+        }
+
+        /* Efeitos dose-dependentes */
+        .dose-effects {
+            background: #fef3c7;
+            border: 2px solid #fbbf24;
+            border-radius: 12px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .dose-effects-title {
+            font-size: 0.9em;
+            font-weight: 700;
+            color: #92400e;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .dose-tier {
+            background: white;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            font-size: 0.85em;
+            border-left: 3px solid;
+        }
+
+        .dose-tier.low { border-left-color: #10b981; }
+        .dose-tier.medium { border-left-color: #f59e0b; }
+        .dose-tier.high { border-left-color: #dc2626; }
+
+        .dose-tier strong {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 0.9em;
+        }
+
+        /* Comentários e alertas */
+        .comments-section {
+            background: #dbeafe;
+            border-left: 4px solid #3b82f6;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 15px;
+        }
+
+        .comment-item {
+            font-size: 0.85em;
+            color: #1e40af;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .comment-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .comment-item strong {
+            font-weight: 700;
+        }
+
+        /* Alertas críticos */
+        .alert-box {
+            background: #fee2e2;
+            border: 2px solid #dc2626;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 12px;
+        }
+
+        .alert-title {
+            font-size: 0.85em;
+            font-weight: 700;
+            color: #991b1b;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .alert-content {
+            font-size: 0.8em;
+            color: #7f1d1d;
+            line-height: 1.5;
+        }
+
+        /* Receptores */
+        .receptors {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .receptor-badge {
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 600;
+        }
+
+        /* Legenda */
+        .legend {
+            margin-top: 40px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 16px;
+            border: 2px solid #dee2e6;
+        }
+
+        .legend-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #282d54;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        .legend-color {
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            flex-shrink: 0;
+        }
+
+        .legend-text {
+            font-size: 0.9em;
+            color: #334155;
+            font-weight: 500;
+        }
+
+        /* Quick Reference */
+        .quick-reference {
+            margin-top: 30px;
+            padding: 25px;
+            background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+            border-radius: 16px;
+            border-left: 6px solid #3059ef;
+        }
+
+        .quick-ref-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #282d54;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .quick-ref-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        .quick-ref-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .quick-ref-item h4 {
+            color: #3059ef;
+            font-size: 1em;
+            margin-bottom: 8px;
+        }
+
+        .quick-ref-item p {
+            font-size: 0.85em;
+            color: #475569;
+            line-height: 1.5;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .component-wrapper {
+                padding: 20px;
+            }
+
+            .title {
+                font-size: 1.8em;
+            }
+
+            .drugs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tabs-container {
+                flex-direction: column;
+            }
+
+            .tab-button {
+                width: 100%;
+            }
+
+            .nav-content {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .logo {
+                font-size: 1.2em;
+            }
+
+            .page-container {
+                padding: 0 10px 20px;
+            }
+        }
+
+        /* Hidden class para tabs */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">💊 Vasopressores e Inotrópicos</div>
+            <a href="cirurgia-cardiaca.html" class="back-link">← Voltar à Cirurgia Cardíaca</a>
+        </div>
+    </nav>
+
+    <!-- Container Principal -->
+    <div class="page-container">
+        <div class="component-wrapper">
+            <div class="header">
+                <h1 class="title">Vasopressores e Inotrópicos</h1>
+                <p class="subtitle">Guia Rápido de Dosagem para Adultos</p>
+            </div>
+
+        <!-- Tabs de Filtro -->
+        <div class="tabs-container">
+            <button class="tab-button active" onclick="filterDrugs('all')">Todas as Drogas</button>
+            <button class="tab-button" onclick="filterDrugs('vasopressor')">Vasopressores Puros</button>
+            <button class="tab-button" onclick="filterDrugs('inotrope')">Inotrópicos</button>
+            <button class="tab-button" onclick="filterDrugs('mixed')">Efeito Misto</button>
+            <button class="tab-button" onclick="filterDrugs('first-line')">1ª Linha</button>
+        </div>
+
+        <!-- Grid de Drogas -->
+        <div class="drugs-grid">
+            
+            <!-- EFEDRINA -->
+            <div class="drug-card mixed" data-category="mixed">
+                <div class="drug-header">
+                    <div class="drug-name">Efedrina</div>
+                    <div class="drug-class">🔄 Inotrópico/Vasopresor/Cronotrópico</div>
+                </div>
+                <div class="drug-body">
+                    <div class="dose-section">
+                        <div class="dose-label">💉 Dose em Bolus</div>
+                        <div class="dose-value bolus">5 a 10 mg</div>
+                        <div class="dose-range">Bolus repetidos conforme necessário</div>
+                    </div>
+                    
+                    <div class="dose-section">
+                        <div class="dose-label">💧 Infusão Contínua</div>
+                        <div class="dose-value infusion">N/A</div>
+                    </div>
+
+                    <div class="receptors">
+                        <span class="receptor-badge">α₁</span>
+                        <span class="receptor-badge">β₁</span>
+                        <span class="receptor-badge">β₂</span>
+                    </div>
+
+                    <div class="comments-section">
+                        <div class="comment-item">
+                            <strong>✓</strong> Liberação indireta de norepinefrina
+                        </div>
+                        <div class="comment-item">
+                            <strong>⚠</strong> Taquifilaxia com doses repetidas - pode funcionar como falso neurotransmissor
+                        </div>
+                    </div>
+
+                    <div class="alert-box">
+                        <div class="alert-title">⚠️ CUIDADO</div>
+                        <div class="alert-content">
+                            Usar com extrema cautela em pacientes com IMAO (doses incrementais de 2,5 mg). Risco de crise hipertensiva e arritmias graves.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FENILEFRINA -->
+            <div class="drug-card vasopressor" data-category="vasopressor">
+                <div class="drug-header">
+                    <div class="drug-name">Fenilefrina</div>
+                    <div class="drug-class">🔴 Vasopresor alfa-1 adrnenérgico Puro</div>
+                </div>
+                <div class="drug-body">
+                    <div class="dose-section">
+                        <div class="dose-label">💉 Dose em Bolus</div>
+                        <div class="dose-value bolus">50 a 100 mcg</div>
+                        <div class="dose-range">Repetir conforme necessário</div>
+                    </div>
+                    
+                    <div class="dose-section">
+                        <div class="dose-label">💧 Infusão Contínua</div>
+                        <div class="dose-value infusion">10 a 100 mcg/min</div>
+                        <div class="dose-range">ou 0,1 a 1 mcg/kg/min</div>
+                    </div>
+
+                    <div class="receptors">
+                        <span class="receptor-badge">α₁</span>
+                    </div>
+
+                    <div class="comments-section">
+                        <div class="comment-item">
+                            <strong>✓</strong> Risco de bradicardia reflexa 
+                        </div>
+                        <div class="comment-item">
+                            <strong>✓</strong> Boa droga de escolha em casos de hipotensão com FC normal/elevada
+                        </div>
+                        <div class="comment-item">
+                            <strong>⚠</strong> Polimorfismos genéticos causam respostas individuais variáveis 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NOREPINEFRINA -->
+            <div class="drug-card mixed first-line" data-category="mixed first-line">
+                <div class="drug-header">
+                    <div class="drug-name">Norepinefrina ⭐</div>
+                    <div class="drug-class">🔴 Vasopresor de 1ª Linha / Efeito inotrópico leve</div>
+                </div>
+                <div class="drug-body">
+                    <div class="dose-section">
+                        <div class="dose-label">💉 Dose em Bolus</div>
+                        <div class="dose-value bolus">4 a 8 mcg</div>
+                        <div class="dose-range">Se bolus repetidos → iniciar infusão contínua</div>
+                    </div>
+                    
+                    <div class="dose-section">
+                        <div class="dose-label">💧 Infusão Contínua</div>
+                        <div class="dose-value infusion">0.025 a 1 mcg/kg/min (Dose Usual)</div>
+                        <div class="dose-range"><b>Iniciar entre 0,05 a 0,15 mcg/kg/min </b> e <b>titular</b> de acordo com o alvo. Em situações extremas de <b>choque refratário</b> a dose pode chegar a 3 mcg/kg/min
+                        </div>
+                    </div>
+
+                    <div class="receptors">
+                        <span class="receptor-badge">α₁</span>
+                        <span class="receptor-badge">β₁</span>
+                    </div>
+
+                    <div class="comments-section">
+                        <div class="comment-item">
+                            <strong>✓</strong> Tratamento preferencial na maioria dos tipos de choque distributivos
+                        </div>
+                        <div class="comment-item">
+                            <strong>✓</strong> Doses acima de 0.3 mcg/kg/min: considerar associar um segundo vasopressor (ex: Vasopressina / Epinefrina)
+                        </div>
+                        <div class="comment-item">
+                            <strong>💡</strong> Equivalência: Norepinefrina 8 mcg ≈ Fenilefrina 100 mcg
+                        </div>
+                    </div>
+
+                    <div class="alert-box">
+                        <div class="alert-title">⚠️ ATENÇÃO</div>
+                        <div class="alert-content">
+                            Extravasamento periférico de altas concentrações pode causar necrose tecidual.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EPINEFRINA -->
+            <div class="drug-card mixed" data-category="mixed">
+                <div class="drug-header">
+                    <div class="drug-name">Epinefrina</div>
+                    <div class="drug-class">🔄 Inotrópico/Vasopresor/Cronotrópico</div>
+                </div>
+                <div class="drug-body">
+                    <div class="dose-section">
+                        <div class="dose-label">💉 Dose em Bolus</div>
+                        <div class="dose-value bolus">4 a 10 mcg (inicial)</div>
+                        <div class="dose-range">Até 100 mcg se resposta inadequada</div>
+                    </div>
+                    
+                    <div class="dose-section">
+                        <div class="dose-label">💧 Infusão Contínua</div>
+                        <div class="dose-value infusion">0,01 a 1 mcg/kg/min</div>
+                        <div class="dose-range">ou 1 a 100 mcg/min</div>
+                    </div>
+
+                    <div class="receptors">
+                        <span class="receptor-badge">α₁</span>
+                        <span class="receptor-badge">β₁</span>
+                        <span class="receptor-badge">β₂</span>
+                    </div>
+
+                    <div class="dose-effects">
+                        <div class="dose-effects-title">📊 Efeitos Dose-Dependentes</div>
+                        
+                        <div class="dose-tier low">
+                            <strong>🟢 Baixas Doses (1-2 mcg/min ou 0,01-0,02 mcg/kg/min)</strong>
+                            Efeitos β₂: broncodilatação, vasodilatação arterial, possível ↓ PA (RVS)
+                        </div>
+                        
+                        <div class="dose-tier medium">
+                            <strong>🟡 Doses Intermediárias (2-10 mcg/min ou 0,02-0,1 mcg/kg/min)</strong>
+                            Predominam os Efeitos β-adrenérgicos (β₁ + β₂): ↑ FC e ↑ PA
+                        </div>
+                        
+                        <div class="dose-tier high">
+                            <strong>🔴 Altas Doses (10-100 mcg/min ou 0,1-1 mcg/kg/min)</strong>
+                            PAM-RECEPTOR, com grande efeito α₁: vasoconstrição intensa, hipertensão grave possível, efeitos metabólicos adversos
+                        </div>
+                    </div>
+
+                    <div class="comments-section">
+                        <div class="comment-item">
+                            <strong>✓</strong> Primeira linha para parada cardíaca e anafilaxia
+                        </div>
+                        <div class="comment-item">
+                            <strong>✓</strong> Pode ser administrada IV, IM ou via tubo endotraqueal
+                        </div>
+                        <div class="comment-item">
+                            <strong>⚠</strong> Respostas individuais dose-dependentes são variáveis
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VASOPRESSINA -->
+            <div class="drug-card vasopressor" data-category="vasopressor">
+                <div class="drug-header">
+                    <div class="drug-name">Vasopressina</div>
+                    <div class="drug-class">🔴 Vasopresor Não-Adrenérgico</div>
+                </div>
+                <div class="drug-body">
+                    <div class="dose-section">
+                        <div class="dose-label">💉 Dose em Bolus</div>
+                        <div class="dose-value bolus">1 a 4 unidades</div>
+                    </div>
+                    
+                    <div class="dose-section">
+                        <div class="dose-label">💧 Infusão Contínua</div>
+                        <div class="dose-value infusion">0,01 a 0,04 unidades/min</div>
+                        <div class="dose-range">⚠️ Doses >0,04 até 0,1 U/min: apenas em TERAPIA DE RESGATE, em casos de choque extremamente refratários</div>
+                    </div>
+
+                    <div class="receptors">
+                        <span class="receptor-badge">V₁</span>
+                        <span class="receptor-badge">V₂</span>
+                    </div>
+
+                    <div class="comments-section">
+                        <div class="comment-item">
+                            <strong>✓</strong> Efetivo em hipotensão refratária a catecolaminas (atua em uma via diferente da catecolaminérgica, especialmente quando há acidose metabólica grave)
+                        </div>
+                        <div class="comment-item">
+                            <strong>✓</strong> Sem efeito direto na FC
+                        </div>
+                        <div class="comment-item">
+                            <strong>⚠</strong> Pode causar vasoconstrição esplâncnica, especialmente em doses >0.04 U/min
+                        </div>
+                    </div>
+
+                    <div class="alert-box">
+                        <div class="alert-title">⚠️ ALERTA</div>
+                        <div class="alert-content">
+                            Extravasamento periférico pode causar necrose cutânea. Respostas dose-dependentes são variáveis.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DOPAMINA -->
+            <div class="drug-card mixed" data-category="mixed">
+                <div class="drug-header">
+                    <div class="drug-name">Dopamina</div>
+                    <div class="drug-class">🔄 Inotrópico/Vasopresor</div>
+                </div>
+                <div class="drug-body">
+                    <div class="dose-section">
+                        <div class="dose-label">💉 Dose em Bolus</div>
+                        <div class="dose-value bolus">N/A</div>
+                    </div>
+                    
+                    <div class="dose-section">
+                        <div class="dose-label">💧 Infusão Contínua</div>
+                        <div class="dose-value infusion">2 a 20 mcg/kg/min</div>
+                    </div>
+
+                    <div class="receptors">
+                        <span class="receptor-badge">D₁/D₂</span>
+                        <span class="receptor-badge">β₁</span>
+                        <span class="receptor-badge">β₂</span>
+                        <span class="receptor-badge">α₁</span>
+                    </div>
+
+                    <div class="dose-effects">
+                        <div class="dose-effects-title">📊 Efeitos Dose-Dependentes</div>
+                        
+                        <div class="dose-tier low">
+                            <strong>🟢 Baixas Doses (<3 mcg/kg/min)</strong>
+                            Efeitos dopaminérgicos: vasodilatação renal/mesentérica
+                        </div>
+                        
+                        <div class="dose-tier medium">
+                            <strong>🟡 Doses Intermediárias (3-10 mcg/kg/min)</strong>
+                            Efeitos β₁ + β₂: inotrópico e cronotrópico
+                        </div>
+                        
+                        <div class="dose-tier high">
+                            <strong>🔴 Altas Doses (>10 mcg/kg/min)</strong>
+                            Efeitos α₁: vasoconstrição, arritmias e efeitos metabólicos adversos
+                        </div>
+                    </div>
+
+                    <div class="alert-box">
+                        <div class="alert-title">⚠️ CUIDADO</div>
+                        <div class="alert-content">
+                            Baixas doses podem exacerbar hipotensão via estímulo β₂. Altas doses causam vasoconstrição e arritmias.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DOBUTAMINA -->
+            <div class="drug-card inotrope" data-category="inotrope">
+                <div class="drug-header">
+                    <div class="drug-name">Dobutamina</div>
+                    <div class="drug-class">🟡 Inotrópico/Vasodilatador</div>
+                </div>
+                <div class="drug-body">
+                    <div class="dose-section">
+                        <div class="dose-label">💉 Dose em Bolus</div>
+                        <div class="dose-value bolus">NÃO SE DEVE FAZER BOLUS</div>
+                    </div>
+                    
+                    <div class="dose-section">
+                        <div class="dose-label">💧 Infusão Contínua</div>
+                        <div class="dose-value infusion">1 a 10 mcg/kg/min</div>
+                        <div class="dose-value infusion use BB">1 a 20 mcg/kg/min</div>
+                    </div>
+
+                    <div class="receptors">
+                        <span class="receptor-badge">β₁</span>
+                        <span class="receptor-badge">β₂</span>
+                    </div>
+
+                    <div class="comments-section">
+                        <div class="comment-item">
+                            <strong>⚠</strong> Pode exacerbar hipotensão por vasodilatação (β₂)
+                        </div>
+                        <div class="comment-item">
+                            <strong>💡</strong> Considerar associação com vasoconstritor (norepinefrina ou vasopressina)
+                        </div>
+                        <div class="comment-item">
+                            <strong>🫀</strong> Pacientes em uso de beta-bloqueadores tem maior resistência à Dobutamina
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MILRINONA -->
+            <div class="drug-card inotrope" data-category="inotrope">
+                <div class="drug-header">
+                    <div class="drug-name">Milrinona</div>
+                    <div class="drug-class">🟡 Inotrópico/Vasodilatador</div>
+                </div>
+                <div class="drug-body">
+                    <div class="dose-section">
+                        <div class="dose-label">💉 Dose de Ataque (opcional)</div>
+                        <div class="dose-value bolus">50 mcg/kg em um período superior à 10 min</div>
+                        <div class="dose-range">Pode ser omitida para evitar hipotensão</div>
+                    </div>
+                    
+                    <div class="dose-section">
+                        <div class="dose-label">💧 Infusão Contínua</div>
+                        <div class="dose-value infusion">0,375 a 0,75 mcg/kg/min</div>
+                    </div>
+
+                    <div class="receptors">
+                        <span class="receptor-badge">Inibidor da Fosfodiesterase (PDE-3 ↓)</span>
+                        <span class="receptor-badge">cAMP ↑</span>
+                    </div>
+
+                    <div class="comments-section">
+                        <div class="comment-item">
+                            <strong>⚠</strong> Risco de Vasodilatação (inibição de fosfodiesterase)
+                        </div>
+                        <div class="comment-item">
+                            <strong>✅</strong> Vasodilatação Arterial Pulmonar - Droga interessante para casos de Insuficiência Ventricular Direita com Hipertensão Pulmonar
+                        </div>
+                        <div class="comment-item">
+                            <strong>💡</strong> Administração concomitante de vasoconstritor geralmente necessária
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- LEVOSIMENDAN -->
+             <div class="drug-card inotrope" data-category="inotrope">
+                <div class="drug-header">
+                    <div class="drug-name">Levosimendan</div>
+                    <div class="drug-class">🟡 Sensibilizador de Cálcio - Inodilatador</div>
+                </div>
+                <div class="drug-body">
+                    <div class="dose-section">
+                        <div class="dose-label">💉 Dose Inicial</div>
+                        <div class="dose-value bolus">6 a 12 mcg/kg infundido durante 10 min</div>
+                    </div>
+                    
+                    <div class="dose-section">
+                        <div class="dose-label">💧 Infusão de Manutenção</div>
+                        <div class="dose-value infusion">0,05 a 0,2 mcg/kg/min</div>
+                    </div>
+
+                    <div class="receptors">
+                        <span class="receptor-badge">Ca²⁺ ↑</span>
+                        <span class="receptor-badge">Inibidor da Fosfodiesterase 3 (PDE-3 ↓)</span>
+                    </div>
+
+                    <div class="comments-section">
+                        <div class="comment-item">
+                            <strong>⚠</strong> Aumenta a sensibilidade miocárdica ao cálcio melhorando a contratilidade (inotropismo) e o relaxamento miocárdico (lusitropismo) 
+                        </div>
+                        <div class="comment-item">
+                            <strong>✓</strong> ↓ Pressões de enchimento, ↑ índice cardíaco, vasodilatação
+                        </div>
+                        <div class="comment-item">
+                            <strong>✓</strong> A Abertura de canais de potássio na musculatura lisa vascular promove vasodilatação e redução na pré-carga, pós-carga e no trabalho cardiaco.
+                        </div>
+                    </div>
+
+                    <div class="alert-box">
+                        <div class="alert-title">⚠️ Levosimendan vs. Dobutamina</div>
+                        <div class="alert-content">
+                            A literatura atual ainda não define claramente benefício do Levosimendan em relação à Dobutamina. Entretanto, a análise de subgrupo do estudo SURVIVE sugere que o Levosimendan possa reduzir a mortalidade em relação à Dobutamina em pacientes em uso de beta-bloqueadores.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ISOPROTERENOL -->
+            <div class="drug-card inotrope" data-category="inotrope">
+                <div class="drug-header">
+                    <div class="drug-name">Isoproterenol</div>
+                    <div class="drug-class">🟡 Inotrópico/Cronotrópico/Vasodilatador</div>
+                </div>
+                <div class="drug-body">
+                    <div class="dose-section">
+                        <div class="dose-label">💉 Dose em Bolus</div>
+                        <div class="dose-value bolus">Não recomendado</div>
+                    </div>
+                    
+                    <div class="dose-section">
+                        <div class="dose-label">💧 Infusão Contínua</div>
+                        <div class="dose-value infusion">5 a 20 mcg/min</div>
+                        <div class="dose-range">ou 0,05 a 0,2 mcg/kg/min</div>
+                    </div>
+
+                    <div class="receptors">
+                        <span class="receptor-badge">β₁</span>
+                        <span class="receptor-badge">β₂</span>
+                    </div>
+                    <div class="comments-section">
+                        <div class="comment-item">
+                            <strong>⚠</strong> Droga Utilizada em contexto de Bradicardia/Bloqueio Atrioventricular, especialmente como ponte até colocação de marca-passo.
+                        </div>
+
+                    <div class="alert-box">
+                        <div class="alert-title">⚠️ LIMITAÇÕES</div>
+                        <div class="alert-content">
+                            Exacerbação de hipotensão provável. Risco de arritmias. Aumento do VO2 Miocárdico (Risco de Isquemia) Não disponível na maioria dos centros.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+
+        </div>
+
+        <!-- Legenda -->
+        <div class="legend">
+            <h2 class="legend-title">Legenda de Classes</h2>
+            <div class="legend-grid">
+                <div class="legend-item" style="border-left-color: #dc2626;">
+                    <div class="legend-color" style="background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);"></div>
+                    <span class="legend-text">Vasopressor Puro</span>
+                </div>
+                <div class="legend-item" style="border-left-color: #f59e0b;">
+                    <div class="legend-color" style="background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);"></div>
+                    <span class="legend-text">Inotrópico Puro</span>
+                </div>
+                <div class="legend-item" style="border-left-color: #8b5cf6;">
+                    <div class="legend-color" style="background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);"></div>
+                    <span class="legend-text">Efeito Misto</span>
+                </div>
+                <div class="legend-item" style="border-left-color: #059669;">
+                    <div class="legend-color" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%);"></div>
+                    <span class="legend-text">Vasodilatador</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Reference -->
+        <div class="quick-reference">
+            <h3 class="quick-ref-title">⚡ Referência Rápida - Quando Usar?</h3>
+            <div class="quick-ref-grid">
+                <div class="quick-ref-item">
+                    <h4>Hipotensão + FC Normal/Alta</h4>
+                    <p><strong>1ª linha:</strong> Fenilefrina ou Norepinefrina</p>
+                </div>
+                <div class="quick-ref-item">
+                    <h4>Choque (maioria dos tipos)</h4>
+                    <p><strong>1ª linha:</strong> Norepinefrina</p>
+                </div>
+                <div class="quick-ref-item">
+                    <h4>Parada Cardíaca</h4>
+                    <p><strong>1ª linha:</strong> Epinefrina</p>
+                </div>
+                <div class="quick-ref-item">
+                    <h4>Anafilaxia</h4>
+                    <p><strong>1ª linha:</strong> Epinefrina (IM preferível)</p>
+                </div>
+                <div class="quick-ref-item">
+                    <h4>Hipotensão Refratária a catecolaminas</h4>
+                    <p><strong>Considerar:</strong> Vasopressina</p>
+                </div>
+                <div class="quick-ref-item">
+                    <h4>Baixo Débito Cardíaco</h4>
+                    <p><strong>Considerar:</strong> Dobutamina<br>(+ vasoconstritor se hipotenso)</p>
+                </div>
+                <div class="quick-ref-item">
+                    <h4>Baixo Débito Cardíaco + Hipertensão Pulmonar</h4>
+                    <p><strong>Considerar:</strong> Milrinona<br>(+ vasoconstritor se hipotenso)</p>
+                </div>
+                <div class="quick-ref-item">
+                    <h4>Baixo Débito Cardíaco + Uso prévio de beta-bloqueadores</h4>
+                    <p><strong>Considerar:</strong> Levosimendan (ou Dobutamina 5 - 20 mcg/kg/min)<br>(+ vasoconstritor se hipotenso)</p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Função de filtro
+        function filterDrugs(category) {
+            const cards = document.querySelectorAll('.drug-card');
+            const buttons = document.querySelectorAll('.tab-button');
+
+            // Atualizar botões ativos
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Filtrar cards
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    const categories = card.dataset.category.split(' ');
+                    if (categories.includes(category)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        // Animação de entrada
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.drug-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 80);
+            });
+        });
+    </script>
+</body>
+</html>

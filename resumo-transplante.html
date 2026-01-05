@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo Transplante Hepático - Biblioteca de Anestesiologia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #282d54 0%, #3059ef 50%, #48638b 100%);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(247, 247, 247, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            cursor: pointer;
+        }
+
+        .back-link {
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: #555;
+            font-weight: 500;
+            text-decoration: none;
+            background: #e8e8e8;
+        }
+
+        .back-link:hover {
+            background: #3059ef;
+            color: white;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Sidebar de Navegação */
+        .layout {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 30px;
+        }
+
+        .sidebar {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar-title {
+            font-size: 1.2em;
+            font-weight: 700;
+            color: #282d54;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3059ef;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar-nav a {
+            display: block;
+            padding: 10px 15px;
+            color: #555;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s;
+            font-size: 0.95em;
+        }
+
+        .sidebar-nav a:hover {
+            background: #eff6ff;
+            color: #3059ef;
+            transform: translateX(5px);
+        }
+
+        .sidebar-nav a.active {
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            color: white;
+        }
+
+        /* Conteúdo Principal */
+        .content {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 50px;
+            scroll-margin-top: 100px;
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            color: white;
+            padding: 20px 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1em;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .subsection {
+            margin-bottom: 30px;
+        }
+
+        .subsection-title {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #282d54;
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 4px solid #3059ef;
+        }
+
+        .text-content {
+            color: #444;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .text-content strong {
+            color: #282d54;
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: #eff6ff;
+            border-left: 4px solid #3059ef;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .highlight-box.warning {
+            background: #fef3c7;
+            border-left-color: #f59e0b;
+        }
+
+        .highlight-box.success {
+            background: #d1fae5;
+            border-left-color: #10b981;
+        }
+
+        .bullet-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .bullet-list li {
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            background: #f8fafc;
+            border-left: 3px solid #36c8e0;
+            border-radius: 6px;
+        }
+
+        .bullet-list li::before {
+            content: "→";
+            color: #3059ef;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 1024px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: relative;
+                top: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 25px;
+            }
+
+            .section-title {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo" onclick="window.location.href='biblioteca-anestesiologia.html'">
+                📚 Biblioteca de Anestesiologia
+            </div>
+            <a href="transplante-hepatico.html" class="back-link">← Voltar</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="layout">
+            <!-- Sidebar de Navegação -->
+            <aside class="sidebar">
+                <h3 class="sidebar-title">📑 Navegação</h3>
+                <ul class="sidebar-nav">
+                    <li><a href="#fisiopatologia" class="active">Fisiopatologia do Cirrótico</a></li>
+                    <li><a href="#hemodinamicas">Alterações Hemodinâmicas</a></li>
+                    <li><a href="#renal">Disfunção Renal</a></li>
+                    <li><a href="#pulmonar">Sistema Pulmonar</a></li>
+                    <li><a href="#nervoso">Sistema Nervoso</a></li>
+                    <li><a href="#gastrointestinal">Complicações GI</a></li>
+                    <li><a href="#avaliacao">Avaliação Pré-Anestésica</a></li>
+                    <li><a href="#inducao">Indução e Manutenção</a></li>
+                    <li><a href="#fases">Fases do Transplante</a></li>
+                </ul>
+            </aside>
+
+            <!-- Conteúdo Principal -->
+            <main class="content">
+                <!-- Introdução -->
+                <section id="fisiopatologia" class="section">
+                    <div class="section-header">
+                        <h1 class="section-title">Fisiopatologia do Paciente Cirrótico</h1>
+                        <p class="section-subtitle">Uma Revisão Didática para o Anestesiologista</p>
+                    </div>
+
+                    <div class="highlight-box">
+                        <p><strong>Prezados residentes,</strong></p>
+                        <p>A anestesia para pacientes com doença hepática crônica avançada representa um dos cenários mais complexos da nossa especialidade. A disfunção hepática não é uma patologia restrita a um único órgão; ela desencadeia uma cascata de alterações fisiopatológicas que afetam, de forma profunda e interligada, virtualmente todos os sistemas orgânicos.</p>
+                    </div>
+                </section>
+
+                <!-- 1. Alterações Hemodinâmicas -->
+                <section id="hemodinamicas" class="section">
+                    <div class="section-header">
+                        <h2 class="section-title">1. Alterações Hemodinâmicas Sistêmicas</h2>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">1.1 Circulação Hiperdinâmica</h3>
+                        <p class="text-content">
+                            O estado de <strong>circulação hiperdinâmica</strong> é uma característica marcante de pacientes com disfunção hepática crônica e cirrose. Este estado é definido por uma combinação de baixa resistência vascular periférica e um índice cardíaco aumentado.
+                        </p>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">1.2 Fisiopatologia da Baixa RVS</h3>
+                        <p class="text-content">
+                            A resistência vascular sistêmica (RVS) reduzida resulta de um aumento de vasodilatadores endógenos circulantes:
+                        </p>
+                        <ul class="bullet-list">
+                            <li><strong>Óxido nítrico:</strong> Considerado um dos principais mediadores</li>
+                            <li><strong>Peptídeo relacionado ao gene da calcitonina</strong></li>
+                            <li><strong>Substância P</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">1.3 Débito Cardíaco Elevado</h3>
+                        <p class="text-content">O débito cardíaco elevado é uma resposta compensatória à vasodilatação sistêmica. Diversos fatores contribuem:</p>
+                        <ul class="bullet-list">
+                            <li>Aumento da atividade do sistema nervoso simpático</li>
+                            <li>Aumento do volume sanguíneo e da pré-carga</li>
+                            <li>Redução da resistência vascular sistêmica (pós-carga)</li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">1.4 Cardiomiopatia Cirrótica</h3>
+                        <div class="highlight-box warning">
+                            <p><strong>⚠️ Conceito Crucial:</strong> Apesar do alto débito cardíaco em repouso, o coração do paciente cirrótico não é normal. A <strong>cardiomiopatia cirrótica</strong> descreve uma disfunção cardíaca intrínseca caracterizada por:</p>
+                            <ul class="bullet-list">
+                                <li>Resposta contrátil embotada ao estresse</li>
+                                <li>Disfunção diastólica</li>
+                                <li>Baixo débito cardíaco sob estresse</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. Disfunção Renal -->
+                <section id="renal" class="section">
+                    <div class="section-header">
+                        <h2 class="section-title">2. Disfunção Renal no Paciente com Doença Hepática</h2>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">2.1 Azotemia Pré-renal</h3>
+                        <p class="text-content">
+                            A azotemia pré-renal é a causa mais comum de disfunção renal neste cenário clínico. Sua principal causa é o uso excessivamente agressivo de diuréticos para o controle da ascite, levando à depleção do volume intravascular.
+                        </p>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">2.2 Necrose Tubular Aguda (NTA)</h3>
+                        <p class="text-content">
+                            A NTA é a segunda causa mais frequente, ocorrendo tipicamente no contexto de um fator precipitante agudo que leva à isquemia ou nefrotoxicidade renal. O cenário clínico clássico envolve o desenvolvimento de uma síndrome de sepse de baixo tônus vascular.
+                        </p>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">2.3 Síndrome Hepatorrenal (SHR)</h3>
+                        <div class="highlight-box">
+                            <p><strong>Teorias Fisiopatológicas:</strong></p>
+                            <p><strong>1. Teoria da Vasodilatação Periférica (mais aceita):</strong> A vasodilatação periférica extrema leva a uma redução do volume arterial efetivo. Em resposta, há ativação maciça de sistemas vasoconstritores que causam vasoconstrição renal desproporcional.</p>
+                            <p><strong>2. Teoria do Reflexo Hepatorrenal:</strong> A hipertensão portal reduz o fluxo sanguíneo para os hepatócitos, ativando um reflexo neural que causa vasoconstrição renal.</p>
+                        </div>
+                        <div class="highlight-box success">
+                            <p><strong>✅ Tratamento:</strong> O tratamento definitivo da SHR é o <strong>transplante de fígado</strong>. Medidas temporizadoras incluem vasoconstritores esplâncnicos (vasopressina, terlipressina) e expansores de plasma (albumina).</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. Sistema Pulmonar -->
+                <section id="pulmonar" class="section">
+                    <div class="section-header">
+                        <h2 class="section-title">3. Acometimento do Sistema Pulmonar</h2>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">3.1 Hipertensão Portopulmonar (HPOP)</h3>
+                        <p class="text-content">
+                            A HPOP é uma condição de remodelamento e <strong>vasoconstrição</strong> vascular pulmonar que leva ao aumento da pressão na artéria pulmonar.
+                        </p>
+                        <ul class="bullet-list">
+                            <li><strong>Triagem:</strong> Ecocardiografia transtorácica com Doppler (pode superestimar)</li>
+                            <li><strong>Confirmação:</strong> Cateterismo de artéria pulmonar (diagnóstico definitivo)</li>
+                            <li><strong>Implicação:</strong> HPOP moderada a grave é frequentemente contraindicação ao transplante</li>
+                            <li><strong>Tratamento:</strong> Vasodilatadores pulmonares (epoprostenol, óxido nítrico inalatório)</li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">3.2 Síndrome Hepatopulmonar (SHP)</h3>
+                        <p class="text-content">
+                            A SHP é definida por: disfunção hepática/hipertensão portal, gradiente alvéolo-arterial de O₂ elevado e evidência de <strong>vasodilatação intrapulmonar</strong>.
+                        </p>
+                        <div class="highlight-box">
+                            <p><strong>Sinais Clínicos Característicos:</strong></p>
+                            <ul class="bullet-list">
+                                <li>Baqueteamento digital</li>
+                                <li>Angiomas aracneiformes</li>
+                                <li>Hipoxemia arterial</li>
+                                <li><strong>Ortodeóxia</strong> (piora da saturação na posição vertical)</li>
+                                <li><strong>Platipneia</strong> (piora da dispneia ao passar da posição deitada para vertical)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. Sistema Nervoso -->
+                <section id="nervoso" class="section">
+                    <div class="section-header">
+                        <h2 class="section-title">4. Disfunções do Sistema Nervoso</h2>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">4.1 Encefalopatia Hepática (EH)</h3>
+                        <p class="text-content">
+                            <strong>Fisiopatologia:</strong> A formação de shunts portossistêmicos permite que amoníaco e outras substâncias neurotóxicas cheguem à circulação sistêmica e cruzem a barreira hematoencefálica.
+                        </p>
+                        <div class="highlight-box warning">
+                            <p><strong>⚠️ Falência Hepática Fulminante:</strong> A EH está associada ao edema cerebral progressivo e aumento da pressão intracraniana (PIC), uma complicação de altíssima mortalidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">4.2 Neuropatia Autonômica</h3>
+                        <p class="text-content">Presente em até 50% dos pacientes com doença hepática crônica:</p>
+                        <ul class="bullet-list">
+                            <li><strong>Disfunção cardiovascular:</strong> Respostas cronotrópicas e pressóricas atenuadas</li>
+                            <li><strong>Motilidade gástrica alterada:</strong> Risco elevado de regurgitação e aspiração → ISR mandatória</li>
+                            <li><strong>Maior incidência de hipotensão</strong> durante anestesia geral</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 5. Gastrointestinal -->
+                <section id="gastrointestinal" class="section">
+                    <div class="section-header">
+                        <h2 class="section-title">5. Fisiopatologia e Complicações Gastrointestinais</h2>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">5.1 Cirrose e Hipertensão Portal</h3>
+                        <p class="text-content">
+                            A cirrose é o estágio final da lesão hepática crônica, caracterizada por fibrose extensa e formação de nódulos regenerativos que desorganizam a arquitetura vascular hepática normal, resultando em <strong>hipertensão portal</strong>.
+                        </p>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">5.2 Varizes Esofágicas</h3>
+                        <p class="text-content">
+                            Consequência direta e de alto risco da hipertensão portal. Seu rompimento pode causar hemorragia maciça.
+                        </p>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">5.3 Falência Hepática Aguda (FHA)</h3>
+                        <div class="highlight-box warning">
+                            <p><strong>Definição:</strong> Aparecimento de encefalopatia + coagulopatia (INR ≥1.5) em paciente sem doença hepática prévia com doença < 26 semanas.</p>
+                            <p><strong>Complicação mais grave:</strong> Edema cerebral agudo com hipertensão intracraniana</p>
+                            <p><strong>Etiologia principal (EUA/Europa):</strong> Toxicidade por acetaminofeno</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 6. Avaliação Pré-Anestésica -->
+                <section id="avaliacao" class="section">
+                    <div class="section-header">
+                        <h2 class="section-title">Avaliação Pré-Anestésica e Monitorização</h2>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Coagulopatia do Cirrótico: Hemostasia Reequilibrada</h3>
+                        <div class="highlight-box">
+                            <p><strong>Conceito Central:</strong> O paciente cirrótico possui redução simultânea de fatores pró-coagulantes E anticoagulantes, resultando em um novo equilíbrio frágil.</p>
+                            <ul class="bullet-list">
+                                <li><strong>Falha de síntese:</strong> ↓ Fatores V, VII, IX, X + ↓ Proteína C, S, Antitrombina</li>
+                                <li><strong>Fatores elevados:</strong> ↑ Fator VIII e Fator de von Willebrand</li>
+                                <li><strong>Testes viscoelásticos (ROTEM/TEG):</strong> Padrão-ouro para avaliação funcional</li>
+                                <li><strong>Fibrinogênio:</strong> Manter > 150 mg/dL é objetivo crucial</li>
+                                <li><strong>Transfusão de plaquetas:</strong> Evitar transfusão profilática - associada a menor sobrevida do enxerto</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Escore MELD e Seleção de Pacientes</h3>
+                        <p class="text-content">
+                            O <strong>MELD (Model for End-Stage Liver Disease)</strong> prediz mortalidade em 3 meses na lista de espera.
+                        </p>
+                        <ul class="bullet-list">
+                            <li><strong>Componentes:</strong> Bilirrubina total, INR, Creatinina sérica</li>
+                            <li><strong>MELD-Na:</strong> Inclusão do sódio sérico aumentou poder preditivo (hiponatremia = marcador de gravidade)</li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Avaliação Cardiovascular</h3>
+                        <p class="text-content"><strong>Cardiomiopatia Cirrótica:</strong></p>
+                        <ul class="bullet-list">
+                            <li>Circulação hiperdinâmica em repouso</li>
+                            <li>Disfunção diastólica (> 50% dos candidatos)</li>
+                            <li>Incompetência cronotrópica e contrátil</li>
+                            <li>Prolongamento do intervalo QTc</li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Monitorização Intraoperatória</h3>
+                        <ul class="bullet-list">
+                            <li><strong>Pressão arterial invasiva contínua:</strong> Preferência por acesso femoral (evita gradiente por vasodilatação esplâncnica)</li>
+                            <li><strong>Acesso venoso central de largo calibre:</strong> Introdutores 8.5F ou cateteres multilúmen</li>
+                            <li><strong>Cateter de artéria pulmonar (Swan-Ganz):</strong> Em pacientes de alto risco</li>
+                            <li><strong>Ecocardiograma transesofágico (ETE):</strong> INDISPENSÁVEL - avaliação dinâmica e diagnóstico de complicações</li>
+                            <li><strong>Testes viscoelásticos:</strong> Guiar terapia transfusional por metas</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 7. Indução e Manutenção -->
+                <section id="inducao" class="section">
+                    <div class="section-header">
+                        <h2 class="section-title">Indução e Manutenção Anestésica</h2>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Técnica de Indução</h3>
+                        <div class="highlight-box success">
+                            <p><strong>✅ Indução em Sequência Rápida (ISR):</strong> Técnica de eleição devido a:</p>
+                            <ul class="bullet-list">
+                                <li>Retardo do esvaziamento gástrico (gastroparesia)</li>
+                                <li>Presença de ascite elevando pressão intragástrica</li>
+                            </ul>
+                            <p><strong>Bloqueador neuromuscular:</strong> Rocurônio 1 mg/kg (evitar succinilcolina em hipercalemia)</p>
+                        </div>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Manutenção Anestésica</h3>
+                        <ul class="bullet-list">
+                            <li><strong>Anestesia balanceada vs TIVA:</strong> Sem evidência de superioridade</li>
+                            <li><strong>Exceção - FHA com edema cerebral:</strong> Evitar voláteis (vasodilatação cerebral exacerba PIC)</li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Bloqueio Neuromuscular</h3>
+                        <ul class="bullet-list">
+                            <li><strong>Cisatracúrio:</strong> Primeira linha (eliminação de Hofmann - independente de órgãos)</li>
+                            <li><strong>Rocurônio:</strong> Alternativa (depuração hepática → prolongamento do efeito → necessita monitorização)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 8. Fases do Transplante -->
+                <section id="fases" class="section">
+                    <div class="section-header">
+                        <h2 class="section-title">Fases do Transplante Hepático</h2>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Fase Pré-Anepática (Dissecação)</h3>
+                        <p class="text-content"><strong>Desafios:</strong> Hemorragia maciça, instabilidade hemodinâmica, distúrbios metabólicos</p>
+                        <p class="text-content"><strong>Objetivos:</strong></p>
+                        <ul class="bullet-list">
+                            <li>Manejo hemostático (protocolo de transfusão maciça)</li>
+                            <li>Otimização metabólica (eletrólitos, equilíbrio ácido-base)</li>
+                            <li>Proteção renal (débito cardíaco e volume adequados)</li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Fase Anepática</h3>
+                        <div class="highlight-box warning">
+                            <p><strong>⚠️ Período crítico:</strong> Paciente sem fígado = sem função hepática + obstrução do retorno venoso</p>
+                        </div>
+                        <p class="text-content"><strong>Técnicas cirúrgicas:</strong></p>
+                        <ul class="bullet-list">
+                            <li><strong>Convencional (interposição caval):</strong> Frequentemente requer bypass venovenoso (BVV)</li>
+                            <li><strong>"Piggyback":</strong> Preserva VCI do receptor → melhor estabilidade hemodinâmica</li>
+                        </ul>
+                        <p class="text-content"><strong>Metas do manejo:</strong></p>
+                        <ul class="bullet-list">
+                            <li>Acidose metabólica (acúmulo de lactato)</li>
+                            <li>Hipocalcemia ionizada (citrato não metabolizado → infusão contínua de cálcio MANDATÓRIA)</li>
+                            <li>Hipotermia (aquecimento ativo essencial)</li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Fase Neo-Hepática (Reperfusão)</h3>
+                        <div class="highlight-box warning">
+                            <p><strong>⚠️ Síndrome Pós-Reperfusão (SPR):</strong> Principal causa de colapso hemodinâmico</p>
+                            <p><strong>Manifestações:</strong> Hipotensão severa, bradicardia, arritmias, disfunção VD, aumento súbito da PAP</p>
+                            <p><strong>Fisiopatologia:</strong> Liberação de solução de preservação (FRIA, HIPERCALÊMICA, ÁCIDA) + mediadores vasoativos</p>
+                        </div>
+                        
+                        <p class="text-content"><strong>Manejo da Hipercalemia de Reperfusão (TRÍADE):</strong></p>
+                        <ul class="bullet-list">
+                            <li><strong>Cloreto de cálcio:</strong> Estabilização da membrana miocárdica</li>
+                            <li><strong>Bicarbonato de sódio:</strong> Antagonismo celular + trata acidose</li>
+                            <li><strong>Insulina + Glicose:</strong> Influxo celular de potássio</li>
+                        </ul>
+
+                        <div class="highlight-box success">
+                            <p><strong>✅ Sinais Precoces de Função do Enxerto:</strong></p>
+                            <ul class="bullet-list">
+                                <li>↓ Necessidade de infusão de cálcio (metabolização de citrato)</li>
+                                <li>Melhora da acidose metabólica (metabolismo de lactato)</li>
+                                <li>↑ Débito urinário</li>
+                                <li>↑ Temperatura corporal</li>
+                                <li>Produção de BILE</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="subsection-title">Manejo da Transfusão</h3>
+                        <div class="highlight-box">
+                            <p><strong>Terapia Guiada por Metas:</strong></p>
+                            <ul class="bullet-list">
+                                <li><strong>PFC:</strong> Manter INR < 2.0 em sangramento ativo</li>
+                                <li><strong>Crioprecipitado/Concentrado de fibrinogênio:</strong> Manter > 150 mg/dL</li>
+                                <li><strong>Plaquetas:</strong> Manter > 50.000/mm³ em sangramento microvascular</li>
+                                <li><strong>Antifibrinolíticos:</strong> Usar apenas em hiperfibrinólise documentada (pós-reperfusão)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // Navegação suave
+        document.querySelectorAll('.sidebar-nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove active de todos
+                document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
+                
+                // Adiciona active ao clicado
+                this.classList.add('active');
+                
+                // Scroll suave para a seção
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Atualiza active baseado no scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            document.querySelectorAll('.section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.sidebar-nav a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
