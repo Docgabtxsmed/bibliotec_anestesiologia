@@ -18,6 +18,88 @@
             padding: 40px 20px;
         }
 
+        /* Navbar */
+        .navbar {
+            background: rgba(247, 247, 247, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            margin-bottom: 40px;
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .back-link {
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: #555;
+            font-weight: 500;
+            text-decoration: none;
+            background: #e8e8e8;
+        }
+
+        .back-link:hover {
+            background: #3059ef;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .page-container {
+            padding: 0 20px 40px;
+        }
+
+        .component-wrapper {
+            max-width: 1400px;
+            margin: 0 auto 40px;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .title {
+            font-size: 2.5em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
         .component-wrapper {
             max-width: 1400px;
             margin: 0 auto;
@@ -357,6 +439,14 @@
     </style>
 </head>
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">📚 Circuito de CEC</div>
+            <a href="./cec.html" class="back-link">← Voltar</a>
+        </div>
+    </nav>
+
     <div class="component-wrapper">
         <div class="header">
             <h1 class="title">Circuito de Circulação Extracorpórea (CEC)</h1>
