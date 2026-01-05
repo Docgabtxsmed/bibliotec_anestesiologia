@@ -1,0 +1,42 @@
+/* ============================================
+   STYLE.CSS - Arquivo CSS Principal
+   Biblioteca de Anestesiologia - Academia MedTech
+   ============================================
+   
+   Este arquivo orquestra todos os módulos CSS do projeto.
+   Estrutura modular para fácil manutenção e escalabilidade.
+   
+   Autor: Academia MedTech
+   Última atualização: 2026
+   ============================================ */
+
+/* ==================== IMPORTAÇÕES DE MÓDULOS ==================== */
+
+/* Base: Reset, Variáveis CSS e Tipografia */
+@import url('css/base.css');
+
+/* Layout: Navbar, Container, Grid e Estrutura */
+@import url('css/layout.css');
+
+/* Components: Cards, Modais, Botões e Componentes Reutilizáveis */
+@import url('css/components.css');
+
+/* Utilities: Classes Utilitárias para Espaçamento, Cores, etc */
+@import url('css/utilities.css');
+
+/* ==================== ESTILOS GLOBAIS ESPECÍFICOS ==================== */
+
+/* Aqui você pode adicionar overrides ou estilos muito específicos do projeto */
+/* que não se encaixam nos módulos acima */
+
+/* Exemplo: Estilos globais de animação */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease forwards;
+}
+
+/* ==================== FIM ==================== */

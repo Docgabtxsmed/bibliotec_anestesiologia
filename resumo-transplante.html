@@ -13,8 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #282d54 0%, #3059ef 50%, #48638b 100%);
-            min-height: 100vh;
+            background: #f7f7f7;
             line-height: 1.6;
         }
 
@@ -49,7 +48,7 @@
         }
 
         .back-link {
-            padding: 8px 16px;
+            padding: 10px 20px;
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s;
@@ -62,34 +61,32 @@
         .back-link:hover {
             background: #3059ef;
             color: white;
+            transform: translateY(-2px);
         }
 
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        /* Sidebar de Navegação */
-        .layout {
-            display: grid;
-            grid-template-columns: 280px 1fr;
+        /* Layout Principal */
+        .main-container {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 30px 20px;
             gap: 30px;
         }
 
+        /* Sidebar */
         .sidebar {
-            background: white;
-            border-radius: 16px;
-            padding: 25px;
-            height: fit-content;
+            width: 280px;
             position: sticky;
             top: 100px;
+            height: fit-content;
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
 
         .sidebar-title {
-            font-size: 1.2em;
+            font-size: 1.1em;
             font-weight: 700;
             color: #282d54;
             margin-bottom: 20px;
@@ -102,139 +99,178 @@
         }
 
         .sidebar-nav li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .sidebar-nav a {
-            display: block;
-            padding: 10px 15px;
-            color: #555;
             text-decoration: none;
-            border-radius: 8px;
-            transition: all 0.3s;
+            color: #666;
             font-size: 0.95em;
+            display: block;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: all 0.3s;
         }
 
-        .sidebar-nav a:hover {
-            background: #eff6ff;
-            color: #3059ef;
-            transform: translateX(5px);
-        }
-
+        .sidebar-nav a:hover,
         .sidebar-nav a.active {
             background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
             color: white;
+            transform: translateX(5px);
         }
 
-        /* Conteúdo Principal */
+        /* Content Area */
         .content {
+            flex: 1;
             background: white;
-            border-radius: 16px;
+            border-radius: 12px;
             padding: 40px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
 
-        .section {
-            margin-bottom: 50px;
-            scroll-margin-top: 100px;
+        .content-header {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #e2e8f0;
         }
 
-        .section-header {
+        .content-title {
+            font-size: 2.2em;
+            font-weight: 700;
             background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
-            color: white;
-            padding: 20px 25px;
-            border-radius: 12px;
-            margin-bottom: 25px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .content-subtitle {
+            font-size: 1.1em;
+            color: #666;
+            font-weight: 400;
+        }
+
+        /* Seções */
+        .section {
+            margin-bottom: 40px;
         }
 
         .section-title {
             font-size: 1.8em;
             font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .section-subtitle {
-            font-size: 1.1em;
-            opacity: 0.95;
-            font-weight: 300;
-        }
-
-        .subsection {
-            margin-bottom: 30px;
+            color: white;
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+            border-radius: 10px;
         }
 
         .subsection-title {
-            font-size: 1.4em;
+            font-size: 1.3em;
             font-weight: 600;
-            color: #282d54;
-            margin-bottom: 15px;
+            color: #3059ef;
+            margin: 25px 0 15px 0;
             padding-left: 15px;
             border-left: 4px solid #3059ef;
         }
 
-        .text-content {
-            color: #444;
+        .section p {
             margin-bottom: 15px;
-            line-height: 1.8;
+            color: #444;
+            text-align: justify;
         }
 
-        .text-content strong {
-            color: #282d54;
-            font-weight: 600;
-        }
-
-        .highlight-box {
-            background: #eff6ff;
-            border-left: 4px solid #3059ef;
-            padding: 20px;
-            border-radius: 8px;
+        /* Listas */
+        .section ul {
             margin: 20px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .section ul li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            color: #444;
+        }
+
+        .section ul li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3059ef;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* Boxes de Destaque */
+        .highlight-box {
+            margin: 25px 0;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid;
+        }
+
+        .highlight-box.info {
+            background: #e8f0fe;
+            border-color: #3059ef;
         }
 
         .highlight-box.warning {
             background: #fef3c7;
-            border-left-color: #f59e0b;
+            border-color: #f59e0b;
         }
 
         .highlight-box.success {
             background: #d1fae5;
-            border-left-color: #10b981;
+            border-color: #059669;
         }
 
-        .bullet-list {
-            list-style: none;
-            padding-left: 0;
+        .highlight-box.danger {
+            background: #fee2e2;
+            border-color: #dc2626;
         }
 
-        .bullet-list li {
-            padding: 10px 15px;
-            margin-bottom: 10px;
-            background: #f8fafc;
-            border-left: 3px solid #36c8e0;
-            border-radius: 6px;
+        .highlight-box p {
+            margin: 0;
         }
 
-        .bullet-list li::before {
-            content: "→";
-            color: #3059ef;
-            font-weight: bold;
-            margin-right: 10px;
+        .highlight-box strong {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1em;
         }
 
+        /* Responsividade */
         @media (max-width: 1024px) {
-            .layout {
-                grid-template-columns: 1fr;
+            .main-container {
+                flex-direction: column;
             }
 
             .sidebar {
+                width: 100%;
                 position: relative;
                 top: 0;
+            }
+
+            .sidebar-nav {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .sidebar-nav li {
+                margin: 0;
             }
         }
 
         @media (max-width: 768px) {
             .content {
                 padding: 25px;
+            }
+
+            .content-title {
+                font-size: 1.8em;
             }
 
             .section-title {
@@ -254,10 +290,10 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="layout">
-            <!-- Sidebar de Navegação -->
-            <aside class="sidebar">
+    <!-- Container Principal -->
+    <div class="main-container">
+        <!-- Sidebar de Navegação -->
+        <aside class="sidebar">
                 <h3 class="sidebar-title">📑 Navegação</h3>
                 <ul class="sidebar-nav">
                     <li><a href="#fisiopatologia" class="active">Fisiopatologia do Cirrótico</a></li>
@@ -272,28 +308,27 @@
                 </ul>
             </aside>
 
-            <!-- Conteúdo Principal -->
-            <main class="content">
-                <!-- Introdução -->
-                <section id="fisiopatologia" class="section">
-                    <div class="section-header">
-                        <h1 class="section-title">Fisiopatologia do Paciente Cirrótico</h1>
-                        <p class="section-subtitle">Uma Revisão Didática para o Anestesiologista</p>
-                    </div>
+        <!-- Conteúdo Principal -->
+        <main class="content">
+            <!-- Header -->
+            <div class="content-header">
+                <h1 class="content-title">Fisiopatologia do Paciente Cirrótico</h1>
+                <p class="content-subtitle">Uma Revisão Didática para o Anestesiologista - Transplante Hepático</p>
+            </div>
 
-                    <div class="highlight-box">
-                        <p><strong>Prezados residentes,</strong></p>
-                        <p>A anestesia para pacientes com doença hepática crônica avançada representa um dos cenários mais complexos da nossa especialidade. A disfunção hepática não é uma patologia restrita a um único órgão; ela desencadeia uma cascata de alterações fisiopatológicas que afetam, de forma profunda e interligada, virtualmente todos os sistemas orgânicos.</p>
-                    </div>
-                </section>
+            <!-- Introdução -->
+            <section id="fisiopatologia" class="section">
+                <div class="highlight-box info">
+                    <strong>Prezados residentes,</strong>
+                    <p>A anestesia para pacientes com doença hepática crônica avançada representa um dos cenários mais complexos da nossa especialidade. A disfunção hepática não é uma patologia restrita a um único órgão; ela desencadeia uma cascata de alterações fisiopatológicas que afetam, de forma profunda e interligada, virtualmente todos os sistemas orgânicos.</p>
+                </div>
+            </section>
 
-                <!-- 1. Alterações Hemodinâmicas -->
-                <section id="hemodinamicas" class="section">
-                    <div class="section-header">
-                        <h2 class="section-title">1. Alterações Hemodinâmicas Sistêmicas</h2>
-                    </div>
-
-                    <div class="subsection">
+            <!-- 1. Alterações Hemodinâmicas -->
+            <section id="hemodinamicas" class="section">
+                <h2 class="section-title">1. Alterações Hemodinâmicas Sistêmicas</h2>
+                
+                <div class="subsection">
                         <h3 class="subsection-title">1.1 Circulação Hiperdinâmica</h3>
                         <p class="text-content">
                             O estado de <strong>circulação hiperdinâmica</strong> é uma característica marcante de pacientes com disfunção hepática crônica e cirrose. Este estado é definido por uma combinação de baixa resistência vascular periférica e um índice cardíaco aumentado.
@@ -335,13 +370,11 @@
                     </div>
                 </section>
 
-                <!-- 2. Disfunção Renal -->
-                <section id="renal" class="section">
-                    <div class="section-header">
-                        <h2 class="section-title">2. Disfunção Renal no Paciente com Doença Hepática</h2>
-                    </div>
-
-                    <div class="subsection">
+            <!-- 2. Disfunção Renal -->
+            <section id="renal" class="section">
+                <h2 class="section-title">2. Disfunção Renal no Paciente com Doença Hepática</h2>
+                
+                <div class="subsection">
                         <h3 class="subsection-title">2.1 Azotemia Pré-renal</h3>
                         <p class="text-content">
                             A azotemia pré-renal é a causa mais comum de disfunção renal neste cenário clínico. Sua principal causa é o uso excessivamente agressivo de diuréticos para o controle da ascite, levando à depleção do volume intravascular.
@@ -368,13 +401,11 @@
                     </div>
                 </section>
 
-                <!-- 3. Sistema Pulmonar -->
-                <section id="pulmonar" class="section">
-                    <div class="section-header">
-                        <h2 class="section-title">3. Acometimento do Sistema Pulmonar</h2>
-                    </div>
-
-                    <div class="subsection">
+            <!-- 3. Sistema Pulmonar -->
+            <section id="pulmonar" class="section">
+                <h2 class="section-title">3. Acometimento do Sistema Pulmonar</h2>
+                
+                <div class="subsection">
                         <h3 class="subsection-title">3.1 Hipertensão Portopulmonar (HPOP)</h3>
                         <p class="text-content">
                             A HPOP é uma condição de remodelamento e <strong>vasoconstrição</strong> vascular pulmonar que leva ao aumento da pressão na artéria pulmonar.
@@ -405,13 +436,11 @@
                     </div>
                 </section>
 
-                <!-- 4. Sistema Nervoso -->
-                <section id="nervoso" class="section">
-                    <div class="section-header">
-                        <h2 class="section-title">4. Disfunções do Sistema Nervoso</h2>
-                    </div>
-
-                    <div class="subsection">
+            <!-- 4. Sistema Nervoso -->
+            <section id="nervoso" class="section">
+                <h2 class="section-title">4. Disfunções do Sistema Nervoso</h2>
+                
+                <div class="subsection">
                         <h3 class="subsection-title">4.1 Encefalopatia Hepática (EH)</h3>
                         <p class="text-content">
                             <strong>Fisiopatologia:</strong> A formação de shunts portossistêmicos permite que amoníaco e outras substâncias neurotóxicas cheguem à circulação sistêmica e cruzem a barreira hematoencefálica.
@@ -432,13 +461,11 @@
                     </div>
                 </section>
 
-                <!-- 5. Gastrointestinal -->
-                <section id="gastrointestinal" class="section">
-                    <div class="section-header">
-                        <h2 class="section-title">5. Fisiopatologia e Complicações Gastrointestinais</h2>
-                    </div>
-
-                    <div class="subsection">
+            <!-- 5. Gastrointestinal -->
+            <section id="gastrointestinal" class="section">
+                <h2 class="section-title">5. Fisiopatologia e Complicações Gastrointestinais</h2>
+                
+                <div class="subsection">
                         <h3 class="subsection-title">5.1 Cirrose e Hipertensão Portal</h3>
                         <p class="text-content">
                             A cirrose é o estágio final da lesão hepática crônica, caracterizada por fibrose extensa e formação de nódulos regenerativos que desorganizam a arquitetura vascular hepática normal, resultando em <strong>hipertensão portal</strong>.
@@ -462,13 +489,11 @@
                     </div>
                 </section>
 
-                <!-- 6. Avaliação Pré-Anestésica -->
-                <section id="avaliacao" class="section">
-                    <div class="section-header">
-                        <h2 class="section-title">Avaliação Pré-Anestésica e Monitorização</h2>
-                    </div>
-
-                    <div class="subsection">
+            <!-- 6. Avaliação Pré-Anestésica -->
+            <section id="avaliacao" class="section">
+                <h2 class="section-title">Avaliação Pré-Anestésica e Monitorização</h2>
+                
+                <div class="subsection">
                         <h3 class="subsection-title">Coagulopatia do Cirrótico: Hemostasia Reequilibrada</h3>
                         <div class="highlight-box">
                             <p><strong>Conceito Central:</strong> O paciente cirrótico possui redução simultânea de fatores pró-coagulantes E anticoagulantes, resultando em um novo equilíbrio frágil.</p>
@@ -516,13 +541,11 @@
                     </div>
                 </section>
 
-                <!-- 7. Indução e Manutenção -->
-                <section id="inducao" class="section">
-                    <div class="section-header">
-                        <h2 class="section-title">Indução e Manutenção Anestésica</h2>
-                    </div>
-
-                    <div class="subsection">
+            <!-- 7. Indução e Manutenção -->
+            <section id="inducao" class="section">
+                <h2 class="section-title">Indução e Manutenção Anestésica</h2>
+                
+                <div class="subsection">
                         <h3 class="subsection-title">Técnica de Indução</h3>
                         <div class="highlight-box success">
                             <p><strong>✅ Indução em Sequência Rápida (ISR):</strong> Técnica de eleição devido a:</p>
@@ -551,13 +574,11 @@
                     </div>
                 </section>
 
-                <!-- 8. Fases do Transplante -->
-                <section id="fases" class="section">
-                    <div class="section-header">
-                        <h2 class="section-title">Fases do Transplante Hepático</h2>
-                    </div>
-
-                    <div class="subsection">
+            <!-- 8. Fases do Transplante -->
+            <section id="fases" class="section">
+                <h2 class="section-title">Fases do Transplante Hepático</h2>
+                
+                <div class="subsection">
                         <h3 class="subsection-title">Fase Pré-Anepática (Dissecação)</h3>
                         <p class="text-content"><strong>Desafios:</strong> Hemorragia maciça, instabilidade hemodinâmica, distúrbios metabólicos</p>
                         <p class="text-content"><strong>Objetivos:</strong></p>
@@ -627,43 +648,47 @@
                     </div>
                 </section>
 
-            </main>
-        </div>
+        </main>
     </div>
 
     <script>
-        // Navegação suave
-        document.querySelectorAll('.sidebar-nav a').forEach(link => {
-            link.addEventListener('click', function(e) {
+        // Smooth scroll para navegação
+        document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
-                // Remove active de todos
-                document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
-                
-                // Adiciona active ao clicado
-                this.classList.add('active');
-                
-                // Scroll suave para a seção
                 const targetId = this.getAttribute('href');
                 const targetSection = document.querySelector(targetId);
-                targetSection.scrollIntoView({ behavior: 'smooth' });
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Atualiza active
+                    document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
+                    this.classList.add('active');
+                }
             });
         });
 
-        // Atualiza active baseado no scroll
+        // Atualiza navegação baseado no scroll
         window.addEventListener('scroll', () => {
             let current = '';
-            document.querySelectorAll('.section').forEach(section => {
+            const sections = document.querySelectorAll('.section');
+            
+            sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 150) {
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
                     current = section.getAttribute('id');
                 }
             });
 
-            document.querySelectorAll('.sidebar-nav a').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
+            document.querySelectorAll('.sidebar-nav a').forEach(a => {
+                a.classList.remove('active');
+                if (a.getAttribute('href') === `#${current}`) {
+                    a.classList.add('active');
                 }
             });
         });
