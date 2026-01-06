@@ -1,0 +1,82 @@
+/* ========================================
+   ETAPA 1: RESET E BÁSICOS
+   ======================================== */
+
+/* Remove margens e espaçamentos padrão de todos elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Inclui padding/border na largura total */
+}
+
+/* Configuração para scroll suave e espaço para navbar fixa */
+html {
+    scroll-behavior: smooth;        /* Rolagem suave ao clicar em links âncora */
+    scroll-padding-top: 100px;      /* Deixa 100px de espaço ao rolar (navbar) */
+}
+
+/* Estilos globais do body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f7f7;            /* Fundo cinza claro */
+    line-height: 1.6;               /* Espaçamento entre linhas */
+}
+/* ========================================
+   ETAPA 2: NAVBAR
+   ======================================== */
+
+   .navbar {
+    background: rgba(247, 247, 247, 0.95);   /* Fundo semi-transparente */
+    backdrop-filter: blur(10px);              /* Efeito blur no fundo */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 20px 0;
+    position: sticky;                         /* Gruda no topo ao rolar */
+    top: 0;                                   /* Posição: topo */
+    z-index: 100;                            /* Fica acima de outros elementos */
+}
+
+/* Container interno da navbar */
+.nav-content {
+    max-width: 1400px;                       /* Largura máxima */
+    margin: 0 auto;                          /* Centraliza horizontalmente */
+    padding: 0 20px;                         /* Espaçamento interno lateral */
+    display: flex;                           /* Flexbox */
+    justify-content: space-between;          /* Logo à esquerda, botão à direita */
+    align-items: center;                     /* Alinha verticalmente no centro */
+}
+
+/* Logo com gradiente */
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%); /* Gradiente azul-ciano */
+    -webkit-background-clip: text;           /* Truque: recorta gradiente no texto */
+    -webkit-text-fill-color: transparent;    /* Torna o texto transparente */
+    background-clip: text;
+    cursor: pointer;                         /* Mostra que é clicável */
+}
+
+/* Botão "Voltar" */
+.back-link {
+    padding: 10px 20px;
+    border-radius: 8px;                      /* Cantos arredondados */
+    cursor: pointer;
+    transition: all 0.3s;                    /* Animação suave */
+    color: #555;
+    font-weight: 500;
+    text-decoration: none;                   /* Remove sublinhado */
+    background: #e8e8e8;                     /* Fundo cinza claro */
+    /* Touch target mínimo 44x44px (acessibilidade mobile) */
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Efeito hover no botão */
+.back-link:hover {
+    background: #3059ef;                     /* Fundo azul */
+    color: white;                            /* Texto branco */
+    transform: translateY(-2px);             /* Sobe 2px (efeito de elevação) */
+}

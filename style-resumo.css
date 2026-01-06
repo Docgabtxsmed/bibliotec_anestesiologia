@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+/* Scroll behavior para navbar sticky */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #f7f7f7;
@@ -49,6 +55,12 @@ body {
     font-weight: 500;
     text-decoration: none;
     background: #e8e8e8;
+    /* Touch target mínimo 44x44px */
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .back-link:hover {
@@ -103,6 +115,10 @@ body {
     padding: 8px 12px;
     border-radius: 6px;
     transition: all 0.3s;
+    /* Touch target adequado */
+    min-height: 44px;
+    display: flex;
+    align-items: center;
 }
 
 .sidebar-nav a:hover,
@@ -119,6 +135,10 @@ body {
     border-radius: 12px;
     padding: 40px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Melhor quebra de palavras longas (termos médicos) */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 .content-header {
@@ -135,12 +155,14 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 10px;
+    line-height: 1.3;
 }
 
 .content-subtitle {
     font-size: 1.1em;
     color: #666;
     font-weight: 400;
+    line-height: 1.5;
 }
 
 /* Seções */
@@ -157,6 +179,11 @@ body {
     padding: 15px 20px;
     background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
     border-radius: 10px;
+    line-height: 1.4;
+}
+
+.subsection {
+    margin-bottom: 25px;
 }
 
 .subsection-title {
@@ -166,43 +193,68 @@ body {
     margin: 25px 0 15px 0;
     padding-left: 15px;
     border-left: 4px solid #3059ef;
+    line-height: 1.4;
 }
 
-.section p {
+.section p,
+.text-content {
     margin-bottom: 15px;
     color: #444;
     text-align: justify;
+    line-height: 1.7;
 }
 
-/* Listas */
-.section ul {
-    margin: 20px 0;
+/*ELEMENTOS DE DESTAQUE*/
+
+/*LISTAS*/
+
+/* Lista com SETAS */
+.section ul,
+.bullet-list-dots {
+    margin: 10px 0;
     padding-left: 0;
     list-style: none;
 }
 
-.section ul li {
+.bullet-list-dots li {
     margin-bottom: 15px;
     padding-left: 30px;
     position: relative;
     color: #444;
+    line-height: 2.0;
 }
 
-.section ul li::before {
-    content: "→";
+.bullet-list-dots li::before {
+    content: "•";
     position: absolute;
     left: 0;
-    color: #3059ef;
+    color: #051242;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.0em;
+    line-height: 1.5;
 }
 
-/* Boxes de Destaque */
+/* ========================================
+   Lista com BOLINHAS (nova opção)
+   ======================================== */
+
+
+
+/* Nested Lists */
+.nested-list {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* =========================
+      CARTÔES DE DESTAQUE 
+============================ */
 .highlight-box {
     margin: 25px 0;
     padding: 20px;
     border-radius: 10px;
     border-left: 5px solid;
+    line-height: 1.7;
 }
 
 .highlight-box.info {
@@ -226,24 +278,32 @@ body {
 }
 
 .highlight-box p {
-    margin: 0;
+    margin: 0 0 10px 0;
+    line-height: 1.7;
+}
+
+.highlight-box p:last-child {
+    margin-bottom: 0;
 }
 
 .highlight-box strong {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-size: 1.1em;
+    line-height: 1.4;
 }
 
 .highlight-box ul {
     margin-top: 10px;
+    padding-left: 0;
 }
 
-/* Nested Lists */
-.nested-list {
-    margin-left: 20px;
-    margin-top: 10px;
+.highlight-box ul li {
+    margin-bottom: 10px;
+    line-height: 1.7;
 }
+
+
 
 /* Divider */
 .divider {
@@ -253,7 +313,7 @@ body {
     margin: 40px 0;
 }
 
-/* Tabelas */
+/* TABELAS - OPÇÃO 1(SEM BORDAS VERTICAIS)*/
 .data-table {
     width: 100%;
     border-collapse: collapse;
@@ -287,7 +347,62 @@ body {
     border-bottom: none;
 }
 
+/* ========================================
+   TABELAS - OPÇÃO 2 (COM BORDAS VERTICAIS)
+   ======================================== */
+
+   .data-table-bordered {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Cabeçalho com fundo azul gradiente */
+.data-table-bordered thead {
+    background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+    color: white;
+}
+
+/* Células do cabeçalho COM borda vertical */
+.data-table-bordered th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);  /* Borda vertical branca */
+}
+
+/* Remove borda da última coluna do cabeçalho */
+.data-table-bordered th:last-child {
+    border-right: none;
+}
+
+/* Células de dados COM bordas vertical e horizontal */
+.data-table-bordered td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e8e8e8;  /* Linha horizontal */
+    border-right: 1px solid #e8e8e8;   /* Linha vertical */
+}
+
+/* Remove borda da última coluna */
+.data-table-bordered td:last-child {
+    border-right: none;
+}
+
+/* Efeito hover na linha */
+.data-table-bordered tbody tr:hover {
+    background: #f5f7ff;
+}
+
+/* Remove borda inferior da última linha */
+.data-table-bordered tbody tr:last-child td {
+    border-bottom: none;
+}
+
 /* Cards de Alvos */
+/* Container grid responsivo*/
 .target-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -295,35 +410,46 @@ body {
     margin: 25px 0;
 }
 
+/* Card individual */
+
 .target-card {
     background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 100%);
     border-radius: 12px;
-    padding: 20px;
+    padding: 12px;
     border-left: 5px solid #3059ef;
     transition: all 0.3s;
 }
+
+/* Efeito hover */
 
 .target-card:hover {
     transform: translateX(5px);
     box-shadow: 0 5px 15px rgba(48, 89, 239, 0.2);
 }
 
+/* Número grande destacado */
+
 .target-number {
-    font-size: 2em;
-    font-weight: 900;
+    font-size: 1.5em;
+    font-weight: 600;
     color: #3059ef;
     margin-bottom: 5px;
 }
 
+/* Título do card */
+
 .target-label {
+    font-size: 1.5em;
     font-weight: 600;
     color: #282d54;
     margin-bottom: 8px;
 }
 
+/* Descrição */
+
 .target-value {
     color: #666;
-    font-size: 0.95em;
+    font-size: 1em;
 }
 
 /* Estilos alternativos para headings dentro de .content */
@@ -341,6 +467,7 @@ body {
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 3px solid #3059ef;
+    line-height: 1.3;
 }
 
 .content h3 {
@@ -348,12 +475,14 @@ body {
     color: #3059ef;
     margin-top: 30px;
     margin-bottom: 15px;
+    line-height: 1.4;
 }
 
 .content p {
     color: #444;
     margin-bottom: 15px;
     text-align: justify;
+    line-height: 1.7;
 }
 
 .content ul {
@@ -367,16 +496,22 @@ body {
     line-height: 1.7;
 }
 
-/* Responsividade */
+
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+/* Tablet Landscape (≤1024px) */
 @media (max-width: 1024px) {
     .main-container {
         flex-direction: column;
+        padding: 25px 20px;
     }
 
     .sidebar {
         width: 100%;
         position: relative;
         top: 0;
+        padding: 20px;
     }
 
     .sidebar-nav {
@@ -388,18 +523,559 @@ body {
     .sidebar-nav li {
         margin: 0;
     }
-}
 
-@media (max-width: 768px) {
-    .content {
-        padding: 25px;
+    .sidebar-nav a {
+        padding: 10px 15px;
+        font-size: 0.9em;
     }
 
     .content-title {
-        font-size: 1.8em;
+        font-size: 1.9em;
     }
 
     .section-title {
+        font-size: 1.6em;
+        padding: 12px 18px;
+    }
+
+    .subsection-title {
+        font-size: 1.2em;
+    }
+
+    .content {
+        padding: 35px;
+    }
+
+    .target-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Tablet Portrait / Mobile Large (≤768px) */
+@media (max-width: 768px) {
+    html {
+        scroll-padding-top: 80px;
+    }
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .nav-content {
+        padding: 0 15px;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 1.3em;
+    }
+
+    .back-link {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .main-container {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .sidebar {
+        padding: 18px;
+    }
+
+    .sidebar-title {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .sidebar-nav {
+        gap: 8px;
+    }
+
+    .sidebar-nav a {
+        font-size: 0.85em;
+        padding: 8px 12px;
+        min-height: 40px;
+    }
+
+    .content {
+        padding: 25px 20px;
+        border-radius: 10px;
+    }
+
+    .content-header {
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+    }
+
+    .content-title {
+        font-size: 1.6em;
+        line-height: 1.3;
+    }
+
+    .content-subtitle {
+        font-size: 1em;
+    }
+
+    .section {
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        font-size: 1.4em;
+        padding: 12px 15px;
+        margin-bottom: 18px;
+    }
+
+    .subsection-title {
+        font-size: 1.15em;
+        margin: 20px 0 12px 0;
+        padding-left: 12px;
+        border-left-width: 3px;
+    }
+
+    /* Remover justify em mobile para melhor legibilidade */
+    .section p,
+    .text-content,
+    .content p {
+        text-align: left;
+        line-height: 1.7;
+        margin-bottom: 12px;
+    }
+
+    .section ul li,
+    .bullet-list li {
+        padding-left: 25px;
+        margin-bottom: 12px;
+        line-height: 1.7;
+    }
+
+    .section ul li::before,
+    .bullet-list li::before {
+        font-size: 1.1em;
+    }
+
+    .highlight-box {
+        margin: 20px 0;
+        padding: 15px;
+        border-radius: 8px;
+        border-left-width: 4px;
+    }
+
+    .highlight-box strong {
+        font-size: 1em;
+        margin-bottom: 8px;
+    }
+
+    .highlight-box ul li {
+        padding-left: 25px;
+        margin-bottom: 8px;
+    }
+
+    .divider {
+        margin: 30px 0;
+    }
+
+    .data-table {
+        font-size: 0.9em;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 10px 12px;
+    }
+
+    .target-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .target-card {
+        padding: 18px;
+    }
+
+    .content h1 {
+        font-size: 1.8em;
+    }
+
+    .content h2 {
+        font-size: 1.5em;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .content h3 {
+        font-size: 1.2em;
+        margin-top: 25px;
+        margin-bottom: 12px;
+    }
+
+    .content ul {
+        padding-left: 25px;
+    }
+}
+
+/* Mobile Medium (≤640px) */
+@media (max-width: 640px) {
+    .logo {
+        font-size: 1.2em;
+    }
+
+    .back-link {
+        padding: 8px 14px;
+        font-size: 0.85em;
+    }
+
+    .main-container {
+        padding: 18px 12px;
+    }
+
+    .content {
+        padding: 20px 16px;
+    }
+
+    .content-title {
         font-size: 1.5em;
     }
+
+    .section-title {
+        font-size: 1.3em;
+        padding: 10px 14px;
+    }
+
+    .subsection-title {
+        font-size: 1.12em;
+        padding-left: 10px;
+    }
+
+    .highlight-box {
+        padding: 14px;
+    }
+
+    .data-table {
+        font-size: 0.85em;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 8px 10px;
+    }
+}
+
+/* Mobile Small (≤480px) */
+@media (max-width: 480px) {
+    html {
+        scroll-padding-top: 70px;
+    }
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .nav-content {
+        padding: 0 12px;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 1.1em;
+    }
+
+    .back-link {
+        padding: 8px 12px;
+        font-size: 0.8em;
+        min-height: 40px;
+        min-width: 40px;
+    }
+
+    .main-container {
+        padding: 15px 10px;
+        gap: 15px;
+    }
+
+    .sidebar {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .sidebar-title {
+        font-size: 0.95em;
+        margin-bottom: 12px;
+        padding-bottom: 10px;
+        border-bottom-width: 2px;
+    }
+
+    .sidebar-nav {
+        gap: 6px;
+    }
+
+    .sidebar-nav a {
+        font-size: 0.8em;
+        padding: 8px 10px;
+        border-radius: 5px;
+    }
+
+    .content {
+        padding: 18px 14px;
+        border-radius: 8px;
+    }
+
+    .content-header {
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+        border-bottom-width: 2px;
+    }
+
+    .content-title {
+        font-size: 1.4em;
+        line-height: 1.3;
+        margin-bottom: 8px;
+    }
+
+    .content-subtitle {
+        font-size: 0.95em;
+        line-height: 1.5;
+    }
+
+    .section {
+        margin-bottom: 25px;
+    }
+
+    .section-title {
+        font-size: 1.25em;
+        padding: 10px 12px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+    }
+
+    .subsection-title {
+        font-size: 1.1em;
+        margin: 18px 0 10px 0;
+        padding-left: 10px;
+        border-left-width: 3px;
+    }
+
+    .section p,
+    .text-content,
+    .content p {
+        font-size: 0.95em;
+        line-height: 1.7;
+        margin-bottom: 12px;
+    }
+
+    .section ul,
+    .bullet-list {
+        margin: 15px 0;
+    }
+
+    .section ul li,
+    .bullet-list li {
+        padding-left: 22px;
+        margin-bottom: 10px;
+        font-size: 0.95em;
+        line-height: 1.7;
+    }
+
+    .section ul li::before,
+    .bullet-list li::before {
+        font-size: 1em;
+    }
+
+    .highlight-box {
+        margin: 18px 0;
+        padding: 12px;
+        border-radius: 6px;
+        border-left-width: 3px;
+    }
+
+    .highlight-box strong {
+        font-size: 0.95em;
+        margin-bottom: 8px;
+    }
+
+    .highlight-box p {
+        font-size: 0.95em;
+        margin-bottom: 8px;
+    }
+
+    .highlight-box ul {
+        margin-top: 8px;
+    }
+
+    .highlight-box ul li {
+        padding-left: 22px;
+        margin-bottom: 8px;
+        font-size: 0.9em;
+    }
+
+    .divider {
+        margin: 25px 0;
+        height: 1px;
+    }
+
+    .data-table {
+        font-size: 0.8em;
+        margin: 20px 0;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 8px;
+    }
+
+    .target-grid {
+        margin: 20px 0;
+        gap: 12px;
+    }
+
+    .target-card {
+        padding: 15px;
+        border-left-width: 4px;
+    }
+
+    .target-number {
+        font-size: 1.8em;
+    }
+
+    .target-label {
+        font-size: 0.95em;
+    }
+
+    .target-value {
+        font-size: 0.9em;
+    }
+
+    .content h1 {
+        font-size: 1.6em;
+    }
+
+    .content h2 {
+        font-size: 1.4em;
+        margin-top: 25px;
+        margin-bottom: 12px;
+        padding-bottom: 8px;
+        border-bottom-width: 2px;
+    }
+
+    .content h3 {
+        font-size: 1.15em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .content ul {
+        padding-left: 22px;
+        margin: 15px 0;
+    }
+
+    .content ul li {
+        font-size: 0.95em;
+        margin-bottom: 10px;
+    }
+}
+
+/* Mobile Extra Small (≤375px) */
+@media (max-width: 375px) {
+    .content {
+        padding: 15px 12px;
+    }
+
+    .content-title {
+        font-size: 1.3em;
+    }
+
+    .section-title {
+        font-size: 1.2em;
+        padding: 8px 12px;
+    }
+
+    .subsection-title {
+        font-size: 1.05em;
+    }
+
+    .section p,
+    .text-content,
+    .content p {
+        font-size: 0.9em;
+    }
+
+    .highlight-box {
+        padding: 10px;
+    }
+}
+
+/* ========================================
+   IMAGENS E FIGURAS
+   ======================================== */
+
+/* Container de figura (imagem + legenda) */
+.figure-container {
+    margin: 30px 0;                    /* Espaço acima e abaixo */
+    text-align: center;                /* Centraliza */
+}
+
+/* Estilo da imagem */
+.figure-container img {
+    max-width: 100%;                   /* Responsivo - nunca maior que o container */
+    height: auto;                      /* Mantém proporção original */
+    border-radius: 8px;                /* Cantos arredondados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  /* Sombra suave */
+    display: block;                    /* Remove espaço extra embaixo */
+    margin: 0 auto;                    /* Centraliza horizontalmente */
+}
+
+/* Legenda da imagem */
+.figure-caption {
+    font-size: 0.9em;                  /* Texto um pouco menor */
+    color: #666;                       /* Cinza médio */
+    font-style: italic;                /* Itálico */
+    margin-top: 10px;                  /* Espaço entre imagem e legenda */
+    padding: 0 20px;                   /* Espaço lateral */
+    line-height: 1.5;                  /* Altura da linha */
+}
+
+/* Efeito hover sutil (opcional) */
+.figure-container img:hover {
+    transform: scale(1.02);            /* Aumenta 2% ao passar o mouse */
+    transition: transform 0.3s ease;   /* Animação suave */
+    cursor: pointer;                   /* Mostra que é clicável */
+}
+
+/* Tamanhos de imagem */
+.img-small {
+    max-width: 400px;
+}
+
+.img-medium {
+    max-width: 600px;
+}
+
+.img-large {
+    max-width: 800px;
+}
+
+/* Responsividade mobile */
+@media (max-width: 768px) {
+    .figure-container {
+        margin: 20px 0;
+    }
+    
+    .figure-caption {
+        font-size: 0.85em;
+        padding: 0 10px;
+    }
+}
+
+/* ========================================
+   DESTAQUE DE PALAVRAS-CHAVE INLINE
+   ======================================== */
+
+   .destaque {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #04133e;
+    white-space: nowrap;  /* Evita quebra no meio de valores como "36-37°C" */
 }
