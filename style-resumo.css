@@ -218,20 +218,22 @@ body {
 
 .bullet-list-dots li {
     margin-bottom: 15px;
-    padding-left: 30px;
+    padding-left: 25px;
     position: relative;
     color: #444;
-    line-height: 2.0;
+    line-height: 1;
 }
 
 .bullet-list-dots li::before {
     content: "•";
     position: absolute;
     left: 0;
+    top: 15%;
     color: #051242;
-    font-weight: bold;
-    font-size: 1.0em;
-    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1;
+    display: inline-block;
 }
 
 /* ========================================
