@@ -16,6 +16,21 @@
     flex-direction: column;
 }
 
+/* Estilos para links semânticos */
+a.component-card {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.component-card:visited {
+    color: inherit;
+}
+
+a.component-card:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
 .component-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-xl);

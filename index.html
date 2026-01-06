@@ -15,8 +15,8 @@
                 📚 Biblioteca de Anestesiologia - Academia MedTech
             </div>
             <div class="nav-links">
-                <button class="nav-link active" onclick="showSection('gallery')">Galeria</button>
-                <button class="nav-link" onclick="showSection('about')">Sobre</button>
+                <button class="nav-link active" onclick="showSection('gallery', this)">Galeria</button>
+                <button class="nav-link" onclick="showSection('about', this)">Sobre</button>
             </div>
         </div>
     </nav>
@@ -31,8 +31,8 @@
             <!-- Grid de Especialidades -->
             <div class="gallery-grid">
                 <!-- Card Transplante Hepático -->
-                <div class="component-card" onclick="window.location.href='transplante-hepatico.html'">
-                    <div class="card-thumbnail">🏥</div>
+                <a href="transplante-hepatico.html" class="component-card" aria-label="Acessar conteúdo sobre Transplante Hepático">
+                    <div class="card-thumbnail" aria-hidden="true">🏥</div>
                     <div class="card-info">
                         <h3 class="card-title">Transplante Hepático</h3>
                         <p class="card-description">Manejo anestésico complexo em transplantes hepáticos.</p>
@@ -41,11 +41,11 @@
                             <span class="tag">Coagulopatia</span>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- Card Cirurgia Cardíaca -->
-                <div class="component-card" onclick="window.location.href='cirurgia-cardiaca.html'">
-                    <div class="card-thumbnail">❤️</div>
+                <a href="cirurgia-cardiaca.html" class="component-card" aria-label="Acessar conteúdo sobre Cirurgia Cardíaca">
+                    <div class="card-thumbnail" aria-hidden="true">❤️</div>
                     <div class="card-info">
                         <h3 class="card-title">Cirurgia Cardíaca</h3>
                         <p class="card-description">Fisiopatologia da CEC, proteção miocárdica, manejo hemodinâmico e complicações em cirurgia cardíaca.</p>
@@ -54,7 +54,7 @@
                             <span class="tag">Bypass</span>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- Card Cirurgia Torácica -->
                 <div class="component-card" onclick="alert('Em breve!')">
@@ -187,14 +187,16 @@
 
     <script>
         // Navegação entre seções
-        function showSection(section) {
+        function showSection(section, clickedElement) {
             // Remove active de todos os links
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.classList.remove('active');
             });
             
             // Adiciona active ao link clicado
-            event.target.classList.add('active');
+            if (clickedElement) {
+                clickedElement.classList.add('active');
+            }
             
             // Mostra/esconde seções
             document.getElementById('gallery-section').classList.toggle('active', section === 'gallery');
