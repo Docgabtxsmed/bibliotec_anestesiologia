@@ -1,0 +1,665 @@
+/* ============================================
+   STYLE-FLASHCARDS.CSS
+   Biblioteca de Anestesiologia - Academia MedTech
+   ============================================
+   
+   CSS dedicado para sistema de flashcards
+   com repetição espaçada (estilo Anki).
+   
+   Uso: <link rel="stylesheet" href="style-flashcards.css">
+   ============================================ */
+
+/* Importa CSS base do projeto */
+@import url('css/base.css');
+@import url('css/layout.css');
+
+/* ==================== LAYOUT BASE ==================== */
+
+body {
+    padding: 20px;
+}
+
+.navbar {
+    margin-bottom: 30px;
+    border-radius: 12px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ==================== PROGRESS BAR ==================== */
+
+.progress-container {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow-sm);
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.progress-text {
+    font-size: 1.1em;
+    color: var(--dark-blue);
+    font-weight: var(--font-weight-semibold);
+}
+
+.cards-count {
+    font-size: 0.95em;
+    color: var(--gray-600);
+}
+
+.progress-bar {
+    height: 10px;
+    background: var(--gray-300);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+/* ==================== FLASHCARD ==================== */
+
+.flashcard-container {
+    perspective: 1000px;
+    margin-bottom: 20px;
+}
+
+.flashcard {
+    position: relative;
+    width: 100%;
+    min-height: 320px;
+    height: auto;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flashcard.flipped {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    min-height: 320px;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.card-front {
+    background: var(--white);
+}
+
+.card-back {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+    transform: rotateY(180deg);
+}
+
+.card-label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 0.85em;
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+.card-content {
+    font-size: 1.3em;
+    line-height: 1.6;
+    color: var(--dark-blue);
+    white-space: pre-line;
+    max-width: 100%;
+}
+
+.card-back .card-content {
+    color: var(--white);
+}
+
+.flip-hint {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.9em;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ==================== BUTTONS ==================== */
+
+.buttons-container {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 20px;
+}
+
+.difficulty-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.difficulty-btn {
+    padding: 14px 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95em;
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-height: 70px;
+    min-width: 44px;
+}
+
+.btn-again {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.btn-again:hover {
+    background: #fecaca;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(220, 38, 38, 0.3);
+}
+
+.btn-hard {
+    background: #fef3c7;
+    color: #f59e0b;
+}
+
+.btn-hard:hover {
+    background: #fde68a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.3);
+}
+
+.btn-good {
+    background: #d1fae5;
+    color: #059669;
+}
+
+.btn-good:hover {
+    background: #a7f3d0;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(5, 150, 105, 0.3);
+}
+
+.btn-easy {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.btn-easy:hover {
+    background: #bfdbfe;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+}
+
+.btn-time {
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+
+.action-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.action-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95em;
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    background: var(--gray-200);
+    color: var(--dark-blue);
+    min-height: 44px;
+}
+
+.action-btn:hover {
+    background: var(--gray-300);
+    transform: translateY(-2px);
+}
+
+.action-btn.primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+}
+
+.action-btn.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(48, 89, 239, 0.4);
+}
+
+/* ==================== STATS ==================== */
+
+.stats-container {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--shadow-sm);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    background: var(--gray-50);
+}
+
+.stat-value {
+    font-size: 1.8em;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.8em;
+    color: var(--gray-600);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-again .stat-value { color: #dc2626; }
+.stat-hard .stat-value { color: #f59e0b; }
+.stat-good .stat-value { color: #059669; }
+.stat-easy .stat-value { color: #2563eb; }
+
+/* ==================== COMPLETION SCREEN ==================== */
+
+.completion-screen {
+    display: none;
+    text-align: center;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 60px 40px;
+    box-shadow: var(--shadow-lg);
+}
+
+.completion-screen.active {
+    display: block;
+}
+
+.completion-icon {
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+.completion-title {
+    font-size: 2em;
+    font-weight: var(--font-weight-bold);
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.completion-message {
+    font-size: 1.1em;
+    color: var(--gray-600);
+    margin-bottom: 30px;
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+/* Tablet (≤768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .navbar {
+        margin-bottom: 20px;
+    }
+
+    .progress-container {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .progress-text {
+        font-size: 1em;
+    }
+
+    .cards-count {
+        font-size: 0.9em;
+    }
+
+    .flashcard-container {
+        margin-bottom: 15px;
+    }
+
+    .flashcard {
+        min-height: 280px;
+    }
+
+    .card-face {
+        min-height: 280px;
+        padding: 30px 25px;
+    }
+
+    .card-content {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+
+    .card-label {
+        font-size: 0.8em;
+        top: 15px;
+        left: 15px;
+    }
+
+    .flip-hint {
+        font-size: 0.85em;
+        bottom: 15px;
+    }
+
+    .buttons-container {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .difficulty-buttons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+    .difficulty-btn {
+        padding: 12px 15px;
+        font-size: 0.9em;
+        min-height: 65px;
+    }
+
+    .btn-time {
+        font-size: 0.75em;
+    }
+
+    .action-buttons {
+        gap: 10px;
+    }
+
+    .action-btn {
+        padding: 11px 18px;
+        font-size: 0.9em;
+    }
+
+    .stats-container {
+        padding: 15px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .stat-item {
+        padding: 10px;
+    }
+
+    .stat-value {
+        font-size: 1.6em;
+    }
+
+    .stat-label {
+        font-size: 0.75em;
+    }
+
+    .completion-screen {
+        padding: 40px 30px;
+    }
+
+    .completion-icon {
+        font-size: 4em;
+    }
+
+    .completion-title {
+        font-size: 1.7em;
+    }
+
+    .completion-message {
+        font-size: 1em;
+    }
+}
+
+/* Mobile (≤640px) */
+@media (max-width: 640px) {
+    body {
+        padding: 12px;
+    }
+
+    .flashcard {
+        min-height: 260px;
+    }
+
+    .card-face {
+        min-height: 260px;
+        padding: 25px 20px;
+    }
+
+    .card-content {
+        font-size: 1.05em;
+    }
+
+    .difficulty-buttons {
+        gap: 8px;
+    }
+
+    .difficulty-btn {
+        padding: 10px 12px;
+        font-size: 0.85em;
+        min-height: 60px;
+    }
+
+    .stat-value {
+        font-size: 1.5em;
+    }
+}
+
+/* Mobile Small (≤480px) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .navbar {
+        margin-bottom: 15px;
+    }
+
+    .progress-container {
+        padding: 12px;
+        margin-bottom: 12px;
+        border-radius: 10px;
+    }
+
+    .progress-text {
+        font-size: 0.95em;
+    }
+
+    .cards-count {
+        font-size: 0.85em;
+    }
+
+    .progress-bar {
+        height: 8px;
+    }
+
+    .flashcard-container {
+        margin-bottom: 12px;
+    }
+
+    .flashcard {
+        min-height: 240px;
+    }
+
+    .card-face {
+        min-height: 240px;
+        padding: 20px 16px;
+        border-radius: 12px;
+    }
+
+    .card-content {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    .card-label {
+        font-size: 0.75em;
+        top: 12px;
+        left: 12px;
+    }
+
+    .flip-hint {
+        font-size: 0.8em;
+        bottom: 12px;
+    }
+
+    .buttons-container {
+        padding: 12px;
+        margin-bottom: 12px;
+        border-radius: 10px;
+    }
+
+    .difficulty-buttons {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+
+    .difficulty-btn {
+        padding: 10px 14px;
+        font-size: 0.85em;
+        min-height: 52px;
+        border-radius: 8px;
+    }
+
+    .btn-time {
+        font-size: 0.75em;
+    }
+
+    .action-buttons {
+        gap: 8px;
+    }
+
+    .action-btn {
+        padding: 10px 16px;
+        font-size: 0.85em;
+        min-height: 42px;
+        border-radius: 8px;
+    }
+
+    .stats-container {
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+    }
+
+    .stat-item {
+        padding: 8px 4px;
+        border-radius: 8px;
+    }
+
+    .stat-value {
+        font-size: 1.4em;
+        margin-bottom: 2px;
+    }
+
+    .stat-label {
+        font-size: 0.65em;
+        letter-spacing: 0.3px;
+    }
+
+    .completion-screen {
+        padding: 30px 20px;
+        border-radius: 12px;
+    }
+
+    .completion-icon {
+        font-size: 3.5em;
+        margin-bottom: 15px;
+    }
+
+    .completion-title {
+        font-size: 1.5em;
+        margin-bottom: 8px;
+    }
+
+    .completion-message {
+        font-size: 0.95em;
+        margin-bottom: 25px;
+    }
+}
+
+/* Mobile Extra Small (≤375px) */
+@media (max-width: 375px) {
+    .flashcard {
+        min-height: 220px;
+    }
+
+    .card-face {
+        min-height: 220px;
+        padding: 18px 14px;
+    }
+
+    .card-content {
+        font-size: 0.95em;
+    }
+
+    .difficulty-btn {
+        padding: 9px 12px;
+        font-size: 0.8em;
+        min-height: 48px;
+    }
+
+    .stat-value {
+        font-size: 1.3em;
+    }
+
+    .stat-label {
+        font-size: 0.6em;
+    }
+}

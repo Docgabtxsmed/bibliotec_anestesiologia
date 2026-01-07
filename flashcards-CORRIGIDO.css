@@ -1,0 +1,72 @@
+/* Layout correto: Desktop (2 cols) | Mobile (stacked) */
+@import url('css/base.css');
+
+:root {
+    --card-min-height: 400px;
+    --flip-duration: 0.6s;
+    --color-again-bg: #fecaca;
+    --color-again-text: #dc2626;
+    --color-hard-bg: #fde68a;
+    --color-hard-text: #d97706;
+    --color-good-bg: #a7f3d0;
+    --color-good-text: #059669;
+    --color-easy-bg: #bfdbfe;
+    --color-easy-text: #2563eb;
+}
+
+body {
+    background: linear-gradient(135deg, #282d54 0%, #3059ef 50%, #48638b 100%);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* BOTÕES DE AÇÃO - DESKTOP: 2 colunas iguais */
+.action-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.action-btn {
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.action-btn--primary {
+    background: linear-gradient(135deg, #3059ef, #36c8e0);
+    color: white;
+}
+
+.action-btn--secondary {
+    background: rgba(255, 255, 255, 0.9);
+    color: #282d54;
+}
+
+/* MOBILE: Stack vertical */
+@media (max-width: 480px) {
+    .action-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .action-btn {
+        width: 100%;
+    }
+    
+    .action-btn--primary {
+        order: 1;
+    }
+    
+    .action-btn--secondary {
+        order: 2;
+    }
+}
