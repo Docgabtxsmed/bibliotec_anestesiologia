@@ -1,0 +1,382 @@
+/* ============================================
+   STYLE-SECONDARY.CSS
+   Biblioteca de Anestesiologia - Academia MedTech
+   ============================================
+   
+   Arquivo CSS para páginas secundárias do projeto.
+   Importa módulos base e adiciona estilos específicos
+   para páginas de especialidades (ex: Cirurgia Cardíaca,
+   Transplante Hepático, Cirurgia Torácica).
+   
+   Uso: <link rel="stylesheet" href="style-secondary.css">
+   ============================================ */
+
+/* ==================== IMPORTAÇÕES DE MÓDULOS ==================== */
+
+/* Base: Reset, Variáveis CSS e Tipografia */
+@import url('css/base.css');
+
+/* Layout: Navbar, Container, Grid e Estrutura */
+@import url('css/layout.css');
+
+/* Components: Cards, Modais, Botões e Componentes Reutilizáveis */
+@import url('css/components.css');
+
+/* Utilities: Classes Utilitárias */
+@import url('css/utilities.css');
+
+/* ==================== ESTILOS ESPECÍFICOS PÁGINAS SECUNDÁRIAS ==================== */
+
+/* BODY - Remove gradiente de fundo para páginas secundárias */
+body {
+    background: var(--gray-50);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR - Ajustes para páginas secundárias */
+.navbar {
+    background: rgba(255, 255, 255, 0.98);
+    margin-bottom: 0;
+}
+
+.logo {
+    transition: transform var(--transition-normal);
+    user-select: none;
+}
+
+.logo:hover {
+    transform: scale(1.02);
+}
+
+.logo:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 4px;
+    border-radius: var(--radius-sm);
+}
+
+/* Back Link - Melhorias */
+.back-link {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-link:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* CONTAINER - Ajustes */
+.container {
+    flex: 1;
+    padding: var(--spacing-2xl) var(--spacing-md);
+}
+
+/* PAGE HEADER - Ajustes para fundo claro */
+.page-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+    animation: fadeInDown var(--transition-slow);
+}
+
+.page-title {
+    font-size: 2.5em;
+    font-weight: var(--font-weight-bold);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.2;
+    color: transparent;
+}
+
+.page-subtitle {
+    font-size: 1.125rem;
+    color: var(--gray-600);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* GALLERY GRID - Mantém estrutura existente */
+.gallery-grid {
+    margin-bottom: var(--spacing-2xl);
+}
+
+/* COMPONENT CARD - Melhorias e animações */
+.component-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp var(--transition-slow) forwards;
+    position: relative;
+}
+
+/* Animação em cascata para cards */
+.component-card:nth-child(1) { animation-delay: 0.1s; }
+.component-card:nth-child(2) { animation-delay: 0.2s; }
+.component-card:nth-child(3) { animation-delay: 0.3s; }
+.component-card:nth-child(4) { animation-delay: 0.4s; }
+.component-card:nth-child(5) { animation-delay: 0.5s; }
+.component-card:nth-child(6) { animation-delay: 0.6s; }
+.component-card:nth-child(7) { animation-delay: 0.7s; }
+.component-card:nth-child(8) { animation-delay: 0.8s; }
+
+/* Barra superior colorida nos cards */
+.component-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    transform: scaleX(0);
+    transition: transform var(--transition-normal);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.component-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* CARD DESABILITADO - Estado "Em Breve" */
+.card-disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+.card-disabled:hover {
+    transform: translateY(0);
+    box-shadow: var(--shadow-md);
+}
+
+.card-disabled::before {
+    display: none;
+}
+
+.card-disabled .card-thumbnail {
+    background: linear-gradient(135deg, #94a3b8 0%, #64748b 100%) !important;
+}
+
+.card-disabled .card-thumbnail::after {
+    content: 'Em Breve' !important;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* FOOTER - Estilo para páginas secundárias */
+footer {
+    background: var(--dark-blue);
+    color: var(--white);
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+footer p + p {
+    margin-top: 10px;
+    opacity: 0.7;
+    font-size: var(--font-size-sm);
+}
+
+/* ==================== ANIMAÇÕES ==================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+}
+
+/* ==================== NOTIFICAÇÕES ==================== */
+
+.notification {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    padding: var(--spacing-md);
+    max-width: 350px;
+    z-index: calc(var(--z-modal) + 100);
+    animation: slideInRight var(--transition-normal) ease;
+}
+
+.notification-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--dark-blue);
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-semibold);
+}
+
+.notification-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--gray-500);
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+}
+
+.notification-close:hover {
+    background: var(--gray-100);
+    color: var(--error);
+}
+
+.notification-content p {
+    margin: 0;
+    color: var(--gray-600);
+    line-height: 1.5;
+    font-size: var(--font-size-sm);
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Tablet Portrait / Mobile Large (≤768px) */
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: row;
+        gap: var(--spacing-sm);
+    }
+    
+    .logo {
+        font-size: 1.3rem;
+    }
+    
+    .back-link {
+        padding: 10px 16px;
+        font-size: var(--font-size-sm);
+    }
+    
+    .container {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+    
+    .page-title {
+        font-size: 1.75rem;
+    }
+    
+    .page-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .notification {
+        top: 80px;
+        right: 15px;
+        left: 15px;
+        max-width: none;
+    }
+}
+
+/* Mobile Small (≤480px) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.1rem;
+    }
+    
+    .back-link {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        min-height: 40px;
+        min-width: 40px;
+    }
+    
+    .page-title {
+        font-size: 1.5rem;
+    }
+    
+    .page-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .card-thumbnail {
+        height: 160px;
+        font-size: 3em;
+    }
+    
+    .notification {
+        top: 70px;
+        padding: var(--spacing-sm);
+    }
+    
+    .notification-header {
+        font-size: 1rem;
+    }
+}
+
+/* ==================== FIM ==================== */
+

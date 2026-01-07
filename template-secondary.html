@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ============================================
+         SEO: PERSONALIZE ESTAS META TAGS
+         ============================================ -->
+    <meta name="description" content="[DESCRIÇÃO ESPECÍFICA DA ESPECIALIDADE - descreva o conteúdo disponível]">
+    <meta name="keywords" content="anestesiologia, [ESPECIALIDADE], [PALAVRAS-CHAVE SEPARADAS POR VÍRGULA]">
+    <meta name="author" content="Academia MedTech - Medicina Perioperatória e Tecnologia">
+    
+    <!-- Schema.org para Páginas Médicas -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "[TÍTULO DA ESPECIALIDADE]",
+      "description": "[DESCRIÇÃO BREVE]",
+      "medicalAudience": "Anestesiologista"
+    }
+    </script>
+    
+    <!-- ============================================
+         TÍTULO: PERSONALIZE
+         ============================================ -->
+    <title>[ESPECIALIDADE] - Biblioteca de Anestesiologia</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- CSS: Arquivo base para páginas secundárias -->
+    <link rel="stylesheet" href="style-secondary.css">
+</head>
+<body>
+    <!-- ============================================
+         NAVBAR
+         ============================================ -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <!-- Logo Clicável - Personalize o ícone e texto -->
+            <div class="logo" onclick="window.location.href='index.html'" role="button" tabindex="0" aria-label="Voltar para a página inicial">
+                [ÍCONE] [TÍTULO DA ESPECIALIDADE]
+            </div>
+            
+            <!-- Link de Voltar -->
+            <a href="index.html" class="back-link">← Voltar à Biblioteca</a>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         CONTAINER PRINCIPAL
+         ============================================ -->
+    <div class="container">
+        
+        <!-- HEADER DA PÁGINA -->
+        <header class="page-header">
+            <h1 class="page-title">[TÍTULO PRINCIPAL DA PÁGINA]</h1>
+            <p class="page-subtitle">[SUBTÍTULO DESCRITIVO - explique o que o usuário encontrará nesta página]</p>
+        </header>
+
+        <!-- ============================================
+             GRID DE CARDS
+             
+             Instruções:
+             - Use .component-card para cards clicáveis
+             - Adicione .card-disabled para cards "Em Breve"
+             - Use onclick ou href conforme necessário
+             - Personalize gradientes de .card-thumbnail
+             ============================================ -->
+        <div class="gallery-grid">
+            
+            <!-- ==========================================
+                 EXEMPLO 1: CARD ATIVO COM LINK
+                 ========================================== -->
+            <article class="component-card" onclick="window.location.href='[caminho/para/pagina].html'">
+                <!-- Ícone do Card - Personalize a cor do gradiente -->
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);">
+                    🔄
+                </div>
+                
+                <!-- Conteúdo do Card -->
+                <div class="card-info">
+                    <h3 class="card-title">[Título do Card]</h3>
+                    <p class="card-description">[Descrição do conteúdo disponível neste card]</p>
+                    
+                    <!-- Tags -->
+                    <div class="card-tags">
+                        <span class="tag">[Tag1]</span>
+                        <span class="tag">[Tag2]</span>
+                        <span class="tag">[Tag3]</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ==========================================
+                 EXEMPLO 2: CARD ATIVO COM LINK SEMÂNTICO
+                 ========================================== -->
+            <a href="[caminho/para/pagina].html" class="component-card" aria-label="Acessar [Título do Card]">
+                <!-- Ícone do Card -->
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);">
+                    💊
+                </div>
+                
+                <!-- Conteúdo do Card -->
+                <div class="card-info">
+                    <h3 class="card-title">[Título do Card 2]</h3>
+                    <p class="card-description">[Descrição do conteúdo]</p>
+                    
+                    <!-- Tags -->
+                    <div class="card-tags">
+                        <span class="tag">[Tag1]</span>
+                        <span class="tag">[Tag2]</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ==========================================
+                 EXEMPLO 3: CARD DESABILITADO (EM BREVE)
+                 ========================================== -->
+            <article class="component-card card-disabled">
+                <!-- Ícone do Card - Gradiente será sobrescrito por cinza -->
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #dc2626 0%, #f59e0b 100%);">
+                    📊
+                </div>
+                
+                <!-- Conteúdo do Card -->
+                <div class="card-info">
+                    <h3 class="card-title">[Título do Card 3]</h3>
+                    <p class="card-description">[Descrição do conteúdo que estará disponível em breve]</p>
+                    
+                    <!-- Tags -->
+                    <div class="card-tags">
+                        <span class="tag">Em breve</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ==========================================
+                 ADICIONE MAIS CARDS AQUI
+                 
+                 Gradientes sugeridos:
+                 - Azul/Cyan:   linear-gradient(135deg, #3059ef 0%, #36c8e0 100%)
+                 - Roxo/Índigo: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)
+                 - Vermelho:    linear-gradient(135deg, #dc2626 0%, #f59e0b 100%)
+                 - Verde:       linear-gradient(135deg, #10b981 0%, #059669 100%)
+                 - Azul Escuro: linear-gradient(135deg, #282d54 0%, #48638b 100%)
+                 - Rosa:        linear-gradient(135deg, #ec4899 0%, #f472b6 100%)
+                 ========================================== -->
+
+        </div>
+    </div>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer>
+        <p>© 2026 Biblioteca de Anestesiologia - Academia MedTech</p>
+        <p>Conteúdo baseado em evidências científicas atualizadas</p>
+    </footer>
+
+    <!-- ============================================
+         JAVASCRIPT
+         ============================================ -->
+    <script src="script-secondary.js"></script>
+    
+    <!-- Scripts adicionais (se necessário) -->
+    <!-- <script src="[seu-script-adicional].js"></script> -->
+</body>
+</html>
+
