@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards - Modo Estudo</title>
+    
+    <link rel="stylesheet" href="css/flashcards.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo" id="deck-title">🎴 Flashcards</div>
+            <a href="javascript:history.back()" class="back-link">← Voltar</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="progress-container">
+            <div class="progress-info">
+                <span class="progress-text">Progresso da Sessão</span>
+                <span class="cards-count" id="counter">0 / 0</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+            </div>
+        </div>
+
+        <div class="flashcard-stage" id="game-area">
+            <div class="flashcard-container" id="flashcard" onclick="flipCard()">
+                <div class="card-face card-front">
+                    <span class="card-label">PERGUNTA</span>
+                    <div class="card-content" id="card-front-content">
+                        Carregando...
+                    </div>
+                    <span class="flip-hint">🔄 Clique para ver a resposta</span>
+                </div>
+                <div class="card-face card-back">
+                    <span class="card-label">RESPOSTA</span>
+                    <div class="card-content" id="card-back-content">
+                        ...
+                    </div>
+                    <span class="flip-hint">🔄 Clique para ver a pergunta</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botões de dificuldade -->
+
+        <div class="buttons-container disabled" id="buttons-container">
+            <div class="difficulty-buttons">
+                <button class="difficulty-btn btn-again" onclick="answerCard('again')">
+                    <span>Repetir</span>
+                    <span class="btn-time">&lt; 1 min</span>
+                </button>
+                <button class="difficulty-btn btn-hard" onclick="answerCard('hard')">
+                    <span>Difícil</span>
+                    <span class="btn-time">&lt; 6 min</span>
+                </button>
+                <button class="difficulty-btn btn-good" onclick="answerCard('good')">
+                    <span>Bom</span>
+                    <span class="btn-time">&lt; 10 min</span>
+                </button>
+                <button class="difficulty-btn btn-easy" onclick="answerCard('easy')">
+                    <span>Fácil</span>
+                    <span class="btn-time">4 dias</span>
+                </button>
+            </div>
+
+            <div class="action-buttons">
+                <button class="action-btn" onclick="shuffleCardsManual()">🔀 Embaralhar</button>
+                <button class="action-btn primary" onclick="answerCard('skip')">Próximo Card →</button>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="stats-grid">
+                <div class="stat-item stat-again">
+                    <span class="stat-value" id="stat-again">0</span>
+                    <span class="stat-label">Repetir</span>
+                </div>
+                <div class="stat-item stat-hard">
+                    <span class="stat-value" id="stat-hard">0</span>
+                    <span class="stat-label">Difícil</span>
+                </div>
+                <div class="stat-item stat-good">
+                    <span class="stat-value" id="stat-good">0</span>
+                    <span class="stat-label">Bom</span>
+                </div>
+                <div class="stat-item stat-easy">
+                    <span class="stat-value" id="stat-easy">0</span>
+                    <span class="stat-label">Fácil</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="completion-screen" id="completion-screen">
+            <div style="font-size: 5em; margin-bottom: 20px;">🎉</div>
+            <h2 style="font-size: 2em; color: #282d54; margin-bottom: 15px;">Sessão Concluída!</h2>
+            <p style="font-size: 1.1em; color: #666; margin-bottom: 30px;">Você revisou todos os cards deste tópico.</p>
+            <button class="action-btn primary" onclick="location.reload()">🔄 Recomeçar Sessão</button>
+            <a href="javascript:history.back()" class="action-btn" style="margin-left: 10px;">Voltar ao Menu</a>
+        </div>
+
+    <script src="js/script-flashcard.js"></script>
+</body>
+</html>

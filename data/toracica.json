@@ -1,0 +1,122 @@
+[
+    {
+      "front": "Fisiologia: O que é o fenômeno de 'Pendelluft' e quando ele ocorre na cirurgia torácica?",
+      "back": "É o movimento paradoxal de gás entre os pulmões (do pulmão 'intacto' para o aberto na expiração e vice-versa na inspiração). Ocorre em tórax aberto com respiração espontânea."
+    },
+    {
+      "front": "Fisiologia: Qual a consequência hemodinâmica da oscilação mediastinal?",
+      "back": "O deslocamento do mediastino interfere no retorno venoso (pré-carga), podendo causar instabilidade hemodinâmica severa, especialmente em hipovolemia."
+    },
+    {
+      "front": "Farmacologia: Por que o Sevoflurano é frequentemente o agente de escolha em pacientes com via aérea reativa?",
+      "back": "Porque é destacado como possivelmente o mais potente broncodilatador entre os agentes voláteis, reduzindo a reatividade brônquica."
+    },
+    {
+      "front": "Farmacologia: Quais agentes de indução devem ser evitados em pacientes com alta reatividade brônquica?",
+      "back": "Barbitúricos, atracúrio (libera histamina) e agentes sem efeito broncodilatador (diferente de propofol/cetamina)."
+    },
+    {
+      "front": "Fluidoterapia: Qual é o limite prático sugerido para o saldo positivo total de fluidos nas primeiras 24h pós-ressecção pulmonar?",
+      "back": "Menor ou igual a 20 mL/kg."
+    },
+    {
+      "front": "Fluidoterapia: Por que a reposição de perdas teóricas de 'terceiro espaço' é desencorajada em ressecção pulmonar?",
+      "back": "O excesso de fluido aumenta a pressão hidrostática, favorecendo edema no pulmão dependente e aumentando o shunt."
+    },
+    {
+      "front": "VMP: Qual gás deve ser usado para acelerar o colapso pulmonar antes do início da VMP?",
+      "back": "Oxigênio a 100%. O O2 é absorvido mais rapidamente que o nitrogênio, acelerando a atelectasia de absorção."
+    },
+    {
+      "front": "VMP: Por que o Óxido Nitroso (N2O) geralmente é evitado em cirurgia torácica?",
+      "back": "Ele inibe a Vasoconstrição Pulmonar Hipóxica (VPH) e pode expandir bullae/blebs, aumentando risco de ruptura."
+    },
+    {
+      "front": "Fisiologia: O que é a Vasoconstrição Pulmonar Hipóxica (VPH)?",
+      "back": "Reflexo onde a hipóxia alveolar causa vasoconstrição local, desviando sangue das áreas mal ventiladas. Na VMP, reduz o fluxo para o pulmão não ventilado em ~50%."
+    },
+    {
+      "front": "Fisiologia: Qual o efeito dos anestésicos voláteis sobre a VPH?",
+      "back": "Inibem a VPH de forma dose-dependente. Em doses < 1 MAC, a inibição é fraca e clinicamente aceitável."
+    },
+    {
+      "front": "Fisiologia: Como a hipotermia afeta a oxigenação durante a VMP?",
+      "back": "A hipotermia inibe a VPH, prejudicando o desvio de sangue do pulmão não ventilado e piorando a oxigenação."
+    },
+    {
+      "front": "Manejo: Qual a relação entre posição (lateral vs supino) e PaO2 durante a VMP?",
+      "back": "A VMP em decúbito lateral tende a ter melhor PaO2 que em supino, pois a gravidade favorece a perfusão do pulmão dependente (ventilado)."
+    },
+    {
+      "front": "Fisiologia: Qual o efeito de um Débito Cardíaco muito elevado sobre a PaO2 na VMP?",
+      "back": "Pode aumentar a pressão da artéria pulmonar, vencendo a VPH e recrutando vasos no pulmão não ventilado (aumenta shunt, piora PaO2)."
+    },
+    {
+      "front": "Fisiologia: Qual o efeito de um Débito Cardíaco muito baixo sobre a PaO2 na VMP?",
+      "back": "Reduz a SvO2. Como sempre há shunt na VMP, sangue venoso muito dessaturado misturando-se ao arterial reduz a PaO2 final."
+    },
+    {
+      "front": "Ventilação: Quais os parâmetros sugeridos (VT e PEEP) para VMP protetora?",
+      "back": "VT de 5-6 mL/kg (peso ideal) e PEEP de 5-10 cmH2O (exceto em DPOC grave)."
+    },
+    {
+      "front": "Ventilação: Qual o limite de Driving Pressure sugerido?",
+      "back": "Menor ou igual a 15 cmH2O."
+    },
+    {
+      "front": "Hipoxemia: Diante de dessaturação severa e abrupta na VMP, qual a primeira conduta?",
+      "back": "Retornar para ventilação em dois pulmões (se possível), pois sugere causa mecânica grave."
+    },
+    {
+      "front": "Hipoxemia: No algoritmo gradual, qual o 1º passo após ajustar FiO2 para 1.0?",
+      "back": "Confirmar a posição do tubo (DLT) ou bloqueador com fibrobroncoscopia."
+    },
+    {
+      "front": "Hipoxemia: Por que a manobra de recrutamento no pulmão ventilado exige cautela?",
+      "back": "Pode piorar a oxigenação transitoriamente ao aumentar a resistência vascular no pulmão ventilado e desviar sangue para o não ventilado."
+    },
+    {
+      "front": "Hipoxemia: Qual a técnica para aplicar CPAP no pulmão não ventilado?",
+      "back": "Aplicar CPAP (iniciar baixo, 1-2 cmH2O) após manobra de recrutamento nesse pulmão (para garantir que esteja aberto)."
+    },
+    {
+      "front": "Hipoxemia: Por que evitar vasodilatadores sistêmicos (ex: nitroglicerina) na hipoxemia?",
+      "back": "Podem causar vasodilatação não seletiva, inibindo a VPH no pulmão não ventilado e aumentando o shunt."
+    },
+    {
+      "front": "Hipoxemia: O que é a insuflação apneica de oxigênio?",
+      "back": "Administração de O2 em baixo fluxo no pulmão não ventilado. Cria fonte de O2 para difusão sem expandir o pulmão."
+    },
+    {
+      "front": "Ventilação: Qual o risco de PEEP elevada em DPOC/Enfisema?",
+      "back": "Aumentar a hiperinsuflação dinâmica (Auto-PEEP), comprimindo capilares e aumentando espaço morto."
+    },
+    {
+      "front": "Cirurgia Bilateral: Em qual momento o risco de hipoxemia é maior?",
+      "back": "Durante a VMP do segundo lado (quando se ventila o pulmão recém-operado)."
+    },
+    {
+      "front": "Cirurgia Bilateral: Qual a recomendação para a ordem dos lados?",
+      "back": "Operar primeiro o lado com melhor função (geralmente direito), para que ele seja o pulmão ventilado na fase crítica (2ª VMP)."
+    },
+    {
+      "front": "Farmacologia: Papel da Epidural Torácica na oxigenação durante VMP?",
+      "back": "Pouco efeito direto na VPH, mas se causar hipotensão, reduz DC e SvO2, piorando oxigenação indiretamente."
+    },
+    {
+      "front": "Fisiologia: Relação entre CRF e Resistência Vascular Pulmonar (RVP)?",
+      "back": "Curva em 'U'. RVP é mínima na CRF. Aumenta em atelectasia (volume baixo) e hiperinsuflação (volume alto)."
+    },
+    {
+      "front": "Hipoxemia: Quando considerar ECMO veno-venosa?",
+      "back": "Resgate em hipoxemia refratária onde não se pode interromper a VMP e outras manobras falharam."
+    },
+    {
+      "front": "Fisiologia: Descreva o padrão temporal da VPH.",
+      "back": "Bifásica. Fase rápida (imediata, platô 20-30 min) e Fase tardia (início 40 min, platô 2h)."
+    },
+    {
+      "front": "Monitorização: Qual nível de SpO2 é 'aceitável' na VMP (sem coronariopatia)?",
+      "back": "SpO2 ≥ 90% (PaO2 > 60 mmHg). Quedas para 80-90% toleradas por curtos períodos."
+    }
+  ]

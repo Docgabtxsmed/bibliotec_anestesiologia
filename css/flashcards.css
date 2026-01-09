@@ -1,80 +1,98 @@
-/* ============================================
-   FLASHCARDS.CSS
-   Biblioteca de Anestesiologia - Academia MedTech
-   ============================================
-   
-   CSS dedicado para sistema de flashcards
-   com repetição espaçada (estilo Anki).
-   
-   Uso: <link rel="stylesheet" href="css/flashcards.css">
-   ============================================ */
-
-/* ==================== IMPORTS DO PROJETO ==================== */
-/* Importa módulos base do projeto */
-@import url('base.css');      /* Variáveis globais + Reset CSS */
-@import url('layout.css');    /* Navbar + Container + Grid */
-
-/* ==================== VARIÁVEIS ESPECÍFICAS ==================== */
-/* Variáveis customizadas para flashcards */
-:root {
-    /* Dimensões do Card */
-    --card-min-height: 400px;
-    --card-max-width: 800px;
-    
-    /* Animações */
-    --flip-duration: 0.6s;
-    --flip-timing: cubic-bezier(0.4, 0, 0.2, 1);
-    
-    /* Cores de Dificuldade (Sistema Anki) */
-    --color-again: #dc2626;      /* Vermelho */
-    --color-hard: #f59e0b;       /* Amarelo */
-    --color-good: #10b981;       /* Verde */
-    --color-easy: #3b82f6;       /* Azul */
-    
-    /* Sombras específicas */
-    --shadow-card: 0 10px 40px rgba(0, 0, 0, 0.15);
-    --shadow-card-hover: 0 15px 50px rgba(0, 0, 0, 0.25);
-    
-    /* Z-index */
-    --z-completion: 1000;
+/* css/flashcards.css - Tema Blue Anki */
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* ==================== LAYOUT BASE ==================== */
+/* Base: Reset, Variáveis CSS e Tipografia */
+/* 1. O FUNDO AZUL (A identidade visual principal) */
 
-/* Body - Remove gradiente para fundo limpo QUERO DEIXAR O PADRAO */
-/*body {
-    background: var(--gray-50);  /* Cinza claro do projeto 
-    padding: 20px;
+/* ======================================================
+   1. ESTILOS BASE (MOBILE - Comportamento Natural)
+   A navbar rola junto com a página e some ao descer
+   ====================================================== */
+
+   body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    background: linear-gradient(135deg, #282d54 0%, #3059ef 50%, #48638b 100%) !important;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    color: #333;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 20px; 
 }
-
-/* Smooth scroll para navegação */
-html {
-    scroll-behavior: smooth;
-}
-
-/* ==================== NAVBAR ==================== */
 
 .navbar {
-    margin-bottom: 30px;
-    border-radius: var(--radius-md);  /* 12px do base.css */
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(247, 247, 247, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    z-index: 100; 
+    padding: 15px;
+    border-radius: 12px; 
+    margin-bottom: 20px;
 }
 
-/* Logo com transição suave */
+/* ======================================================
+   2. AJUSTES PARA DESKTOP (Telas maiores que 768px)
+   Aqui decidimos se no PC ela fixa ou também rola
+   ====================================================== */
+   @media (min-width: 768px) {       
+    .navbar {
+        position: sticky; /* No PC ela cola no teto ao rolar */
+        top: 0;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* css/flashcards.css */
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px; 
+}
+
 .logo {
-    transition: transform var(--transition-normal);
-    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    white-space: nowrap;
+    overflow: hidden;         
+    text-overflow: ellipsis;   
+    flex: 1;  
 }
 
-.logo:hover {
-    transform: scale(1.02);
-}
+/*=================================BOTÃO VOLTAR
+=====================*/
 
-/* Back link com melhor área de clique */
 .back-link {
+    padding: 8px 8px 0px 0;
+    width: 30%;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #555;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    background: #e8e8e8;
+    flex-shrink: 0;       
+    white-space: nowrap;
     min-height: 44px;
     min-width: 44px;
     display: inline-flex;
@@ -82,62 +100,28 @@ html {
     justify-content: center;
 }
 
-/* ==================== CONTAINER PRINCIPAL ==================== */
+.back-link:hover {
+    background: #3059ef;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* 3. CONTAINER PRINCIPAL */
 
 .container {
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto;
-    flex: 1;  /* Ocupa espaço disponível (empurra footer para baixo) */
 }
 
-/* ==================== HEADER ==================== */
-
-.flashcard-header {
-    text-align: center;
-    margin-bottom: var(--spacing-xl);  /* 30px */
-    animation: fadeInDown 0.6s ease;
-}
-
-.page-title {
-    font-size: 2.5em;
-    font-weight: var(--font-weight-bold);
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: var(--spacing-sm);
-    line-height: 1.2;
-}
-
-.page-subtitle {
-    font-size: 1.125rem;
-    color: var(--gray-600);
-    font-weight: var(--font-weight-normal);
-}
-
-/* Animação de entrada */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* ==================== BARRA DE PROGRESSO ==================== */
-
-.progress-section {
-    background: var(--white);
-    border-radius: var(--radius-md);
+/* 4. BARRA DE PROGRESSO */
+.progress-container {
+    background: white;
+    border-radius: 12px;
     padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: var(--shadow-sm);
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Informações textuais */
 .progress-info {
     display: flex;
     justify-content: space-between;
@@ -147,902 +131,370 @@ html {
 
 .progress-text {
     font-size: 1.1em;
-    color: var(--dark-blue);
-    font-weight: var(--font-weight-semibold);
+    color: #282d54;
+    font-weight: 600;
 }
 
 .cards-count {
     font-size: 0.95em;
-    color: var(--gray-600);
-    font-weight: var(--font-weight-medium);
+    color: #666;
 }
 
-/* Barra de progresso */
 .progress-bar {
     height: 10px;
-    background: var(--gray-300);
+    background: #e2e8f0;
     border-radius: 10px;
     overflow: hidden;
-    position: relative;
 }
 
-/* Preenchimento animado */
 .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(90deg, #3059ef, #36c8e0);
     border-radius: 10px;
     transition: width 0.5s ease;
-    position: relative;
 }
 
-/* Efeito de brilho na barra */
-.progress-fill::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    animation: shimmer 2s infinite;
+/* 5. O FLASHCARD (Estilo 3D) */
+.flashcard-stage {
+    perspective: 1000px; /* Necessário para o efeito 3D */
+    margin-bottom: 30px;
 }
 
-@keyframes shimmer {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
-}
-
-/* ==================== FLASHCARD 3D ==================== */
-
-/* Wrapper com perspectiva 3D */
-.flashcard-wrapper {
-    perspective: 1000px;  /* Profundidade 3D */
-    margin-bottom: 20px;
-}
-
-/* Card principal (gira 180°) */
-.flashcard {
+.flashcard-container {
     position: relative;
     width: 100%;
-    max-width: var(--card-max-width);
-    min-height: var(--card-min-height);
-    margin: 0 auto;
-    transition: transform var(--flip-duration) var(--flip-timing);
-    transform-style: preserve-3d;  /* Mantém 3D nos filhos */
+    height: 400px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
     cursor: pointer;
 }
 
-/* Estado "virado" */
-.flashcard.flipped {
+.flashcard-container.flipped {
     transform: rotateY(180deg);
 }
 
-/* Faces do card (frente e verso) */
-.flashcard__face {
+.card-face {
     position: absolute;
     width: 100%;
-    min-height: var(--card-min-height);
-    backface-visibility: hidden;  /* Esconde face não visível */
-    border-radius: var(--radius-lg);
-    padding: 40px;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: var(--shadow-card);
-    transition: box-shadow var(--transition-normal);
+    align-items: center;
+    padding: 40px;
+    text-align: center;
 }
 
-.flashcard:hover .flashcard__face {
-    box-shadow: var(--shadow-card-hover);
+/* Frente Branca */
+.card-front {
+    background: white;
+    z-index: 2;
 }
 
-/* Face frontal (PERGUNTA) */
-.flashcard__face--front {
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-    border: 3px solid var(--primary-color);
+/* Verso Azul Degradê */
+.card-back {
+    background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+    color: white;
+    transform: rotateY(180deg);
 }
 
-/* Face traseira (RESPOSTA) */
-.flashcard__face--back {
-    background: linear-gradient(135deg, #e8f0fe 0%, #d1e3ff 100%);
-    border: 3px solid var(--secondary-color);
-    transform: rotateY(180deg);  /* Já começa virado */
-}
-
-/* Label superior (PERGUNTA / RESPOSTA) */
 .card-label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
     font-size: 0.85em;
-    font-weight: var(--font-weight-bold);
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-    text-align: center;
+    opacity: 0.7;
 }
 
-.flashcard__face--back .card-label {
-    color: var(--secondary-color);
-}
-
-/* Conteúdo do card */
 .card-content {
-    font-size: 1.3em;
-    line-height: 1.7;
-    color: var(--dark-blue);
-    text-align: center;
-    flex: 1;
+    font-size: 1.6em; /* Aumentado para leitura */
+    line-height: 1.6;
+    color: #282d54;
+    font-weight: 500;
+}
+
+.card-back .card-content {
+    color: white;
+}
+
+.flip-hint {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.9em;
+    opacity: 0.6;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 20px 0;
+    gap: 8px;
 }
 
-/* Dica de interação */
-.flip-hint {
-    font-size: 0.9em;
-    color: var(--gray-500);
-    text-align: center;
-    margin-top: 20px;
-    font-style: italic;
+/* 6. BOTÕES (Estilo Anki Colorido) */
+.buttons-container {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    
+    /* Controle de estado para JS */
+    transition: opacity 0.3s;
 }
 
-/* Efeito ao focar (acessibilidade) */
-.flashcard:focus {
-    outline: 3px solid var(--primary-color);
-    outline-offset: 5px;
+.buttons-container.disabled {
+    opacity: 0.5;
+    pointer-events: none;
 }
 
-/* ==================== BOTÕES DE DIFICULDADE ==================== */
-
-.controls-section {
-    margin-bottom: 30px;
-}
-
-/* Grid de botões de dificuldade */
+/* Grid para os botões de Dificuldade */
 .difficulty-buttons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    margin-bottom: 20px;
+    grid-template-columns: 1fr 1fr; /* 2 Colunas */
+    gap: 10px; /* Espaço entre eles */
+    /* Isso gera automaticamente 2 linhas quando tem 4 itens */
 }
 
-/* Botão base */
 .difficulty-btn {
-    padding: 15px 10px;
+    padding: 15px 20px;
     border: none;
-    border-radius: var(--radius-md);
-    font-weight: var(--font-weight-semibold);
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 600;
     cursor: pointer;
-    transition: all var(--transition-normal);
+    transition: all 0.3s;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 5px;
-    color: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    min-height: 40px;
 }
+.difficulty-btn:hover { transform: translateY(-3px); }
 
-.difficulty-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-}
+/* Cores específicas */
+.btn-again { background: #fee2e2; color: #dc2626; }
+.btn-again:hover { box-shadow: 0 6px 20px rgba(220, 38, 38, 0.3); }
 
-.difficulty-btn:active {
-    transform: translateY(-1px);
-}
+.btn-hard { background: #fef3c7; color: #f59e0b; }
+.btn-hard:hover { box-shadow: 0 6px 20px rgba(245, 158, 11, 0.3); }
 
-/* Label do botão */
-.btn-label {
-    font-size: 1.5em;
-    font-weight: var(--font-weight-bold);
-}
+.btn-good { background: #d1fae5; color: #059669; }
+.btn-good:hover { box-shadow: 0 6px 20px rgba(5, 150, 105, 0.3); }
 
-/* Tempo de repetição */
+.btn-easy { background: #dbeafe; color: #2563eb; }
+.btn-easy:hover { box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3); }
+
 .btn-time {
     font-size: 0.85em;
-    opacity: 0.9;
+    opacity: 0.8;
+    font-weight: normal;
 }
 
-/* Cores específicas (Sistema Anki) */
-.difficulty-btn--again {
-    background: linear-gradient(135deg, var(--color-again) 0%, #b91c1c 100%);
+/* 7. TELA DE FINALIZAÇÃO */
+.completion-screen {
+    display: none;
+    text-align: center;
+    background: white;
+    border-radius: 16px;
+    padding: 60px 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
-.difficulty-btn--hard {
-    background: linear-gradient(135deg, var(--color-hard) 0%, #d97706 100%);
+.completion-screen.active {
+    display: block;
 }
 
-.difficulty-btn--good {
-    background: linear-gradient(135deg, var(--color-good) 0%, #059669 100%);
+/* Botão de ação genérico */
+.action-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+    color: white;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.difficulty-btn--easy {
-    background: linear-gradient(135deg, var(--color-easy) 0%, #2563eb 100%);
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(48, 89, 239, 0.4);
 }
 
-/* Efeito hover com brilho */
-.difficulty-btn--again:hover {
-    box-shadow: 0 8px 20px rgba(220, 38, 38, 0.4);
-}
+/* --- ADICIONE ISTO AO FINAL DO ARQUIVO css/flashcards.css --- */
 
-.difficulty-btn--hard:hover {
-    box-shadow: 0 8px 20px rgba(245, 158, 11, 0.4);
-}
-
-.difficulty-btn--good:hover {
-    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
-}
-
-.difficulty-btn--easy:hover {
-    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
-}
-
-/* ==================== BOTÕES DE AÇÃO ==================== */
-
+/* Botões de Ação Extras (Embaralhar / Próximo) */
 .action-buttons {
     display: flex;
     gap: 15px;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
 }
 
-/* Botão base */
 .action-btn {
     padding: 12px 24px;
-    border-radius: var(--radius-md);
-    font-weight: var(--font-weight-semibold);
-    cursor: pointer;
-    transition: all var(--transition-normal);
     border: none;
-    font-size: 1rem;
-    display: inline-flex;
+    border-radius: 10px;
+    font-size: 0.95em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: #f1f5f9;
+    color: #475569;
+    display: flex;
     align-items: center;
     gap: 8px;
-    flex: 1;
-    padding: 12px 20px;
+}
+
+.action-btn:hover {
+    background: #e2e8f0;
+    transform: translateY(-2px);
+}
+
+.action-btn.primary {
+    background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+    color: white;
+}
+
+.action-btn.primary:hover {
+    box-shadow: 0 4px 15px rgba(48, 89, 239, 0.3);
+}
+
+/* Container de Estatísticas (O Placar) */
+.stats-container {
+    background: white;
     border-radius: 12px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    animation: fadeInUp 0.5s ease;
 }
 
-/* Botão primário */
-.action-btn--primary {
-    background: linear-gradient(135deg, #259ceb, #2563eb); /*var(--secundary-color), var(--secondary-color)*/
-    color: white;
-    box-shadow: 0 4px 12px rgba(48, 89, 239, 0.3);
-}
-
-.action-btn--primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(48, 175, 239, 0.4);
-}
-
-/* Botão secundário */
-.action-btn--secondary {
-    background: var(--gray-200);
-    color: var(--dark-blue);
-}
-
-.action-btn--secondary:hover {
-    background: var(--gray-300);
-    transform: translateY(-2px);
-}
-
-/* Estado ativo (modo escuro) */
-.action-btn--secondary.active {
-    background: var(--dark-blue);
-    color: white;
-}
-
-/* ==================== PAINEL DE ESTATÍSTICAS ==================== */
-
-.stats-section {
-    background: var(--white);
-    border-radius: var(--radius-lg);
-    padding: 25px;
-    margin-bottom: 30px;
-    box-shadow: var(--shadow-sm);
-}
-
-/* Grid 4 colunas */
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
 }
 
-/* Item individual */
 .stat-item {
     text-align: center;
-    padding: 20px;
-    border-radius: var(--radius-md);
-    transition: transform var(--transition-normal);
+    padding: 15px;
+    border-radius: 10px;
+    background: #f8fafc;
+    border: 1px solid #eee;
 }
 
-.stat-item:hover {
-    transform: scale(1.05);
-}
-
-/* Valor numérico */
 .stat-value {
-    font-size: 2.5em;
-    font-weight: var(--font-weight-bold);
-    margin-bottom: 8px;
-    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    display: block;
 }
 
-/* Label descritivo */
 .stat-label {
-    font-size: 0.9em;
-    font-weight: var(--font-weight-medium);
+    font-size: 0.75em;
+    color: #64748b;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    font-weight: 600;
 }
 
-/* Cores por dificuldade */
-.stat-item--again {
-    background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
-    border-left: 4px solid var(--color-again);
+/* Cores dos Números */
+.stat-again .stat-value { color: #dc2626; }
+.stat-hard .stat-value { color: #f59e0b; }
+.stat-good .stat-value { color: #059669; }
+.stat-easy .stat-value { color: #2563eb; }
+
+/* Animaçãozinha suave */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.stat-item--again .stat-value {
-    color: var(--color-again);
-}
 
-.stat-item--hard {
-    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-    border-left: 4px solid var(--color-hard);
-}
 
-.stat-item--hard .stat-value {
-    color: var(--color-hard);
-}
 
-.stat-item--good {
-    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
-    border-left: 4px solid var(--color-good);
-}
 
-.stat-item--good .stat-value {
-    color: var(--color-good);
-}
+/* css/flashcards.css */
 
-.stat-item--easy {
-    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
-    border-left: 4px solid var(--color-easy);
-}
+/* ... (resto do código acima) ... */
 
-.stat-item--easy .stat-value {
-    color: var(--color-easy);
-}
-
-/* ==================== TELA DE CONCLUSÃO ==================== */
-
-.completion-section {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(5px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: var(--z-completion);
-    padding: 20px;
-}
-
-/* Container central */
-.completion-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    opacity: 0.1;
-}
-
-/* Conteúdo */
-.completion-section > * {
-    position: relative;
-    z-index: 1;
-}
-
-/* Ícone de celebração */
-.completion-icon {
-    font-size: 5em;
-    text-align: center;
-    margin-bottom: 20px;
-    animation: bounce 0.6s ease infinite alternate;
-}
-
-@keyframes bounce {
-    from { transform: translateY(0); }
-    to { transform: translateY(-20px); }
-}
-
-/* Título */
-.completion-title {
-    font-size: 2.5em;
-    font-weight: var(--font-weight-bold);
-    color: white;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-/* Mensagem */
-.completion-message {
-    font-size: 1.2em;
-    color: rgba(255, 255, 255, 0.9);
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-/* Resumo de desempenho */
-.completion-stats {
-    background: white;
-    border-radius: var(--radius-lg);
-    padding: 25px;
-    margin-bottom: 30px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.completion-stats p {
-    color: var(--dark-blue);
-    font-weight: var(--font-weight-semibold);
-    margin-bottom: 15px;
-}
-
-.completion-list {
-    list-style: none;
-    padding: 0;
-}
-
-.completion-list li {
-    padding: 10px;
-    margin-bottom: 8px;
-    border-radius: var(--radius-sm);
-    background: var(--gray-50);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Botões de ação */
-.completion-buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* ==================== FOOTER ==================== */
-
-footer {
-    background: var(--dark-blue);
-    color: white;
-    text-align: center;
-    padding: var(--spacing-xl) var(--spacing-md);
-    margin-top: auto;
-    border-radius: var(--radius-md) var(--radius-md) 0 0;
-}
-
-footer p {
-    margin: 0;
-    opacity: 0.9;
-}
-
-footer p + p {
-    margin-top: 10px;
-    opacity: 0.7;
-    font-size: var(--font-size-sm);
-}
-
-/* ==================== RESPONSIVIDADE OTIMIZADA ==================== */
-
-/* Tablet (≤768px) */
+/* ==================== AJUSTES MOBILE ==================== */
 @media (max-width: 768px) {
-    body {
-        padding: 15px 10px;
-    }
-
-    .container {
-        padding: 0;
-    }
-
-    /* Navbar - mantém sticky em tablet */
+    
+    /* 1. Navbar rolando junto (como definimos antes) */
     .navbar {
-        margin-bottom: 25px;
-        padding: 15px 0;
-    }
-
-    .nav-content {
-        padding: 0 15px;
-    }
-
-    .logo {
-        font-size: 1.2em;
-    }
-
-    .back-link {
-        padding: 10px 16px;
-        font-size: 0.9em;
-    }
-
-    /* Header */
-    .flashcard-header {
-        margin-bottom: 25px;
-    }
-
-    .page-title {
-        font-size: 2em;
-        line-height: 1.3;
-    }
-
-    .page-subtitle {
-        font-size: 1rem;
-    }
-
-    /* Progresso */
-    .progress-section {
-        padding: 18px;
-        margin-bottom: 18px;
-    }
-
-    /* Flashcard */
-    .flashcard {
-        min-height: 320px;
-        max-width: 100%;
-    }
-
-    .flashcard__face {
-        padding: 30px 20px;
-        min-height: 320px;
-    }
-
-    .card-content {
-        font-size: 1.15em;
-        padding: 15px 0;
-    }
-
-    .card-label {
-        font-size: 0.8em;
-        margin-bottom: 15px;
-    }
-
-    .flip-hint {
-        font-size: 0.85em;
-        margin-top: 15px;
-    }
-
-    /* Botões de dificuldade - 2 colunas */
-    .difficulty-buttons {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-    }
-
-    .difficulty-btn {
-        min-height: 75px;
-        padding: 12px 8px;
-    }
-
-    .btn-label {
-        font-size: 0.95em;
-    }
-
-    .btn-time {
-        font-size: 0.8em;
-    }
-
-    /* Botões de ação */
-    .action-buttons {
-        gap: 12px;
-    }
-
-    .action-btn {
-        padding: 11px 20px;
-        font-size: 0.95em;
-    }
-
-    /* Stats - 2 colunas */
-    .stats-section {
-        padding: 20px;
-        margin-bottom: 25px;
-    }
-
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-
-    .stat-item {
-        padding: 18px 15px;
-    }
-
-    .stat-value {
-        font-size: 2.2em;
-    }
-
-    .stat-label {
-        font-size: 0.85em;
-    }
-}
-
-/* Mobile (≤480px) */
-@media (max-width: 480px) {
-    body {
-        padding: 12px 8px;
-    }
-
-    /* Navbar estática */
-    .navbar {
-        position: static !important;
-        margin-bottom: 20px;
-        padding: 12px 0;
-    }
-
-    .nav-content {
-        padding: 0 12px;
-        gap: 10px;
-    }
-
-    .logo {
-        font-size: 0.95em;
-        line-height: 1.4;
-    }
-
-    .back-link {
-        padding: 10px 14px;
-        font-size: 0.85em;
-        min-height: 42px;
-        min-width: 42px;
-    }
-
-    /* Header compacto */
-    .flashcard-header {
+        position: sticky;
         margin-bottom: 20px;
     }
 
-    .page-title {
-        font-size: 1.5em;
-        line-height: 1.3;
-        margin-bottom: 8px;
-    }
-
-    .page-subtitle {
-        font-size: 0.9em;
-        line-height: 1.5;
-    }
-
-    /* Progresso */
-    .progress-section {
-        padding: 15px;
-        margin-bottom: 15px;
-    }
-
-    .progress-info {
-        margin-bottom: 12px;
-    }
-
-    .progress-text {
-        font-size: 0.95em;
-    }
-
-    .cards-count {
-        font-size: 0.85em;
-    }
-
-    .progress-bar {
-        height: 8px;
-    }
-
-    /* Flashcard - altura reduzida */
-    .flashcard-wrapper {
-        margin-bottom: 15px;
-    }
-
-    .flashcard {
-        min-height: 260px;
-        max-width: 100%;
-    }
-
-    .flashcard__face {
-        padding: 25px 15px;
-        min-height: 260px;
-    }
-
-    .card-content {
+    .logo {
         font-size: 1em;
-        line-height: 1.6;
-        padding: 12px 0;
     }
 
-    .card-label {
-        font-size: 0.75em;
-        margin-bottom: 12px;
-        letter-spacing: 0.5px;
+    .backlink{
+        width: 100%;
+    }
+    
+    .page-flashcards {
+        padding: 15px
+
     }
 
-    .flip-hint {
-        font-size: 0.75em;
-        margin-top: 12px;
-    }
-
-    /* Controles */
-    .controls-section {
-        margin-bottom: 20px;
-    }
-
-    /* ===== BOTÕES DE DIFICULDADE: 4 COLUNAS (COMPACTOS) ===== */
+    /* 2. Botões de Dificuldade em UMA LINHA e MENORES */
     .difficulty-buttons {
-        grid-template-columns: repeat(4, 1fr);  /* ✅ 4 colunas */
-        gap: 8px;  /* Espaço menor */
-        margin-bottom: 15px;
-    }
-
-    .difficulty-btn {
-        min-height: 60px;  /* Mais compacto */
-        padding: 8px 4px;
-        font-size: 0.75em;  /* Fonte menor */
-    }
-
-    .btn-label {
-        font-size: 0.85em;
-        font-weight: var(--font-weight-bold);
-    }
-
-    .btn-time {
-        font-size: 0.7em;
-        opacity: 0.85;
-    }
-
-    /* ===== BOTÕES DE AÇÃO: 2 NA LINHA + 1 EMBAIXO ===== */
-    .action-buttons {
         display: grid;
-        grid-template-columns: 1fr 1fr;  /* 2 colunas */
-        gap: 10px;
-    }
-
-    .action-btn {
-        padding: 12px 16px;
-        font-size: 0.85em;
-        min-height: 48px;
-        justify-content: center;
-    }
-
-    /* Modo Escuro ocupa linha inteira */
-    .action-btn#dark-mode-btn {
-        grid-column: 1 / -1;  /* Ocupa as 2 colunas */
-    }
-
-    /* ===== STATS: 4 COLUNAS (COMPACTAS) ===== */
-    .stats-section {
-        padding: 15px 12px;
-        margin-bottom: 20px;
-    }
-
-    .stats-grid {
-        grid-template-columns: repeat(4, 1fr);  /* ✅ 4 colunas */
-        gap: 8px;  /* Espaço menor */
-    }
-
-    .stat-item {
-        padding: 12px 8px;
-    }
-
-    .stat-value {
-        font-size: 1.6em;  /* Menor */
-        margin-bottom: 4px;
-    }
-
-    .stat-label {
-        font-size: 0.65em;  /* Menor */
-        line-height: 1.2;
-    }
-
-    /* Footer */
-    footer {
-        padding: 20px 15px;
-        margin-top: 25px;
-    }
-
-    footer p {
-        font-size: 0.85em;
-    }
-
-    /* Conclusão */
-    .completion-icon {
-        font-size: 3.5em;
-        margin-bottom: 15px;
-    }
-
-    .completion-title {
-        font-size: 1.8em;
-        margin-bottom: 12px;
-    }
-
-    .completion-message {
-        font-size: 1em;
-        margin-bottom: 25px;
-    }
-
-    .completion-stats {
-        padding: 20px 15px;
-        margin-bottom: 25px;
-    }
-
-    .completion-list li {
-        padding: 8px 12px;
-        font-size: 0.9em;
-    }
-
-    .completion-buttons {
-        flex-direction: column;
-        width: 100%;
-        gap: 12px;
-    }
-
-    .completion-buttons .action-btn {
-        width: 100%;
-    }
-}
-
-/* Mobile Extra Small (≤375px) - AINDA MAIS COMPACTO */
-@media (max-width: 375px) {
-    .page-title {
-        font-size: 1.3em;
-    }
-
-    .flashcard {
-        min-height: 240px;
-    }
-
-    .flashcard__face {
-        padding: 20px 12px;
-        min-height: 240px;
-    }
-
-    .card-content {
-        font-size: 0.95em;
-    }
-
-    /* Botões de dificuldade - 4 colunas ainda menores */
-    .difficulty-buttons {
-        gap: 6px;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 4 px; 
     }
 
     .difficulty-btn {
-        min-height: 55px;
-        padding: 6px 3px;
+        margin: 0px;
+        padding: 10px 10px 20px 20px;
+        font-size: 1rem; 
+        flex: 1; /* Garante que todos tenham a mesma largura */
+        min-width: 0; /* Permite que o botão encolha se necessário */
     }
 
-    .btn-label {
-        font-size: 0.75em;
-    }
-
+    /* Ajuste fino para o texto do tempo (ex: < 10min) */
     .btn-time {
-        font-size: 0.65em;
+        font-size: 0.8em; /* Deixa o tempo bem pequeno */
+        white-space: nowrap; /* Evita quebra de linha no tempo */
+        margin-top: 2px;
     }
 
-    /* Stats - 4 colunas ainda menores */
+    /* 3. Ajuste da altura do card para caber em telas pequenas */
+    .flashcard-container {
+        height: 300px;
+        font-size: 12px; /* Reduzi de 400px para 300px no mobile */
+    }
+
+    /* 4. Ajuste da grade de estatísticas */
     .stats-grid {
-        gap: 6px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
     }
 
     .stat-item {
-        padding: 10px 6px;
+        padding: 20px;
     }
-
+    
     .stat-value {
-        font-size: 1.4em;
+        font-size: 1.2em; 
+        margin-bottom: 0;/* Números menores no placar */
     }
-
+    
     .stat-label {
         font-size: 0.6em;
+        display: block;
     }
 }
