@@ -57,14 +57,13 @@ window.onload = async function() {
             arquivoJson = 'data/hepatico.json';
             nomeDisplay = 'Transplante Hepático';
         } else {
-            // Se abrir sem tema, mostra aviso
-            elements.deckTitle.innerText = "Nenhum baralho selecionado.";
+            elements.deckTitle.innerText = "Nenhum deck selecionado.";
             elements.cardFront.innerText = "Erro: Tema não definido na URL.";
             return;
         }
 
         // Atualiza o título da página
-        elements.deckTitle.innerText = "Baralho: " + nomeDisplay;
+        elements.deckTitle.innerText = "Deck: " + nomeDisplay;
 
         // Busca os dados (JSON)
         const response = await fetch(arquivoJson);

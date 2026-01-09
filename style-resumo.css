@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('css/base.css');
 
 /* Scroll behavior para navbar sticky */
 html {
@@ -11,8 +7,8 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f7f7f7;
+    font-family: var(--font-main);
+    background: var(--gray-100);
     line-height: 1.6;
 }
 
@@ -39,7 +35,7 @@ body {
 .logo {
     font-size: 1.5em;
     font-weight: bold;
-    background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -51,10 +47,10 @@ body {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s;
-    color: #555;
+    color: var(--gray-700);
     font-weight: 500;
     text-decoration: none;
-    background: #e8e8e8;
+    background: var(--gray-200);
     /* Touch target mínimo 44x44px */
     min-height: 44px;
     min-width: 44px;
@@ -64,7 +60,7 @@ body {
 }
 
 .back-link:hover {
-    background: #3059ef;
+    background: var(--primary-color);
     color: white;
     transform: translateY(-2px);
 }
@@ -72,58 +68,62 @@ body {
 /* Layout Principal */
 .main-container {
     display: flex;
+    flex-direction: column;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 30px 20px;
-    gap: 30px;
+    padding: 20px 15px;
+    gap: 20px;
 }
 
 /* Sidebar */
 .sidebar {
-    width: 280px;
-    position: sticky;
-    top: 100px;
+    width: 100%;
+    position: relative;
+    top: 0;
     height: fit-content;
     background: white;
     border-radius: 12px;
-    padding: 25px;
+    padding: 18px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-title {
     font-size: 1.1em;
     font-weight: 700;
-    color: #282d54;
+    color: var(--dark-blue);
     margin-bottom: 20px;
     padding-bottom: 15px;
-    border-bottom: 3px solid #3059ef;
+    border-bottom: 3px solid var(--primary-color);
 }
 
 .sidebar-nav {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .sidebar-nav li {
-    margin-bottom: 12px;
+    margin: 0;
 }
 
 .sidebar-nav a {
     text-decoration: none;
-    color: #666;
-    font-size: 0.95em;
+    color: var(--gray-600);
+    font-size: 0.85em;
     display: block;
     padding: 8px 12px;
     border-radius: 6px;
     transition: all 0.3s;
     /* Touch target adequado */
-    min-height: 44px;
+    min-height: 40px;
     display: flex;
     align-items: center;
 }
 
 .sidebar-nav a:hover,
 .sidebar-nav a.active {
-    background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: white;
     transform: translateX(5px);
 }
@@ -144,13 +144,13 @@ body {
 .content-header {
     margin-bottom: 30px;
     padding-bottom: 20px;
-    border-bottom: 3px solid #e2e8f0;
+    border-bottom: 3px solid var(--gray-300);
 }
 
 .content-title {
     font-size: 2.2em;
     font-weight: 700;
-    background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -160,7 +160,7 @@ body {
 
 .content-subtitle {
     font-size: 1.1em;
-    color: #666;
+    color: var(--gray-600);
     font-weight: 400;
     line-height: 1.5;
 }
@@ -177,7 +177,7 @@ body {
     color: white;
     margin-bottom: 20px;
     padding: 15px 20px;
-    background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     border-radius: 10px;
     line-height: 1.4;
 }
@@ -189,10 +189,10 @@ body {
 .subsection-title {
     font-size: 1.3em;
     font-weight: 600;
-    color: #3059ef;
+    color: var(--primary-color);
     margin: 25px 0 15px 0;
     padding-left: 15px;
-    border-left: 4px solid #3059ef;
+    border-left: 4px solid var(--primary-color);
     line-height: 1.4;
 }
 
@@ -261,7 +261,7 @@ body {
 
 .highlight-box.info {
     background: #e8f0fe;
-    border-color: #3059ef;
+    border-color: var(--primary-color);
 }
 
 .highlight-box.warning {
@@ -311,7 +311,7 @@ body {
 .divider {
     border: 0;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #3059ef, transparent);
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
     margin: 40px 0;
 }
 
@@ -326,7 +326,7 @@ body {
 }
 
 .data-table thead {
-    background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: white;
 }
 
@@ -338,7 +338,7 @@ body {
 
 .data-table td {
     padding: 12px 15px;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid var(--gray-200);
 }
 
 .data-table tbody tr:hover {
@@ -364,7 +364,7 @@ body {
 
 /* Cabeçalho com fundo azul gradiente */
 .data-table-bordered thead {
-    background: linear-gradient(135deg, #3059ef 0%, #36c8e0 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: white;
 }
 
@@ -384,8 +384,8 @@ body {
 /* Células de dados COM bordas vertical e horizontal */
 .data-table-bordered td {
     padding: 12px 15px;
-    border-bottom: 1px solid #e8e8e8;  /* Linha horizontal */
-    border-right: 1px solid #e8e8e8;   /* Linha vertical */
+    border-bottom: 1px solid var(--gray-200);  /* Linha horizontal */
+    border-right: 1px solid var(--gray-200);   /* Linha vertical */
 }
 
 /* Remove borda da última coluna */
@@ -418,7 +418,7 @@ body {
     background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 100%);
     border-radius: 12px;
     padding: 12px;
-    border-left: 5px solid #3059ef;
+    border-left: 5px solid var(--primary-color);
     transition: all 0.3s;
 }
 
@@ -434,7 +434,7 @@ body {
 .target-number {
     font-size: 1.5em;
     font-weight: 600;
-    color: #3059ef;
+    color: var(--primary-color);
     margin-bottom: 5px;
 }
 
@@ -443,38 +443,38 @@ body {
 .target-label {
     font-size: 1.5em;
     font-weight: 600;
-    color: #282d54;
+    color: var(--dark-blue);
     margin-bottom: 8px;
 }
 
 /* Descrição */
 
 .target-value {
-    color: #666;
+    color: var(--gray-600);
     font-size: 1em;
 }
 
 /* Estilos alternativos para headings dentro de .content */
 .content h1 {
     font-size: 2.2em;
-    color: #282d54;
+    color: var(--dark-blue);
     margin-bottom: 10px;
     line-height: 1.3;
 }
 
 .content h2 {
     font-size: 1.7em;
-    color: #282d54;
+    color: var(--dark-blue);
     margin-top: 40px;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 3px solid #3059ef;
+    border-bottom: 3px solid var(--primary-color);
     line-height: 1.3;
 }
 
 .content h3 {
     font-size: 1.3em;
-    color: #3059ef;
+    color: var(--primary-color);
     margin-top: 30px;
     margin-bottom: 15px;
     line-height: 1.4;
@@ -501,6 +501,35 @@ body {
 
 
 /* ==================== RESPONSIVIDADE ==================== */
+
+@media (min-width: 1025px) {
+    .main-container {
+        flex-direction: row;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .sidebar {
+        width: 280px;
+        position: sticky;
+        top: 100px;
+        padding: 25px;
+    }
+
+    .sidebar-nav {
+        display: block;
+    }
+
+    .sidebar-nav li {
+        margin-bottom: 12px;
+    }
+
+    .sidebar-nav a {
+        font-size: 0.95em;
+        padding: 8px 12px;
+        min-height: 44px;
+    }
+}
 
 /* Tablet Landscape (≤1024px) */
 @media (max-width: 1024px) {
@@ -687,6 +716,13 @@ body {
     .data-table th,
     .data-table td {
         padding: 10px 12px;
+    }
+
+    .data-table,
+    .data-table-bordered {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .target-grid {
@@ -1031,7 +1067,7 @@ body {
 /* Legenda da imagem */
 .figure-caption {
     font-size: 0.9em;                  /* Texto um pouco menor */
-    color: #666;                       /* Cinza médio */
+    color: var(--gray-600);                       /* Cinza médio */
     font-style: italic;                /* Itálico */
     margin-top: 10px;                  /* Espaço entre imagem e legenda */
     padding: 0 20px;                   /* Espaço lateral */
@@ -1074,10 +1110,17 @@ body {
    DESTAQUE DE PALAVRAS-CHAVE INLINE
    ======================================== */
 
-   .destaque {
+.destaque {
     padding: 2px 6px;
     border-radius: 4px;
     font-weight: 600;
     color: #04133e;
     white-space: nowrap;  /* Evita quebra no meio de valores como "36-37°C" */
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none;
+        transition: none;
+    }
 }

@@ -1,22 +1,15 @@
 /* css/flashcards.css - Tema Blue Anki */
 @import url('base.css');
 
-/* 1. O FUNDO AZUL (A identidade visual principal) */
+/* ==================== ESTILOS PARA O BODY (PERSONALIZADO) ==================== */
 
-/* ======================================================
-   1. ESTILOS BASE (MOBILE - Comportamento Natural)
-   A navbar rola junto com a página e some ao descer
-   ====================================================== */
+.body-flashcards {
+    padding: 10px;
+}
 
-body {
-    font-family: var(--font-main);
-    font-size: 14px;
-    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-color) 50%, var(--accent-blue) 100%);
-    min-height: 100vh;
-    color: #333;
-    margin: 0;
-    overflow-x: hidden;
-    padding: 20px; 
+.main-flashcards {
+    margin: auto;
+    max-width: 700px;
 }
 
 .navbar {
@@ -74,14 +67,13 @@ body {
 =====================*/
 
 .back-link {
-    padding: 8px 8px 0px 0;
-    width: 30%;
+    width: 40%;
     border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s;
     color: var(--gray-700);
-    font-size: 0.9em;
-    font-weight: 500;
+    font-size: 0.95em;
+    font-weight: 550;
     text-align: center;
     text-decoration: none;
     background: var(--gray-200);
@@ -102,10 +94,6 @@ body {
 
 /* 3. CONTAINER PRINCIPAL */
 
-.container {
-    max-width: 700px;
-    margin: 0 auto;
-}
 
 /* 4. BARRA DE PROGRESSO */
 .progress-container {
@@ -230,9 +218,10 @@ body {
 
 /* 6. BOTÕES (Estilo Anki Colorido) */
 .buttons-container {
+    height: 50%;
     background: var(--white);
     border-radius: 12px;
-    padding: 25px;
+    padding: 10px;
     box-shadow: var(--shadow-sm);
     margin-bottom: 20px;
     
@@ -288,46 +277,39 @@ body {
     font-weight: normal;
 }
 
-/* 7. TELA DE FINALIZAÇÃO */
-.completion-screen {
-    display: none;
-    text-align: center;
-    background: var(--white);
-    border-radius: 16px;
-    padding: 60px 40px;
-    box-shadow: var(--shadow-lg);
-}
-
-.completion-screen.active {
-    display: block;
-}
-
-/* --- ADICIONE ISTO AO FINAL DO ARQUIVO css/flashcards.css --- */
-
-/* Botões de Ação Extras (Embaralhar / Próximo) */
+/* Botões de EMBARALHAR E PRÓXIMO) */
 .action-buttons {
+    margin: auto;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+    /*
     gap: 15px;
     justify-content: center;
     margin-top: 20px;
     padding-top: 20px;
     border-top: 1px solid #eee;
-}
+}*/
 
 .action-btn {
-    padding: 12px 24px;
-    border: none;
+    background: #f1f5f9;
+    text-align: center;
     border-radius: 10px;
-    font-size: 0.95em;
+    font-size: 1em;
     font-weight: 600;
+    padding: 20px;
+    text-decoration: none;
+    width: 100%;
+    height: 200%;
+    border: none;
     cursor: pointer;
     transition: all 0.3s;
-    background: #f1f5f9;
     color: #475569;
-    display: flex;
-    align-items: center;
     gap: 8px;
-    text-decoration: none;
 }
 
 .action-btn:hover {
@@ -336,22 +318,24 @@ body {
     box-shadow: 0 6px 20px rgba(48, 89, 239, 0.4);
 }
 
-.action-btn.primary {
+.action-btn.passar {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: var(--white);
+    font-weight: 600;
 }
 
-.action-btn.primary:hover {
+.action-btn.passar:hover {
     box-shadow: 0 4px 15px rgba(48, 89, 239, 0.3);
 }
 
 /* Container de Estatísticas (O Placar) */
 .stats-container {
-    background: var(--white);
+    background: var( --gray-300);
     border-radius: 12px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: var(--shadow-sm);
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 15px;
     animation: fadeInUp 0.5s ease;
 }
 
@@ -389,6 +373,30 @@ body {
 .stat-hard .stat-value { color: #f59e0b; }
 .stat-good .stat-value { color: #059669; }
 .stat-easy .stat-value { color: #2563eb; }
+
+
+/* 7. TELA DE FINALIZAÇÃO */
+.completion-screen {
+    display: none;
+    text-align: center;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 60px 40px;
+    box-shadow: var(--shadow-lg);
+}
+
+.completion-screen.active {
+    display: block;
+}
+
+footer {
+    background: var(--dark-blue);
+    color: var(--gray-300);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+
+}
 
 /* Animaçãozinha suave */
 @keyframes fadeInUp {

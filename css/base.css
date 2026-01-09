@@ -17,6 +17,7 @@
     --secondary-color: #36c8e0;
     --dark-blue: #282d54;
     --accent-blue: #48638b;
+    --light-blue: #48638b;
     
     /* Cores de Estado */
     --success: #10b981;
@@ -86,10 +87,11 @@
 
 /* Tipografia Base */
 body {
-    font-family: var(--font-main);
-    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-color) 50%, var(--accent-blue) 100%);
     min-height: 100vh;
+    font-family: var(--font-main);
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-color) 100%, var(--accent-blue) 100%);
 }
+
 
 /* Focus Visible para Acessibilidade */
 *:focus-visible {
