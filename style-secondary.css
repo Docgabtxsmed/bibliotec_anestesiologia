@@ -42,6 +42,7 @@ body {
 }
 
 .logo {
+    font-size: 1.1rem;
     transition: transform var(--transition-normal);
     user-select: none;
 }
@@ -58,8 +59,10 @@ body {
 
 /* Back Link - Melhorias */
 .back-link {
-    min-height: 44px;
-    min-width: 44px;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    min-height: 40px;
+    min-width: 40px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -73,7 +76,7 @@ body {
 /* CONTAINER - Ajustes */
 .container {
     flex: 1;
-    padding: var(--spacing-2xl) var(--spacing-md);
+    padding: var(--spacing-lg) var(--spacing-sm);
 }
 
 /* PAGE HEADER - Ajustes para fundo claro */
@@ -84,7 +87,7 @@ body {
 }
 
 .page-title {
-    font-size: 2.5em;
+    font-size: 1.5rem;
     font-weight: var(--font-weight-bold);
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     -webkit-background-clip: text;
@@ -96,7 +99,7 @@ body {
 }
 
 .page-subtitle {
-    font-size: 1.125rem;
+    font-size: 0.9rem;
     color: var(--gray-600);
     max-width: 800px;
     margin: 0 auto;
@@ -235,6 +238,13 @@ footer p + p {
     }
 }
 
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none;
+        transition: none;
+    }
+}
+
 /* ==================== NOTIFICAÇÕES ==================== */
 
 .notification {
@@ -295,8 +305,43 @@ footer p + p {
 
 /* ==================== RESPONSIVIDADE ==================== */
 
-/* Tablet (≤1024px) */
-@media (max-width: 1024px) {
+@media (min-width: 481px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .back-link {
+        padding: 10px 16px;
+        font-size: var(--font-size-sm);
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .page-title {
+        font-size: 1.75rem;
+    }
+    
+    .page-subtitle {
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .logo {
+        font-size: var(--font-size-2xl);
+    }
+
+    .back-link {
+        padding: 10px 20px;
+        font-size: var(--font-size-base);
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .container {
+        padding: var(--spacing-2xl) var(--spacing-md);
+    }
+
     .page-title {
         font-size: 2rem;
     }
@@ -306,32 +351,21 @@ footer p + p {
     }
 }
 
+@media (min-width: 1025px) {
+    .page-title {
+        font-size: 2.5em;
+    }
+
+    .page-subtitle {
+        font-size: 1.125rem;
+    }
+}
+
 /* Tablet Portrait / Mobile Large (≤768px) */
 @media (max-width: 768px) {
     .nav-content {
         flex-direction: row;
         gap: var(--spacing-sm);
-    }
-    
-    .logo {
-        font-size: 1.3rem;
-    }
-    
-    .back-link {
-        padding: 10px 16px;
-        font-size: var(--font-size-sm);
-    }
-    
-    .container {
-        padding: var(--spacing-lg) var(--spacing-sm);
-    }
-    
-    .page-title {
-        font-size: 1.75rem;
-    }
-    
-    .page-subtitle {
-        font-size: 0.95rem;
     }
     
     .notification {
@@ -344,25 +378,6 @@ footer p + p {
 
 /* Mobile Small (≤480px) */
 @media (max-width: 480px) {
-    .logo {
-        font-size: 1.1rem;
-    }
-    
-    .back-link {
-        padding: 8px 12px;
-        font-size: 0.85rem;
-        min-height: 40px;
-        min-width: 40px;
-    }
-    
-    .page-title {
-        font-size: 1.5rem;
-    }
-    
-    .page-subtitle {
-        font-size: 0.9rem;
-    }
-    
     .card-thumbnail {
         height: 160px;
         font-size: 3em;
@@ -379,4 +394,3 @@ footer p + p {
 }
 
 /* ==================== FIM ==================== */
-
