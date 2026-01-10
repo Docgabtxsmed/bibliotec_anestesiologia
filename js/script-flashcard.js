@@ -55,12 +55,19 @@ window.onload = async function() {
             nomeDisplay = 'Cirurgia Torácica';
         } else if (tema === 'hepatico') {
             arquivoJson = 'data/hepatico.json';
-            nomeDisplay = 'Transplante Hepático';
+            nomeDisplay = 'Transplante Hepático';}
+          else if (tema === 'cdi-marcapasso') {
+            arquivoJson = 'data/cdi-marcapasso.json';
+            nomeDisplay = 'CDI Marcapasso';
+        } else if (tema === 'cardiaca') {
+            arquivoJson = 'data/cardiaca.json';
+            nomeDisplay = 'Cirurgia Cardíaca';        
         } else {
             elements.deckTitle.innerText = "Nenhum deck selecionado.";
             elements.cardFront.innerText = "Erro: Tema não definido na URL.";
             return;
         }
+
 
         // Atualiza o título da página
         elements.deckTitle.innerText = "Deck: " + nomeDisplay;

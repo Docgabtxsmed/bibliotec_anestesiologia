@@ -16,14 +16,14 @@
     </nav>
 
     <!-- Container Principal -->
-    <div class="container">
+    <main class="container">
         <h1 class="page-title">Anestesia para Cirurgia Cardíaca</h1>
         <p class="page-subtitle">Recursos visuais e conteúdos científicos sobre manejo anestésico em cirurgia cardíaca</p>
 
         <!-- Grid de Componentes -->
-        <div class="gallery-grid">
+        <section class="gallery-grid">
             <!-- Card Circulação Extra-Corpórea (CEC) -->
-            <div class="component-card" onclick="window.location.href='Cardiaca/cec.html'">
+            <article class="component-card" onclick="window.location.href='Cardiaca/cec.html'">
                 <div class="card-thumbnail" style="background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);">🔄</div>
                 <div class="card-info">
                     <h3 class="card-title">Circulação Extra-Corpórea (CEC)</h3>
@@ -34,10 +34,10 @@
                         <span class="tag">Circuito</span>
                     </div>
                 </div>
-            </div>
+            </article>
 
             <!-- Card Vasopressores e Inotrópicos -->
-            <div class="component-card" onclick="window.location.href='vasopressores-inotropicos.html'">
+            <article class="component-card" onclick="window.location.href='vasopressores-inotropicos.html'">
                 <div class="card-thumbnail" style="background: linear-gradient(135deg, #dc2626 0%, #f59e0b 100%);">💊</div>
                 <div class="card-info">
                     <h3 class="card-title">Vasopressores e Inotrópicos</h3>
@@ -48,10 +48,10 @@
                         <span class="tag">Vasopressina</span>
                     </div>
                 </div>
-            </div>
+            </article>
 
             <!-- Valvopatias-->
-            <div class="component-card" onclick="window.location.href='Cardiaca/valvopatias.html'">
+            <article class="component-card" onclick="window.location.href='Cardiaca/valvopatias.html'">
                 <div class="card-thumbnail" style="background: linear-gradient(135deg, #a11414 0%, #5836e0 100%);">💉</div>
                 <div class="card-info">
                     <h3 class="card-title">Valvopatias</h3>
@@ -63,9 +63,26 @@
                         <span class="tag">SAM</span>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="component-card" onclick="alert('Em breve!')">
+             <!-- Flash Cirurgia Cardiaca -->
+
+             <a href="flashcards.html?tema=cardiaca" class="component-card">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #282d54 0%, #3059ef 100%);">
+                    🧠
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Flashcards de Revisão</h3>
+                    <p class="card-description">Memorize conceitos-chave de Cirurgia Cardiaca, CEC, Valvopatias e muito mais com nosso sistema de repetição espaçada.</p>
+                    <div class="card-tags">
+                        <span class="tag" style="background: #e0f2fe; color: #0284c7;">Novo</span>
+                        <span class="tag">Interativo</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card Monitorização -->
+            <artcile class="component-card" onclick="alert('Em breve!')">
                 <div class="card-thumbnail" style="background: linear-gradient(135deg, #48638b 0%, #282d54 100%);">📊</div>
                 <div class="card-info">
                     <h3 class="card-title">Monitorização em CEC</h3>
@@ -75,9 +92,9 @@
                         <span class="tag">Hemodinâmica</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </article>
+        </section>
+    </main>
 
     <!-- Modal (para futuro uso) -->
     <div id="componentModal" class="modal">

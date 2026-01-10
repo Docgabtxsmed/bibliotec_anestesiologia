@@ -1,0 +1,207 @@
+[
+    {
+    "front": "Em paciente com dispositivo eletrônico cardíaco implantável (marcapasso, cardioversor-desfibrilador implantável ou terapia de ressincronização cardíaca), quais 3 informações iniciais devem ser identificadas antes de decidir entre uso de ímã e reprogramação?",
+    "back": "Tipo de dispositivo, fabricante/modelo e resposta ao ímã (se está habilitada e qual efeito)."
+    },
+    {
+    "front": "Em paciente com dispositivo eletrônico cardíaco implantável próximo do período de substituição eletiva, em quais 2 situações deve-se considerar trocar o gerador antes da cirurgia?",
+    "back": "Cirurgia maior ou eletrocirurgia monopolar a menos de 15 cm do gerador ou dos eletrodos."
+    },
+    {
+    "front": "No risco de interferência eletromagnética em dispositivos eletrônicos cardíacos implantáveis, qual distância é usada como limiar associado a maior risco quando a fonte de interferência está próxima do gerador/eletrodos?",
+    "back": "Cerca de 15 cm."
+    },
+    {
+    "front": "No preparo pré-operatório de paciente com dispositivo eletrônico cardíaco implantável, por que determinar ritmo e frequência cardíaca subjacentes é essencial?",
+    "back": "Para estimar dependência de estimulação e planejar estimulação de backup se houver inibição/falha durante interferência eletromagnética."
+    },
+    {
+    "front": "Em cirurgia com interferência eletromagnética provável, qual medida deve ser planejada para um paciente com cardioversor-desfibrilador implantável para reduzir risco de terapias inapropriadas?",
+    "back": "Desativar terapias antitaquicardia."
+    },
+    {
+    "front": "Em paciente com cardioversor-desfibrilador implantável no qual se deseja estimulação assíncrona no perioperatório, qual estratégia é necessária para garantir essa estimulação assíncrona?",
+    "back": "Reprogramação (o ímã não torna a estimulação de base assíncrona)."
+    },
+    {
+    "front": "Durante uso de eletrocirurgia em paciente com dispositivo eletrônico cardíaco implantável, por que monitorizar pulso por pletismografia/onda arterial é mais confiável do que apenas o traçado elétrico para avaliar captura e perfusão?",
+    "back": "Porque o traçado elétrico pode ficar artefatado e não confirmar captura/perfusão; o pulso mecânico confirma débito e captura efetiva."
+    },
+    {
+    "front": "Quando eletrocirurgia monopolar é necessária em paciente com dispositivo eletrônico cardíaco implantável, qual modo do equipamento é preferível e qual padrão de aplicação reduz interferência eletromagnética?",
+    "back": "Preferir modo de corte puro e aplicar em rajadas curtas (<4 s) separadas por pelo menos 2 s."
+    },
+    {
+    "front": "Ao posicionar a placa de retorno (eletrodo dispersivo) da eletrocirurgia em paciente com dispositivo eletrônico cardíaco implantável, qual é o objetivo do posicionamento para reduzir interferência eletromagnética?",
+    "back": "Evitar que a corrente cruze o circuito gerador–coração; manter o trajeto da corrente longe do dispositivo."
+    },
+    {
+    "front": "Em paciente com marcapasso com resposta de frequência baseada em ventilação minuto, qual ajuste deve ser feito no perioperatório para reduzir comportamento indesejado do dispositivo?",
+    "back": "Programar a resposta baseada em ventilação minuto para desligado."
+    },
+    {
+    "front": "Em cirurgias maiores em paciente com marcapasso, qual ajuste de programação pode ser considerado para otimizar entrega de oxigênio durante o procedimento?",
+    "back": "Aumentar o limite inferior de frequência."
+    },
+    {
+    "front": "Em manejo perioperatório de marcapasso, o que significa 'dependência de marcapasso'?",
+    "back": "Ausência de ritmo perfusor (ou sintomas graves/parada) quando a estimulação é interrompida."
+    },
+    {
+    "front": "Em paciente dependente de marcapasso, quais 3 opções de estimulação de backup podem ser planejadas e qual limitação-chave de cada uma?",
+    "back": "Transesofágica (depende condução atrioventricular intacta), transcutânea (alto estímulo e desconforto/posicionamento), transvenosa (demora e não é ideal como solução imediata)."
+    },
+    {
+    "front": "Na avaliação de dependência de marcapasso quando há tempo e suporte especializado, como pode ser testada a presença de ritmo intrínseco perfusor?",
+    "back": "Reduzindo a frequência de estimulação em degraus; ausência de ritmo em torno de 40–45 batimentos por minuto ou sintomas sugere dependência."
+    },
+    {
+    "front": "Em paciente com terapia de ressincronização cardíaca, por que ele pode ser considerado dependente funcionalmente mesmo com ritmo sinusal e condução atrioventricular preservada?",
+    "back": "Porque a perda de ressincronização piora hemodinâmica por dissincronia entre ventrículos e dentro do ventrículo esquerdo."
+    },
+    {
+    "front": "Para avaliação pré-operatória, qual recência de interrogação do dispositivo é aceitável para marcapasso e para cardioversor-desfibrilador implantável/terapia de ressincronização cardíaca quando não houve mudança clínica?",
+    "back": "Marcapasso: até 12 meses; cardioversor-desfibrilador implantável ou terapia de ressincronização cardíaca: até 6 meses."
+    },
+    {
+    "front": "Em cirurgia abaixo do umbigo, com placa de retorno também abaixo do umbigo, qual conduta frequentemente é possível em relação a ímã ou reprogramação por interferência eletromagnética?",
+    "back": "Frequentemente é possível seguir sem ímã ou reprogramação, por menor probabilidade de interferência relevante."
+    },
+    {
+    "front": "Quais 5 efeitos clínicos possíveis da interferência eletromagnética em marcapassos e cardioversores-desfibriladores implantáveis devem ser antecipados no perioperatório?",
+    "back": "Inibição de estimulação, estimulação inapropriada por sobresensoriamento, modo de reversão por ruído, dano na interface eletrodo–tecido/gerador e reinicialização elétrica."
+    },
+    {
+    "front": "Em paciente dependente de marcapasso, qual é a consequência típica do sobresensoriamento por eletrocirurgia monopolar sobre a função de estimulação?",
+    "back": "Inibição da estimulação, com risco hemodinâmico."
+    },
+    {
+    "front": "Em paciente com cardioversor-desfibrilador implantável, qual é o risco típico do sobresensoriamento por interferência eletromagnética durante eletrocirurgia?",
+    "back": "Interpretar ruído como taquiarritmia e entregar terapia antitaquicardia de forma inapropriada."
+    },
+    {
+    "front": "Qual evento raro relacionado a interferência eletromagnética não é prevenido por ímã nem por reprogramação, e qual medida reduz sua chance?",
+    "back": "Reinicialização elétrica; reduzir a chance mantendo a fonte de interferência longe do gerador/eletrodos (idealmente >15 cm)."
+    },
+    {
+    "front": "Se ocorrer reinicialização elétrica de um marcapasso, qual modo e faixa de frequência são típicos no modo de segurança?",
+    "back": "VVI em torno de 65–70 batimentos por minuto."
+    },
+    {
+    "front": "Em marcapasso Medtronic, qual é a resposta típica ao ímã com bateria normal e com bateria em intervalo de substituição eletiva?",
+    "back": "Estimulação assíncrona; 85 batimentos por minuto com bateria adequada e 65 batimentos por minuto no intervalo de substituição eletiva (mudança binária)."
+    },
+    {
+    "front": "Em marcapasso Abbott (St. Jude) com resposta ao ímã habilitada, qual é a resposta típica ao ímã com bateria normal e em intervalo de substituição eletiva?",
+    "back": "Estimulação assíncrona a 100 batimentos por minuto com bateria normal e 85 batimentos por minuto no intervalo de substituição eletiva (queda gradual)."
+    },
+    {
+    "front": "Em paciente com estenose aórtica ou doença coronariana, por que uma frequência de ímã em torno de 90 batimentos por minuto pode ser indesejável ao tornar o marcapasso assíncrono?",
+    "back": "Pode ser hemodinamicamente inadequada; em outros perfis pode ser útil se houver necessidade de aumentar entrega de oxigênio tecidual."
+    },
+    {
+    "front": "Ao aplicar ímã para tornar um marcapasso assíncrono em paciente com ritmo intrínseco normal e condução atrioventricular intacta, qual risco elétrico deve ser considerado?",
+    "back": "Competição entre estimulação e ritmo intrínseco, com risco de arritmia por estímulo em período refratário."
+    },
+    {
+    "front": "Em paciente com dispositivo eletrônico cardíaco implantável posicionado de modo difícil de acesso (por exemplo, posição prona), por que reprogramação pode ser preferível ao uso de ímã?",
+    "back": "Porque pode ser difícil manter o ímã corretamente posicionado sobre o gerador."
+    },
+    {
+    "front": "Ao optar por reprogramação perioperatória em dispositivo com terapias antitaquicardia desativadas, qual é a principal armadilha de segurança no pós-operatório?",
+    "back": "Esquecer de reativar as terapias antitaquicardia após a cirurgia."
+    },
+    {
+    "front": "Em cirurgia urgente com informações insuficientes sobre o dispositivo eletrônico cardíaco implantável, qual teste simples com ímã pode ajudar a diferenciar marcapasso de cardioversor-desfibrilador implantável?",
+    "back": "Aplicar ímã com monitorização e observar mudança abrupta de frequência: mudança sugere marcapasso; ausência de mudança sugere mais provavelmente cardioversor-desfibrilador implantável."
+    },
+    {
+    "front": "Em situação urgente sem avaliação formal, como inferir provável dependência de marcapasso usando o traçado de monitorização?",
+    "back": "Se a maioria dos complexos ventriculares for precedida por espícula de estimulação, tratar como dependente."
+    },
+    {
+    "front": "Em cirurgia urgente com cardioversor-desfibrilador implantável e interferência eletromagnética acima do umbigo, quais 2 medidas imediatas aumentam segurança intraoperatória?",
+    "back": "Colocar adesivos de desfibrilação e aplicar ímã para suspender terapias antitaquicardia (até ser possível reprogramar)."
+    },
+    {
+    "front": "Em paciente com cardioversor-desfibrilador implantável sob interferência eletromagnética acima do umbigo, por que ainda se recomenda eletrocirurgia em rajadas curtas mesmo com ímã aplicado?",
+    "back": "Porque o ímã não torna a estimulação de base assíncrona; rajadas curtas reduzem sobresensoriamento e inibição de estimulação."
+    },
+    {
+    "front": "Em desfibrilador implantável subcutâneo, qual é o efeito do ímã e qual sinal auditivo confirma que a terapia foi suspensa?",
+    "back": "O ímã suspende detecção/terapia; um som de confirmação indica posição correta (o som pode parar após 60 s, mas a suspensão persiste enquanto o ímã permanecer no local)."
+    },
+    {
+    "front": "Em desfibrilador implantável subcutâneo, por que pode ser mais confiável reprogramar no perioperatório do que depender do ímã para suspender terapias?",
+    "back": "A localização do gerador na linha médio-axilar pode dificultar manter o ímã corretamente; reprogramar e colocar adesivos de desfibrilação é mais confiável."
+    },
+    {
+    "front": "Em marcapasso sem eletrodo Medtronic Micra/Micra AV, qual é a implicação prática do ímã para o perioperatório?",
+    "back": "Não responde ao ímã; se precisar VOO, é necessário programador da Medtronic."
+    },
+    {
+    "front": "Em marcapasso sem eletrodo Abbott AVEIR VR, como é a resposta ao ímã e qual condição deve ser confirmada antes de depender desse recurso?",
+    "back": "Com ímã diretamente sobre o coração, induz VOO a 100 batimentos por minuto por 5 batimentos e depois segue a frequência de ímã; a resposta pode estar ligada ou desligada e deve ser confirmada."
+    },
+    {
+    "front": "Em ressonância magnética de paciente com dispositivo condicional para ressonância magnética e dependência de marcapasso, qual programação é usada durante o exame e qual ação é necessária após o exame?",
+    "back": "Programar modo de ressonância com estimulação assíncrona e suspender terapias antitaquicardia quando presentes; após o exame, reinterrogar e restaurar parâmetros permanentes."
+    },
+    {
+    "front": "Em ressonância magnética de paciente com dispositivo não condicional, quais condições podem sustentar a decisão de realizar o exame sob protocolo institucional?",
+    "back": "Ausência de eletrodos fraturados, epicárdicos ou abandonados e a ressonância magnética ser o melhor exame para a questão clínica, seguindo protocolo institucional."
+    },
+    {
+    "front": "Em ressonância magnética de paciente com dispositivo eletrônico cardíaco implantável, quais medidas institucionais de segurança devem estar disponíveis durante o exame?",
+    "back": "Monitorização com traçado elétrico e oximetria, equipe capaz de reanimação cardiopulmonar avançada, desfibrilador externo imediatamente disponível fora da zona 4 e pessoal capaz de programar o dispositivo conforme protocolo."
+    },
+    {
+    "front": "Quando é necessária cardioversão/desfibrilação externa em paciente com terapias antitaquicardia suspensas por ímã, qual é a ação imediata sobre o ímã?",
+    "back": "Remover o ímã para reabilitar as terapias; se não reabilitar e não for possível reprogramar rapidamente, realizar cardioversão/desfibrilação externa conforme a emergência."
+    },
+    {
+    "front": "Durante ablação por radiofrequência em paciente com dispositivo eletrônico cardíaco implantável, quais 2 medidas reduzem risco de mau funcionamento do dispositivo?",
+    "back": "Evitar contato direto do cateter com o gerador/eletrodos e manter o trajeto da corrente (ponta do cateter até a placa de retorno) o mais distante possível do dispositivo."
+    },
+    {
+    "front": "Em paciente com dispositivo eletrônico cardíaco implantável submetido à radioterapia, qual limite de dose acumulada e qual conduta prática reduzem risco de dano ao gerador?",
+    "back": "Evitar feixe direto e manter dose acumulada <5 Gy; posicionar o gerador fora do campo (podendo exigir realocação)."
+    },
+    {
+    "front": "Durante terapia eletroconvulsiva em paciente dependente de marcapasso, qual é o principal risco relacionado ao dispositivo e quando considerar estimulação assíncrona?",
+    "back": "Sobresensoriamento levando a subestimulação; se houver exposição elétrica prolongada, programar modo assíncrono e desativar terapias antitaquicardia quando presentes."
+    },
+    {
+    "front": "Em marcapasso, o que é o limiar de captura?",
+    "back": "Menor energia necessária para capturar consistentemente o coração fora do período refratário."
+    },
+    {
+    "front": "Em marcapasso, quais 3 fatores determinam o limiar de captura?",
+    "back": "Excitabilidade intrínseca, densidade de corrente na interface eletrodo–tecido e duração do pulso."
+    },
+    {
+    "front": "No código NBG de marcapasso, o que representam as posições I, II e III?",
+    "back": "I: câmara estimulada; II: câmara sensada; III: resposta ao sensoriamento (disparo/inibição/dupla)."
+    },
+    {
+    "front": "Em marcapasso programado em DDI(R), qual problema do modo DDD em taquiarritmias supraventriculares se busca evitar no perioperatório e no seguimento?",
+    "back": "Evitar que o dispositivo acompanhe a frequência atrial alta e gere estimulação ventricular rápida."
+    },
+    {
+    "front": "Em paciente com risco de interferência eletromagnética relevante, qual é o objetivo do modo DOO no perioperatório?",
+    "back": "Garantir estimulação fixa e evitar inibição por sobresensoriamento, especialmente em pacientes dependentes."
+    },
+    {
+    "front": "Na elaboração do plano perioperatório para um dispositivo eletrônico cardíaco implantável, qual prática é desencorajada quanto a quem deve definir esse plano?",
+    "back": "Que um profissional vinculado à indústria determine o plano perioperatório de um dispositivo específico."
+    },
+    {
+    "front": "Em cirurgia urgente com dispositivo eletrônico cardíaco implantável, quais 5 itens mínimos devem ser obtidos rapidamente antes de decisões com ímã/reprogramação?",
+    "back": "Tipo de dispositivo, fabricante, dependência de marcapasso, risco de interferência eletromagnética e função do ímã."
+    },
+    {
+    "front": "Quais telefones de contato rápido de fabricantes de dispositivos eletrônicos cardíacos implantáveis são fornecidos para consulta imediata (listar em uma linha)?",
+    "back": "Medtronic: 1-800-633-8766; St. Jude: 1-800-722-3423; Boston Scientific: 1-800-227-3422; Biotronik: 1-800-547-0394."
+    }
+    ]
+    
