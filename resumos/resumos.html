@@ -14,14 +14,15 @@
     <link rel="stylesheet" href="../css/style-resumo.css">
 </head>
 <body>
+    <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
     <header class="site-header">
         <!-- Navbar -->
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Navegação principal">
             <div class="nav-content">
-                <div class="logo" onclick="window.location.href='index.html'">
+                <div class="logo" onclick="window.location.href='../index.html'">
                     📚 [TÍTULO DO SEU RESUMO]
                 </div>
-                <a href="index.html" class="back-link">← Voltar</a>
+                <a href="../index.html" class="back-link">← Voltar</a>
             </div>
         </nav>
     </header>
@@ -32,16 +33,18 @@
             <!-- Sidebar de Navegação -->
             <aside class="sidebar">
                 <h3 class="sidebar-title">Navegação</h3>
-                <ul class="sidebar-nav">
-                    <li><a href="#primeira-secao" class="active">1. Primeira Seção</a></li>
-                    <li><a href="#segunda-secao">2. Segunda Seção</a></li>
-                    <li><a href="#terceira-secao">3. Terceira Seção</a></li>
-                    <li><a href="#quarta-secao">4. Quarta Seção</a></li>
-                    <li><a href="#listas">5. Listas</a></li>
-                    <li><a href="#divider">6. Divider</a></li>
-                    <li><a href="#continuacao">7. Continuação</a></li>
-                    <li><a href="#tabelas">8. Tabelas</a></li>
-                </ul>
+                <nav aria-label="Sumário do resumo">
+                    <ul class="sidebar-nav">
+                        <li><a href="#primeira-secao" class="active">1. Primeira Seção</a></li>
+                        <li><a href="#segunda-secao">2. Segunda Seção</a></li>
+                        <li><a href="#terceira-secao">3. Terceira Seção</a></li>
+                        <li><a href="#quarta-secao">4. Quarta Seção</a></li>
+                        <li><a href="#listas">5. Listas</a></li>
+                        <li><a href="#divider">6. Divider</a></li>
+                        <li><a href="#continuacao">7. Continuação</a></li>
+                        <li><a href="#tabelas">8. Tabelas</a></li>
+                    </ul>
+                </nav>
             </aside>
 
             <!-- Conteúdo Principal -->
@@ -69,10 +72,10 @@
                             <li>Segundo item da lista</li>
                             <li>Terceiro item da lista</li>
                         </ul>
-                        <div class="highlight-box warning">
+                        <aside class="highlight-box warning" role="note">
                             <strong>⚠️ Atenção</strong>
                             <p>Use este box para avisos e cuidados.</p>
-                        </div>
+                        </aside>
                     </section>
 
                     <!-- Seção 2 -->
@@ -80,10 +83,10 @@
                         <h2 class="section-title">2. Segunda Seção</h2>
 
                         <p>Conteúdo da segunda seção...</p>
-                        <div class="highlight-box danger">
+                        <aside class="highlight-box danger" role="note">
                             <strong>🔴 Crítico</strong>
                             <p>Use este box para informações críticas e perigos.</p>
-                        </div>
+                        </aside>
                     </section>
 
                     <!-- Seção 3 -->
@@ -101,19 +104,19 @@
                         <h3 class="subsection-title">Exemplos de Destaque</h3>
 
                         <!-- Box Azul (Informação) -->
-                        <div class="highlight-box info">
+                        <aside class="highlight-box info" role="note">
                             <strong>📌 Informação Importante</strong>
                             <p>Use este box para informações gerais.</p>
-                        </div>
+                        </aside>
 
                         <!-- Box Amarelo (Aviso) -->
-                        <div class="highlight-box warning">
+                        <aside class="highlight-box warning" role="note">
                             <strong>⚠️ Atenção</strong>
                             <p>Use este box para avisos e cuidados.</p>
-                        </div>
+                        </aside>
 
                         <!-- Box Verde (Sucesso/Positivo) -->
-                        <div class="highlight-box success">
+                        <aside class="highlight-box success" role="note">
                             <strong>✅ Recomendação</strong>
                             <p>A decisão de transfundir deve ser <b>individualizada</b> e baseada em marcadores de <b>oferta de oxigênio inadequada</b>:</p>
                             <ul class="bullet-list-dots">
@@ -122,13 +125,13 @@
                                 <li>Acidose metabólica</li>
                                 <li>Queda da SvO₂ ou rSO₂ cerebral</li>
                             </ul>
-                        </div>
+                        </aside>
 
                         <!-- Box Vermelho (Perigo/Crítico) -->
-                        <div class="highlight-box danger">
+                        <aside class="highlight-box danger" role="note">
                             <strong>🔴 Crítico</strong>
                             <p>Use este box para informações críticas e perigos.</p>
-                        </div>
+                        </aside>
                     </section>
 
                     <!-- Seção LISTAS -->
@@ -187,12 +190,13 @@
                         <h3 class="subsection-title">Opção 1: Sem Bordas Verticais</h3>
 
                         <table class="data-table">
+                            <caption>Parâmetros e alvos durante CEC (sem bordas verticais)</caption>
                             <thead>
                                 <tr>
-                                    <th>Parâmetro</th>
-                                    <th>Alvo Durante CEC</th>
-                                    <th>Unidade</th>
-                                    <th>Justificativa</th>
+                                    <th scope="col">Parâmetro</th>
+                                    <th scope="col">Alvo Durante CEC</th>
+                                    <th scope="col">Unidade</th>
+                                    <th scope="col">Justificativa</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -227,12 +231,13 @@
                         <h3 class="subsection-title">Opção 2: Com Bordas Verticais</h3>
 
                         <table class="data-table-bordered">
+                            <caption>Parâmetros e alvos durante CEC (com bordas verticais)</caption>
                             <thead>
                                 <tr>
-                                    <th>Parâmetro</th>
-                                    <th>Alvo Durante CEC</th>
-                                    <th>Unidade</th>
-                                    <th>Justificativa</th>
+                                    <th scope="col">Parâmetro</th>
+                                    <th scope="col">Alvo Durante CEC</th>
+                                    <th scope="col">Unidade</th>
+                                    <th scope="col">Justificativa</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -263,7 +268,7 @@
                             </tbody>
                         </table>
                         <figure class="figure-container">
-                            <img src="imagens/Cardiaca/saida-cec.png"
+                            <img src="../imagens/Cardiaca/saida-cec.png"
                             alt="Descrição da imagem para leitores de tela"
                             class="img-medium">
                             <figcaption class="figure-caption">
@@ -294,6 +299,6 @@
     <footer class="site-footer">
         <p>© 2026 Biblioteca de Anestesiologia - Academia MedTech</p>
     </footer>
-    <script src="script-resumo.js"></script>
+    <script src="../script-resumo.js"></script>
 </body>
 </html>
