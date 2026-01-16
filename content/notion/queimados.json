@@ -1,0 +1,2579 @@
+[
+  {
+    "object": "block",
+    "id": "93f89858-73fd-47fa-8cf3-da486a7c0c46",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2026-01-10T17:53:00.000Z",
+    "last_edited_time": "2026-01-10T17:58:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🧠 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "🧠 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "Fisiopatologia do Trauma Térmico",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Fisiopatologia do Trauma Térmico",
+          "href": null
+        }
+      ],
+      "is_toggleable": true,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "d89a9ef2-5dbe-43a4-9334-a526b09da4a7",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2026-01-10T17:53:00.000Z",
+    "last_edited_time": "2026-01-10T17:58:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🌬️ ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "🌬️ ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "Lesão por Inalação em Queimaduras",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Lesão por Inalação em Queimaduras",
+          "href": null
+        }
+      ],
+      "is_toggleable": true,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f91d2ed-24cf-8048-a0ff-ee50d3979fe8",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-05-20T13:24:00.000Z",
+    "last_edited_time": "2025-05-20T13:46:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🚑 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "🚑 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "Manejo Agudo do Paciente Queimado",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Manejo Agudo do Paciente Queimado",
+          "href": null
+        }
+      ],
+      "is_toggleable": true,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f91d2ed-24cf-8078-b0cd-dabf999de2c2",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-05-20T13:47:00.000Z",
+    "last_edited_time": "2025-05-20T13:56:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "💧 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "💧 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "Ressuscitação Volêmica no Paciente Queimado",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Ressuscitação Volêmica no Paciente Queimado",
+          "href": null
+        }
+      ],
+      "is_toggleable": true,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "71012765-f5e7-484b-abc1-4ffe0071fc22",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2026-01-10T17:53:00.000Z",
+    "last_edited_time": "2026-01-10T17:58:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🛌 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "🛌 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "Manejo Anestésico do Paciente Queimado",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Manejo Anestésico do Paciente Queimado",
+          "href": null
+        }
+      ],
+      "is_toggleable": true,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f91d2ed-24cf-80ff-8125-c00a61d45ba3",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-05-20T15:00:00.000Z",
+    "last_edited_time": "2025-05-20T15:00:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "image",
+    "image": {
+      "caption": [],
+      "type": "file",
+      "file": {
+        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/78666cf6-aa89-4198-9fe9-1c1a08b1ab5f/0fd2679f-18c0-4e04-b151-62826d7c7efd/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4662OSXNCFN%2F20260112%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260112T032922Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBgaCXVzLXdlc3QtMiJIMEYCIQCAsLkCtDW48RNAxHUbf3tNHt7i2I6P3GCJ66APfA6erAIhAKEt732D4Z1lJp739BWMBqpeMVkLvA3eC6dD93t73RNqKogECOH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgzG0Nuzmx1vQiTxZ2Uq3AMKS6Yh999Gn%2F9tV58CUtcItihsEwkIZe2KLwx38fkfGMogATJeyy8H1OEkLOOwSDdpEz7lr6cbq2826SS2iJ7TflxUGjuvMO1axE31FXsHj527Q6FfYa1EAineeS3uT6%2B%2Fxenwl%2BXIs93jDMJbBGd74AFeoQSFsg%2Bwxq%2FNc49xI79S9FWlqdQtWXRdESQ3%2BEzevPUyF8DlQTTgbEWd9S6kG8BSwsK8m2at9V9HLE%2Fe32jxPyYD1StCA9v7nsjCdugk5CpFqcSZyDHyxk2VQapaTxxj%2BcUWXgNZKN5%2BycbOYrUdU5GMN5sAgnIp4AUIkUqXq8CwpPJQGGQUwR8MwJghucwDopX7Zh57oksdA4Qxola5TG7vy2ihahExqZ6YI4tF5zc2y69%2F7OuG4vReEDbrapfwd5nBssYp70mJE1r5CAPFDDqLjJwFUtA938Y7UDW%2BpuO4rw9lzf0DIQ6r7jCEO2Ci5cp9bl6RoJqTbFGiZezRDS2quSWKvuqcH022jlammCY5n%2FsnMCAd%2BLLRDsUFWllu5yR0JPcoR4L61XlmAngl9Ql5DZVhDt9Y%2BymSomoionZFNM2wwHYKXPjat5N8kbdMhEZlz3yOOeM1cGwpP%2BnLlUK%2F3T%2FyZW3LSDDN5JDLBjqkARNWN9rTowZTUQmYEnapTEKAQhQ3sWC6YoE5TSzdN83YG9Blwe%2B5CrnbPwLrp%2B9138TkHNkdAWbV5pt017PX2meIq9YZUiJ5OwJqrq%2F16TIs3C8a4XiNBaLGK%2FpVzFRYvlfTQIyZaQuZCvfMiOWq9Lo72Zg7I%2Bri9us3gm6w3o%2BFPrUqG8SXiZguTZugAx%2F3M2IgNgk%2BdkOy5hPuEg1y0hpw0FV4&X-Amz-Signature=c9a8dc270e64a5eca50d1f2ef5d20e658f5bd4068c86a7fc097eeb75e1b1918d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+        "expiry_time": "2026-01-12T04:29:22.143Z"
+      }
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f91d2ed-24cf-801c-9300-f89fd88780fe",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-05-20T14:28:00.000Z",
+    "last_edited_time": "2025-05-20T14:36:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80cf-ab10-d5d81a222fb5",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-05-20T13:45:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_1",
+    "heading_1": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "1. Fisiopatologia da Queimadura e Coloides",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "1. Fisiopatologia da Queimadura e Coloides",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-8017-bc82-f446577e581f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Fase inicial (primeiras 24h) – “Fase hipovolêmica”",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Fase inicial (primeiras 24h) – “Fase hipovolêmica”",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80d5-bd78-ca369d352d87",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Aumento maciço da permeabilidade capilar: proteínas plasmáticas extravasam para o interstício.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Aumento maciço da permeabilidade capilar: proteínas plasmáticas extravasam para o interstício.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80f0-9834-dfdd005f9c3c",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "O uso de coloides nessa fase precoce (ex: albumina, gelatinas, dextranos) pode piorar o edema, pois:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "O uso de coloides nessa fase precoce (ex: albumina, gelatinas, dextranos) pode piorar o edema, pois:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-8091-92f8-e41b3c4a7aa7",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-8084-9410-d711f3c3d863",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Resultado: agravam o edema pulmonar, cerebral ou da área queimada, podendo comprometer enxertos.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Resultado: agravam o edema pulmonar, cerebral ou da área queimada, podendo comprometer enxertos.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-8008-9415-d8abeaee155c",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Portanto, a conduta padrão é:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Portanto, a conduta padrão é:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80bf-9cff-da7201e838a6",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Evitar coloides nas primeiras 24 horas.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Evitar coloides nas primeiras 24 horas.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80d1-8d8b-d66488c1e40f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_1",
+    "heading_1": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "2. Quando e por que considerar coloides?",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "2. Quando e por que considerar coloides?",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80ff-aa6e-c738e4c02d54",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Fase de retorno capilar (após 18–24h)",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Fase de retorno capilar (após 18–24h)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80cc-a9bd-f9902dd0bbfe",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "A integridade da membrana capilar começa a se restabelecer.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "A integridade da membrana capilar começa a se restabelecer.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-803a-8b26-e168e7ddc245",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Os coloides passam a permanecer no espaço intravascular.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Os coloides passam a permanecer no espaço intravascular.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-803c-a3de-f296c9fe880b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Podem reduzir o volume total de cristaloide necessário, evitando “fluid creep” (hipervolemia iatrogênica).",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Podem reduzir o volume total de cristaloide necessário, evitando “fluid creep” (hipervolemia iatrogênica).",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80a0-b7cb-d78759b04dda",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Indicações sugeridas para coloides após 24h:",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Indicações sugeridas para coloides após 24h:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-8051-83db-df99f98bbf27",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Reposição volêmica refratária com cristaloides (necessidade contínua de >6 mL/kg/%SCQ nas primeiras 24h).",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Reposição volêmica refratária com cristaloides (necessidade contínua de >6 mL/kg/%SCQ nas primeiras 24h).",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-8017-b67c-c38e957af45e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Pacientes com hipoalbuminemia significativa (albumina <2 g/dL).",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Pacientes com hipoalbuminemia significativa (albumina <2 g/dL).",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80b4-ac60-df5fd2216213",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Edema pulmonar, hipertensão intra-abdominal ou síndrome compartimental por sobrecarga de cristaloides.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Edema pulmonar, hipertensão intra-abdominal ou síndrome compartimental por sobrecarga de cristaloides.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80d9-a0dc-c91eca404ef8",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Pacientes com lesão elétrica extensa e rabdomiólise.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Pacientes com lesão elétrica extensa e rabdomiólise.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-806c-9c6d-e00aa3780e57",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Estado hiperdinâmico com hipotensão refratária, após otimização com cristaloides.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Estado hiperdinâmico com hipotensão refratária, após otimização com cristaloides.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-808a-89d2-d4bbc2ef7bc0",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_1",
+    "heading_1": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "3. Qual coloide usar?",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "3. Qual coloide usar?",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-8084-a673-e2449f3f0231",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Albumina (preferencialmente a 5%)",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Albumina (preferencialmente a 5%)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-802c-a7b6-fc11e9a35fee",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Mais segura que outros coloides sintéticos.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Mais segura que outros coloides sintéticos.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-8027-9121-d3bcabf8f075",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Menor risco de nefrotoxicidade e coagulopatia.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Menor risco de nefrotoxicidade e coagulopatia.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-8066-a5bb-f19ec0ea4ae9",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Dose sugerida:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Dose sugerida:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80c3-af74-c0f733d8d674",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80b0-9768-fa881a3d303d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Hidroxi-etil-amido (HES) e dextranos",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Hidroxi-etil-amido (HES) e dextranos",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-804f-b427-c87f812fd385",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Desencorajados ou contraindicados:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Desencorajados ou contraindicados:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80f2-93ec-d15c1ebaa5fc",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80d6-8375-fe1d85e1dc68",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_1",
+    "heading_1": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "4. Comparativo Rápido: Cristaloides vs Coloides no Queimado",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "4. Comparativo Rápido: Cristaloides vs Coloides no Queimado",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-8043-9826-f8ca963ef3f8",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80f0-aece-c24cfa980877",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:41:00.000Z",
+    "last_edited_time": "2025-04-16T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "table",
+    "table": {
+      "table_width": 3,
+      "has_column_header": false,
+      "has_row_header": false
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80c7-a829-d28120d7cf34",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:40:00.000Z",
+    "last_edited_time": "2025-04-16T19:40:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-8078-b455-e0192b841abe",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T19:34:00.000Z",
+    "last_edited_time": "2025-04-16T19:34:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Reposição Volêmica",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Reposição Volêmica",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80bd-a8db-dd94d6c3b783",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Importante na fase inicial. Fórmula de Parkland (primeiras 24h):",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Importante na fase inicial. Fórmula de Parkland (primeiras 24h):",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80c3-b32e-c3c07207853a",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Reposição guiada por diurese (meta: 0,5–1 mL/kg/h em adultos).",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Reposição guiada por diurese (meta: 0,5–1 mL/kg/h em adultos).",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-802a-9dff-da045b9be1df",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "9. Controle da Dor",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "9. Controle da Dor",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-8068-bdb9-e648a7b08513",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Dor intensa, contínua e de difícil controle.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Dor intensa, contínua e de difícil controle.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80fb-a5d0-f7ee7707e927",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Preferência por infusão contínua de opioides (fentanil, remifentanil).",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Preferência por infusão contínua de opioides (fentanil, remifentanil).",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-8078-8173-d15611b0927a",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Tolerância frequente → ajuste de doses.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Tolerância frequente → ajuste de doses.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80d0-839b-c350664dfea1",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Analgesia multimodal: paracetamol, cetamina (analgesia e poupador de opioides), AINEs (com cautela renal).",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Analgesia multimodal: paracetamol, cetamina (analgesia e poupador de opioides), AINEs (com cautela renal).",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80f7-9d9b-c38a3d67999d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Bloqueios regionais são raramente utilizados devido à destruição de pele e risco infeccioso.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Bloqueios regionais são raramente utilizados devido à destruição de pele e risco infeccioso.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80cf-9ed4-e83d6f445b0b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "10. Pós-Operatório",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "10. Pós-Operatório",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-8065-b47c-e5b9e33d396d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Ventilação prolongada se houve lesão inalatória ou edema de via aérea.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Ventilação prolongada se houve lesão inalatória ou edema de via aérea.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-8094-9358-f4b14826d4d7",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Controle rigoroso da dor e temperatura.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Controle rigoroso da dor e temperatura.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-801a-92ee-f9feaeb99f59",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Cuidados com infecções, sepse e nutrição.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Cuidados com infecções, sepse e nutrição.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-8032-9ad4-c093d17e123c",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Estratégia de desmame ventilatório progressivo.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Estratégia de desmame ventilatório progressivo.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-802b-9647-fa0de3fc0cf4",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Avaliação contínua de função renal e metabólica.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Avaliação contínua de função renal e metabólica.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80a3-862c-e9a8e8fca0cd",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "11. Pontos Críticos para o Anestesiologista",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "11. Pontos Críticos para o Anestesiologista",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-808c-b5fe-f354893e432a",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Antecipar via aérea difícil – intubação precoce se lesão térmica ou inalatória.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Antecipar via aérea difícil – intubação precoce se lesão térmica ou inalatória.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80dd-9ea3-e8c087e782cc",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Evitar succinilcolina após 24h.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Evitar succinilcolina após 24h.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80fb-aff8-ff3ba644e341",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Adequar doses de bloqueadores e anestésicos na fase hipermetabólica.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Adequar doses de bloqueadores e anestésicos na fase hipermetabólica.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-8037-a2c7-cb998a49a950",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Atuar com equipe multidisciplinar para controle de dor, infecção, suporte hemodinâmico e nutricional.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Atuar com equipe multidisciplinar para controle de dor, infecção, suporte hemodinâmico e nutricional.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d71d2ed-24cf-80d3-b938-c0eb28304276",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1d71d2ed-24cf-80b2-9829-c15b5b72856b"
+    },
+    "created_time": "2025-04-16T17:55:00.000Z",
+    "last_edited_time": "2025-04-16T17:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [],
+      "color": "default"
+    }
+  }
+]

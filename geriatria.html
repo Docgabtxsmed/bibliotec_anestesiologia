@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anestesia para Geriatria  - Biblioteca de Anestesiologia</title>
+    <link rel="stylesheet" href="style-secondary.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo" onclick="window.location.href='index.html'" role="button" tabindex="0" aria-label="Voltar para a página inicial">🧓🏽 Anestesia para Geriatria</div>
+            <a href="index.html" class="back-link">← Voltar à Biblioteca</a>
+        </div>
+    </nav>
+
+    <!-- Container Principal -->
+    <main class="container">
+        <h1 class="page-title">Anestesia para Geriatria</h1>
+        <p class="page-subtitle">Recursos visuais e conteúdos científicos sobre manejo anestésico em pacientes geriátricos.</p>
+
+        <!-- Grid de Componentes -->
+        <section class="gallery-grid">
+            <!-- Card Fisiologia do Idoso -->
+            <article class="component-card" onclick="window.location.href='resumos/geriatria/fisiologia.html'">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);">🧓</div>
+                <div class="card-info">
+                    <h3 class="card-title">Fisiologia do Idoso</h3>
+                    <p class="card-description">Principais alterações cardiovasculares, pulmonares e de farmacocinética que impactam o manejo anestésico no paciente geriátrico.</p>
+                    <div class="card-tags">
+                        <span class="tag">Fragilidade</span>
+                        <span class="tag">Farmacologia</span>
+                        <span class="tag">Manejo Perioperatório</span>
+                    </div>
+                </div>
+            </article>
+
+
+             <!-- Flash Cirurgia Cardiaca -->
+
+             <a href="flashcards.html?tema=geriatria" class="component-card">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #282d54 0%, #3059ef 100%);">
+                    🧠
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Flashcards de Revisão</h3>
+                    <p class="card-description">Consolide os pilares da geriatria cirúrgica com nosso sistema de repetição espaçada.</p>
+                    <div class="card-tags">
+                        <span class="tag" style="background: #e0f2fe; color: #0284c7;">Novo</span>
+                        <span class="tag">Interativo</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card Questões Comentadas -->
+            <article class="component-card" onclick="window.location.href='questoes/questoes-template.html?tema=geriatria&origem=geriatria.html'">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #282d54 0%, #48638b 100%);">📝</div>
+                <div class="card-info">
+                    <h3 class="card-title">Questões Comentadas</h3>
+                    <p class="card-description">Quiz interativo com gabarito comentado sobre geriatria e cuidados perioperatórios do idoso.</p>
+                    <div class="card-tags">
+                        <span class="tag">Interativo</span>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Modal (para futuro uso) -->
+    <div id="componentModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">Título do Componente</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Conteúdo será carregado aqui -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function closeModal() {
+            document.getElementById('componentModal').style.display = 'none';
+        }
+
+        // Fechar modal ao clicar fora
+        window.onclick = function(event) {
+            const modal = document.getElementById('componentModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+    <script src="script-secondary.js"></script>
+</body>
+</html>

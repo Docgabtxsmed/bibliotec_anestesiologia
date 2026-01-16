@@ -1,0 +1,3614 @@
+[
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-8062-bf1e-d64adbdf82d2",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:34:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Indicações ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Indicações ",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-8021-83e2-fc7176d5f22c",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:57:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Indicações Absolutas:",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Indicações Absolutas:",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-8092-89a7-f1e8ea6d1556",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:57:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Controle de contaminação:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Controle de contaminação:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-8046-80eb-c5189167ad52",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:57:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Controle de Ventilação:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Controle de Ventilação:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-800e-9d08-c73a82589fd7",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:57:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Lavagem Pulmonar (proteinólise alveolar)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Lavagem Pulmonar (proteinólise alveolar)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8031-8243-e3ec446815bc",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T18:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Cirurgia com abertura direta da via aérea (traqueia/bronquica, ressecção em manga, ressecção carina)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Cirurgia com abertura direta da via aérea (traqueia/bronquica, ressecção em manga, ressecção carina)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-803e-ab27-edfdf4799ecc",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:57:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Indicações Relativas:",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Indicações Relativas:",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-8058-8d21-c2f6b9ca5b2d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:57:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Melhor exposição cirúrgica:",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Melhor exposição cirúrgica:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-8033-b466-d3731c140a7f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:34:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Fisiologia ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Fisiologia ",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-80e0-8c93-d086974bb9fc",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:34:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Isolando o Pulmão ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Isolando o Pulmão ",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-800b-9800-e0c7a4848930",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T18:44:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Métodos de Isolamento ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Métodos de Isolamento ",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-800b-83d6-ca8ec738c0a3",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T18:47:00.000Z",
+    "last_edited_time": "2026-01-06T02:18:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Tubo Duplo Lumen ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Tubo Duplo Lumen ",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80e1-b75c-e425aada8e43",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T18:47:00.000Z",
+    "last_edited_time": "2026-01-06T02:18:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Tubo Single Lumen ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Tubo Single Lumen ",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80ae-9b2a-d0fbfec604ab",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T18:47:00.000Z",
+    "last_edited_time": "2026-01-06T02:18:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Bloqueadores Brônquicos:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Bloqueadores Brônquicos:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80e5-97c2-d084afd01e95",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T18:44:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Tamanho Tubo  ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Tamanho Tubo  ",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8082-a010-d82412849458",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T18:46:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "column_list",
+    "column_list": {}
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8036-8816-fcc3a01867f4",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T18:45:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "image",
+    "image": {
+      "caption": [],
+      "type": "file",
+      "file": {
+        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/78666cf6-aa89-4198-9fe9-1c1a08b1ab5f/eae7cbb8-7296-465b-a883-b7a4256cf9d9/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466VFTCCAC3%2F20260111%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260111T224048Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBUaCXVzLXdlc3QtMiJGMEQCIEUWUy%2F2Kag3%2FObS9s2QwVIUIG5aYObEhIYHsMqmQK1IAiBLX50R1IkIU9KUlgQN2cnOqRkzJKtpuTrelpTb3Fu%2BnyqIBAje%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIM1G9khzPELaCNqwubKtwD3TB%2FNC4HpOgAwqjn5c6WYhshOCcdODOWOGjXoAG523Jyi3aG%2BaZSnPpU3f%2FxylDmvAQwyTFYbUxdrAofGiUIn%2B682uaL%2BORa59%2Bk49jtJeqtV2gbWfk4VXtf3bU6a4q8dp%2BQrgTECchLwP46Zn9pWoDK0BJa7dlS0vWbtRAn8B%2F1Xo6j36i%2FwoHZXIM8yg7jxvK%2FLTftXKDxFVgwzuu26knIfju%2BjZivpOmXAQCvQZjNiKhVkzIsGhtYayV12zY7a7KS16E4%2BLp5PRPknOdN4rIwZpO6o4rr1Os313OH4iw9suY9FYxa%2FOKRIp257CxxxpmoemuMEtS2ygCG%2BL2Bx1wPiYuDUrBA6NfIKN3t6kQ2Lphr%2BCOPRBijaEeWdJ1sZm9r5yUgN%2FemmTDf%2B45k9d7hkwwOKcatty1XdaFEBX%2Fka%2BRmczvMtqy8MHIi8Jadiq8XTGkje%2Fd8%2FwWxKE4ArECU6HdtOLsmqxHTsI%2FQnUy%2BeWmv7Hu8s4qUrcB7%2Fdxfrww6hAe5y3J3iDZXlWj2lh6L2khe8lSLwPVyQw%2Bm6VPidUCqyggYOCKm6ipz7YQTTnQed808Aj30upSTjjYy8vovtaqSzCU91VFRDkVHlkOcQnbJAvow5psbQBMwsI6QywY6pgH5DHa2NRcl8g2YMdgwyHhtnQT5H0TvEf072A94XXAUHaQXez1SOjmJ67wLs%2F1j3yoW2scNpSvt96R0EDGSKcqce9ArUHWAe%2F%2FrZsoTdISYNEX%2F6YSjvSJv8qtj%2Bq6GgvZDikMPebBqQNh0PBh0hERTG98hybEnb3xl1Claq%2BmiWav9s92r2mPRuJnkAXPjBYMBl4vrN1ubmb5tqCVMpgwCeR4qf1os&X-Amz-Signature=af3d285ab3e4c501e342dcc37a73e609ecf44e56dd2c0b0691455e16e3abf11b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+        "expiry_time": "2026-01-11T23:40:48.524Z"
+      }
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8088-954d-cd73c28bc79e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T18:44:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Verificação da posição ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Verificação da posição ",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-8092-ad69-e928af516094",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:34:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Hipoxemia ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Hipoxemia ",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-80a9-99bc-f4549306a3c1",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:56:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Fatores de Risco:",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Fatores de Risco:",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-80d3-add0-f1edd643e147",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:56:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Toracotomia direita:",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Toracotomia direita:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-80f4-8642-f6bec53ba0f0",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:56:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Diminuição do débito cardíaco.",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Diminuição do débito cardíaco.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-80d6-9748-fbff70f61a07",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:56:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Ventilação inadequada do pulmão dependente.",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Ventilação inadequada do pulmão dependente.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-80e2-b493-dc77577cc99c",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:56:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Colapso incompleto do pulmão não dependente.",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Colapso incompleto do pulmão não dependente.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-803b-bf00-d7cb48a3cb89",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:56:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Dificuldade de posicionamento adequado do tubo duplo-lúmen ou bloqueador.",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Dificuldade de posicionamento adequado do tubo duplo-lúmen ou bloqueador.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-806c-bfeb-e9b44bc3148f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:56:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Manejo da Dessaturação:",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Manejo da Dessaturação:",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-8063-9636-f5434f342bb2",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:56:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Medidas iniciais:",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Medidas iniciais:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-8058-a7f6-c6c7c84fcdcf",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:56:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Intervenções específicas:",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Intervenções específicas:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-80b1-a199-fce1f99ea38d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:34:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Vasoconstricção Pulmonar Hipoxica",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Vasoconstricção Pulmonar Hipoxica",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-802a-b90c-d20c9d163279",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:18:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "toggle",
+    "toggle": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Fisiopatologia VPH",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Fisiopatologia VPH",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-803e-9f1c-e57548a32232",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:24:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "toggle",
+    "toggle": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Efeitos dos Anestésicos",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Efeitos dos Anestésicos",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80a2-899a-ddfbf830f799",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:24:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "toggle",
+    "toggle": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Efeito do Débito Cardiaco",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Efeito do Débito Cardiaco",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80b7-8db8-e8c0299b68e6",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:01:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-803d-a77b-c5f45cc69062",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:08:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80b5-ad55-d5b56c722252",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:08:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f61d2ed-24cf-8078-aed1-d4215c5715bf",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-17T20:34:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Ventilação Mecânica ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Ventilação Mecânica ",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8075-acdf-c2c495c74408",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:40:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Volume Corrente (VT)",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Volume Corrente (VT)",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8017-8b4c-db0770fa3890",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:40:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Histórico",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Histórico",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ": utilizava-se 10 mL/kg (ideal body weight) → recrutamento de alvéolos, mas risco de barotrauma.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ": utilizava-se 10 mL/kg (ideal body weight) → recrutamento de alvéolos, mas risco de barotrauma.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8074-ab36-ffe706a09fd2",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:40:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Tendência atual",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Tendência atual",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8046-8255-cbcfe56a65da",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:40:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Alvo de pressão",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Alvo de pressão",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-804d-b7e4-e30b85526847",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:46:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8080-b119-c597df12be26",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:46:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "image",
+    "image": {
+      "caption": [],
+      "type": "file",
+      "file": {
+        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/78666cf6-aa89-4198-9fe9-1c1a08b1ab5f/e9134efc-87c6-4cf4-bc94-322f957d00b5/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466VFTCCAC3%2F20260111%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260111T224048Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBUaCXVzLXdlc3QtMiJGMEQCIEUWUy%2F2Kag3%2FObS9s2QwVIUIG5aYObEhIYHsMqmQK1IAiBLX50R1IkIU9KUlgQN2cnOqRkzJKtpuTrelpTb3Fu%2BnyqIBAje%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIM1G9khzPELaCNqwubKtwD3TB%2FNC4HpOgAwqjn5c6WYhshOCcdODOWOGjXoAG523Jyi3aG%2BaZSnPpU3f%2FxylDmvAQwyTFYbUxdrAofGiUIn%2B682uaL%2BORa59%2Bk49jtJeqtV2gbWfk4VXtf3bU6a4q8dp%2BQrgTECchLwP46Zn9pWoDK0BJa7dlS0vWbtRAn8B%2F1Xo6j36i%2FwoHZXIM8yg7jxvK%2FLTftXKDxFVgwzuu26knIfju%2BjZivpOmXAQCvQZjNiKhVkzIsGhtYayV12zY7a7KS16E4%2BLp5PRPknOdN4rIwZpO6o4rr1Os313OH4iw9suY9FYxa%2FOKRIp257CxxxpmoemuMEtS2ygCG%2BL2Bx1wPiYuDUrBA6NfIKN3t6kQ2Lphr%2BCOPRBijaEeWdJ1sZm9r5yUgN%2FemmTDf%2B45k9d7hkwwOKcatty1XdaFEBX%2Fka%2BRmczvMtqy8MHIi8Jadiq8XTGkje%2Fd8%2FwWxKE4ArECU6HdtOLsmqxHTsI%2FQnUy%2BeWmv7Hu8s4qUrcB7%2Fdxfrww6hAe5y3J3iDZXlWj2lh6L2khe8lSLwPVyQw%2Bm6VPidUCqyggYOCKm6ipz7YQTTnQed808Aj30upSTjjYy8vovtaqSzCU91VFRDkVHlkOcQnbJAvow5psbQBMwsI6QywY6pgH5DHa2NRcl8g2YMdgwyHhtnQT5H0TvEf072A94XXAUHaQXez1SOjmJ67wLs%2F1j3yoW2scNpSvt96R0EDGSKcqce9ArUHWAe%2F%2FrZsoTdISYNEX%2F6YSjvSJv8qtj%2Bq6GgvZDikMPebBqQNh0PBh0hERTG98hybEnb3xl1Claq%2BmiWav9s92r2mPRuJnkAXPjBYMBl4vrN1ubmb5tqCVMpgwCeR4qf1os&X-Amz-Signature=38b88b719895cd7b5a37905c6190fc2e28379695c77aeca4844d30617520d99e&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+        "expiry_time": "2026-01-11T23:40:48.609Z"
+      }
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8054-a7d6-dad7f5cf194c",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "PEEP e Auto-PEEP",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "PEEP e Auto-PEEP",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8088-b8d5-d74c0907b878",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🟢 Benefícios do PEEP:",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "🟢 Benefícios do PEEP:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-809f-b3b9-d29bc6efb18c",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Restaura FRC",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Restaura FRC",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " (capacidade residual funcional)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " (capacidade residual funcional)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8013-9b82-c163730bd344",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Melhora a ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Melhora a ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "complacência",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "complacência",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " e ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " e ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "oxigenação",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "oxigenação",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-805f-9cba-e21cf868997e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Reduz ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Reduz ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "shunt intrapulmonar",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "shunt intrapulmonar",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-809b-965d-ce86838400f3",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🔴 Riscos:",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "🔴 Riscos:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80e4-90ca-cc0a74e7b0fb",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "PEEP mal ajustado pode afastar o pulmão da ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "PEEP mal ajustado pode afastar o pulmão da ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "curva ótima de complacência",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "curva ótima de complacência",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " → ↑ risco de hipoxemia",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " → ↑ risco de hipoxemia",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80f5-a8ee-e9f0d1fb90ca",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Auto-PEEP",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Auto-PEEP",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-809a-9d7e-e153f1e46a6b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "📍 Detecção:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "📍 Detecção:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80dc-9935-d5e125746c86",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Manobra de pausa expiratória com circuito fechado",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Manobra de pausa expiratória com circuito fechado",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80e7-8659-cecc1c20801a",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Requer ventiladores com capacidade de medir auto-PEEP",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Requer ventiladores com capacidade de medir auto-PEEP",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8078-8767-cabac6f8b893",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T20:16:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80de-8c82-e36344b5330b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T20:16:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "PEEP → Melhora a ventilação mas pode piorar a perfusão → buscar sempre um balanço desses dois efeitos (BUSCAR A CRF)  ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "PEEP → Melhora a ventilação mas pode piorar a perfusão → buscar sempre um balanço desses dois efeitos (BUSCAR A CRF)  ",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-801a-9ea1-cc334ee26216",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T20:16:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "image",
+    "image": {
+      "caption": [],
+      "type": "file",
+      "file": {
+        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/78666cf6-aa89-4198-9fe9-1c1a08b1ab5f/f690e32b-1233-46ff-a60f-e5e9dd0efafd/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466VFTCCAC3%2F20260111%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260111T224048Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBUaCXVzLXdlc3QtMiJGMEQCIEUWUy%2F2Kag3%2FObS9s2QwVIUIG5aYObEhIYHsMqmQK1IAiBLX50R1IkIU9KUlgQN2cnOqRkzJKtpuTrelpTb3Fu%2BnyqIBAje%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIM1G9khzPELaCNqwubKtwD3TB%2FNC4HpOgAwqjn5c6WYhshOCcdODOWOGjXoAG523Jyi3aG%2BaZSnPpU3f%2FxylDmvAQwyTFYbUxdrAofGiUIn%2B682uaL%2BORa59%2Bk49jtJeqtV2gbWfk4VXtf3bU6a4q8dp%2BQrgTECchLwP46Zn9pWoDK0BJa7dlS0vWbtRAn8B%2F1Xo6j36i%2FwoHZXIM8yg7jxvK%2FLTftXKDxFVgwzuu26knIfju%2BjZivpOmXAQCvQZjNiKhVkzIsGhtYayV12zY7a7KS16E4%2BLp5PRPknOdN4rIwZpO6o4rr1Os313OH4iw9suY9FYxa%2FOKRIp257CxxxpmoemuMEtS2ygCG%2BL2Bx1wPiYuDUrBA6NfIKN3t6kQ2Lphr%2BCOPRBijaEeWdJ1sZm9r5yUgN%2FemmTDf%2B45k9d7hkwwOKcatty1XdaFEBX%2Fka%2BRmczvMtqy8MHIi8Jadiq8XTGkje%2Fd8%2FwWxKE4ArECU6HdtOLsmqxHTsI%2FQnUy%2BeWmv7Hu8s4qUrcB7%2Fdxfrww6hAe5y3J3iDZXlWj2lh6L2khe8lSLwPVyQw%2Bm6VPidUCqyggYOCKm6ipz7YQTTnQed808Aj30upSTjjYy8vovtaqSzCU91VFRDkVHlkOcQnbJAvow5psbQBMwsI6QywY6pgH5DHa2NRcl8g2YMdgwyHhtnQT5H0TvEf072A94XXAUHaQXez1SOjmJ67wLs%2F1j3yoW2scNpSvt96R0EDGSKcqce9ArUHWAe%2F%2FrZsoTdISYNEX%2F6YSjvSJv8qtj%2Bq6GgvZDikMPebBqQNh0PBh0hERTG98hybEnb3xl1Claq%2BmiWav9s92r2mPRuJnkAXPjBYMBl4vrN1ubmb5tqCVMpgwCeR4qf1os&X-Amz-Signature=ff4050c174fbb2b1712a706aa45793bdadbcbcb79f0d11f41dd6330d4ee9e7a4&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+        "expiry_time": "2026-01-11T23:40:48.705Z"
+      }
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80f0-8b75-e6d1eae33b42",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Acidose Respiratória e HPV",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Acidose Respiratória e HPV",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-800b-af54-d13c144f7a66",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Acidose respiratória",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Acidose respiratória",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " pode ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " pode ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "potencializar a HPV",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "potencializar a HPV",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " → inicialmente parece benéfica",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " → inicialmente parece benéfica",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-800d-9251-d9385099a2f3",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "No entanto, ela também ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "No entanto, ela também ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "↑ tônus vascular no pulmão bem ventilado",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "↑ tônus vascular no pulmão bem ventilado",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ", podendo ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ", podendo ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "prejudicar redistribuição do fluxo",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "prejudicar redistribuição do fluxo",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8074-ab9e-ebea655e7625",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Hiperventilação (ALCALOSE RESPIRATÓRIA) → ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Hiperventilação (ALCALOSE RESPIRATÓRIA) → ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "↓ HPV",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "↓ HPV",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " e pode ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " e pode ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "piorar V/Q",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "piorar V/Q",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80fc-9d38-e818ba70e57e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:51:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80d3-aa11-f3a590f975b1",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:51:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "image",
+    "image": {
+      "caption": [],
+      "type": "file",
+      "file": {
+        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/78666cf6-aa89-4198-9fe9-1c1a08b1ab5f/ba2fe1bc-007d-4cdf-a5ba-129d77ea063c/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466VFTCCAC3%2F20260111%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260111T224048Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBUaCXVzLXdlc3QtMiJGMEQCIEUWUy%2F2Kag3%2FObS9s2QwVIUIG5aYObEhIYHsMqmQK1IAiBLX50R1IkIU9KUlgQN2cnOqRkzJKtpuTrelpTb3Fu%2BnyqIBAje%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIM1G9khzPELaCNqwubKtwD3TB%2FNC4HpOgAwqjn5c6WYhshOCcdODOWOGjXoAG523Jyi3aG%2BaZSnPpU3f%2FxylDmvAQwyTFYbUxdrAofGiUIn%2B682uaL%2BORa59%2Bk49jtJeqtV2gbWfk4VXtf3bU6a4q8dp%2BQrgTECchLwP46Zn9pWoDK0BJa7dlS0vWbtRAn8B%2F1Xo6j36i%2FwoHZXIM8yg7jxvK%2FLTftXKDxFVgwzuu26knIfju%2BjZivpOmXAQCvQZjNiKhVkzIsGhtYayV12zY7a7KS16E4%2BLp5PRPknOdN4rIwZpO6o4rr1Os313OH4iw9suY9FYxa%2FOKRIp257CxxxpmoemuMEtS2ygCG%2BL2Bx1wPiYuDUrBA6NfIKN3t6kQ2Lphr%2BCOPRBijaEeWdJ1sZm9r5yUgN%2FemmTDf%2B45k9d7hkwwOKcatty1XdaFEBX%2Fka%2BRmczvMtqy8MHIi8Jadiq8XTGkje%2Fd8%2FwWxKE4ArECU6HdtOLsmqxHTsI%2FQnUy%2BeWmv7Hu8s4qUrcB7%2Fdxfrww6hAe5y3J3iDZXlWj2lh6L2khe8lSLwPVyQw%2Bm6VPidUCqyggYOCKm6ipz7YQTTnQed808Aj30upSTjjYy8vovtaqSzCU91VFRDkVHlkOcQnbJAvow5psbQBMwsI6QywY6pgH5DHa2NRcl8g2YMdgwyHhtnQT5H0TvEf072A94XXAUHaQXez1SOjmJ67wLs%2F1j3yoW2scNpSvt96R0EDGSKcqce9ArUHWAe%2F%2FrZsoTdISYNEX%2F6YSjvSJv8qtj%2Bq6GgvZDikMPebBqQNh0PBh0hERTG98hybEnb3xl1Claq%2BmiWav9s92r2mPRuJnkAXPjBYMBl4vrN1ubmb5tqCVMpgwCeR4qf1os&X-Amz-Signature=baf38d385c3e42ebd95896ca5768229256ce854fc1d10306c66f7684152475b6&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+        "expiry_time": "2026-01-11T23:40:48.704Z"
+      }
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8068-97fd-fb0c37ffee2b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8068-9835-fe6367160575",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:41:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "PCV vs. VCV",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "PCV vs. VCV",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80cf-af17-c14c7cd936f1",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:52:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "image",
+    "image": {
+      "caption": [],
+      "type": "file",
+      "file": {
+        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/78666cf6-aa89-4198-9fe9-1c1a08b1ab5f/3ee0d779-8a31-407c-8cb7-d901f8d8ffb7/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466VFTCCAC3%2F20260111%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260111T224048Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBUaCXVzLXdlc3QtMiJGMEQCIEUWUy%2F2Kag3%2FObS9s2QwVIUIG5aYObEhIYHsMqmQK1IAiBLX50R1IkIU9KUlgQN2cnOqRkzJKtpuTrelpTb3Fu%2BnyqIBAje%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIM1G9khzPELaCNqwubKtwD3TB%2FNC4HpOgAwqjn5c6WYhshOCcdODOWOGjXoAG523Jyi3aG%2BaZSnPpU3f%2FxylDmvAQwyTFYbUxdrAofGiUIn%2B682uaL%2BORa59%2Bk49jtJeqtV2gbWfk4VXtf3bU6a4q8dp%2BQrgTECchLwP46Zn9pWoDK0BJa7dlS0vWbtRAn8B%2F1Xo6j36i%2FwoHZXIM8yg7jxvK%2FLTftXKDxFVgwzuu26knIfju%2BjZivpOmXAQCvQZjNiKhVkzIsGhtYayV12zY7a7KS16E4%2BLp5PRPknOdN4rIwZpO6o4rr1Os313OH4iw9suY9FYxa%2FOKRIp257CxxxpmoemuMEtS2ygCG%2BL2Bx1wPiYuDUrBA6NfIKN3t6kQ2Lphr%2BCOPRBijaEeWdJ1sZm9r5yUgN%2FemmTDf%2B45k9d7hkwwOKcatty1XdaFEBX%2Fka%2BRmczvMtqy8MHIi8Jadiq8XTGkje%2Fd8%2FwWxKE4ArECU6HdtOLsmqxHTsI%2FQnUy%2BeWmv7Hu8s4qUrcB7%2Fdxfrww6hAe5y3J3iDZXlWj2lh6L2khe8lSLwPVyQw%2Bm6VPidUCqyggYOCKm6ipz7YQTTnQed808Aj30upSTjjYy8vovtaqSzCU91VFRDkVHlkOcQnbJAvow5psbQBMwsI6QywY6pgH5DHa2NRcl8g2YMdgwyHhtnQT5H0TvEf072A94XXAUHaQXez1SOjmJ67wLs%2F1j3yoW2scNpSvt96R0EDGSKcqce9ArUHWAe%2F%2FrZsoTdISYNEX%2F6YSjvSJv8qtj%2Bq6GgvZDikMPebBqQNh0PBh0hERTG98hybEnb3xl1Claq%2BmiWav9s92r2mPRuJnkAXPjBYMBl4vrN1ubmb5tqCVMpgwCeR4qf1os&X-Amz-Signature=c15a139d70cca812ec29818bdde50026bb4e95fef2560e541570bf65de301b2e&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+        "expiry_time": "2026-01-11T23:40:48.711Z"
+      }
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80fc-9e28-c1e204b33eb8",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:42:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "table",
+    "table": {
+      "table_width": 3,
+      "has_column_header": true,
+      "has_row_header": true
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-807f-a530-c1d2b49999c9",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:43:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Considerações Fisiológicas Adicionais",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Considerações Fisiológicas Adicionais",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80da-93e7-fa253d8f3acd",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:43:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🔸 Efeito da posição lateral:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "🔸 Efeito da posição lateral:",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80ae-93c6-e125b2fe5a0b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:43:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "↑ espaço morto",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "↑ espaço morto",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80b8-a21f-ee15edae495b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:43:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "↑ gradiente PaCO₂ – EtCO₂ → EtCO₂ menos confiável",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "↑ gradiente PaCO₂ – EtCO₂ → EtCO₂ menos confiável",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-802a-b596-f4a745758aa6",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:43:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "↑ necessidade de ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "↑ necessidade de ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "20% no volume minuto",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "20% no volume minuto",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " para manter PaCO₂",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " para manter PaCO₂",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80d0-a0d1-c8355d595469",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:43:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🔸 Alterações ventilatórias durante OLV:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "🔸 Alterações ventilatórias durante OLV:",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8014-9b92-ffd039905c0a",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:43:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Ventilação personalizada",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Ventilação personalizada",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8017-95e3-c57e04e0ec51",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T22:07:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80b0-ae7c-dc1fceaaff22",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T22:07:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "FIO2 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "FIO2 ",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-808a-8c00-d85877897c37",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T22:07:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "100% = aumenta atelectasias  no pulmão ventilado → Aumento da RVP no Pulmão Dependente → Maior Shunt do pulmão não dependente",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "100% = aumenta atelectasias  no pulmão ventilado → Aumento da RVP no Pulmão Dependente → Maior Shunt do pulmão não dependente",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8042-9bdd-d5490b0c76e1",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T22:08:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-8094-bfcb-e6aaaa7fab5c",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:43:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80bf-b5de-c8e00a26fd77",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:43:00.000Z",
+    "last_edited_time": "2026-01-06T02:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f71d2ed-24cf-80b5-962a-eb9ce296da4a",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1f61d2ed-24cf-8012-91a5-d99937422a57"
+    },
+    "created_time": "2025-05-18T19:44:00.000Z",
+    "last_edited_time": "2025-05-18T21:48:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "image",
+    "image": {
+      "caption": [],
+      "type": "file",
+      "file": {
+        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/78666cf6-aa89-4198-9fe9-1c1a08b1ab5f/99950667-b4e2-459e-840b-458e33e5ce9c/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466VFTCCAC3%2F20260111%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260111T224048Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBUaCXVzLXdlc3QtMiJGMEQCIEUWUy%2F2Kag3%2FObS9s2QwVIUIG5aYObEhIYHsMqmQK1IAiBLX50R1IkIU9KUlgQN2cnOqRkzJKtpuTrelpTb3Fu%2BnyqIBAje%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIM1G9khzPELaCNqwubKtwD3TB%2FNC4HpOgAwqjn5c6WYhshOCcdODOWOGjXoAG523Jyi3aG%2BaZSnPpU3f%2FxylDmvAQwyTFYbUxdrAofGiUIn%2B682uaL%2BORa59%2Bk49jtJeqtV2gbWfk4VXtf3bU6a4q8dp%2BQrgTECchLwP46Zn9pWoDK0BJa7dlS0vWbtRAn8B%2F1Xo6j36i%2FwoHZXIM8yg7jxvK%2FLTftXKDxFVgwzuu26knIfju%2BjZivpOmXAQCvQZjNiKhVkzIsGhtYayV12zY7a7KS16E4%2BLp5PRPknOdN4rIwZpO6o4rr1Os313OH4iw9suY9FYxa%2FOKRIp257CxxxpmoemuMEtS2ygCG%2BL2Bx1wPiYuDUrBA6NfIKN3t6kQ2Lphr%2BCOPRBijaEeWdJ1sZm9r5yUgN%2FemmTDf%2B45k9d7hkwwOKcatty1XdaFEBX%2Fka%2BRmczvMtqy8MHIi8Jadiq8XTGkje%2Fd8%2FwWxKE4ArECU6HdtOLsmqxHTsI%2FQnUy%2BeWmv7Hu8s4qUrcB7%2Fdxfrww6hAe5y3J3iDZXlWj2lh6L2khe8lSLwPVyQw%2Bm6VPidUCqyggYOCKm6ipz7YQTTnQed808Aj30upSTjjYy8vovtaqSzCU91VFRDkVHlkOcQnbJAvow5psbQBMwsI6QywY6pgH5DHa2NRcl8g2YMdgwyHhtnQT5H0TvEf072A94XXAUHaQXez1SOjmJ67wLs%2F1j3yoW2scNpSvt96R0EDGSKcqce9ArUHWAe%2F%2FrZsoTdISYNEX%2F6YSjvSJv8qtj%2Bq6GgvZDikMPebBqQNh0PBh0hERTG98hybEnb3xl1Claq%2BmiWav9s92r2mPRuJnkAXPjBYMBl4vrN1ubmb5tqCVMpgwCeR4qf1os&X-Amz-Signature=205924936ee5112696dc459f96dc302aec506b0cc29bdc33b12860bd9f1a8dd9&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+        "expiry_time": "2026-01-11T23:40:48.777Z"
+      }
+    }
+  }
+]

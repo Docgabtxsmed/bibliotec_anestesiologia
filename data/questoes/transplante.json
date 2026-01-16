@@ -1,0 +1,162 @@
+{
+  "titulo": "Transplante Hepatico",
+  "descricao": "Questoes comentadas sobre transplante hepatico.",
+  "questoes": [
+    {
+      "enunciado": "Um paciente de 59 anos, com diagnostico de cirrose hepatica por hepatite C e alcool (escore de MELD-Na 24), e admitido para avaliacao pre-transplante hepatico. Ao exame, apresenta-se com pressao arterial de 98/50 mmHg, frequencia cardiaca de 102 bpm e um sopro sistolico ejetivo. O ecocardiograma transtoracico revela uma fracao de ejecao do ventriculo esquerdo (FEVE) de 70%, debito cardiaco indexado de 4.5 L/min/m2, mas com disfuncao diastolica grau II e prolongamento do intervalo QTc. Qual e a interpretacao fisiopatologica mais precisa desses achados e sua principal implicacao para o manejo anestesico intraoperatorio?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Os achados representam um estado cardiovascular compensado, onde a principal preocupacao anestesica sera a prevencao de bradicardia, dado o prolongamento do intervalo QTc.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "O paciente apresenta um quadro classico de cardiomiopatia cirrotica, caracterizado por circulacao hiperdinamica em repouso com disfuncao diastolica, implicando em alto risco de insuficiencia cardiaca aguda se submetido a sobrecarga volemica ou aumento subito da pos-carga.",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "A combinacao de baixo tonus vascular e alto debito cardiaco e um mecanismo protetor contra a lesao renal, minimizando a necessidade de vasopressores no intraoperatorio.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "A FEVE elevada e o alto debito indicam uma reserva miocardica robusta, sugerindo que o paciente tolerara bem as flutuacoes hemodinamicas e a reposicao volemica agressiva durante a cirurgia.",
+          "correta": false
+        }
+      ],
+      "explicacao": "Este quadro paradoxal de alto debito com reserva contratil limitada e um ventriculo rigido (disfuncao diastolica) torna o coracao extremamente vulneravel as mudancas hemodinamicas do transplante, especialmente a reperfusao."
+    },
+    {
+      "enunciado": "Durante um transplante hepatico de doador vivo (hepatectomia direita no doador), o anestesiologista opta por uma estrategia de manutencao com sevoflurano. Qual e a principal consideracao teorica sobre o uso de sevoflurano em cirurgias hepaticas e qual a conclusao da literatura apresentada nas fontes sobre sua seguranca clinica em transplantes renais (que pode ser extrapolada)?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A preocupacao teorica e a nefrotoxicidade pelos metabolitos Composto A e ion fluoreto, mas grandes estudos e meta-analises nao demonstraram disfuncao de enxerto renal, sugerindo seguranca clinica.",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "O sevoflurano causa vasodilatacao hepatica excessiva, levando ao sequestro de volume no leito esplancnico e instabilidade hemodinamica.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "O sevoflurano e o agente de escolha, pois comprovadamente aumenta o fluxo sanguineo da arteria hepatica mais do que o propofol.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "O sevoflurano deve ser evitado devido a nefrotoxicidade direta de seus metabolitos, o que contraindica seu uso em cirurgias de transplante.",
+          "correta": false
+        }
+      ],
+      "explicacao": "As fontes mencionam especificamente a preocupacao com o Composto A e o fluoreto, mas concluem, com base em uma meta-analise de 41 ensaios, que o sevoflurano e seguro e nao causa disfuncao renal pos-operatoria em comparacao com outros anestesicos."
+    },
+    {
+      "enunciado": "Um paciente de 45 anos, submetido a um transplante renal de doador falecido, apresenta Doenca Renal em Estagio Terminal (DRET) secundaria a diabetes mellitus. Durante a avaliacao pre-anestesica, o potassio serico e de 6,2 mEq/L, com alteracoes no ECG (ondas T apiculadas). A ultima sessao de hemodialise foi ha 36 horas. Qual e a conduta anestesica mais apropriada em relacao ao bloqueio neuromuscular para a sequencia rapida de intubacao?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Utilizar rocuronio em dose elevada (1,2 mg/kg), pois oferece um inicio de acao rapido, evitando o risco de hipercalemia induzida pela succinilcolina.",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Administrar succinilcolina na dose de 1,5 mg/kg, pois seu rapido inicio de acao e crucial e o aumento do potassio e clinicamente insignificante.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Utilizar cisatracurio, pois sua eliminacao de Hofmann e ideal, e proceder com a intubacao sem aguardar o tempo total de latencia.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Administrar pancuronio, pois sua longa duracao de acao e benefica para o procedimento e ele nao afeta o potassio serico.",
+          "correta": false
+        }
+      ],
+      "explicacao": "O rocuronio e a escolha segura para sequencia rapida de intubacao neste cenario, pois nao afeta os niveis de potassio. A dose elevada garante um inicio de acao comparavel ao da succinilcolina."
+    },
+    {
+      "enunciado": "Durante a fase de dissecao (pre-anepatica) de um transplante hepatico em um paciente com MELD 35 e ascite refrataria, a equipe cirurgica solicita manutencao de uma Pressao Venosa Central (PVC) baixa para minimizar o sangramento. Contudo, o paciente apresenta disfuncao renal cronica pre-operatoria (Sindrome Hepatorrenal tipo 2). Qual e o principal conflito de objetivos e o risco associado a essa estrategia de PVC baixa neste cenario especifico?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A estrategia de PVC baixa conflita com a necessidade de manter a perfusao renal adequada, aumentando o risco de lesao renal aguda (LRA) pos-operatoria.",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "O principal risco e a instabilidade hemodinamica severa, pois a PVC baixa inviabiliza o uso de vasopressores como a norepinefrina.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "A PVC baixa e ideal, pois a Sindrome Hepatorrenal e uma condicao funcional que se resolvera com o transplante, independentemente do manejo hidrico intraoperatorio.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "A PVC baixa aumenta o risco de embolia aerea venosa, mas e a estrategia padrao-ouro para reduzir a necessidade de transfusao em todos os pacientes.",
+          "correta": false
+        }
+      ],
+      "explicacao": "Pacientes com disfuncao renal previa sao particularmente vulneraveis a hipovolemia, e a manutencao de uma PVC baixa para reduzir o sangramento pode comprometer criticamente o fluxo sanguineo renal."
+    },
+    {
+      "enunciado": "Um paciente de 58 anos, com diagnostico de cirrose por Doenca Hepatica Gordurosa Nao Alcoolica (DHGNA) e MELD-Na de 32, esta programado para transplante hepatico. A avaliacao pre-operatoria revela uma gasometria arterial em ar ambiente com PaO2 de 58 mmHg e um ecocardiograma com contraste (microbolhas) que demonstra a passagem tardia (> 3 ciclos cardiacos) de bolhas para as camaras esquerdas. Qual e o diagnostico mais provavel e a principal implicacao anestesica intraoperatoria relacionada a oxigenacao?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Tromboembolismo pulmonar cronico, exigindo anticoagulacao plena e possivel embolectomia antes do transplante.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Sindrome Hepatopulmonar (SHP), o que implica que a hipoxemia pode piorar com a ventilacao com pressao positiva e que o transplante e a unica terapia curativa.",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Cardiomiopatia cirrotica com disfuncao diastolica, causando edema pulmonar e hipoxemia, necessitando de restricao hidrica rigorosa.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Hipertensao Portopulmonar (HPP) grave, indicando a necessidade de uso profilatico de oxido nitrico inalatorio para prevenir falencia de VD.",
+          "correta": false
+        }
+      ],
+      "explicacao": "A SHP e caracterizada por vasodilatacoes vasculares intrapulmonares, resultando em shunt e hipoxemia, confirmada pelo teste de microbolhas tardio. O transplante hepatico e o unico tratamento definitivo."
+    },
+    {
+      "enunciado": "Durante um transplante hepatico, na fase neo-hepatica, imediatamente apos a reperfusao do enxerto, o paciente desenvolve hipotensao arterial severa (PAM 45 mmHg), bradicardia (FC 40 bpm) e um aumento subito da pressao da arteria pulmonar. A gasometria arterial revela K+ = 7.1 mEq/L e acidose metabolica grave. Alem do suporte vasopressor, qual e a medida farmacologica prioritaria para tratar a causa subjacente da instabilidade cardiovascular?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Administracao de azul de metileno para reverter a vasoplegia associada a sindrome pos-reperfusao.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Infusao rapida de albumina a 5% para expandir o volume intravascular e melhorar o retorno venoso.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Administracao de furosemida em altas doses para promover a caliurese e reduzir rapidamente os niveis de potassio.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Administracao intravenosa de cloreto de calcio para estabilizacao da membrana miocardica contra os efeitos da hipercalemia.",
+          "correta": true
+        }
+      ],
+      "explicacao": "O calcio antagoniza diretamente os efeitos da hipercalemia no miocardio, estabilizando a membrana celular e restaurando o potencial de acao, sendo a medida mais critica para prevenir uma parada cardiaca."
+    }
+  ]
+}
