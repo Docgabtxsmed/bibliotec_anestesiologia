@@ -61,7 +61,22 @@ window.onload = async function() {
             nomeDisplay = 'CDI Marcapasso';
         } else if (tema === 'cardiaca') {
             arquivoJson = 'data/cardiaca.json';
-            nomeDisplay = 'Cirurgia Cardíaca';        
+            nomeDisplay = 'Cirurgia Cardíaca';
+        } else if (tema === 'plastica') {
+            arquivoJson = 'data/plastica.json';
+            nomeDisplay = 'Cirurgia Plastica';
+        } else if (tema === 'geriatria') {
+            arquivoJson = 'data/geriatria.json';
+            nomeDisplay = 'Geriatria';
+        } else if (tema === 'dor') {
+            arquivoJson = 'data/dor.json';
+            nomeDisplay = 'Dor';
+        } else if (tema === 'vascular') {
+            arquivoJson = 'data/vascular.json';
+            nomeDisplay = 'Cirurgia Vascular';
+        } else if (tema === 'hipotermia') {
+            arquivoJson = 'data/hipotermia.json';
+            nomeDisplay = 'Hipotermia';
         } else {
             elements.deckTitle.innerText = "Nenhum deck selecionado.";
             elements.cardFront.innerText = "Erro: Tema não definido na URL.";

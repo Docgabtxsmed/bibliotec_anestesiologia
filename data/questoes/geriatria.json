@@ -1,0 +1,471 @@
+{
+    "titulo": "Anestesiologia Geriátrica",
+    "descricao": "Simulado completo com 15 questões comentadas sobreanestesiologia geriátrica.",
+    "questoes": [
+      {
+        "enunciado": "Paciente de 78 anos, sexo feminino, é avaliada no ambulatório pré-anestésico para colecistectomia videolaparoscópica eletiva. Durante a anamnese, relata que nos últimos 12 meses perdeu 5 kg de forma não-intencional, sente-se exausta na maior parte dos dias, apresenta força de preensão palmar reduzida à dinamometria (12 kg), caminha muito lentamente (velocidade <0,8 m/s) e reduziu drasticamente suas atividades físicas habituais. Segundo os critérios do fenótipo de fragilidade de Linda Fried, quantos critérios essa paciente apresenta e qual a classificação de fragilidade?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "3 critérios; paciente pré-frágil",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "4 critérios; paciente frágil",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "5 critérios; paciente frágil",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "2 critérios; paciente pré-frágil",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "3 critérios; paciente robusta",
+            "correta": false
+          }
+        ],
+        "explicacao": "A paciente apresenta TODOS os 5 critérios de Linda Fried:\n\n1. ✅ Perda peso não-intencional: 5 kg/ano (critério = 4,5 kg/ano ou 5%)\n2. ✅ Exaustão: 'sente-se exausta na maior parte dos dias'\n3. ✅ Fraqueza (grip): força preensão palmar reduzida (12 kg)\n4. ✅ Lentidão marcha: velocidade <0,8 m/s\n5. ✅ ↓ atividade física: 'reduziu drasticamente suas atividades físicas habituais'\n\nClassificação: ≥3 critérios = frágil | 1-2 critérios = pré-frágil | 0 critérios = robusta\n\nPegadinha: Alternativas A e E tentam confundir com '3 critérios'; B força '4 critérios' para você perder 1 critério óbvio."
+      },
+      {
+        "enunciado": "Em relação à farmacocinética e farmacodinâmica do propofol no paciente idoso (≥80 anos), qual das alternativas abaixo está CORRETA?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "O volume do compartimento central está aumentado devido ao aumento da água corporal total, resultando em menor concentração plasmática",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "A depuração hepática está preservada, não sendo necessário ajuste de dose para infusões prolongadas",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "A redução de 20-40% da massa hepática e 40-60% do fluxo hepático resulta em acúmulo da droga e maior risco de sobredose",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "A capacidade metabólica das enzimas hepáticas (fase I e II) está aumentada no idoso, acelerando o metabolismo do propofol",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "A redistribuição é mais rápida no idoso devido ao aumento da massa muscular, reduzindo o tempo de ação",
+            "correta": false
+          }
+        ],
+        "explicacao": "Farmacocinética do propofol no idoso:\n\n❌ A está ERRADA: V compartimento central está DIMINUÍDO (↓ água corporal + ↓ massa magra) → concentração plasmática AUMENTA (não diminui)\n\n❌ B está ERRADA: Depuração hepática está REDUZIDA (↓ 20-40% massa fígado + ↓ 40-60% fluxo) → necessário ajuste de dose\n\n✅ C está CORRETA: Mecanismo principal de sobredose = ↓ massa + ↓ fluxo hepático → acúmulo\n\n❌ D está ERRADA: Capacidade metabólica é VARIÁVEL (não aumenta); fase I ↓ ou variável; fase II preservada\n\n❌ E está ERRADA: Redistribuição é mais LENTA (↓ massa muscular) → prolonga efeito\n\nAjuste prático: ↓ 20-60% dose bolus; ↓ 50% infusão >50 min"
+      },
+      {
+        "enunciado": "Paciente de 82 anos, submetido à raquianestesia para correção de fratura de fêmur, apresenta hipotensão refratária (PAM 45 mmHg) após 3 doses de efedrina 10 mg IV. Qual o mecanismo fisiopatológico que melhor explica a falha terapêutica da efedrina neste cenário e qual a conduta mais apropriada?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Tônus simpático basal reduzido; utilizar atropina para aumentar a frequência cardíaca",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Hiporresponsividade dos receptores β-adrenérgicos por diminuição da afinidade receptorial e defeito no acoplamento intracelular; utilizar α-agonistas puros (fenilefrina ou metaraminol)",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Níveis de catecolaminas circulantes reduzidos; administrar noradrenalina em infusão contínua",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Extravasamento pós-ganglionar de noradrenalina; utilizar midodrina oral",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Hiperresponsividade dos receptores α-adrenérgicos; suspender efedrina e iniciar betabloqueador",
+            "correta": false
+          }
+        ],
+        "explicacao": "Mecanismo da falha da efedrina no idoso:\n\n• Efedrina = β-agonista predominante (efeito inotrópico/cronotrópico)\n• Idoso tem hiporresponsividade β-adrenérgica por:\n  ○ ↓ afinidade receptores β\n  ○ Defeito acoplamento intracelular (transdução de sinal)\n• Idoso DEPENDE de pré-carga, não de efeito β (inotrópico)\n\nFisiopatologia cardiovascular do idoso (compensação):\n✅ Tônus simpático basal AUMENTADO (não diminuído) — elimina A\n✅ Catecolaminas circulantes AUMENTADAS (não diminuídas) — elimina C\n❌ Extravasamento pós-ganglionar NÃO é mecanismo limitante — elimina D\n\nConduta correta: Usar α-agonistas puros (fenilefrina, metaraminol) → vasoconstrição venosa → ↑ retorno venoso (pré-carga)"
+      },
+      {
+        "enunciado": "Paciente de 80 anos será submetido à colectomia sob anestesia geral balanceada com sevoflurano. Considerando a redução da CAM com o envelhecimento, qual a concentração alveolar mínima esperada de sevoflurano para este paciente?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "2,0% (CAM base aos 40 anos, sem ajuste necessário)",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "1,8% (CAM base mínima aos 40 anos)",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "1,4% (redução de 6%/década após os 40 anos)",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "1,0% (redução de 40% em relação à CAM base)",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "2,4% (aumento compensatório pela redução de receptores GABA)",
+            "correta": false
+          }
+        ],
+        "explicacao": "Fórmula de ajuste da CAM por idade:\nCAM ajustada = CAM base × (1 - 0,06 × décadas após 40 anos)\n\nCálculo para paciente de 80 anos:\n• CAM base sevoflurano aos 40 anos = 1,8–2,0%\n• Décadas após 40 anos = (80 - 40) / 10 = 4 décadas\n• Redução = 6% × 4 = 24% = 0,24\n• Fator multiplicador = 1 - 0,24 = 0,76\n• CAM ajustada = 2,0% × 0,76 ≈ 1,52% OU 1,8% × 0,76 ≈ 1,37% ≈ 1,4%\n\nAlternativas incorretas:\n• A/B = sem ajuste (erro conceitual)\n• D = 1,0% seria redução >40% (excessivo)\n• E = CAM diminui (não aumenta) no idoso\n\nMecanismo: ↓ receptores GABA + ↓ acetilcolina + alterações transmissão neuronal"
+      },
+      {
+        "enunciado": "Em relação ao uso de bloqueadores neuromusculares (BNM) adespolarizantes em pacientes idosos, assinale a alternativa CORRETA sobre a farmacocinética e o ajuste de dose:",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "A dose de intubação deve ser reduzida em 25-50% devido à diminuição do volume de distribuição",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "A dose de intubação deve ser mantida (100%), mas a duração do bloqueio está aumentada em 25-50% pela redução da depuração",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "A dose de manutenção deve ser aumentada devido ao aumento do clearance hepático",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "A dose de neostigmina para reversão deve ser reduzida pela maior sensibilidade dos receptores nicotínicos",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Todos os BNM devem ter suas doses reduzidas em 50% devido ao aumento da sensibilidade da junção neuromuscular",
+            "correta": false
+          }
+        ],
+        "explicacao": "Conceito CRÍTICO — FK 'desbalanceada' do idoso para BNM:\n\n| Parâmetro | Idoso | Efeito | Ajuste |\n|-----------|-------|--------|--------|\n| Vd (Volume distribuição) | ↑ | Dilui droga | Manter dose intubação 100% |\n| Depuração (clearance) | ↓ 25-50% | Prolonga bloqueio | ↑ Duração 25-50% |\n| Dose manutenção | — | Acúmulo | ↓ dose ou ↑ intervalo |\n| Neostigmina | — | Bloqueio prolongado | ↑ dose (única que aumenta!) |\n\nPor que alternativas estão erradas:\n❌ A: Vd ↑ (não ↓) → dose intubação mantida (não reduzida)\n❌ C: Clearance ↓ (não ↑) → ↓ dose manutenção (não aumentar)\n❌ D: Neostigmina deve ser AUMENTADA (não reduzida)\n❌ E: Sensibilidade junção neuromuscular preservada; farmacocinética que muda"
+      },
+      {
+        "enunciado": "Qual das seguintes características diferencia a Disfunção Cognitiva Pós-Operatória (DCPO) do delirium pós-operatório?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "DCPO é um déficit agudo (24-72h) com rebaixamento do nível de consciência",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "DCPO é um déficit crônico (semanas-meses) com múltiplos domínios cognitivos afetados (memória, atenção, função executiva) e consciência preservada",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "DCPO apresenta curso flutuante e ocorre exclusivamente nas primeiras 24 horas de pós-operatório",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "DCPO não compromete as atividades de vida diária (AVD), diferentemente do delirium",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "DCPO e delirium são sinônimos, diferindo apenas no momento do diagnóstico",
+            "correta": false
+          }
+        ],
+        "explicacao": "Diferenças DCPO vs Delirium:\n\n| Característica | DCPO | Delirium |\n|----------------|------|----------|\n| Timeline | CRÔNICO (semanas–meses) | AGUDO (horas-dias) |\n| Consciência | PRESERVADA | ↓ Rebaixada/flutuante |\n| Curso | Progressivo/estável | Flutuante |\n| Domínios | Múltiplos (memória, atenção, função executiva, visuespacial) | Atenção + pensamento desorganizado |\n| AVD | Comprometidas | Variável |\n\nNomenclatura atualizada (2018):\n• Delayed Neurocognitive Recovery (dNCR): até 30 dias PO\n• Postoperative NCD (mild/major): 30 dias–12 meses PO\n• POD (Postoperative Delirium): até 7 dias PO ou alta\n\nAlternativas incorretas:\nA = inverteu (DCPO é crônico, não agudo)\nC = curso flutuante é do delirium\nD = DCPO SIM compromete AVD (critério DSM-5)\nE = NÃO são sinônimos"
+      },
+      {
+        "enunciado": "Sobre os subtipos de delirium pós-operatório, assinale a alternativa CORRETA:",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "O subtipo hiperativo é o mais comum e tem melhor prognóstico por ser facilmente identificado",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "O subtipo hipoativo é o mais prevalente, frequentemente passa despercebido e apresenta piores desfechos",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "O subtipo misto é raro (<5% dos casos) e não tem relevância clínica",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Todos os subtipos têm a mesma incidência e prognóstico",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "O subtipo hipoativo é caracterizado por agitação psicomotora intensa",
+            "correta": false
+          }
+        ],
+        "explicacao": "Subtipos de delirium:\n\n| Subtipo | Prevalência | Características | Prognóstico |\n|---------|-------------|-----------------|-------------|\n| Hipoativo | MAIS COMUM | Letargia, sonolência, ↓ atividade | PIOR (passa despercebido) |\n| Hiperativo | Menos comum | Agitação, hiperatividade motora | Intermediário (identificado facilmente) |\n| Misto | Comum | Alterna hipoativo/hiperativo | Variável |\n\nManifestações hipoativo:\n• Letargia\n• Sonolência diurna\n• Agitação noturna (inversão ciclo sono-vigília, NÃO hiperatividade motora)\n\nPor que B está correta:\n• Hipoativo = mais prevalente (não hiperativo)\n• Passa despercebido (equipe não identifica letargia como delirium)\n• Piores desfechos (diagnóstico tardio → sem intervenção precoce)\n\nAlternativas incorretas:\nA = hiperativo NÃO é o mais comum\nC = misto é comum (não raro)\nD = incidências e prognósticos DIFERENTES\nE = hipoativo = letargia (não agitação psicomotora)"
+      },
+      {
+        "enunciado": "Qual o mecanismo neuroquímico predominante envolvido na fisiopatologia do delirium pós-operatório?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Aumento da atividade colinérgica e diminuição da atividade dopaminérgica",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Diminuição da atividade colinérgica e aumento da atividade dopaminérgica",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Aumento da atividade serotoninérgica e diminuição da atividade GABAérgica",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Aumento da atividade glutamatérgica e diminuição da atividade histaminérgica",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Diminuição da atividade dopaminérgica e aumento da atividade noradrenérgica",
+            "correta": false
+          }
+        ],
+        "explicacao": "Fisiopatologia neuroquímica do delirium:\n• ↓ Acetilcolina (ACh)\n• ↑ Dopamina\n\nImplicações clínicas:\n\n1. EVITAR anticolinérgicos (pioram delirium):\n   • Difenidramina, escopolamina\n   • Atropina em altas doses\n   • Antidepressivos tricíclicos\n\n2. EVITAR benzodiazepínicos (↓ ACh indiretamente)\n\n3. NÃO suspender antidepressivos crônicos (risco descompensação)\n\n4. Meperidina = CONTRAINDICADA (ação anticolinérgica)\n\nAlternativas incorretas:\nA = INVERTEU (↓ ACh, não ↑)\nC, D, E = outros neurotransmissores (não mecanismo principal)"
+      },
+      {
+        "enunciado": "Paciente de 76 anos com hipertensão arterial crônica apresenta hipotensão importante durante indução anestésica, apesar de dose reduzida de propofol. Qual a principal alteração cardiovascular relacionada ao envelhecimento que explica a dependência de pré-carga neste paciente?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Disfunção sistólica com fração de ejeção reduzida",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Hipertrofia ventricular excêntrica com aumento da complacência",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "Disfunção diastólica com aumento da rigidez ventricular por hipertrofia e fibrose, resultando em dependência de pré-carga para enchimento adequado",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "Diminuição da resistência vascular sistêmica por perda de elasticidade arterial",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Aumento da responsividade β-adrenérgica compensatória",
+            "correta": false
+          }
+        ],
+        "explicacao": "Fisiopatologia cardiovascular do idoso:\n\nMiocárdio:\n• Morte miócitos + ↑ tamanho → hipertrofia ventricular\n• ↑ Fibrose → ↓ elasticidade → ↑ rigidez ventricular\n• Disfunção DIASTÓLICA (relaxamento prejudicado)\n• Função sistólica em repouso PRESERVADA (sem patologia)\n\nConsequência clínica:\n• DEPENDE DE PRÉ-CARGA para enchimento ventricular adequado\n• Não tolera hipovolemia\n• Não tolera fibrilação atrial (perde 'kick' atrial = 15-30% do enchimento)\n\nOutras alterações:\n• ↑ RVS (rigidez arterial) = ↑ pós-carga\n• ↓ Responsividade β (não aumenta)\n\nAlternativas incorretas:\nA = função sistólica PRESERVADA (não reduzida) em repouso\nB = hipertrofia CONCÊNTRICA (não excêntrica); complacência DIMINUI (não aumenta)\nD = RVS AUMENTA (não diminui)\nE = responsividade β DIMINUI (não aumenta)"
+      },
+      {
+        "enunciado": "Em relação às alterações dos volumes e capacidades pulmonares no envelhecimento, assinale a alternativa CORRETA:",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "A capacidade pulmonar total (CPT) apresenta redução importante (25-40%)",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "A CPT permanece estável; há aumento da CRF e do VR; diminuição da CV",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "A complacência pulmonar diminui pela deposição de colágeno no parênquima",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "O volume residual (VR) diminui 5-10% por década",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "A capacidade vital (CV) aumenta compensatoriamente em 15% por década",
+            "correta": false
+          }
+        ],
+        "explicacao": "Alterações dos volumes pulmonares no idoso:\n\n| Volume/Capacidade | Alteração | Mecanismo |\n|-------------------|-----------|------------|\n| CPT | ESTÁVEL | Equilíbrio entre ↑ pulmão e ↓ parede |\n| CRF | ↑ 1-3%/década | Perda elasticidade pulmonar |\n| VR | ↑ 5-10%/década | ↓ Força muscular expiratória |\n| CV | ↓ 25-40% | ↓ VR + alterações parede |\n\nAlterações de complacência:\n• ↑ Complacência PULMONAR (perda elastina = ↓ retração elástica)\n• ↓ Complacência PAREDE TORÁCICA (rigidez caixa torácica)\n• Resultado: ↑ trabalho respiratório\n\nAlternativas incorretas:\nA = CPT ESTÁVEL (não ↓)\nC = complacência pulmonar AUMENTA (não diminui)\nD = VR AUMENTA (não diminui)\nE = CV DIMINUI (não aumenta)"
+      },
+      {
+        "enunciado": "Sobre a relação entre capacidade de fechamento das vias aéreas e CRF no paciente idoso durante o perioperatório, qual alternativa está CORRETA?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "A capacidade de fechamento diminui com a idade, permanecendo sempre abaixo da CRF",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "A CRF aumenta significativamente no perioperatório, ultrapassando a capacidade de fechamento",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "A capacidade de fechamento aumenta com a idade e pode ultrapassar a CRF no perioperatório, resultando em fechamento precoce de pequenas vias aéreas, atelectasias e hipoxemia",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "Não há relação entre capacidade de fechamento e CRF no contexto perioperatório",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "A capacidade de fechamento só é relevante em pacientes com DPOC grave",
+            "correta": false
+          }
+        ],
+        "explicacao": "Conceito crítico — Capacidade de fechamento vs CRF:\n\nEstado basal (envelhecimento):\n• CRF ↑ 1-3%/década\n• Capacidade fechamento ↑↑ MAIS que CRF\n\nEstado perioperatório:\n• CRF ↓ (↓ tônus muscular + ↓ função diafragmática + posição supina + anestesia)\n• Capacidade fechamento mantém-se elevada\n\nResultado clínico:\n• Quando capacidade fechamento > CRF → fechamento precoce pequenas vias aéreas\n• → Atelectasias + shunt (V/Q mismatch) + hipoxemia\n\nMecanismo anatômico:\n• Perda elastina → ↓ tração radial → colapso precoce vias aéreas distais\n\nImplicações perioperatórias:\n• Prolongar pré-oxigenação\n• PEEP adequado (≥5 cmH2O)\n• Manobras recrutamento\n• Mobilização precoce PO"
+      },
+      {
+        "enunciado": "Em relação às alterações da função renal no envelhecimento, qual das seguintes afirmações está CORRETA?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "A taxa de filtração glomerular (TFG) aumenta 1%/ano após os 40 anos",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "A capacidade de excretar H+ está aumentada devido ao aumento da secreção de amônia",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "A TFG diminui aproximadamente 1%/ano após os 40 anos; há redução da capacidade de excretar H+ (por diminuição da secreção de amônia), resultando em maior suscetibilidade à acidose",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "O fluxo sanguíneo renal aumenta 10% por década após os 40 anos",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "A resposta à aldosterona, renina e vasopressina está aumentada, melhorando a regulação volêmica",
+            "correta": false
+          }
+        ],
+        "explicacao": "Alterações renais no envelhecimento:\n\nEstruturais:\n• ↓ Néfrons funcionais\n• ↑ Glomeruloesclerose\n• ↓ 35-50% fluxo sanguíneo renal aos 80 anos\n\nFuncionais:\n• ↓ TFG 1%/ano após 40 anos\n• ↓ Capacidade concentração/diluição urina\n• ↓ Secreção amônia → ↓ tampão pH urinário → maior suscetibilidade acidose\n• ↓ Resposta aldosterona/renina/vasopressina → ↓ ajuste volêmico\n\nConsequências clínicas:\n• Propensão LRA/hipotensão\n• Distúrbios eletrolíticos (disnatremia)\n• Acidose metabólica/respiratória mal compensada\n• Acúmulo drogas excreção renal (ajustar dose)\n\nAlternativas incorretas:\nA/D = TFG e fluxo DIMINUEM (não aumentam)\nB = secreção amônia DIMINUI (não aumenta)\nE = resposta hormonal DIMINUI (não aumenta)"
+      },
+      {
+        "enunciado": "Sobre o metabolismo hepático de fármacos no idoso, assinale a alternativa CORRETA:",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "A fase I (oxidação/redução/hidrólise) está preservada; a fase II (conjugação) está deprimida",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Tanto a fase I quanto a fase II estão aumentadas, acelerando o metabolismo de drogas",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "A fase I está reduzida ou variável; a fase II (conjugação/acetilação) permanece preservada",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "O volume hepático aumenta 20-40% com compensação funcional completa",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "A síntese de albumina e fatores de coagulação está aumentada no idoso saudável",
+            "correta": false
+          }
+        ],
+        "explicacao": "Alterações hepáticas no idoso:\n\nEstruturais:\n• ↓ 20-40% massa hepática\n• ↓ 35-50% fluxo sanguíneo hepático\n• Fibrose + esteatose (50% geriátricos)\n\nMetabolismo:\n• Fase I (oxidação/redução/hidrólise via CYP450): ↓ ou VARIÁVEL\n• Fase II (conjugação/acetilação): PRESERVADA\n\nConsequências clínicas:\n\nDrogas fluxo-dependente (alta extração): metabolismo ↓↓\n• Morfina, fentanil, sufentanil\n• Ketamina, lidocaína\n• → ↑ meia-vida, prolongamento efeito\n\nDrogas capacidade-dependente (baixa extração): variável\n• Propofol, midazolam\n• Depende de ligação proteica\n\nSíntese proteica:\n• Albumina ↓ (não aumenta)\n• Fatores coagulação ↓ (adequada para demanda basal, mas insuficiente em trauma/cirurgia)\n\nAlternativas incorretas:\nA = INVERTEU (fase I ↓, fase II preservada)\nB = nenhuma aumenta\nD = volume hepático DIMINUI (não aumenta)\nE = síntese proteica DIMINUI (não aumenta)"
+      },
+      {
+        "enunciado": "Paciente de 72 anos, com 4 anos de escolaridade formal e histórico de déficit cognitivo leve (MoCA = 22), será submetido à artroplastia total de quadril. Qual dos seguintes NÃO é considerado fator de risco estabelecido para DCPO?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Idade >65 anos",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Baixa escolaridade (menor reserva cognitiva)",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "Déficit cognitivo prévio",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Sexo feminino",
+            "correta": true
+          },
+          {
+            "letra": "E",
+            "texto": "Tipo de cirurgia (ortopédica de grande porte)",
+            "correta": false
+          }
+        ],
+        "explicacao": "Fatores de risco ESTABELECIDOS para DCPO:\n\nPré-operatórios:\n✅ Idade >65 anos (risco exponencial)\n✅ Baixa escolaridade (↓ reserva cognitiva)\n✅ Déficit cognitivo prévio (MCI, demência)\n✅ Comorbidades (DM, HAS, ICC)\n✅ APOE E4 alelo (genético)\n\nIntra/Perioperatórios:\n✅ Tipo/duração cirurgia (ortopédica, cardíaca, vascular)\n✅ Complicações PO (sangramento, infecção, delirium)\n• ↑ Duração cirurgia\n• Hipotensão/hipóxia intraoperatória\n\nNÃO são fatores estabelecidos:\n❌ Sexo feminino (sem evidência consistente)\n❌ Elevação cortisol (não direto)\n❌ Tipo anestesia (IV vs inalatório — evidência controversa)\n\nFatores PROTETORES:\n• Dexmedetomidina (vs BZD)\n• Alta escolaridade"
+      },
+      {
+        "enunciado": "De acordo com os critérios de Beers e as diretrizes de prevenção de delirium, qual das seguintes classes de medicamentos deve ser EVITADA no perioperatório de pacientes idosos por aumentar o risco de delirium?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Paracetamol",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Benzodiazepínicos, anticolinérgicos (difenidramina, escopolamina) e meperidina",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Dexmedetomidina",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Antagonistas 5-HT3 (ondansetrona)",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Anti-inflamatórios não-esteroides (AINEs) em doses reduzidas",
+            "correta": false
+          }
+        ],
+        "explicacao": "Medicações CONTRAINDICADAS (Beers Criteria) no idoso:\n\n❌ Benzodiazepínicos:\n• Midazolam, diazepam, lorazepam\n• Mecanismo: ↓ atividade colinérgica → delirium\n• Substituir por: dexmedetomidina (ICU)\n\n❌ Anticolinérgicos:\n• Difenidramina, escopolamina\n• Atropina (altas doses)\n• Proclorperazina, prometazina (antieméticos)\n• Mecanismo: ↓ ACh diretamente\n\n❌ Meperidina:\n• Única opioide CONTRAINDICADA\n• Metabólito normeperidina = ação anticolinérgica + neurotóxico\n• Substituir por: morfina, fentanil (com ajuste dose)\n\n❌ Outros:\n• Corticosteroides (altas doses)\n• Antipsicóticos (haloperidol) — NÃO previnem delirium; não tratam\n• Bloqueadores H2 (ranitidina)\n\n✅ SEGURAS no idoso:\n• Paracetamol (sem ajuste dose se função hepática normal)\n• Antagonistas 5-HT3 (ondansetrona) — antiemético preferido\n• AINEs (dose ↓ 25-50%; evitar se IRC)\n• Dexmedetomidina (PROTETOR)"
+      }
+    ]
+  }

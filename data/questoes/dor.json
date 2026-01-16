@@ -1,0 +1,626 @@
+{
+    "titulo": "Dor Aguda e Crônica",
+    "descricao": "Simulado completo com 30 questões comentadas sobre manejo de dor aguda e crônica em anestesiologia.",
+    "questoes": [
+      {
+        "enunciado": "Mulher de 68 anos, diabética, com neuralgia pós-herpética há 6 meses, apresenta alodínia intensa na região torácica. Foi tratada com amitriptilina 75 mg/dia, mas apresentou retenção urinária e boca seca. Qual o fármaco de primeira linha mais adequado para esta paciente?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Carbamazepina 200 mg 2x/dia",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Pregabalina 150 mg 2x/dia",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Oxcarbazepina 300 mg 2x/dia",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Aciclovir 400 mg 5x/dia",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Codeína 30 mg 4x/dia",
+            "correta": false
+          }
+        ],
+        "explicacao": "NPH estabelecida (6 meses) com alodínia + idosa com efeitos anticolinérgicos de amitriptilina → Pregabalina = 1ª linha para NPH.\n\nGabapentina também seria correta.\n\nCarbamazepina (A) = específica para neuralgia trigêmeo + múltiplas interações + black box warning.\n\nAciclovir (D) = útil na fase aguda do herpes para prevenir NPH, não trata NPH estabelecida.\n\nAdesivo de lidocaína seria adjuvante para alodínia."
+      },
+      {
+        "enunciado": "Homem de 45 anos, usuário crônico de oxicodona 60 mg/dia há 18 meses para dor lombar crônica, será submetido a artrodese lombar. Na avaliação pré-anestésica, qual conduta está CORRETA?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Suspender oxicodona 24h antes da cirurgia para evitar interação com anestésicos",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Manter oxicodona na manhã da cirurgia e planejar necessidade analgésica 2-4x maior no perioperatório",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Substituir oxicodona por tramadol 48h antes da cirurgia",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Reduzir dose de oxicodona pela metade 7 dias antes da cirurgia",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Suspender oxicodona e iniciar metadona 24h antes da cirurgia",
+            "correta": false
+          }
+        ],
+        "explicacao": "Usuário crônico de opioide → MANTER na manhã da cirurgia (evitar abstinência) + necessidade 2-4x maior no perioperatório + infusão de fundo (50-75% dose diária) + titular opioide curta ação 2-4x dose habitual.\n\nSuspender (A, D, E) = risco abstinência (taquicardia/hipertensão prejudicial)."
+      },
+      {
+        "enunciado": "Em relação ao mecanismo de ação da pregabalina no tratamento da dor neuropática, qual afirmação está CORRETA?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Age como agonista seletivo dos receptores GABA-A no sistema nervoso central",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Liga-se à subunidade α2-δ dos canais de cálcio voltagem-dependentes, reduzindo liberação de neurotransmissores excitatórios",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Bloqueia canais de sódio voltagem-dependentes nas fibras A-delta",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Inibe a recaptação de serotonina e noradrenalina na fenda sináptica",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Age como antagonista não-competitivo dos receptores NMDA",
+            "correta": false
+          }
+        ],
+        "explicacao": "Pregabalina/gabapentina NÃO age em GABA (apesar do nome).\n\nLiga-se à subunidade α2-δ dos canais Ca²⁺ voltagem-dependentes → modula liberação de neurotransmissores excitatórios (glutamato, substância P).\n\nSem interações medicamentosas significativas com GABA/BZD."
+      },
+      {
+        "enunciado": "Paciente de 72 anos, coronariopata, em uso crônico de fentanil transdérmico 50 mcg/h, gabapentina 300 mg 3x/dia e amitriptilina 25 mg/noite, será submetido a colectomia. Qual manejo perioperatório está CORRETO?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Manter patch de fentanil durante cirurgia e dobrar dose de amitriptilina no pós-operatório",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Remover patch de fentanil antes da cirurgia, converter para morfina IV, manter gabapentina e amitriptilina em doses pré-operatórias",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Suspender gabapentina 48h antes por risco de interação com anestésicos",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Manter patch de fentanil e usar dose plena ao reintroduzir transdérmico no pós-operatório",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Suspender amitriptilina 7 dias antes por risco de arritmias",
+            "correta": false
+          }
+        ],
+        "explicacao": "Remover patch de fentanil antes (intraop = alterações volemia/temperatura → absorção imprevisível) + converter para morfina IV contínua.\n\nManter gabapentina e amitriptilina em doses pré-op (dependência física → abstinência).\n\nReintroduzir transdérmico com 50-75% da última dose IV, não 100% (D errada)."
+      },
+      {
+        "enunciado": "Sobre a PCA (analgesia controlada pelo paciente) com morfina no pós-operatório, qual afirmação está CORRETA?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "A infusão basal contínua melhora a analgesia sem aumentar riscos",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Deve-se utilizar bolus sob demanda sem infusão basal, podendo adicionar adjuvantes como cetamina ou clonidina",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "A via neuroeixo está associada a maior risco de depressão respiratória que a via intravenosa",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Não há benefício em adicionar analgésicos não-opioides concomitantes",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "A infusão basal deve ser de 75-100% da dose total diária",
+            "correta": false
+          }
+        ],
+        "explicacao": "PCA = bolus sob demanda SEM infusão basal (infusão basal ↑ risco depressão respiratória sem benefício).\n\nAdicionar adjuvantes: cetamina 0,125 mg/kg ou clonidina 75 μg.\n\nVia (neuroeixo vs IV) NÃO é fator de risco para depressão respiratória (C falsa)."
+      },
+      {
+        "enunciado": "Homem de 55 anos com dor neuropática em membro inferior esquerdo refratária a opioides será tratado farmacologicamente. Ele tem histórico de depressão maior em tratamento. Qual a melhor opção terapêutica?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Pregabalina como primeira linha",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Duloxetina como primeira linha",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Carbamazepina como primeira linha",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Ziconotida intratecal como primeira linha",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Cetamina oral como primeira linha",
+            "correta": false
+          }
+        ],
+        "explicacao": "Dor neuropática refratária a opioides + DEPRESSÃO → preferir antidepressivo (duloxetina/amitriptilina) como 1ª linha.\n\nSe não houvesse depressão, seria pregabalina.\n\nCarbamazepina (C) = indicação específica (neuralgia trigêmeo), não dor neuropática genérica."
+      },
+      {
+        "enunciado": "Em relação ao fenômeno de wind-up na sensibilização central, qual afirmação está CORRETA?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Ocorre pela estimulação persistente de fibras A-beta que transmitem informações táteis",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Ocorre pela estimulação persistente de fibras A-delta que conduzem dor rápida",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "Ocorre pela estimulação persistente de fibras C, aumentando excitabilidade dos neurônios do corno dorsal e causando alodínia/hiperalgesia",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "É bloqueado pela ativação dos receptores GABA-A no corno dorsal medular",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Ocorre independente da ativação de receptores NMDA",
+            "correta": false
+          }
+        ],
+        "explicacao": "Wind-up = estimulação persistente de FIBRAS C (não A-beta ou A-delta) → ↑ excitabilidade neurônios corno dorsal + ↑ campo receptivo → alodínia/hiperalgesia.\n\nReceptor NMDA envolvido (cetamina bloqueia)."
+      },
+      {
+        "enunciado": "Paciente com dor oncológica visceral pélvica (câncer de próstata) e expectativa de vida de 2 meses. Qual procedimento intervencionista está mais indicado?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Bloqueio neurolítico do plexo celíaco",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Estimulador medular de cordão posterior",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "Bloqueio neurolítico do plexo hipogástrico superior (L5-S1)",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "Bomba intratecal de morfina",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Rizotomia por radiofrequência de gânglio estrelado",
+            "correta": false
+          }
+        ],
+        "explicacao": "Dor visceral PÉLVICA (próstata) = plexo hipogástrico superior (L5-S1).\n\nExpectativa de vida <3 meses = CI bomba/estimulador (B, D).\n\nCelíaco (A) = abdome alta (pâncreas), NÃO pelve."
+      },
+      {
+        "enunciado": "Sobre os metabólitos da morfina, qual afirmação está CORRETA?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "O M6G é inativo como analgésico e responsável por mioclonia",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "O M3G tem atividade analgésica potente e é o principal responsável pela analgesia da morfina",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "O M6G tem atividade analgésica e o M3G é inativo como analgésico, sendo responsável por estimulação do SNC",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "Ambos M6G e M3G são inativos e não têm relevância clínica",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "O M6G causa depressão respiratória mas não tem efeito analgésico",
+            "correta": false
+          }
+        ],
+        "explicacao": "M6G = atividade ANALGÉSICA.\n\nM3G = INATIVO como analgésico + estimulação SNC (mioclonia, hiperalgesia).\n\nMetabolismo hepático via conjugação com ácido glucurônico."
+      },
+      {
+        "enunciado": "Mulher de 80 anos com neuralgia do trigêmeo refratária a tratamento clínico. Qual anticonvulsivante tem aprovação específica para esta condição?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Pregabalina",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Gabapentina",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "Carbamazepina",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "Topiramato",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Lamotrigina",
+            "correta": false
+          }
+        ],
+        "explicacao": "Carbamazepina = aprovação FDA para neuralgia do trigêmeo (bloqueio canais Na⁺ → ↓ disparo espontâneo fibras Aδ/C).\n\nMas: múltiplas interações + black box warning (anemia aplástica, agranulocitose) → utilidade clínica limitada."
+      },
+      {
+        "enunciado": "Em relação à tolerância e hiperalgesia induzida por opioides, qual afirmação está CORRETA?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Tolerância e hiperalgesia são sinônimos e devem ser tratadas com aumento progressivo da dose de opioide",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Tolerância e hiperalgesia são fenômenos distintos; tolerância requer aumento de dose, enquanto hiperalgesia requer redução de dose ou rotação",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "A tolerância é um fenômeno psicológico enquanto hiperalgesia é farmacológica",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Ambas se desenvolvem na mesma velocidade para todos os efeitos dos opioides",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "A constipação desenvolve tolerância rapidamente, enquanto a analgesia não",
+            "correta": false
+          }
+        ],
+        "explicacao": "Tolerância ≠ hiperalgesia. São fenômenos DISTINTOS:\n\nTolerância = ↓ efeito → ↑ dose.\n\nHiperalgesia = ↑ sensibilidade à dor → ↓ dose ou rotação.\n\nNMDA envolvido em ambos. Tratamentos opostos."
+      },
+      {
+        "enunciado": "Sobre a dor nociceptiva versus neuropática, qual característica está CORRETAMENTE associada?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Dor nociceptiva: lesão do sistema somatossensorial, alodínia/hiperalgesia, difícil tratamento",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Dor neuropática: ativação de nociceptores C/A-delta, responde bem a AINEs",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "Dor nociceptiva: ativação de nociceptores, transmissão supraespinhal, responde bem a analgésicos clássicos",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "Dor neuropática: não há transmissão supraespinhal, déficits sensoriais incomuns",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Ambas respondem igualmente bem a AINEs e opioides",
+            "correta": false
+          }
+        ],
+        "explicacao": "Dor NOCICEPTIVA = ativação nociceptores (fibras Aδ/C) + transmissão supraespinhal + responde bem a analgésicos clássicos.\n\nDor NEUROPÁTICA = lesão sistema somatossensorial + alodínia/hiperalgesia + difícil tratamento.\n\nBanca troca definições entre B e A."
+      },
+      {
+        "enunciado": "Paciente com Síndrome Dolorosa Regional Complexa (SDCR) tipo I será submetido a bloqueio simpático. Qual expectativa é REALISTA?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Eliminação completa da dor em 90% dos casos",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Redução de 50% da dor já é considerada excelente resultado; tratamento deve ser multimodal",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "O bloqueio simpático é diagnóstico obrigatório para SDCR",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Neurólise do gânglio ciliar proporciona alívio sustentado",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "O bloqueio deve ser repetido semanalmente por tempo indeterminado",
+            "correta": false
+          }
+        ],
+        "explicacao": "Bloqueios simpáticos para SDCR raramente ELIMINAM dor; 50% redução = excelente.\n\nTratamento multimodal + fisio precoce.\n\nBloqueio simpático NÃO é mais obrigatório para diagnóstico.\n\nCiliar (D) = parassimpático ocular, não trata SDCR."
+      },
+      {
+        "enunciado": "Sobre os AINEs no perioperatório, qual afirmação está CORRETA?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Aumentam risco de sangramento intraoperatório significativamente",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Aumentam risco de sangramento pós-operatório",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Não têm efeito sobre sangramento em nenhuma fase",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Os inibidores COX-2 são seguros em pacientes com insuficiência renal",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "A analgesia dos AINEs é mediada pela inibição da COX-1",
+            "correta": false
+          }
+        ],
+        "explicacao": "AINEs ↑ risco sangramento PÓS-operatório (não intraoperatório).\n\nAnalgesia dos AINEs = inibição COX-2 (E errada).\n\nEfeitos adversos = inibição COX-1."
+      },
+      {
+        "enunciado": "Em relação aos receptores NMDA e sensibilização central, qual afirmação está CORRETA?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Os receptores NMDA não participam da sensibilização central",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "O cálcio bloqueia os receptores NMDA, prevenindo sensibilização",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "Os receptores NMDA estão envolvidos na ativação e inicialização da sensibilização central (wind-up)",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "A ativação dos receptores NMDA reduz a sensibilidade à dor",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Os receptores NMDA são ativados exclusivamente por fibras A-beta",
+            "correta": false
+          }
+        ],
+        "explicacao": "Receptores NMDA envolvidos na ativação/inicialização da sensibilização central (wind-up = passo inicial).\n\nCa²⁺ é cofator necessário para ativação, não bloqueia (B falsa)."
+      },
+      {
+        "enunciado": "Sobre a cetamina subanestésica no perioperatório, qual afirmação está CORRETA?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Não é capaz de reduzir a dor pós-operatória",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Reduz a dor pós-operatória quando usada em bolus pré-incisão e infusão pós-operatória",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Só é eficaz quando usada em doses anestésicas",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Não reduz o consumo de opioides",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Está contraindicada em cirurgias abdominais",
+            "correta": false
+          }
+        ],
+        "explicacao": "Cetamina subanestésica SIM reduz dor pós-op (bolus pré-incisão + infusão pós-op).\n\nReduz necessidade de opioides (mas não substitui totalmente).\n\nPegadinha: banca nega eficácia."
+      },
+      {
+        "enunciado": "Homem de 50 anos em uso crônico de diazepam 10 mg/dia e carbamazepina 400 mg/dia será submetido a cirurgia ortopédica. Qual manejo perioperatório está CORRETO?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Suspender ambas medicações 48h antes por risco de interação",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Manter ambas em doses pré-operatórias pois causam dependência física",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Suspender diazepam mas manter carbamazepina",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Reduzir doses pela metade no dia da cirurgia",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Substituir ambas por opioide de longa ação",
+            "correta": false
+          }
+        ],
+        "explicacao": "Anticonvulsivantes (carbamazepina) e BZD (diazepam) devem ser MANTIDOS em doses pré-op (causam dependência física).\n\nSuspensão = risco abstinência (BZD = taquicardia/hipertensão; anticonvulsivante = convulsões)."
+      },
+      {
+        "enunciado": "Sobre a metadona no tratamento da dor crônica, qual mecanismo está CORRETO?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Age exclusivamente como agonista opioide mu",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "É um opioide racêmico; isômero R é agonista mu/delta e isômero S inibe NMDA não-competitivamente",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Não previne hiperalgesia induzida por opioides",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Tem apenas ação periférica",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "É metabolizada rapidamente, exigindo doses a cada 4 horas",
+            "correta": false
+          }
+        ],
+        "explicacao": "Metadona = opioide racêmico.\n\nIsômero R = agonista μ/δ.\n\nIsômero S = inibe NMDA não-competitivamente → previne hiperalgesia induzida por opioides."
+      },
+      {
+        "enunciado": "Em analgesia pediátrica pós-operatória com bloqueio contínuo, qual afirmação sobre bombas elastoméricas está CORRETA?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Permitem ajuste de bolus pelo paciente",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Têm vazão constante, não permitindo ajuste de bolus",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "São programáveis digitalmente",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Permitem infusão variável conforme demanda",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Só podem ser usadas com opioides, não com anestésicos locais",
+            "correta": false
+          }
+        ],
+        "explicacao": "Bombas elastoméricas = vazão CONSTANTE, não permitem ajuste de bolus (profissional escolhe vazão pré-definida ao selecionar a bomba).\n\nBloqueio infraclavicular > axilar (estabilidade cateter)."
+      },
+      {
+        "enunciado": "Paciente de 35 anos com dor crônica oncológica em uso de oxicodona 60 mg/dia, com doença estável (sem progressão tumoral), refere que 'a dor voltou' após 12 meses de tratamento. Qual hipótese é mais provável?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Progressão tumoral",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Tolerância aos opioides",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Metástases ocultas",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Fratura patológica",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Infecção",
+            "correta": false
+          }
+        ],
+        "explicacao": "Doença estável sem progressão + uso crônico 12 meses = pensar em TOLERÂNCIA aos opioides, não em piora do tumor.\n\nTolerância cruzada INCOMPLETA entre opioides → rotação pode ser útil + considerar analgésicos não-opioides + técnicas regionais."
+      }
+    ]
+  }

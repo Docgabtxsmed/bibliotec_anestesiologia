@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template de Questoes - Biblioteca de Anestesiologia</title>
+  <link rel="stylesheet" href="../css/questoes-template.css">
+</head>
+<body class="body-questoes">
+  <header>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo" id="quiz-logo">Questoes</div>
+        <a class="back-link" id="back-link" href="../index.html">Voltar</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-questoes">
+    <section class="hero">
+      <div class="hero-badge">Template fixo de questoes</div>
+      <h1 class="hero-title" id="quiz-title">Banco de Questoes</h1>
+      <p class="hero-subtitle" id="quiz-description">Atualize o arquivo JSON do tema para adicionar novas questoes.</p>
+      <div class="hero-meta">
+        <span class="meta-label">Total de questoes</span>
+        <span class="meta-value" id="question-total">0</span>
+      </div>
+    </section>
+
+    <section class="quiz-shell">
+      <div id="quiz-root" class="quiz-root" aria-live="polite">
+        Carregando...
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Biblioteca de Anestesiologia</span>
+      <span>Template reutilizavel de questoes</span>
+    </footer>
+  </main>
+
+  <script src="../questoes-template.js"></script>
+</body>
+</html>
