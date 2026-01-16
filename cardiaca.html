@@ -10,7 +10,7 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-content">
-            <div class="logo">❤️ Cirurgia Cardíaca</div>
+            <div class="logo" onclick="window.location.href='index.html'" role="button" tabindex="0" aria-label="Voltar para a página inicial">❤️ Cirurgia Cardíaca</div>
             <a href="index.html" class="back-link">← Voltar à Biblioteca</a>
         </div>
     </nav>
@@ -37,7 +37,7 @@
             </article>
 
             <!-- Card Vasopressores e Inotrópicos -->
-            <article class="component-card" onclick="window.location.href='vasopressores-inotropicos.html'">
+            <article class="component-card" onclick="window.location.href='conteudos/vasopressores-inotropicos.html'">
                 <div class="card-thumbnail" style="background: linear-gradient(135deg, #dc2626 0%, #f59e0b 100%);">💊</div>
                 <div class="card-info">
                     <h3 class="card-title">Vasopressores e Inotrópicos</h3>
@@ -82,7 +82,7 @@
             </a>
 
             <!-- Card Monitorização -->
-            <artcile class="component-card" onclick="alert('Em breve!')">
+            <article class="component-card" onclick="alert('Em breve!')">
                 <div class="card-thumbnail" style="background: linear-gradient(135deg, #48638b 0%, #282d54 100%);">📊</div>
                 <div class="card-info">
                     <h3 class="card-title">Monitorização em CEC</h3>
@@ -122,5 +122,6 @@
             }
         }
     </script>
+    <script src="script-secondary.js"></script>
 </body>
 </html>

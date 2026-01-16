@@ -1,0 +1,3989 @@
+[
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80dd-abe0-cf4a5bf26348",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:40:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "📖 Definição",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "📖 Definição",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-803c-87f0-ceb1ece006a9",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:40:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "SAM (",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "SAM (",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "Systolic Anterior Motion",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": true,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Systolic Anterior Motion",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ") refere-se ao ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ") refere-se ao ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "movimento anterior da cúspide anterior (ou posterior) da valva mitral em direção ao septo interventricular durante a sístole",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "movimento anterior da cúspide anterior (ou posterior) da valva mitral em direção ao septo interventricular durante a sístole",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ".",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ".",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80ea-90de-ce1d158a942f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:40:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Resulta em:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Resulta em:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-806a-a50a-f3edf3ea2d5c",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:40:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Obstrução dinâmica da via de saída do VE (OVSVE)",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Obstrução dinâmica da via de saída do VE (OVSVE)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80e6-9635-d6fa39f299de",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:40:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Insuficiência mitral (IM)",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Insuficiência mitral (IM)",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " por má coaptação das cúspides",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " por má coaptação das cúspides",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80d2-bd9b-d374771c14e7",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "divider",
+    "divider": {}
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8020-8dd4-e9a1a7ceb987",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🔬 Fisiopatologia",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "🔬 Fisiopatologia",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80c4-895e-f2f43fb23a10",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "O SAM ocorre por:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "O SAM ocorre por:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-807a-8b3c-e63841200398",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Efeito Venturi",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Efeito Venturi",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ": fluxo acelerado na VSVE cria pressão negativa que \"puxa\" a valva mitral anteriormente",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ": fluxo acelerado na VSVE cria pressão negativa que \"puxa\" a valva mitral anteriormente",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80c7-8519-e5c07a58ccc6",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Forças de arrasto",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Forças de arrasto",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ": folhetos mitrais deslocados pelo fluxo turbulento",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ": folhetos mitrais deslocados pelo fluxo turbulento",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80a0-975f-f5e7d8641ad1",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Combinação de fatores anatômicos e hemodinâmicos:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Combinação de fatores anatômicos e hemodinâmicos:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-805a-aa98-ddc449fa879f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Geometria desfavorável do aparelho mitral",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Geometria desfavorável do aparelho mitral",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-802f-8a27-e12009b7fa2b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Condições que aumentam a contratilidade e reduzem a pré-carga",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Condições que aumentam a contratilidade e reduzem a pré-carga",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-801a-b88d-d232ffb5b7d6",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "divider",
+    "divider": {}
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8000-af8b-d5c303964dda",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🩺 Causas Principais",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "🩺 Causas Principais",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-805f-a701-dd640fdae81e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Cardiomiopatia Hipertrófica Obstrutiva (CMHO)",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Cardiomiopatia Hipertrófica Obstrutiva (CMHO)",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8074-93e8-d5fda5423eed",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Pós-operatório de cirurgia mitral",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Pós-operatório de cirurgia mitral",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8071-a21c-fe5070f2042e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Hipertrofia ventricular esquerda de outras causas",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Hipertrofia ventricular esquerda de outras causas",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8064-a468-ee61c5518b29",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Estados hiperdinâmicos",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Estados hiperdinâmicos",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8029-bcde-f3b174126755",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Hipovolemia aguda",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Hipovolemia aguda",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8022-a663-dd1ef3d091d1",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "divider",
+    "divider": {}
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8031-bd62-f5c55b312679",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🔍 Achados no Ecocardiograma",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "🔍 Achados no Ecocardiograma",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8032-8b78-e869606d74e1",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Ecocardiograma Transtorácico (ETT)",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Ecocardiograma Transtorácico (ETT)",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80a7-9324-f6ec6e0c5bc9",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Modo M paraesternal: movimento anterior da mitral em direção ao septo durante a sístole",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Modo M paraesternal: movimento anterior da mitral em direção ao septo durante a sístole",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80d2-8290-c17803999a1f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "2D: visualização do contato mitral-septal",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "2D: visualização do contato mitral-septal",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-803a-8c22-c37f6ea910fe",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Doppler contínuo na VSVE: ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Doppler contínuo na VSVE: ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "gradiente dinâmico",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "gradiente dinâmico",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " (formato de \"adaga\" ou \"late-peaking\")",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " (formato de \"adaga\" ou \"late-peaking\")",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8091-bc49-d60306f8bccd",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Ecocardiograma Transesofágico (ETE)",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Ecocardiograma Transesofágico (ETE)",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8032-bf59-d12cc550bda2",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Visão ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Visão ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "transgástrica",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "transgástrica",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " ou ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " ou ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "4 câmaras a 0°",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "4 câmaras a 0°",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ": melhor para visualizar SAM",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ": melhor para visualizar SAM",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80b1-a780-ed56c9996ca8",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Visão de ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Visão de ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "3 câmaras (120°)",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "3 câmaras (120°)",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ": avalia distância mitral-septo e gradiente na VSVE",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ": avalia distância mitral-septo e gradiente na VSVE",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80d7-a39e-daf33cc7180c",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Doppler colorido: ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Doppler colorido: ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "jato de IM posterolateral",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "jato de IM posterolateral",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " (excêntrico)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " (excêntrico)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80cd-9a23-d432ca1e4111",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Graduação da severidade",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Graduação da severidade",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8047-94ab-e5196b89712d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Contato mitral-septal breve vs prolongado",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Contato mitral-septal breve vs prolongado",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-806e-9ab7-c6157a855a14",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Gradiente na VSVE:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Gradiente na VSVE:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8097-9dd7-ca91a0277c0e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "divider",
+    "divider": {}
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8060-ba93-f8c8ac2fd9cf",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "⚠️ Implicações Perioperatórias",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "⚠️ Implicações Perioperatórias",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8073-908e-c4766b4bf531",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "SAM pode ser ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "SAM pode ser ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "induzido ou agravado durante anestesia",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "induzido ou agravado durante anestesia",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " por:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " por:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8061-bb89-c1a3137b77f4",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Hipovolemia relativa (vasodilatação, sangramento)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Hipovolemia relativa (vasodilatação, sangramento)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80b5-966d-d7cae3ef9c3b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Taquicardia",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Taquicardia",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80aa-9142-ed5db8b14e95",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Uso de inotrópicos (dobutamina, milrinona)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Uso de inotrópicos (dobutamina, milrinona)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8026-a957-fbaa80e6842c",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Redução abrupta da pós-carga (vasodilatadores, anestesia)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Redução abrupta da pós-carga (vasodilatadores, anestesia)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80a5-bea3-f1b2ecbdd654",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Consequências",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Consequências",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-801b-94dc-c7326cd6e04f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Hipotensão severa",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Hipotensão severa",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-808c-881f-d880828bbd08",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Baixo débito cardíaco",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Baixo débito cardíaco",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80c1-acf1-f642858ca3c5",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Isquemia miocárdica (↑ MVO₂, ↓ perfusão coronariana)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Isquemia miocárdica (↑ MVO₂, ↓ perfusão coronariana)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-808b-8aa4-c53a1264af33",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Edema pulmonar agudo (IM aguda)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Edema pulmonar agudo (IM aguda)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8016-8715-ec7a6422d84c",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "divider",
+    "divider": {}
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80a3-951b-db86fa7bf413",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "💊 Manejo Anestésico",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "💊 Manejo Anestésico",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8003-9811-e21c877b6740",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Princípios gerais",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Princípios gerais",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80fe-8b33-c40fa5a20c1b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "↑ Pré-carga",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "↑ Pré-carga",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ": volemia adequada, evitar hipovolemia",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ": volemia adequada, evitar hipovolemia",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8081-a098-d7398ac19f7a",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "↑ Pós-carga",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "↑ Pós-carga",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ": manter RVS (fenilefrina, vasopressina)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ": manter RVS (fenilefrina, vasopressina)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80c9-b3a0-e96b35e04b9b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "↓ Contratilidade",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "↓ Contratilidade",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ": beta-bloqueadores (esmolol, metoprolol)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ": beta-bloqueadores (esmolol, metoprolol)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80ea-b5ab-e72f8fcc9f89",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Evitar taquicardia",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Evitar taquicardia",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ": controle rigoroso de FC",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ": controle rigoroso de FC",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-804a-9294-c82593a8b649",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "EVITAR",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "EVITAR",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8025-88bc-cd10605ff05d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Tratamento agudo intraoperatório",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Tratamento agudo intraoperatório",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80e6-9beb-c9c091ed0ebd",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Expansão volêmica",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Expansão volêmica",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " (cristaloides, coloides)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " (cristaloides, coloides)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80f4-be18-e429d1a4f7de",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Fenilefrina",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Fenilefrina",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " ou ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " ou ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "vasopressina",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "vasopressina",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " (↑ pós-carga)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " (↑ pós-carga)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80c8-b5dd-ff90e806bbd6",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Beta-bloqueador IV",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Beta-bloqueador IV",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " (esmolol 0,5 mg/kg em bolus, seguido de infusão)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " (esmolol 0,5 mg/kg em bolus, seguido de infusão)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8034-8743-f4cda2e4b128",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Redução/suspensão de inotrópicos",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Redução/suspensão de inotrópicos",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8088-a094-e664a3f476c0",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Em casos refratários:",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Em casos refratários:",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8013-8e0c-e5900d6d5c97",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Metas hemodinâmicas",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Metas hemodinâmicas",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80ef-ae73-dca5d53e3778",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "FC: 60-80 bpm (ritmo sinusal preferível)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "FC: 60-80 bpm (ritmo sinusal preferível)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8097-8222-e483afa1983b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "PAS: manter próxima ao basal ou levemente elevada",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "PAS: manter próxima ao basal ou levemente elevada",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80cf-b64e-c8e7555adfe4",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Euvolemia: PVC 10-12 mmHg, PAP adequada",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Euvolemia: PVC 10-12 mmHg, PAP adequada",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8084-987c-f2ef4abd7fa0",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "divider",
+    "divider": {}
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-800f-b50f-d74e6860f5f3",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🔧 Tratamento Definitivo (Não Perioperatório)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "🔧 Tratamento Definitivo (Não Perioperatório)",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8016-9f6e-ce615f4eeb0d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Medicamentoso",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Medicamentoso",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-805e-9fb6-c926401a34a7",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Intervencionista",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Intervencionista",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": ":",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ":",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-806e-bc4a-f7071f68a0d2",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Cirúrgico",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Cirúrgico",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " (se SAM pós-plastia mitral):",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " (se SAM pós-plastia mitral):",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-80ae-9624-f54fe6ad9da5",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "divider",
+    "divider": {}
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8015-9c7a-c882705aa856",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "📌 Pontos-Chave",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "📌 Pontos-Chave",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-806f-b2e2-c78ede0745ae",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "SAM = obstrução dinâmica da VSVE + IM por deslocamento anterior da mitral",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "SAM = obstrução dinâmica da VSVE + IM por deslocamento anterior da mitral",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8033-a189-d068015295db",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Causas: CMHO, pós-plastia mitral, HVE, estados hiperdinâmicos",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Causas: CMHO, pós-plastia mitral, HVE, estados hiperdinâmicos",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-809e-ab40-f569d3748855",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Diagnóstico: ETE intraoperatório (visão transgástrica e 3 câmaras)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Diagnóstico: ETE intraoperatório (visão transgástrica e 3 câmaras)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8051-9a9b-c9f5c9e22b34",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Manejo: ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Manejo: ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "↑ volemia, ↑ pós-carga, ↓ contratilidade, ↓ FC",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "↑ volemia, ↑ pós-carga, ↓ contratilidade, ↓ FC",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-8036-92ca-d9bdfb71bf53",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Evitar: inotrópicos, vasodilatadores, hipovolemia, taquicardia",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Evitar: inotrópicos, vasodilatadores, hipovolemia, taquicardia",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "2d81d2ed-24cf-808a-8f34-f084b9ba835f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "2d81d2ed-24cf-805d-b6ba-cf93019f705f"
+    },
+    "created_time": "2025-12-29T12:43:00.000Z",
+    "last_edited_time": "2026-01-05T00:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "17fd872b-594c-817e-a134-00029c31def6"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Tratamento agudo: volume + fenilefrina + beta-bloqueador IV",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Tratamento agudo: volume + fenilefrina + beta-bloqueador IV",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  }
+]
