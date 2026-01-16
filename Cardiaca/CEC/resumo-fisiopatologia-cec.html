@@ -7,39 +7,41 @@
     <link rel="stylesheet" href="../../css/style-resumo.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-content">
-            <div class="logo">🫀 Fisiopatologia da CEC</div>
-            <a href="../cec.html" class="back-link">← Voltar</a>
-        </div>
-    </nav>
+    <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navegação principal">
+            <div class="nav-content">
+                <div class="logo" onclick="window.location.href='../cec.html'">📚 Biblioteca de Anestesiologia</div>
+                <a class="back-link" href="../cec.html">← Voltar</a>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Container Principal -->
-    <div class="main-container">
-        <!-- Sidebar de Navegação -->
-        <aside class="sidebar">
-            <h3 class="sidebar-title">Navegação</h3>
-            <ul class="sidebar-nav">
-                <li><a href="#hemodinamicas" class="active">1. Alterações Hemodinâmicas</a></li>
-                <li><a href="#hematologicas">2. Alterações Hematológicas</a></li>
-                <li><a href="#inflamatoria">3. Resposta ao Estresse e Inflamatória</a></li>
-                <li><a href="#microcirculacao">4. Alterações na Microcirculação</a></li>
-                <li><a href="#orgaos">5. Alterações de Órgãos Específicos</a></li>
-                <li><a href="#snc">5.1 Sistema Nervoso Central</a></li>
-                <li><a href="#renal">5.2 Lesão Renal</a></li>
-                <li><a href="#miocardica">5.3 Lesão Miocárdica</a></li>
-                <li><a href="#pulmonar">5.4 Lesão Pulmonar</a></li>
-                <li><a href="#gi">5.5 Efeitos GI e Hepáticos</a></li>
-            </ul>
-        </aside>
+    <main id="conteudo" class="site-main" role="main">
+        <div class="main-container">
+            <aside class="sidebar">
+                <h3 class="sidebar-title">Navegação</h3>
+                <nav aria-label="Sumário do resumo">
+                    <ul class="sidebar-nav">
+                        <li><a href="#hemodinamicas" class="active">1. Alterações Hemodinâmicas</a></li>
+                        <li><a href="#hematologicas">2. Alterações Hematológicas</a></li>
+                        <li><a href="#inflamatoria">3. Resposta ao Estresse e Inflamatória</a></li>
+                        <li><a href="#microcirculacao">4. Alterações na Microcirculação</a></li>
+                        <li><a href="#orgaos">5. Alterações de Órgãos Específicos</a></li>
+                        <li><a href="#snc">5.1 Sistema Nervoso Central</a></li>
+                        <li><a href="#renal">5.2 Lesão Renal</a></li>
+                        <li><a href="#miocardica">5.3 Lesão Miocárdica</a></li>
+                        <li><a href="#pulmonar">5.4 Lesão Pulmonar</a></li>
+                        <li><a href="#gi">5.5 Efeitos GI e Hepáticos</a></li>
+                    </ul>
+                </nav>
+            </aside>
 
-        <!-- Conteúdo Principal -->
-        <main class="content">
-            <!-- Header -->
-            <div class="content-header">
-                <h1 class="content-title">Fisiologia do Bypass Cardiopulmonar</h1>
-                <p class="content-subtitle">Um Resumo Didático sobre a Fisiopatologia da Circulação Extracorpórea</p>
+            <div class="content">
+                <!-- Header -->
+                <div class="content-header">
+                    <h1 class="content-title">Fisiologia do Bypass Cardiopulmonar</h1>
+                    <p class="content-subtitle">Um Resumo Didático sobre a Fisiopatologia da Circulação Extracorpórea</p>
             </div>
 
             <!-- Seção 1: Alterações Hemodinâmicas -->
@@ -402,50 +404,13 @@
                 </div>
             </section>
 
-        </main>
-    </div>
+        </div>
+    </main>
 
-    <script>
-        // Smooth scroll para navegação
-        document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetSection = document.querySelector(targetId);
-                
-                if (targetSection) {
-                    targetSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    
-                    // Atualiza active
-                    document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
-                    this.classList.add('active');
-                }
-            });
-        });
+    <footer class="site-footer">
+        <p>© 2026 Biblioteca de Anestesiologia - Academia MedTech</p>
+    </footer>
 
-        // Atualiza navegação baseado no scroll
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('.section');
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            document.querySelectorAll('.sidebar-nav a').forEach(a => {
-                a.classList.remove('active');
-                if (a.getAttribute('href') === `#${current}`) {
-                    a.classList.add('active');
-                }
-            });
-        });
-    </script>
+    <script src="../script-resumo.js"></script>
 </body>
 </html>
