@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anestesia Endócrina - Biblioteca de Anestesiologia</title>
+    <link rel="stylesheet" href="style-secondary.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo" onclick="window.location.href='index.html'" role="button" tabindex="0" aria-label="Voltar para a página inicial">Endocrinologia Perioperatória</div>
+            <a href="index.html" class="back-link">Voltar à Biblioteca</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 class="page-title">Anestesia Endócrina</h1>
+        <p class="page-subtitle">Resumo rápido dos síndromes endócrinos perioperatórios e ferramentas para revisão guiada.</p>
+
+        <section class="gallery-grid">
+            <article class="component-card" onclick="window.location.href='resumos/endocrino/diabetes.html'">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #dc2626 0%, #f87171 100%);">D</div>
+                <div class="card-info">
+                    <h3 class="card-title">Diabetes Mellitus</h3>
+                    <p class="card-description">Estratégias de controle glicêmico, ajustes de insulina e prevenção de hipoglicemia.</p>
+                    <div class="card-tags">
+                        <span class="tag">Glicemia</span>
+                        <span class="tag">Balanco</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="component-card" onclick="window.location.href='resumos/endocrino/hipotireoidismo.html'">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);">H</div>
+                <div class="card-info">
+                    <h3 class="card-title">Hipotireoidismo</h3>
+                    <p class="card-description">Avaliação pré-operatória, reposição de levotiroxina e risco de coma mixedematoso.</p>
+                    <div class="card-tags">
+                        <span class="tag">T4/T3</span>
+                        <span class="tag">Crise</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="component-card" onclick="window.location.href='resumos/endocrino/hipertireoidismo.html'">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #c026d3 0%, #a855f7 100%);">H</div>
+                <div class="card-info">
+                    <h3 class="card-title">Hipertireoidismo</h3>
+                    <p class="card-description">Bloqueadores beta e tiamazol, bloqueio iodado e tempestade tireotóxica.</p>
+                    <div class="card-tags">
+                        <span class="tag">Tempestade</span>
+                        <span class="tag">Preparação</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="component-card" onclick="window.location.href='resumos/endocrino/feocromocitoma.html'">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #2dd4bf 0%, #0f766e 100%);">F</div>
+                <div class="card-info">
+                    <h3 class="card-title">Feocromocitoma</h3>
+                    <p class="card-description">Bloqueio alfa prévio, manejo pressórico e monitorização invasiva.</p>
+                    <div class="card-tags">
+                        <span class="tag">Catecolaminas</span>
+                        <span class="tag">Pré-op</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="component-card" onclick="window.location.href='resumos/endocrino/insuficiencia-adrenal.html'">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #4ade80 0%, #16a34a 100%);">I</div>
+                <div class="card-info">
+                    <h3 class="card-title">Insuficiência Adrenal</h3>
+                    <p class="card-description">Identificação precoce, esteroides de estresse e reversão rápida da crise.</p>
+                    <div class="card-tags">
+                        <span class="tag">Cortisol</span>
+                        <span class="tag">Suporte</span>
+                    </div>
+                </div>
+            </article>
+
+            <a href="flashcards.html?tema=endocrino" class="component-card">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%);">F</div>
+                <div class="card-info">
+                    <h3 class="card-title">Flashcards Endócrinos</h3>
+                    <p class="card-description">Revisão rápida dos temas obrigatórios com reforço visual e perguntas curtas.</p>
+                    <div class="card-tags">
+                        <span class="tag" style="background: #e0f2fe; color: #075985;">Novo</span>
+                        <span class="tag">Interativo</span>
+                    </div>
+                </div>
+            </a>
+
+            <article class="component-card" onclick="window.location.href='questoes/questoes-template.html?tema=endocrino&origem=endocrino.html'">
+                <div class="card-thumbnail" style="background: linear-gradient(135deg, #111827 0%, #4b5563 100%);">Q</div>
+                <div class="card-info">
+                    <h3 class="card-title">Questões Comentadas</h3>
+                    <p class="card-description">Banco com perguntas extraídas de <code>data/questoes/endocrino.json</code> e gabarito comentado.</p>
+                    <div class="card-tags">
+                        <span class="tag">Quiz</span>
+                        <span class="tag">Comentado</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Biblioteca de Anestesiologia - Academia MedTech</p>
+        <p>Conteúdo baseado em evidências científicas atualizadas</p>
+    </footer>
+
+    <script src="script-secondary.js"></script>
+</body>
+</html>

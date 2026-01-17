@@ -1,5 +1,316 @@
 {
   "titulo": "Cirurgia Cardiaca",
-  "descricao": "Questoes comentadas sobre cirurgia cardiaca.",
-  "questoes": []
+  "descricao": "Questoes comentadas sobre cirurgia cardiaca com CEC.",
+  "questoes": [
+    {
+      "enunciado": "Paciente masculino, 68 anos, sera submetido a cirurgia de revascularizacao miocardica (CRM) com CEC. Durante a inducao anestesica com propofol e fentanil, administra-se heparina 300 UI/kg IV pelo cateter venoso central. Apos 5 minutos de circulacao, o ACT e medido: 280 segundos (basal era 110 s). Administra-se dose adicional de heparina 100 UI/kg, mas o ACT permanece em 310 segundos apos mais 3 minutos. Qual a causa MAIS provavel da resposta inadequada a heparina e a conduta IMEDIATA apropriada?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Deficiencia de fator XII por contato insuficiente com celite → repetir ACT com outro aparelho.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Resistencia a heparina por deficiencia de antitrombina → administrar concentrado de antitrombina.",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Plaquetas ativadas ligando heparina e impedindo sua acao → administrar dose dobrada de heparina.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Hipotermia relativa reduzindo atividade enzimatica da cascata → reaquecer paciente antes de iniciar CEC.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Heparina de baixa qualidade ou dose calculada incorretamente → trocar lote de heparina.",
+          "correta": false
+        }
+      ],
+      "explicacao": "Resistencia a heparina (ou responsividade alterada a heparina) e definida como incapacidade de elevar ACT a niveis terapeuticos (≥400 s) apos doses recomendadas de heparina nao fracionada (300-400 UI/kg, podendo chegar a 600-800 UI/kg). A deficiencia de antitrombina (AT) e a causa que requer tratamento especifico com concentrado de AT para restaurar responsividade a heparina. Fatores de risco: AT <60% do normal, heparina pre-operatoria, plaquetas >300.000/µL. Tratamento: administrar concentrado de AT ou AT recombinante para atingir 80-100% de atividade de AT (Classe I). Apos suplementacao de AT, cuidado com neutralizacao por protamina (AT potencializa heparina e pode aumentar sangramento pos-operatorio). A alternativa A esta incorreta pois o ACT aumentou parcialmente (de 110 para 280-310 s), indicando que a heparina tem algum efeito. A alternativa C esta incorreta porque doses muito altas de heparina sem correcao de AT nao resolverao o problema. A alternativa D esta incorreta pois a inducao acabou de ocorrer e o paciente ainda nao esta hipotermico. A alternativa E esta incorreta porque o padrao de resposta inadequada apesar de doses crescentes sugere deficiencia de cofator (AT)."
+    },
+    {
+      "enunciado": "Paciente feminina, 72 anos, submetida a troca valvar aortica por CEC. Ao final da CEC, apos desclamp aortico e reperfusao miocardica, a equipe prepara para desmame. ACT pre-protamina: 520 segundos. Administra-se protamina na razao de 1,3 mg/100 UI de heparina total administrada. Imediatamente apos termino da infusao de protamina (administrada em 5 minutos), paciente evolui com hipotensao subita e grave (PA 55/30 mmHg), pressao de arteria pulmonar elevada (PAP 55/30 mmHg), e sinais de falencia aguda de VD ao ETE. Qual a classificacao MAIS provavel desta reacao a protamina e a conduta IMEDIATA prioritaria?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Reacao Tipo I (hipotensao isolada) → expandir volume e desacelerar infusao de protamina.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Reacao Tipo II (anafilactoide) → adrenalina 0,1-0,3 mg IV fracionada + anti-histaminicos + broncodilatador.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Reacao Tipo III (complexos heparina-protamina) → re-heparinizar 70 UI/kg e preparar retorno a CEC.",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Toxicidade direta por overdose de protamina → administrar heparina para neutralizar excesso.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Vasoplegia pos-CEC nao relacionada a protamina → noradrenalina em infusao.",
+          "correta": false
+        }
+      ],
+      "explicacao": "Reacoes a protamina sao classificadas em Tipo I, II e III. Tipo III e causada por grandes complexos heparina-protamina que se alojam na circulacao pulmonar, causam liberacao de mediadores e resultam em hipotensao grave, aumento de pressoes pulmonares e falencia aguda de VD, podendo evoluir para colapso cardiovascular e necessidade de retorno a CEC. Este e o quadro descrito (hipotensao + PAP elevada + falencia VD). Tratamento imediato: (1) Re-heparinizar para reduzir tamanho dos complexos heparina-protamina (70 UI/kg inicialmente se hemodinamica permitir, depois dose plena 300 UI/kg se necessario retorno a CEC - Classe I, Nivel C); (2) Suporte inotrop ico (epinefrina, norepinefrina, milrinona); (3) Broncodilatador nebulizado (albuterol) se broncoespasmo/↑pressoes de via aerea. Reacao Tipo III e rara mas catastrofica. A alternativa A esta incorreta porque Tipo I e hipotensao isolada com pressoes de enchimento normais/baixas e pressao de via aerea normal. A alternativa B esta incorreta porque embora adrenalina possa ser usada, o quadro tem componente pulmonar/VD predominante (PAP elevada, falencia VD ao ETE), mais compativel com Tipo III. A alternativa D esta incorreta porque nao existe overdose de protamina neste contexto (razao 1,3 mg/100 UI e padrao). A alternativa E esta incorreta porque vasoplegia pos-CEC causa hipotensao com baixa RVS, mas nao explica PAP elevada e falencia aguda de VD imediatamente apos protamina."
+    },
+    {
+      "enunciado": "Paciente masculino, 65 anos, com historia de uso pre-operatorio de heparina nao fracionada (5.000 UI SC 12/12h por 7 dias) para sindrome coronariana aguda, sera submetido a CRM de urgencia. Exames pre-operatorios: plaquetas 280.000/µL, TTPA 38 s (normal: 25-35 s), ACT basal 125 s. Durante a inducao, administra-se heparina 400 UI/kg IV. Apos 5 minutos, ACT e 420 s (alvo ≥480 s). Administra-se dose adicional de 100 UI/kg. ACT permanece em 450 s. Considerando o contexto clinico, qual a conduta MAIS apropriada para iniciar CEC com seguranca?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Aceitar ACT 450 s e iniciar CEC com monitorizacao rigorosa, pois esta proximo do alvo.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Administrar concentrado de antitrombina empiricamente antes de dose adicional de heparina.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Administrar mais 100 UI/kg de heparina e aguardar; doses maiores podem ser necessarias neste contexto.",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Iniciar CEC em bypass parcial e administrar heparina adicional durante a CEC.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Solicitar dosagem de antitrombina e aguardar resultado antes de prosseguir.",
+          "correta": false
+        }
+      ],
+      "explicacao": "Em estudo de pacientes cardiacos estratificados por uso pre-operatorio de heparina, responsividade alterada a heparina ocorreu em aproximadamente 40% dos que receberam heparina pre-operatoria. Pacientes com uso previo de heparina podem precisar de doses MAIORES de heparina para atingir ACT alvo (≥400-480 s), mesmo sem deficiencia grave de AT. A conduta mais segura e pratica e administrar dose adicional de heparina (ex: mais 100 UI/kg) e aguardar 3-5 minutos, podendo repetir se necessario ate atingir alvo. Doses de ate 600-800 UI/kg podem ser necessarias. Se apos doses crescentes o ACT continuar inadequado E houver evidencia de deficiencia de AT (ex: AT <60%), considerar concentrado de AT. Mas a primeira linha e heparina suplementar. A alternativa A esta incorreta porque ACT 450 s esta ABAIXO do alvo de 480 s e iniciar CEC com ACT inadequado aumenta risco de coagulacao no circuito. A alternativa B esta incorreta porque administrar AT empiricamente sem evidencia de deficiencia e desnecessario e caro. A alternativa D esta incorreta porque iniciar CEC em bypass parcial com ACT inadequado e perigoso e nao resolve o problema. A alternativa E esta incorreta porque solicitar dosagem de AT e aguardar resultado causa atraso desnecessario."
+    },
+    {
+      "enunciado": "Paciente feminina, 58 anos, submetida a CRM com CEC. Tempo de CEC: 95 minutos, tempo de clampeamento aortico: 68 minutos. Ao final da CEC, apos neutralizacao com protamina (dose total 350 mg), paciente apresenta sangramento microvascular difuso. ACT pos-protamina: 145 s (normal). Exames POC (TEG/ROTEM): R normal, K prolongado, angulo alfa reduzido, MA reduzido (38 mm), Ly30 <5%. Plaquetas: 95.000/µL, fibrinogenio: 110 mg/dL. Qual a causa MAIS provavel do sangramento e o tratamento PRIORITARIO?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Hipofibrinogenemia por consumo e hemodiluicao → crioprecipitado ou concentrado de fibrinogenio.",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Disfuncao plaquetaria qualitativa por CEC → transfusao de plaquetas (2 unidades de pool).",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Rebote de heparina por dissociacao tardia de proteinas ligadoras → protamina adicional 50 mg.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Hiperfibrinolise primaria por ativacao de plasmina → acido tranexamico 1 g IV.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Deficiencia de fatores de coagulacao → plasma fresco congelado 10-15 mL/kg.",
+          "correta": false
+        }
+      ],
+      "explicacao": "TEG/ROTEM mostra: R normal (tempo de iniciacao da coagulacao esta normal, indica fatores de coagulacao adequados), K prolongado + angulo alfa reduzido + MA reduzido (38 mm; normal >50 mm) = deficiencia de fibrinogenio E/OU disfuncao plaquetaria. Ly30 <5% descarta hiperfibrinolise. Plaquetas 95.000/µL (baixas mas geralmente suficientes para hemostasia se funcionais). Fibrinogenio 110 mg/dL (baixo; normal >150-200 mg/dL). CEC causa hemodiluicao, consumo de fibrinogenio e disfuncao plaquetaria. Neste caso, fibrinogenio baixo e o achado laboratorial mais critico. Tratamento prioritario: crioprecipitado (cada unidade contem aproximadamente 250 mg de fibrinogenio; administrar 10 unidades = aproximadamente 2,5 g) ou concentrado de fibrinogenio (25-50 mg/kg = 1,5-3 g em adulto de 60 kg). Fibrinogenio e o primeiro fator a cair durante sangramento massivo e o primeiro a ser reposto em algoritmos modernos (ex: ROTEM-guiado). A alternativa B esta incorreta porque embora CEC cause disfuncao plaquetaria, o fibrinogenio baixo (110 mg/dL) e mais critico neste momento. A alternativa C esta incorreta porque rebote de heparina causa TTPA/TT prolongados e ACT prolongado; aqui ACT e normal (145 s). A alternativa D esta incorreta porque Ly30 <5% descarta hiperfibrinolise. A alternativa E esta incorreta porque R normal no TEG/ROTEM indica que fatores de coagulacao estao adequados."
+    },
+    {
+      "enunciado": "Paciente masculino, 70 anos, sera submetido a troca valvar aortica com CEC. Historia de trombocitopenia induzida por heparina (HIT) ha 6 meses, com anticorpo anti-PF4 fortemente positivo na epoca. Atualmente assintomatico, plaquetas 180.000/µL, anticorpo anti-PF4 fracamente positivo (titulo baixo). Cirurgia e eletiva mas indicada por estenose aortica grave sintomatica. Qual a conduta MAIS apropriada para anticoagulacao neste paciente?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Usar heparina nao fracionada em dose plena com ACT >400 s, pois HIT ocorreu ha 6 meses.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Adiar cirurgia por mais 3 meses ate anticorpo anti-PF4 ficar indetectavel ou muito fraco.",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Usar bivalirudina como anticoagulante alternativo para CEC (Classe IIa, Nivel B).",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Usar dose unica de heparina com neutralizacao rapida por protamina + plasmaferese previa.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Usar heparina associada a tirofiban (inibidor plaquetario) para prevenir ativacao plaquetaria.",
+          "correta": false
+        }
+      ],
+      "explicacao": "Diretrizes (STS/SCA/AmSECT) recomendam: E preferivel, se possivel, adiar a operacao ate que os titulos de anticorpos tenham se tornado indetectaveis ou apenas fracamente positivos, o que pode ocorrer apos aproximadamente 90 dias (classe IIa, Nivel de Evidencia C). Paciente tem HIT ha 6 meses (180 dias) mas anticorpo ainda esta fracamente positivo. Cirurgia e eletiva (estenose aortica grave sintomatica, mas nao emergencia). A conduta mais segura e adiar cirurgia por mais 3 meses (total aproximadamente 9 meses = 270 dias) ate anticorpo ficar indetectavel ou muito fraco. Isso minimiza risco de reativacao de HIT e complicacoes tromboticas se heparina for usada. Se cirurgia for urgente/emergencial, considerar bivalirudina. A alternativa A esta incorreta porque usar heparina em paciente com anticorpo anti-PF4 ainda positivo (mesmo fracamente) e arriscado. A alternativa C esta incorreta porque bivalirudina e opcao razoavel para cirurgia urgente com HIT, mas em cirurgia eletiva com anticorpo ainda positivo, e preferivel adiar ate soronegatividade. A alternativa D esta incorreta porque dose unica de heparina + neutralizacao rapida + plasmaferese e estrategia de alto risco reservada para casos urgentes com anticorpo positivo E disfuncao renal significativa. A alternativa E esta incorreta porque heparina + inibidor plaquetario tem risco aumentado de sangramento e e estrategia de ultimo recurso."
+    },
+    {
+      "enunciado": "Paciente feminina, 75 anos, submetida a CRM com CEC. Tempo de CEC: 110 minutos, hipotermia moderada (32°C nadir). Durante o reaquecimento para 36,5°C, paciente apresenta sudorese profusa, movimentos de extremidades e abertura ocular espontanea. BIS: 65. Ultima dose de propofol foi ha 45 minutos, ultima dose de fentanil ha 60 minutos. Ainda em CEC, com temperatura nasofaringea de 36,2°C. Qual a interpretacao MAIS provavel e a conduta IMEDIATA prioritaria?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Sudorese e resposta fisiologica normal ao reaquecimento → apenas observar.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Hipertermia maligna por reaquecimento excessivo → interromper aquecimento e administrar dantrolene.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Awareness intraoperatoria por profundidade anestesica inadequada → administrar propofol/midazolam e opioide.",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Convulsao focal por embolia cerebral durante CEC → administrar benzodiazepínico e solicitar TC cranio.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Tremores por afterdrop de temperatura → administrar bloqueador neuromuscular.",
+          "correta": false
+        }
+      ],
+      "explicacao": "Awareness durante cirurgia cardiaca e mais frequente que em outros tipos de cirurgia. Fatores de risco: reaquecimento (perfusao do centro termorregulador hipotalamico com sangue quente), tempo longo desde ultima dose de sedativo-hipnotico ou opioide, doses pequenas de anestesico durante CEC, paciente jovem. Sudorese durante reaquecimento pode ser normal (termorregulacao) MAS tambem pode indicar awareness se anestesia inadequada. Movimentos de extremidades + abertura ocular + BIS 65 (indica consciencia; BIS <60 e alvo) = AWARENESS. Conduta imediata: administrar sedativo-hipnotico (propofol bolus ou infusao, ou midazolam) E opioide (fentanil, sufentanil) para garantir profundidade anestesica adequada. Estrategia preventiva: iniciar infusao de propofol ou dexmedetomidina no inicio da CEC e manter durante reaquecimento/desmame. A alternativa A esta incorreta porque sudorese isolada pode ser fisiologica, mas movimentos + abertura ocular + BIS 65 indicam awareness. A alternativa B esta incorreta porque hipertermia maligna e diagnostico de exclusao com quadro clinico distinto (hipercapnia grave, acidose metabolica, rigidez muscular, hipercalemia, rabdomiolise). A alternativa D esta incorreta porque convulsao focal causaria movimentos tonico-clonicos, nao abertura ocular espontanea e movimentos coordenados. A alternativa E esta incorreta porque afterdrop causa tremores/shivering APOS saida da CEC, nao DURANTE o reaquecimento."
+    },
+    {
+      "enunciado": "Paciente masculino, 62 anos, submetido a troca valvar mitral com CEC. Desmame da CEC bem-sucedido, hemodinamica estavel. Administra-se protamina na dose de 1,0 mg/100 UI de heparina total (dose conservadora). ACT pos-protamina: 135 s. Apos 45 minutos, paciente apresenta sangramento microvascular progressivo pelos drenos toracicos (150 mL na primeira hora, agora 80 mL/15 min). Novos exames: ACT 185 s, TTPA 52 s (normal: 25-35 s), TT prolongado, anti-fator Xa aumentado. Qual o diagnostico MAIS provavel e a conduta apropriada?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Coagulacao de consumo por sangramento cirurgico → exploracao cirurgica e hemostasia.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Rebote de heparina por dissociacao tardia e clearance rapido de protamina → protamina adicional guiada por testes.",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Deficiencia adquirida de fatores de coagulacao → transfusao de plasma fresco congelado.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Hiperfibrinolise primaria tardia → acido tranexamico 1 g IV.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Disfuncao plaquetaria persistente pos-CEC → transfusao de plaquetas.",
+          "correta": false
+        }
+      ],
+      "explicacao": "Rebote de heparina e sangramento clinico que ocorre aproximadamente 1 hora apos neutralizacao com protamina, acompanhado de testes sugerindo heparinizacao residual: TTPA prolongado, TT prolongado, ACT aumentado (de 135 para 185 s), aumento de anti-fator Xa. Mecanismos: dissociacao lenta de heparina ligada a proteinas apos clearance de protamina, clearance mais rapido de protamina que de heparina, retorno linfatico de heparina sequestrada. Fatores de risco: dose de protamina baseada apenas na concentracao residual ao fim da CEC (tende a evitar overdose mas deixa margem para rebote); altas doses de heparina; tempo prolongado de CEC. Tratamento: protamina adicional guiada por monitorizacao da coagulacao. Prevencao: infusao de protamina 25 mg/h ate 6 h apos CEC em pacientes de risco (Classe IIb, Nivel C). A alternativa A esta incorreta porque sangramento cirurgico nao explica ACT prolongado, TTPA prolongado e TT prolongado. A alternativa C esta incorreta porque deficiencia de fatores causaria INR/TP prolongado (via extrinseca/comum), nao apenas TTPA/TT. A alternativa D esta incorreta porque hiperfibrinolise causaria Ly30 elevado no TEG/ROTEM e produtos de degradacao de fibrina elevados. A alternativa E esta incorreta porque disfuncao plaquetaria nao explica ACT/TTPA/TT prolongados."
+    },
+    {
+      "enunciado": "Paciente masculino, 68 anos, submetido a CRM com CEC. Durante o desmame da CEC, TEE mostra VE com boa contratilidade global, mas movimento sistolico anterior (SAM) da cuspide anterior da valva mitral com gradiente de VSVE de 45 mmHg e insuficiencia mitral moderada. Paciente hipotenso (PA 75/45 mmHg) apesar de pre-carga otimizada. FC 95 bpm em ritmo sinusal. Qual a fisiopatologia MAIS provavel e o tratamento PRIORITARIO?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Falencia de VE por protecao miocardica inadequada → iniciar dobutamina e considerar retorno a CEC.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Obstrucao dinamica de VSVE por hiperdinamismo em VE hipertrofico → expansao volemica + betabloqueador + fenilefrina.",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Disfuncao valvar mitral iatrogenica cirurgica → retorno a CEC e reparo mitral.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Insuficiencia mitral funcional por dilatacao de VE → milrinone para reduzir pos-carga.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Hipovolemia grave com colapso de cavidades → expansao volemica agressiva com cristaloide/coloide.",
+          "correta": false
+        }
+      ],
+      "explicacao": "Obstrucao dinamica de VSVE ocorre em 5-10% dos pacientes apos cirurgia de valva mitral, mas tambem pode ocorrer pos-CRM em VE hipertrofico. Causas: hiperdinamismo de VE (contratilidade preservada/aumentada), distancia curta entre ponto de coaptacao mitral e septo interventricular, valva mitral mixomatosa. Apresentacao: SAM (systolic anterior motion) da cuspide anterior da mitral ao ETE, gradiente no VSVE (>30 mmHg), insuficiencia mitral secundaria (coaptacao incompleta por deslocamento anterior da valva), hipotensao paradoxal (aumento da contratilidade piora obstrucao). Tratamento: (1) Expansao volemica para aumentar volume de VE e afastar paredes; (2) Betabloqueador (esmolol bolus) para reduzir contratilidade e diminuir SAM; (3) Fenilefrina (vasoconstritor puro) para aumentar pos-carga e reduzir gradiente; (4) EVITAR inotropicos (pioram SAM). Se refratario: considerar reparo cirurgico (resseccao de bulging septal ou reparo/troca de valva mitral). A alternativa A esta incorreta porque TEE mostra VE com boa contratilidade global, nao falencia de VE. A alternativa C esta incorreta porque nao ha evidencia de lesao cirurgica iatrogenica da valva mitral; SAM e fenomeno dinamico funcional. A alternativa D esta incorreta porque insuficiencia mitral aqui e secundaria ao SAM, nao funcional por dilatacao de VE. A alternativa E esta incorreta porque hipovolemia pode contribuir, mas o diagnostico principal e obstrucao dinamica de VSVE."
+    },
+    {
+      "enunciado": "Paciente feminina, 55 anos, diabetica (HbA1c 8,2%), sera submetida a CRM com CEC. Durante a CEC (tempo 45 minutos), glicemia capilar e 285 mg/dL. Inicia-se infusao de insulina regular a 4 UI/h. Apos mais 30 minutos (tempo total CEC 75 min), glicemia e 180 mg/dL. Perfusionista anuncia que faltam aproximadamente 15 minutos para termino da CEC (reaquecimento quase completo). Qual a conduta MAIS apropriada em relacao a insulina neste momento?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Manter infusao de insulina a 4 UI/h ate o final da CEC para garantir controle glicemico.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Aumentar infusao para 6 UI/h para atingir meta <150 mg/dL antes do desmame da CEC.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Reduzir ou descontinuar infusao de insulina para evitar hipoglicemia apos desmame da CEC.",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Trocar para insulina NPH subcutanea para efeito mais prolongado no pos-operatorio.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Manter infusao e administrar glicose 50% 20 mL profilaticamente para prevenir hipoglicemia.",
+          "correta": false
+        }
+      ],
+      "explicacao": "Hiperglicemia e comum durante CEC (resposta ao estresse, catecolaminas, cortisol, hipotermia reduzindo efetividade da insulina). POREM, ao final da CEC e durante o reaquecimento, as necessidades de insulina DIMINUEM (normalizacao da temperatura, reducao de catecolaminas, cessacao do estresse da CEC). Se infusao de insulina nao for reduzida/descontinuada, ha risco de hipoglicemia no periodo pos-CEC. Diretrizes STS: manter glicemia <180 mg/dL (alvo 140-180 mg/dL). Glicemia atual e 180 mg/dL (dentro do alvo). Conduta: reduzir ou descontinuar infusao de insulina ao final da CEC para evitar hipoglicemia. Monitorizacao rigorosa de glicemia e obrigatoria. A alternativa A esta incorreta porque manter infusao a 4 UI/h ate o final expoe a risco de hipoglicemia apos desmame. A alternativa B esta incorreta porque aumentar insulina para atingir <150 mg/dL e arriscado e desnecessario. A alternativa D esta incorreta porque insulina NPH SC e de acao lenta e nao e apropriada para manejo agudo. A alternativa E esta incorreta porque administrar glicose profilaticamente sem evidencia de hipoglicemia piora controle glicemico."
+    },
+    {
+      "enunciado": "Paciente masculino, 72 anos, submetido a troca valvar aortica com CEC. Durante o fechamento do esterno, evolui com hipotensao grave (PA 60/35 mmHg) que nao responde a expansao volemica. TEE mostra VD dilatado com disfuncao global, septo interventricular retificado/abaulado para VE, VE com cavidade pequena e boa contratilidade. PAP 55/30 mmHg, PVC 18 mmHg. Qual a causa MAIS provavel da hipotensao e o tratamento PRIORITARIO?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Hipovolemia por sangramento oculto → reabrir torax e explorar sitios de sangramento.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Tamponamento cardiaco por compressao extrinseca → reabrir torax imediatamente.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Falencia aguda de VD por protecao inadequada ou compressao por fechamento esternal → reabrir torax + suporte inotropico para VD.",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Falencia de VE por isquemia → aumentar inotropicos e considerar balao intra-aortico.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Pneumotorax hipertensivo → drenagem toracica com agulha/dreno.",
+          "correta": false
+        }
+      ],
+      "explicacao": "TEE mostra sinais de falencia de VD: VD dilatado com disfuncao global, septo retificado/abaulado para VE (sobrecarga de pressao de VD), VE com cavidade pequena (compressao por VD dilatado). PAP elevada (55/30 mmHg) e PVC elevada (18 mmHg) confirmam falencia de VD. Timing (durante fechamento esternal) sugere que fechamento do torax piorou a situacao (compressao de VD por edema miocardico significativo, impedindo enchimento/ejecao adequados). Causas de falencia de VD pos-CEC: protecao miocardica inadequada, isquemia/infarto de VD, revascularizacao inadequada, hipertensao pulmonar preexistente, embolia (ar/particulas), doenca valvar mitral cronica, regurgitacao tricuspide. Tratamento: (1) Reabrir torax para aliviar compressao; (2) Suporte inotropico para VD (milrinone, dobutamina, isoproterenol - preferir inodilatadores que reduzem RVP); (3) Vasopressor para manter PAM adequada e perfusao coronariana de VD (noradrenalina, vasopressina); (4) Vasodilatador pulmonar (oxido nitrico inalado, epoprostenol inalado) para reduzir pos-carga de VD; (5) Otimizar pre-carga (cuidado com fluidos excessivos que pioram dilatacao de VD); (6) Manter ritmo sinusal. A alternativa A esta incorreta porque TEE nao mostra sinais de hipovolemia. A alternativa B esta incorreta porque tamponamento cardiaco causa colapso diastolico de AD/VD, nao VD dilatado. A alternativa D esta incorreta porque TEE mostra VE com boa contratilidade. A alternativa E esta incorreta porque pneumotorax hipertensivo nao e evidenciado pelo TEE."
+    }
+  ]
 }

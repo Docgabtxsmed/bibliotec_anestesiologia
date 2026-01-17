@@ -1,0 +1,719 @@
+{
+    "titulo": "Endocrinologia",
+    "descricao": "Questoes estilo SBA sobre endocrinologia para preparacao de prova (TEA/TSA).",
+    "questoes": [
+      {
+        "enunciado": "Paciente feminina, 34 anos, portadora de doenca de Graves, sera submetida a tireoidectomia total eletiva. Apresenta taquicardia persistente (FC 110-120 bpm), tremores e perda ponderal de 8 kg nos ultimos 3 meses. Iniciou propiltiouracil ha 4 semanas e propranolol ha 5 dias. O cirurgiao solicita avaliacao pre-anestesica para definir quando liberar a cirurgia. Qual a melhor conduta para preparo pre-operatorio desta paciente?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Liberar imediatamente para cirurgia, pois ja esta em uso de propiltiouracil e propranolol ha tempo suficiente.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Adicionar solucao de Lugol (iodeto de potassio) por 7-10 dias antes da cirurgia para reduzir vascularizacao glandular.",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Suspender propranolol 48h antes da cirurgia para evitar bradicardia intraoperatoria.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Substituir propranolol por esmolol apenas no dia da cirurgia para melhor controle hemodinamico.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Administrar dexametasona 8-12 mg/dia por 3 dias antes da cirurgia como unica medida adicional.",
+            "correta": false
+          }
+        ],
+        "explicacao": "O iodeto inorganico (Lugol ou SSKI) deve ser administrado por 7-10 dias antes da tireoidectomia para bloquear a liberacao de hormonios pre-formados e reduzir a vascularizacao da glandula (efeito de Wolff-Chaikoff). Importante: deve ser iniciado APOS o propiltiouracil (pelo menos 1h depois) para evitar que o iodeto seja usado como substrato para sintese hormonal, piorando a tireotoxicose. A preparacao usual requer 10-14 dias de combinacao de antitireoidianos, betabloqueadores e iodeto. A alternativa A esta incorreta porque 4 semanas de propiltiouracil e insuficiente para normalizar o estado tireoidiano (necessario 6-8 semanas). A taquicardia persistente indica controle inadequado. Alem disso, falta o iodeto para reduzir vascularizacao. A alternativa C esta incorreta porque os betabloqueadores devem ser mantidos ate a manha da cirurgia para controlar manifestacoes simpaticas. A suspensao aumentaria risco de crise tireotoxica. A alternativa D esta incorreta porque embora esmolol seja util intraoperatoriamente, substituir o propranolol oral apenas no dia da cirurgia nao garante preparo adequado. O propranolol tambem inibe conversao periferica de T4 em T3 ao longo de 1-2 semanas. A alternativa E esta incorreta porque corticoides (dexametasona) tem papel coadjuvante em tireotoxicose grave ao reduzir conversao de T4 em T3, mas nao substituem antitireoidianos, betabloqueadores e iodeto."
+      },
+      {
+        "enunciado": "Durante tireoidectomia de urgencia em paciente hipertireoidea nao preparada adequadamente, 30 minutos apos inicio da manipulacao cirurgica, a paciente desenvolve subitamente hipertermia (temperatura 39,8°C), taquicardia (FC 160 bpm), hipertensao severa (PA 220/120 mmHg) e agitacao importante. Gasometria sem acidose significativa. Qual a sequencia CORRETA de tratamento imediato para este quadro?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Hidrocortisona 100 mg IV → aguardar 1h → propiltiouracil 600 mg por SNG → iodeto de sodio 250 mg IV.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Propiltiouracil 500-1000 mg por SNG → apos 1h administrar Lugol 5 gotas VO → hidrocortisona 100 mg IV.",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Esmolol em infusao → hidrocortisona 100 mg IV → propranolol 40 mg por SNG → resfriamento ativo.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Iodeto de potassio via SNG imediatamente → propiltiouracil 250 mg apos 30 min → hidrocortisona 50 mg IV.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Dantrolene 2,5 mg/kg IV → hidratacao vigorosa → propranolol 10 mg IV → resfriamento passivo.",
+            "correta": false
+          }
+        ],
+        "explicacao": "A crise tireotoxica requer tratamento sequencial especifico: (1) PRIMEIRO bloquear sintese hormonal com propiltiouracil em dose de ataque (500-1000 mg, seguido de 250 mg q4-6h); (2) APOS 1 hora administrar iodeto (Lugol ou SSKI) para inibir liberacao hormonal - o intervalo e critico para evitar que o iodeto sirva como substrato para nova sintese; (3) Hidrocortisona (100 mg IV q6-8h) para inibir conversao periferica T4→T3 e tratar possivel insuficiencia adrenal relativa; (4) Controle adrenergico com betabloqueadores e medidas de suporte (resfriamento, hidratacao). A alternativa A esta incorreta porque inverte a ordem correta - nao se deve aguardar 1h para iniciar o propiltiouracil. Alem disso, administrar hidrocortisona antes do antitireoidiano nao faz sentido na sequencia terapeutica. A alternativa C esta incorreta porque omite completamente o tratamento fundamental: bloqueio de sintese (propiltiouracil) e liberacao (iodeto) hormonal. Apenas controle sintomatico e insuficiente. A alternativa D esta incorreta porque apresenta erro critico - administrar iodeto ANTES do propiltiouracil pode agravar a crise ao fornecer substrato para sintese de novos hormonios tireoidianos. A alternativa E esta incorreta porque confunde com hipertermia maligna. Dantrolene nao tem papel na crise tireotoxica. O quadro clinico diferencia: ausencia de acidose grave e rigidez muscular."
+      },
+      {
+        "enunciado": "Paciente masculino, 58 anos, hipotireoidismo primario em tratamento irregular com levotiroxina, sera submetido a colecistectomia videolaparoscopica de urgencia. Apresenta-se bradicardico (FC 48 bpm), hipotenso (PA 90/60 mmHg), sonolento mas orientado, temperatura 35,2°C. TSH = 42 µUI/mL, T4 livre = 0,3 ng/dL. Nega uso de levotiroxina ha 3 meses. Qual a principal implicacao anestesica neste paciente com hipotireoidismo descompensado?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Necessidade de doses aumentadas de anestesicos volateis devido ao aumento do metabolismo hepatico.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Risco aumentado de depressao respiratoria prolongada por sensibilidade aumentada a opioides e sedativos.",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Indicacao obrigatoria de anestesia regional ao inves de geral para evitar coma mixedematoso.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Contraindicacao absoluta de bloqueadores neuromusculares pela miopatia hipotireoidiana.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Necessidade de aquecimento agressivo pela hipertermia reativa ao estresse cirurgico.",
+            "correta": false
+          }
+        ],
+        "explicacao": "Pacientes hipotireoideos apresentam sensibilidade aumentada a anestesicos, opioides e depressores centrais devido ao metabolismo lento e depuracao hepatica/renal reduzidas. A resposta ventilatoria a hipoxia e hipercapnia ja esta deprimida no hipotireoidismo, e esta depressao e potencializada por sedativos, opioides e anestesia geral. O despertar pode ser prolongado e ha risco de hipoventilacao e falencia ventilatoria pos-operatoria, especialmente em pacientes com doenca pulmonar coexistente, obesidade ou mixedema. Nao ha alteracao na CAM, mas a recuperacao e mais lenta. A alternativa A esta incorreta porque o metabolismo esta REDUZIDO no hipotireoidismo, nao aumentado. A CAM nao se altera significativamente, mas ha sensibilidade aumentada aos efeitos dos anestesicos pela depuracao reduzida. A alternativa C esta incorreta porque nao ha contraindicacao absoluta a anestesia geral. Tanto anestesia geral quanto regional sao viaveis. Regional pode ser vantajosa, mas nao e obrigatoria. O risco de coma mixedematoso existe independente da tecnica anestesica se o paciente estiver gravemente descompensado. A alternativa D esta incorreta porque embora possa haver fraqueza muscular e resposta prolongada a bloqueadores, nao e contraindicacao absoluta. Recomenda-se abordagem conservadora com doses reduzidas e monitorizacao com TOF. A alternativa E esta incorreta porque hipotireoideos tem risco AUMENTADO de HIPOTERMIA (nao hipertermia) pela termogenese reduzida e menor metabolismo basal. Requer aquecimento ativo para prevencao, nao tratamento de hipertermia."
+      },
+      {
+        "enunciado": "Paciente submetida a tireoidectomia total ha 2 horas. Na sala de recuperacao pos-anestesica, apresenta subitamente estridor inspiratorio, uso de musculatura acessoria e SpO2 88% em ar ambiente. Nao ha edema cervical visivel. A laringoscopia, observam-se pregas vocais em posicao medial (aducao) bilateralmente, com fenda glotica estreita. Qual a complicacao mais provavel e a conduta imediata?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Hematoma cervical compressivo; abrir sutura cirurgica a beira-leito e drenar.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Lesao bilateral de nervo laringeo recorrente; reintubacao imediata ou traqueostomia de urgencia.",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Traqueomalacia por bocio volumoso previo; pressao positiva continua nas vias aereas.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Hipocalcemia aguda com laringoespasmo; administrar calcio IV e intubar se necessario.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Edema de glote por manipulacao cirurgica; corticoide IV e nebulizacao com adrenalina.",
+            "correta": false
+          }
+        ],
+        "explicacao": "O quadro de estridor imediatamente apos extubacao, com pregas vocais em aducao bilateral a laringoscopia, e caracteristico de lesao bilateral do nervo laringeo recorrente (NLR). O NLR inerva todos os musculos intrinsecos da laringe exceto o cricotireoideo. A lesao bilateral causa paralisia das pregas em posicao paramediana/medial, resultando em obstrucao glotica e afonia/estridor grave. E uma emergencia que exige reintubacao imediata ou traqueostomia. A lesao unilateral causa apenas rouquidao. A incidencia de lesao do NLR e a complicacao mais temida da tireoidectomia. A alternativa A esta incorreta porque hematoma cervical causaria edema cervical VISIVEL e progressivo, compressao externa da traqueia. O enunciado informa ausencia de edema cervical. Alem disso, a laringoscopia mostrando pregas em aducao aponta para problema neuromuscular, nao compressivo externo. A alternativa C esta incorreta porque traqueomalacia ocorre imediatamente apos extubacao por colapso da parede traqueal previamente enfraquecida. Entretanto, a laringoscopia mostra problema ao nivel das pregas vocais (aducao), nao traqueal. A alternativa D esta incorreta porque hipocalcemia manifesta-se 24-96h apos cirurgia (nao 2h), com progressao subaguda. O laringoespasmo por hipocalcemia seria tetania intermitente, nao paralisia fixa das pregas em aducao visualizada a laringoscopia. A alternativa E esta incorreta porque edema de glote causaria tumefacao visivel das estruturas supragloticas a laringoscopia, nao pregas em posicao fixa de aducao. Alem disso, e incomum 2h apos cirurgia nao traumatica de via aerea."
+      },
+      {
+        "enunciado": "Paciente submetida a tireoidectomia total por carcinoma ha 48 horas. Queixa-se de parestesias periorais e em extremidades, seguidas de caimbras nas maos. Ao exame, o anestesista percute o nervo facial anterior ao lobo da orelha e observa contracao da comissura labial ipsilateral. Calcio total = 6,8 mg/dL, magnesio = 1,2 mg/dL. Qual a fisiopatologia e conduta IMEDIATA mais apropriada?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Hipocalcemia por hipoparatireoidismo transitorio; administrar apenas calcio oral + calcitriol.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Hipocalcemia por remocao inadvertida das paratireoides; cloreto de calcio 10% 10 mL IV lento.",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Sindrome de Chvostek idiopatica sem significado clinico; apenas observacao.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Hipocalcemia com hipomagnesemia; corrigir magnesio primeiro, depois calcio oral.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Alcalose respiratoria por hiperventilacao pos-operatoria; reduzir frequencia respiratoria.",
+            "correta": false
+          }
+        ],
+        "explicacao": "A hipocalcemia sintomatica (parestesias, caimbras, sinal de Chvostek positivo) 24-96h apos tireoidectomia total e causada pela remocao ou lesao isquemica inadvertida das glandulas paratireoides, sendo a complicacao MAIS FREQUENTE da tireoidectomia total. O calcio total <7 mg/dL com sintomas (tetania latente progredindo para manifesta) exige tratamento IV imediato para prevenir progressao para laringoespasmo, convulsoes ou arritmias. Cloreto ou gluconato de calcio IV (10-20 mL de solucao 10% diluida, lentamente) e o tratamento de urgencia. O magnesio tambem deve ser corrigido pois hipomagnesemia agrava hipocalcemia. A alternativa A esta incorreta porque paciente SINTOMATICA com calcio <7 mg/dL requer tratamento IV imediato, nao apenas reposicao oral. Via oral e inadequada para hipocalcemia aguda sintomatica pelo risco de progressao para tetania grave, laringoespasmo e convulsoes. A alternativa C esta incorreta porque sinal de Chvostek positivo em contexto de tireoidectomia recente + hipocalcemia laboratorial + sintomas NAO e idiopatico ou sem significado. Indica hipocalcemia clinicamente relevante que requer tratamento. A alternativa D esta incorreta porque embora a hipomagnesemia deva ser corrigida (pode agravar hipocalcemia e deve ser tratada), a hipocalcemia SINTOMATICA aguda exige calcio IV IMEDIATO, nao apenas correcao de magnesio seguida de calcio oral. Ambos devem ser corrigidos, mas calcio IV e prioridade. A alternativa E esta incorreta porque alcalose respiratoria pode reduzir calcio ionizado, mas nao explica hipocalcemia com calcio total baixo (6,8 mg/dL) no contexto pos-tireoidectomia. A causa e hipoparatireoidismo cirurgico."
+      },
+      {
+        "enunciado": "Paciente feminina, 42 anos, hipotireoidismo em tratamento com levotiroxina 100 mcg/dia, sera submetida a histerectomia abdominal. Traz exames recentes: TSH = 2,1 µUI/mL (normal: 0,4-4,0) e T4 livre = 1,2 ng/dL (normal: 0,8-1,8). Apresenta-se eutireoidea clinicamente. Questiona se deve suspender a levotiroxina no dia da cirurgia. Qual a conduta CORRETA quanto a levotiroxina no perioperatorio?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Suspender 48h antes da cirurgia para reduzir risco cardiovascular (taquicardia, arritmias).",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Manter no dia da cirurgia pela manha com gole de agua, pois interrupcao pode precipitar coma mixedematoso.",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "Substituir por liothyronina (T3) no dia da cirurgia por ter meia-vida mais curta.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Manter no dia da cirurgia, pois levotiroxina tem meia-vida longa (7 dias) e interrupcao breve nao causa descompensacao.",
+            "correta": true
+          },
+          {
+            "letra": "E",
+            "texto": "Suspender apenas no dia da cirurgia e reiniciar com dose dobrada no pos-operatorio.",
+            "correta": false
+          }
+        ],
+        "explicacao": "A levotiroxina (T4) possui meia-vida de aproximadamente 7 dias. Pacientes eutireoideos em uso cronico de levotiroxina podem suspender a medicacao por 1-2 semanas sem descompensacao clinica significativa. Portanto, nao ha necessidade de administracao no dia da cirurgia ou preocupacao com jejum perioperatorio. A reposicao pode ser reiniciada na dose habitual assim que houver tolerancia oral. Em cirurgias prolongadas ou com jejum estendido, pode-se usar levotiroxina IV (75-80% da dose oral). A alternativa A esta incorreta porque nao ha indicacao de suspender 48h antes. Pacientes eutireoideos em reposicao nao tem risco cardiovascular aumentado. A levotiroxina mantem niveis estaveis devido a meia-vida longa. A alternativa B esta incorreta porque embora seja razoavel manter, o racional esta incorreto - coma mixedematoso NAO ocorre por interrupcao de 1-2 dias devido a meia-vida longa da levotiroxina. Coma mixedematoso e complicacao rara de hipotireoidismo grave cronico descompensado. A alternativa C esta incorreta porque nao ha indicacao para substituir por T3. A levotiroxina e adequada e segura no perioperatorio. T3 (liothyronina) tem meia-vida curta (1 dia) e pode causar flutuacoes. A alternativa E esta incorreta porque nao ha indicacao para dobrar dose no pos-operatorio. Deve-se reiniciar na dose habitual de manutencao."
+      },
+      {
+        "enunciado": "Paciente masculino, 62 anos, e admitido na UTI apos cirurgia abdominal prolongada. Encontra-se em coma, hipotermico (33,5°C), bradicardico (FC 38 bpm), hipotenso (PA 75/40 mmHg sem resposta a vasopressores), hipoventilando (PaCO2 68 mmHg). Edema facial e periferico acentuados. Historia de hipotireoidismo tratado irregularmente. Gasometria: acidose respiratoria + metabolica, Na+ 118 mEq/L. Qual o diagnostico mais provavel e o tratamento INICIAL prioritario?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Choque septico refratario; noradrenalina em altas doses + hidrocortisona.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Coma mixedematoso; levotiroxina IV 200-400 mcg em bolus + hidrocortisona 100 mg IV.",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Insuficiencia adrenal primaria; hidrocortisona 100 mg IV + fludrocortisona.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Sindrome de resposta inflamatoria sistemica; reaquecimento ativo + suporte ventilatorio.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Intoxicacao por opioides; naloxona IV + ventilacao mecanica.",
+            "correta": false
+          }
+        ],
+        "explicacao": "O coma mixedematoso e a complicacao mais grave do hipotireoidismo, com mortalidade de 30-60%. Caracteriza-se por: coma/alteracao mental, hipotermia profunda (<35°C), bradicardia, hipotensao refrataria, hipoventilacao (↓resposta ventilatoria a CO2), hiponatremia (SIADH), edema generalizado (mixedema). O tratamento INICIAL e reposicao de hormonios tireoidianos IV (levotiroxina 200-400 mcg em bolus, seguido de 50-100 mcg/dia) + hidrocortisona (100 mg IV q8h) para cobrir possivel insuficiencia adrenal concomitante. Medidas de suporte incluem reaquecimento passivo, ventilacao mecanica, correcao cautelosa de hiponatremia e vasopressores. A alternativa A esta incorreta porque embora o quadro possa mimetizar choque, a triade hipotermia + hipoventilacao + edema generalizado + historia de hipotireoidismo aponta para coma mixedematoso. Tratar apenas como sepse sem reposicao hormonal seria fatal. A alternativa C esta incorreta porque insuficiencia adrenal isolada nao explica hipotermia tao profunda, hipoventilacao grave e edema generalizado. Entretanto, insuficiencia adrenal pode coexistir (sindrome de Schmidt), justificando hidrocortisona empirica. A alternativa D esta incorreta porque SIRS nao explica o conjunto de achados. O tratamento suportivo isolado sem reposicao hormonal nao resolve a causa de base. A alternativa E esta incorreta porque opioides causam miose, depressao respiratoria, mas nao explicam hipotermia profunda, bradicardia extrema, hiponatremia e edema. Naloxona nao teria efeito."
+      },
+      {
+        "enunciado": "Paciente feminina, 48 anos, portadora de bocio multinodular volumoso com extensao retroesternal (5 cm abaixo da furcula esternal), sera submetida a tireoidectomia total. Tomografia cervical mostra desvio traqueal a direita e compressao anterior da traqueia. Avaliacao de via aerea: Mallampati III, abertura oral 3,5 cm, distancia tireomentoniana 6 cm. Paciente relata ortopneia e dispneia aos minimos esforcos ha 3 meses. Qual a estrategia mais adequada para manejo da via aerea neste caso?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Intubacao orotraqueal convencional sob laringoscopia direta apos inducao anestesica padrao.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Intubacao acordada com fibroscopia flexivel sob sedacao e anestesia topica.",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Mascara laringea como dispositivo definitivo para a cirurgia, evitando instrumentacao traqueal.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Bloqueio anestesico cervical profundo e sedacao, sem intubacao.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Inducao inalatoria lenta com sevoflurano mantendo ventilacao espontanea ate laringoscopia.",
+            "correta": false
+          }
+        ],
+        "explicacao": "Bocios volumosos com extensao retroesternal, desvio/compressao traqueal e sintomas de obstrucao de via aerea (ortopneia, dispneia) representam via aerea dificil de alto risco. A inducao anestesica com perda do tonus muscular pode causar colapso completo da via aerea e impossibilidade de ventilacao/intubacao (\"cannot ventilate, cannot intubate\"). A intubacao acordada com fibroscopia flexivel sob sedacao consciente leve e anestesia topica e a tecnica de escolha, pois mantem ventilacao espontanea e tonus muscular preservado ate que a via aerea esteja segura. Permite avaliacao dinamica da traqueia e ajuste posicional se necessario. A alternativa A esta incorreta porque inducao padrao com perda de consciencia e relaxamento muscular antes de garantir via aerea pode resultar em obstrucao completa nao previsivel a laringoscopia, com impossibilidade de ventilacao. Alto risco. A alternativa C esta incorreta porque mascara laringea nao protege via aerea definitivamente e nao e adequada para tireoidectomia (cirurgia cervical com risco de sangramento e necessidade de acesso cirurgico ao pescoco). Alem disso, compressao traqueal pode impedir ventilacao adequada mesmo com mascara laringea. A alternativa D esta incorreta porque tireoidectomia total nao pode ser realizada apenas com bloqueio cervical, pois requer disseccao profunda, hemostasia rigorosa e possivel manipulacao do nervo laringeo recorrente. Via aerea definitiva e essencial. A alternativa E esta incorreta porque inducao inalatoria mantendo ventilacao espontanea e possivel mas menos controlada que intubacao acordada. Se houver obstrucao durante inducao, pode ser impossivel reverter rapidamente. Fibroscopia acordada e mais segura."
+      },
+      {
+        "enunciado": "Paciente feminina, 67 anos, hiperparatireoidismo primario por adenoma de paratireoide, sera submetida a paratireoidectomia eletiva. Exames pre-operatorios: calcio total = 13,2 mg/dL, PTH intacto = 185 pg/mL (normal: 10-65), creatinina = 1,8 mg/dL, fosfatase alcalina elevada. ECG mostra intervalo QT encurtado (QTc = 340 ms). Paciente queixa-se de fadiga, nauseas e constipacao. Qual a principal implicacao anestesica da hipercalcemia grave neste caso?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Risco aumentado de sangramento por disfuncao plaquetaria induzida pela hipercalcemia.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Sensibilidade reduzida a bloqueadores neuromusculares nao despolarizantes, necessitando doses aumentadas.",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "Prolongamento do intervalo QT com risco de torsades de pointes no intraoperatorio.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Risco de arritmias ventriculares, hipotensao e bradiarritmias por efeitos cardiacos diretos do calcio.",
+            "correta": true
+          },
+          {
+            "letra": "E",
+            "texto": "Contraindicacao absoluta a succinilcolina pelo risco de hipercalemia aguda adicional.",
+            "correta": false
+          }
+        ],
+        "explicacao": "Hipercalcemia grave (>12 mg/dL) tem efeitos cardiacos importantes: encurtamento do intervalo QT (nao prolongamento), arritmias (extrassistoles ventriculares, fibrilacao atrial, bloqueios AV), potencializacao de efeitos dos digitalicos (se em uso), e pode causar hipotensao por vasodilatacao. A hipercalcemia tambem causa alteracao de nivel de consciencia, fraqueza muscular, nauseas/vomitos, constipacao (\"stones, bones, groans, psychiatric overtones\"). O tratamento pre-operatorio inclui hidratacao vigorosa com salina, furosemida, e considerar bifosfonatos ou calcitonina em casos graves. A alternativa A esta incorreta porque hipercalcemia nao causa disfuncao plaquetaria significativa. O risco de sangramento nao esta aumentado. A alternativa B esta incorreta porque na verdade ha SENSIBILIDADE AUMENTADA a bloqueadores neuromusculares nao despolarizantes na hipercalcemia, com necessidade de doses REDUZIDAS e monitorizacao cuidadosa com TOF. A hipercalcemia facilita a transmissao neuromuscular e potencializa o bloqueio. A alternativa C esta incorreta porque hipercalcemia ENCURTA o intervalo QT, nao prolonga. O ECG mostra QTc = 340 ms (encurtado). Torsades de pointes esta associada a QT prolongado (hipocalcemia, hipomagnesemia, drogas). A alternativa E esta incorreta porque nao ha contraindicacao absoluta a succinilcolina. A hipercalcemia nao interage significativamente com succinilcolina no contexto de hipercalemia adicional."
+      },
+      {
+        "enunciado": "Paciente masculino, 58 anos, com hiperparatireoidismo primario (calcio = 12,8 mg/dL) sera submetido a paratireoidectomia. Durante a inducao anestesica, o anestesiologista administra rocuronio 0,6 mg/kg (dose padrao) apos propofol e fentanil. Apos 3 minutos, a laringoscopia, observa-se ausencia completa de movimento das pregas vocais, mas o TOF mostra ainda 2 respostas de 4 (TOF 50%). Qual a explicacao mais provavel para este achado?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Dose insuficiente de rocuronio devido a hipercalcemia aumentar clearance hepatico.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Sensibilidade aumentada do diafragma comparado aos musculos laringeos na hipercalcemia.",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "Sensibilidade aumentada a bloqueadores neuromusculares pela hipercalcemia, com bloqueio mais intenso que o TOF sugere.",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "Bloqueio neuromuscular profundo no adutor do polegar (TOF 50% = bloqueio intenso) permitindo intubacao segura.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Efeito residual de benzodiazepinicos pre-operatorios causando relaxamento laringeo independente do bloqueio neuromuscular.",
+            "correta": false
+          }
+        ],
+        "explicacao": "A hipercalcemia aumenta a sensibilidade aos bloqueadores neuromusculares nao despolarizantes. Isso significa que doses menores de BNM produzem bloqueio mais intenso e prolongado. Alem disso, diferentes grupos musculares tem sensibilidades distintas: musculos laringeos e diafragma sao mais resistentes que o adutor do polegar (onde o TOF e medido). Em condicoes normais, TOF 0/4 no polegar corresponde a boas condicoes de intubacao. Na hipercalcemia, a sensibilidade aumentada pode fazer com que musculos perifericos (polegar) mostrem bloqueio mais intenso (TOF 2/4 ja pode corresponder a bloqueio laringeo adequado). Portanto, o TOF deve ser interpretado com cautela e doses reduzidas de BNM devem ser usadas. A alternativa A esta incorreta porque hipercalcemia AUMENTA sensibilidade (reduz necessidade de dose), nao aumenta clearance ou resistencia. A alternativa B esta incorreta porque em condicoes normais, laringe e diafragma sao mais RESISTENTES que musculos perifericos, nao mais sensiveis. Mas na hipercalcemia, a sensibilidade aumentada e generalizada. A alternativa D esta incorreta porque bloqueio TOF 50% (2/4) no adutor do polegar geralmente NAO corresponde a bloqueio profundo suficiente para intubacao em condicoes normais. O enunciado mostra que na hipercalcemia o bloqueio clinico e mais intenso que o TOF sugere. A alternativa E esta incorreta porque benzodiazepinicos causam sedacao, nao relaxamento neuromuscular das pregas vocais. O achado laringoscopico indica bloqueio neuromuscular."
+      },
+      {
+        "enunciado": "Paciente submetido a paratireoidectomia de urgencia por crise hipercalcemica (calcio = 16,5 mg/dL, PTH = 450 pg/mL). Na SRPA, 2 horas apos o termino da cirurgia, apresenta parestesias periorais e em extremidades, seguidas de tetania carpopedal. Exames: calcio total = 6,2 mg/dL, magnesio = 1,8 mg/dL, fosforo = 2,1 mg/dL, PTH = 8 pg/mL. Qual a complicacao mais provavel e o mecanismo fisiopatologico?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Hipocalcemia por remocao inadvertida de todas as paratireoides; repor calcio IV + calcitriol.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Sindrome de \"hungry bone\" por captacao ossea aumentada de calcio apos remocao de PTH elevado cronicamente; repor calcio + fosforo + magnesio.",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Alcalose metabolica perioperatoria reduzindo calcio ionizado; corrigir pH e repor calcio oral.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Hipomagnesemia causando hipocalcemia secundaria por inibicao de secrecao de PTH residual; repor magnesio apenas.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Intoxicacao por citrato de transfusoes sanguineas quelando calcio; gluconato de calcio IV.",
+            "correta": false
+          }
+        ],
+        "explicacao": "A sindrome de \"hungry bone\" (ossos famintos) ocorre apos paratireoidectomia em pacientes com hiperparatireoidismo severo e prolongado, especialmente com doenca ossea (fosfatase alcalina elevada). A remocao subita do PTH cronicamente elevado leva a captacao ossea macica e rapida de calcio, fosforo e magnesio, causando hipocalcemia grave (frequentemente <7 mg/dL), hipofosfatemia e hipomagnesemia no pos-operatorio imediato a 72h. Diferencia-se do hipoparatireoidismo cirurgico comum pelo PTH detectavel (embora baixo), hipocalcemia MAIS GRAVE e mais PERSISTENTE (semanas), e hipofosfatemia concomitante (no hipoparatireoidismo simples, fosforo tende a estar elevado). Requer reposicao agressiva e prolongada de calcio IV + oral, calcitriol, fosforo e magnesio. A alternativa A esta incorreta porque hipoparatireoidismo cirurgico comum causaria hipocalcemia, mas com PTH muito baixo (<10 pg/mL), fosforo ELEVADO, e hipocalcemia geralmente menos grave. O contexto de hiperparatireoidismo severo previo e hipocalcemia muito grave precoce sugere hungry bone. A alternativa C esta incorreta porque alcalose pode reduzir calcio ionizado, mas nao explica calcio TOTAL de 6,2 mg/dL (muito baixo). Alcalose afeta apenas a fracao ionizada, nao o calcio total. A alternativa D esta incorreta porque hipomagnesemia pode inibir secrecao de PTH e causar hipocalcemia, mas o magnesio esta normal (1,8 mg/dL). Alem disso, nao explica a gravidade e precocidade do quadro. A alternativa E esta incorreta porque intoxicacao por citrato e improvavel na ausencia de transfusoes macicas mencionadas. O contexto pos-paratireoidectomia e mais consistente com hungry bone."
+      },
+      {
+        "enunciado": "Paciente feminina, 52 anos, submetida a tireoidectomia total por carcinoma ha 36 horas. Todas as 4 glandulas paratireoides foram identificadas e preservadas in situ durante a cirurgia. Atualmente assintomatica, exames de controle: calcio total = 7,8 mg/dL (normal: 8,5-10,5), magnesio = 2,0 mg/dL, PTH intacto = 12 pg/mL (normal: 10-65). Sinais de Chvostek e Trousseau negativos. Qual a conduta MAIS apropriada neste momento?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Administrar gluconato de calcio 10% 10 mL IV imediato seguido de infusao continua.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Iniciar carbonato de calcio 1-2 g VO 3x/dia + calcitriol 0,25-0,5 mcg 2x/dia profilaticamente.",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "Apenas observacao clinica, pois hipocalcemia leve assintomatica e esperada e transitoria.",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "Administrar apenas calcitriol oral, sem reposicao de calcio, pois PTH esta normal.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Solicitar dosagem de vitamina D 25-OH e repor apenas se deficiencia confirmada.",
+            "correta": false
+          }
+        ],
+        "explicacao": "Hipocalcemia leve assintomatica (calcio 7,5-8,5 mg/dL) apos tireoidectomia e comum e geralmente transitoria, especialmente nas primeiras 48-72h, devido a manipulacao cirurgica e edema temporario das paratireoides preservadas. O PTH esta no limite inferior da normalidade (12 pg/mL), indicando funcao paratiroidiana presente mas ainda recuperando. Com sinais de Chvostek e Trousseau negativos e ausencia de sintomas (parestesias, tetania), a conduta e observacao clinica e monitorizacao laboratorial (calcio e PTH em 24-48h). Tratamento oral profilatico pode ser considerado se calcio <7,5 mg/dL ou sintomas aparecerem. Reserva-se calcio IV para hipocalcemia sintomatica grave. A alternativa A esta incorreta porque calcio IV esta indicado para hipocalcemia SINTOMATICA (tetania, laringoespasmo, convulsoes) ou hipocalcemia grave (<7 mg/dL mesmo assintomatica). Usar IV em paciente assintomatica com calcio 7,8 mg/dL e sobretratamento e expoe a riscos (extravasamento, hipercalcemia iatrogenica). A alternativa B esta incorreta porque tratamento oral profilatico pode ser considerado, mas nao e obrigatorio em paciente assintomatica com PTH presente. Pode-se aguardar evolucao e tratar se necessario. Tratamento precoce pode ser usado em pacientes de risco (calcio <7,5, PTH muito baixo), mas nao e consenso universal para todos os casos de hipocalcemia leve assintomatica. A alternativa D esta incorreta porque calcitriol sozinho sem calcio oral nao repoe calcio adequadamente. Calcitriol aumenta absorcao intestinal, mas precisa de substrato (calcio oral concomitante). A alternativa E esta incorreta porque vitamina D 25-OH e importante a longo prazo, mas na hipocalcemia aguda pos-operatoria o problema e hipoparatireoidismo (falta de conversao para 1,25-dihidroxi-vitamina D ativa), nao deficiencia de substrato 25-OH. Calcitriol (forma ativa) e usado, nao colecalciferol."
+      },
+      {
+        "enunciado": "Paciente feminina, 46 anos, portadora de sindrome de Cushing por adenoma adrenal, sera submetida a adrenalectomia laparoscopica direita. Apresenta obesidade central (IMC 34 kg/m²), hipertensao arterial (PA 170/100 mmHg em uso de 3 anti-hipertensivos), diabetes secundario (HbA1c 8,2%), fraqueza muscular proximal e equimoses multiplas. Cortisol plasmatico 8h = 42 mcg/dL (normal: 5-25), ACTH <5 pg/mL (suprimido). Qual a principal complicacao intraoperatoria esperada nesta paciente?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Hipotensao refrataria durante manipulacao do tumor por supressao do eixo hipotalamo-hipofise-adrenal contralateral.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Hipertensao e arritmias durante manipulacao tumoral por liberacao subita de catecolaminas (feocromocitoma nao diagnosticado).",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "Instabilidade hemodinamica com hiperglicemia grave e necessidade de insulina em infusao continua.",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "Colapso cardiovascular subito apos ligadura da veia adrenal por insuficiencia adrenal aguda.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Hipoglicemia grave apos resseccao tumoral por hiperinsulinismo reativo.",
+            "correta": false
+          }
+        ],
+        "explicacao": "Pacientes com sindrome de Cushing (hipercortisolismo cronico) apresentam no perioperatorio: (1) Hipertensao arterial e instabilidade hemodinamica (hipertensao ou hipotensao, especialmente apos resseccao), (2) Hiperglicemia grave por resistencia insulinica e gliconeogenese aumentada, frequentemente requerendo insulina IV em infusao continua para alvo 140-180 mg/dL, (3) Cicatrizacao prejudicada e risco infeccioso aumentado, (4) Fraqueza muscular e osteoporose. O controle glicemico e desafiador intraoperatoriamente. Apos resseccao unilateral de adenoma, ha risco de insuficiencia adrenal pela supressao do eixo HPA e atrofia da adrenal contralateral, mas isso se manifesta no pos-operatorio (nao imediatamente intraop), requerendo reposicao de glicocorticoides. A alternativa A esta incorreta porque a hipotensao por insuficiencia adrenal ocorre APOS a resseccao (pos-operatorio), nao DURANTE a manipulacao. Intraoperatoriamente, pacientes com Cushing tendem a ter hipertensao. A reposicao de hidrocortisona deve ser iniciada apos resseccao ou no pos-operatorio imediato. A alternativa B esta incorreta porque sindrome de Cushing por adenoma adrenal produtor de cortisol NAO libera catecolaminas. Liberacao de catecolaminas ocorre em feocromocitoma. ACTH suprimido e cortisol elevado confirmam Cushing, nao feo. A alternativa D esta incorreta porque colapso subito imediato apos ligadura da veia adrenal e mais caracteristico de feocromocitoma (hipotensao subita por cessacao aguda de catecolaminas). Em Cushing, a insuficiencia adrenal se desenvolve gradualmente no pos-operatorio. A alternativa E esta incorreta porque hipoglicemia pos-resseccao ocorre em insulinoma (tumor produtor de insulina), nao em Cushing. Cushing causa HIPERGLICEMIA."
+      },
+      {
+        "enunciado": "Paciente masculino, 38 anos, portador de insuficiencia adrenal primaria (doenca de Addison) em tratamento regular com prednisona 5 mg/dia e fludrocortisona 0,1 mg/dia, sera submetido a colectomia eletiva por colite ulcerativa. Durante a inducao anestesica, imediatamente apos intubacao e inicio de ventilacao com pressao positiva, apresenta hipotensao subita (PA 60/30 mmHg) sem resposta inicial a cristaloides e efedrina 10 mg IV. Qual a causa mais provavel e a conduta IMEDIATA prioritaria?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Crise addisoniana por estresse cirurgico sem cobertura adequada; hidrocortisona 100 mg IV em bolus.",
+            "correta": true
+          },
+          {
+            "letra": "B",
+            "texto": "Anafilaxia a antibiotico profilatico; adrenalina 0,1-0,3 mg IV fracionada + anti-histaminicos.",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "Hipotensao por inducao anestesica potencializada pela depletacao volemica cronica; expansao volemica agressiva com cristaloide.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Pneumotorax hipertensivo por barotrauma da ventilacao com pressao positiva; descomprimir com agulha.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Embolia pulmonar macica durante posicionamento; considerar trombólise se instabilidade persistir.",
+            "correta": false
+          }
+        ],
+        "explicacao": "Crise addisoniana (insuficiencia adrenal aguda) e precipitada por estresse fisiologico (cirurgia, trauma, infeccao) em pacientes com insuficiencia adrenal primaria ou secundaria sem cobertura adequada de glicocorticoides. Manifesta-se por: hipotensao refrataria a vasopressores e volume, hiponatremia, hipercalemia, hipoglicemia, e colapso cardiovascular. A dose de reposicao diaria (prednisona 5 mg) e INSUFICIENTE para estresse cirurgico. O tratamento da crise e hidrocortisona 100 mg IV em bolus imediato, seguido de 100 mg IV q6-8h ou infusao continua nas primeiras 24h, associado a expansao volemica com salina. A resposta e rapida (10-30 minutos). Em cirurgias de medio/grande porte, a cobertura de estresse deve ser iniciada ANTES da inducao anestesica. A alternativa B esta incorreta porque anafilaxia tambem causaria hipotensao subita, mas tipicamente vem acompanhada de broncoespasmo, rash cutaneo, edema. Na ausencia desses sinais e no contexto de insuficiencia adrenal conhecida, crise addisoniana e mais provavel. Entretanto, adrenalina pode ser usada se nao houver resposta a hidrocortisona. A alternativa C esta incorreta porque embora depletacao volemica contribua (insuficiencia adrenal causa perda de sodio e volume), a expansao ISOLADA sem reposicao de glicocorticoides e insuficiente para reverter crise addisoniana. Hidrocortisona e prioritaria. A alternativa D esta incorreta porque pneumotorax hipertensivo causaria hipotensao MAIS hipoxemia, aumento de pressoes de via aerea, e ausencia de murmorio vesicular unilateral. Nao ha mencao a esses achados. A alternativa E esta incorreta porque TEP macica e possivel mas menos provavel no contexto. Pacientes com Addison tem risco especifico de crise por estresse cirurgico, tornando essa etiologia mais provavel."
+      },
+      {
+        "enunciado": "Paciente masculino, 55 anos, sera submetido a herniorrafia inguinal sob raquianestesia. Sem comorbidades. Utiliza fluticasona inalatoria 500 mcg 2x/dia ha 5 anos para asma controlada. Nega uso de corticoides sistemicos. Cirurgiao questiona se ha necessidade de suplementacao de corticoides perioperatoria. Qual a recomendacao ATUAL mais adequada para este paciente?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Nao ha necessidade de suplementacao, pois corticoides inalatorios nao suprimem o eixo HPA.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Administrar hidrocortisona 100 mg IV na inducao e manter 100 mg q8h por 48h.",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "Administrar dose unica de hidrocortisona 50 mg IV na inducao anestesica.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Suplementacao nao e necessaria para cirurgia de pequeno porte, independente do uso previo de corticoides.",
+            "correta": true
+          },
+          {
+            "letra": "E",
+            "texto": "Solicitar teste de estimulacao com ACTH pre-operatorio para decidir se ha supressao do eixo HPA.",
+            "correta": false
+          }
+        ],
+        "explicacao": "As diretrizes ATUAIS de suplementacao perioperatoria de corticoides sao baseadas no PORTE CIRURGICO, nao apenas na duracao/dose previa de corticoide: (1) Cirurgias de PEQUENO porte (ex: herniorrafia, cataratas, cirurgias superficiais) sob anestesia local/regional: NAO necessitam suplementacao, pois o estresse cirurgico e minimo e a producao basal de cortisol e suficiente. (2) Cirurgias de MEDIO porte: hidrocortisona 50 mg IV na inducao. (3) Cirurgias de GRANDE porte: hidrocortisona 100 mg IV na inducao + 50-100 mg q8h por 24-48h. Pacientes em corticoides inalatorios em doses convencionais geralmente NAO tem supressao do eixo HPA clinicamente significativa. O uso de corticoides sistemicos >5 mg/dia de prednisona (ou equivalente) por >3 semanas e o criterio classico de risco de supressao. A alternativa A esta incorreta porque embora corticoides inalatorios em doses usuais raramente suprimam o eixo HPA, o principal determinante da necessidade de suplementacao e o PORTE CIRURGICO, nao apenas o status do eixo HPA. Entretanto, neste caso (pequeno porte), o resultado final e o mesmo: nao necessita. A alternativa B esta incorreta porque protocolo excessivo para herniorrafia (pequeno porte). Reservado para cirurgias de grande porte. A alternativa C esta incorreta porque dose unica de 50 mg e apropriada para cirurgias de medio porte, nao pequeno porte. Pequeno porte nao requer suplementacao. A alternativa E esta incorreta porque teste de ACTH pre-operatorio nao e pratico nem necessario. A decisao e baseada em criterios clinicos (dose/duracao de corticoide e porte cirurgico)."
+      },
+      {
+        "enunciado": "Paciente feminina, 42 anos, submetida a adrenalectomia laparoscopica esquerda por adenoma produtor de cortisol (Cushing) ha 6 horas. Recebeu hidrocortisona 100 mg IV apos resseccao do tumor. Na UTI, apresenta tremores, sudorese, taquicardia (FC 120 bpm), agitacao e glicemia capilar de 38 mg/dL. Qual a causa mais provavel e a conduta IMEDIATA?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Insuficiencia adrenal aguda por dose inadequada de hidrocortisona; aumentar para 100 mg IV q6h.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Hipoglicemia por cessacao subita do hipercortisolismo e hiperinsulinismo reativo; glicose IV 10-25 g.",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Crise tireotoxica por liberacao hormonal durante estresse cirurgico; propiltiouracil + betabloqueador.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Abstinencia de benzodiazepinicos ou alcool nao diagnosticada; lorazepam IV.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Sepse de foco abdominal com hipoglicemia por disfuncao hepatica; antibioticoterapia empirica.",
+            "correta": false
+          }
+        ],
+        "explicacao": "Apos adrenalectomia por sindrome de Cushing, a cessacao subita do hipercortisolismo cronico leva a mudancas metabolicas importantes. O cortisol elevado cronicamente causa hiperglicemia, resistencia insulinica e supressao de insulina. Apos resseccao, ha reversao rapida da resistencia insulinica e possivel hiperinsulinismo reativo, resultando em hipoglicemia nas primeiras horas a dias pos-operatorios. O quadro clinico (tremores, sudorese, taquicardia, agitacao) e compativel com hipoglicemia adrenergica. A confirmacao e pela glicemia capilar baixa (38 mg/dL). O tratamento e glicose IV imediata (10-25 g, ex: glicose 50% 20-50 mL) seguido de infusao continua de glicose se necessario. Monitorizacao glicemica rigorosa nas primeiras 24-48h e obrigatoria. A alternativa A esta incorreta porque insuficiencia adrenal causaria hipoglicemia tambem, mas associada a hipotensao, hiponatremia e hipercalemia, nao taquicardia isolada. Alem disso, a paciente recebeu hidrocortisona 100 mg recentemente. A glicemia baixa isolada em contexto pos-Cushing aponta mais para hiperinsulinismo reativo. A alternativa C esta incorreta porque crise tireotoxica causa hipertermia, taquicardia, hipertensao, agitacao, mas HIPERGLICEMIA, nao hipoglicemia. Alem disso, nao ha historico de doenca tireoidiana. A alternativa D esta incorreta porque abstinencia causaria agitacao, tremores, taquicardia, mas geralmente com glicemia normal ou elevada (estresse). A hipoglicemia documentada e o achado chave. A alternativa E esta incorreta porque sepse pode causar hipoglicemia por disfuncao hepatica ou consumo aumentado, mas e menos provavel 6h apos cirurgia laparoscopica nao complicada. A explicacao metabolica pos-Cushing e mais direta."
+      },
+      {
+        "enunciado": "Paciente masculino, 58 anos, portador de hiperaldosteronismo primario (sindrome de Conn) por adenoma adrenal, sera submetido a adrenalectomia laparoscopica direita. Exames pre-operatorios: Na+ = 148 mEq/L, K+ = 2,8 mEq/L, aldosterona plasmatica elevada, renina suprimida. PA = 180/105 mmHg em uso de 4 anti-hipertensivos. ECG mostra ondas U proeminentes e extrassistoles ventriculares ocasionais. Qual a principal preocupacao anestesica e a conduta pre-operatoria prioritaria?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Risco de hipercalemia grave no intraoperatorio; suspender bloqueadores neuromusculares despolarizantes.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Risco de arritmias ventriculares pela hipocalemia e alteracoes de repolarizacao; corrigir K+ para >3,5 mEq/L antes da cirurgia.",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Hipertensao maligna refrataria durante manipulacao tumoral; preparar nitroprussiato de sodio.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Hipotensao refrataria apos ligadura da veia adrenal; ter noradrenalina em infusao pronta.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Hipernatremia grave com risco de edema cerebral; corrigir sodio gradualmente com solucao hipotonica.",
+            "correta": false
+          }
+        ],
+        "explicacao": "Hiperaldosteronismo primario (Conn) causa retencao de sodio, excrecao de potassio (hipocalemia), hipertensao arterial e alcalose metabolica. A hipocalemia (K+ <3,0 mEq/L) e a principal preocupacao anestesica, pois aumenta risco de arritmias ventriculares (extrassistoles, taquicardia ventricular, fibrilacao ventricular), especialmente com manipulacao cirurgica, hipoxia, ou drogas anestesicas. O ECG mostra alteracoes caracteristicas: ondas U proeminentes, achatamento de onda T, prolongamento de QT. A correcao pre-operatoria de K+ para ≥3,5 mEq/L e PRIORITARIA. Espironolactona (antagonista de aldosterona) pode ser usada por 2-4 semanas pre-operatoriamente para corrigir K+ e controlar PA. Evitar hiperventilacao intraoperatoria (alcalose piora hipocalemia). A alternativa A esta incorreta porque o problema e HIPOCALEMIA (2,8 mEq/L), nao hipercalemia. Succinilcolina nao esta contraindicada por hipocalemia (na verdade, pode elevar K+ transitoriamente, o que seria ate benefico, mas nao e indicacao). A preocupacao e arritimia, nao despolarizacao muscular. A alternativa C esta incorreta porque hiperaldosteronismo causa hipertensao arterial, mas nao libera catecolaminas durante manipulacao tumoral (isso ocorre em feocromocitoma). Hipertensao em Conn e por retencao de sodio e expansao volemica, nao por liberacao hormonal subita. A alternativa D esta incorreta porque hipotensao pos-resseccao pode ocorrer, mas nao e tao subita e dramatica quanto em feocromocitoma. O problema prioritario e a hipocalemia pre-operatoria. A alternativa E esta incorreta porque hipernatremia e leve (148 mEq/L) e geralmente nao requer correcao agressiva. Nao ha risco de edema cerebral com este nivel. A hipocalemia e muito mais urgente."
+      },
+      {
+        "enunciado": "Paciente feminina, 35 anos, com insuficiencia adrenal secundaria por uso cronico de prednisona 20 mg/dia por 2 anos para lupus eritematoso sistemico, interrompeu a medicacao abruptamente ha 1 mes por conta propria. Sera submetida a apendicectomia de urgencia. Apresenta-se hipocorada, desidratada, PA 85/50 mmHg, FC 115 bpm. Exames: Na+ = 125 mEq/L, K+ = 5,8 mEq/L, glicemia = 58 mg/dL, cortisol plasmatico = 3 mcg/dL. Qual o diagnostico mais provavel e a principal diferenca laboratorial esperada comparada a insuficiencia adrenal primaria?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Insuficiencia adrenal secundaria; potassio e sodio normais (pois mineralocorticoides preservados).",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Insuficiencia adrenal secundaria; hiponatremia menos grave e potassio NORMAL (pois aldosterona preservada).",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Insuficiencia adrenal primaria por supressao medicamentosa; hipercalemia e hiponatremia graves.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Crise addisoniana tipica; nao ha diferencas laboratoriais entre insuficiencia primaria e secundaria.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Insuficiencia adrenal terciaria; hipernatremia paradoxal por perda renal de agua livre.",
+            "correta": false
+          }
+        ],
+        "explicacao": "Insuficiencia adrenal SECUNDARIA (por supressao do eixo HPA por corticoides exogenos ou lesao hipofisaria) difere da PRIMARIA (Addison - destruicao adrenal) em aspectos importantes: (1) Na secundaria, a producao de aldosterona esta PRESERVADA (pois aldosterona e regulada pelo sistema renina-angiotensina, nao por ACTH). Portanto, o potassio geralmente esta NORMAL e a hiponatremia e MENOS GRAVE ou ausente. (2) Ambas cursam com deficiencia de cortisol (hipoglicemia, hipotensao), mas na primaria ha TAMBEM deficiencia de aldosterona (hiponatremia grave, hipercalemia). (3) Na secundaria, ACTH esta baixo; na primaria, ACTH esta elevado (feedback). ENTRETANTO, no caso clinico apresentado, a paciente tem hiponatremia (125) e hipercalemia (5,8), o que e ATIPICO para secundaria. Isso pode ocorrer em crise grave com desidratacao severa e estresse, mas a diferenciacao classica ensina que secundaria poupa mineralocorticoides. A alternativa A esta incorreta porque na secundaria, sodio pode estar LEVEMENTE reduzido (por deficiencia de cortisol causando SIADH), mas nao tao grave quanto na primaria. Potassio deve estar normal. A afirmacao de que \"sodio e potassio normais\" e muito categorica. A alternativa C esta incorreta porque supressao medicamentosa causa insuficiencia SECUNDARIA (eixo HPA suprimido), nao primaria. Na secundaria, a aldosterona esta preservada, entao hipercalemia grave seria atipica (exceto em contexto de crise severa). A alternativa D esta incorreta porque ha diferencas laboratoriais: primaria tem hipercalemia + hiponatremia grave; secundaria tem K+ normal e hiponatremia leve ou ausente. A alternativa E esta incorreta porque terciaria (por lesao hipotalamica) e funcionalmente similar a secundaria. Nao causa hipernatremia paradoxal - o problema e ainda deficiencia de cortisol ± SIADH."
+      },
+      {
+        "enunciado": "Paciente masculino, 42 anos, com feocromocitoma adrenal direito (5 cm) diagnosticado por metanefrinas urinarias elevadas e TC, sera submetido a adrenalectomia laparoscopica em 3 semanas. Apresenta hipertensao arterial paroxistica (PA basal 180/110 mmHg com picos de 240/130 mmHg), cefaleia, sudorese e palpitacoes. Sem uso atual de medicacoes. Qual a estrategia CORRETA de preparo pre-operatorio?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Iniciar fenoxibenzamina (alfabloqueador) por 10-14 dias, seguido de betabloqueador apos controle da PA.",
+            "correta": true
+          },
+          {
+            "letra": "B",
+            "texto": "Iniciar metoprolol (betabloqueador) isolado para controlar frequencia cardiaca e PA.",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "Iniciar anlodipino (bloqueador de canal de calcio) como monoterapia, pois e seguro e eficaz.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Proceder diretamente a cirurgia sem preparo medicamentoso, pois a resseccao resolve o problema definitivamente.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Iniciar simultaneamente fenoxibenzamina + propranolol na mesma dose desde o inicio.",
+            "correta": false
+          }
+        ],
+        "explicacao": "O preparo pre-operatorio de feocromocitoma e ESSENCIAL para reduzir morbimortalidade (crises hipertensivas, arritmias, IAM, AVC). O protocolo classico e: (1) Iniciar ALFABLOQUEADOR nao seletivo (fenoxibenzamina) por 10-14 dias para bloquear receptores alfa-1 (vasoconstricao) e alfa-2, permitindo expansao volemica e controle da PA. Iniciar com doses baixas (10 mg 2x/dia) e titular ate PA <140/90 e sem crises. (2) APOS 3-7 dias de alfabloqueio, adicionar BETABLOQUEADOR (propranolol, atenolol) se taquicardia persistente (FC >80-90 bpm). NUNCA iniciar betabloqueador ANTES do alfabloqueador, pois isso causa bloqueio beta sem bloqueio alfa, resultando em vasoconstricao alfa nao oposta (crise hipertensiva grave). (3) Incentivar dieta rica em sal e hidratacao para expansao volemica. (4) Considerar alfabloqueadores seletivos (doxazosina, prazosina) ou bloqueadores de canal de calcio como alternativas. A alternativa B esta incorreta porque betabloqueador ISOLADO sem alfabloqueio previo e CONTRAINDICADO em feocromocitoma. Causa bloqueio de receptores beta-2 vasculares (vasodilatacao), deixando receptores alfa-1 (vasoconstricao) sem oposicao → crise hipertensiva grave paradoxal. A alternativa C esta incorreta porque bloqueadores de canal de calcio podem ser usados como adjuvantes ou alternativa, mas nao sao primeira linha isoladamente. Fenoxibenzamina continua sendo padrao-ouro. A alternativa D esta incorreta porque cirurgia sem preparo tem mortalidade historica de 40-80%. Atualmente inaceitavel. Preparo reduz mortalidade para <5%. A alternativa E esta incorreta porque iniciar betabloqueador simultaneamente com fenoxibenzamina e erro. Deve-se aguardar 3-7 dias de alfabloqueio ANTES de adicionar betabloqueador para evitar bloqueio beta sem bloqueio alfa adequado."
+      },
+      {
+        "enunciado": "Paciente feminina, 38 anos, com feocromocitoma adrenal esquerdo, adequadamente preparada com fenoxibenzamina por 14 dias e propranolol por 7 dias, e submetida a adrenalectomia laparoscopica. Durante a manipulacao cirurgica do tumor, desenvolve subitamente PA 260/140 mmHg, FC 135 bpm e extrassistoles ventriculares frequentes. Qual a conduta IMEDIATA mais apropriada?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Aumentar profundidade anestesica com propofol em bolus e fentanil.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Administrar nitroprussiato de sodio em infusao (0,5-10 mcg/kg/min) titulado ao efeito.",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Administrar hidralazina 5-10 mg IV em bolus e aguardar resposta.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Administrar esmolol em infusao para controlar FC, que reduzira PA secundariamente.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Solicitar ao cirurgiao interromper manipulacao tumoral imediatamente e aguardar estabilizacao.",
+            "correta": false
+          }
+        ],
+        "explicacao": "Crise hipertensiva durante manipulacao de feocromocitoma (liberacao macica de catecolaminas) requer vasodilatador arterial de acao RAPIDA e TITULAVEL. Nitroprussiato de sodio IV em infusao (0,5-10 mcg/kg/min) e o agente de escolha por inicio de acao imediato (<1 min), meia-vida curta (2-3 min) e facil titulacao. Alternativas incluem fentolamina (alfabloqueador de acao rapida, 1-5 mg IV bolus), nicardipino ou clevidipino (bloqueadores de canal de calcio IV). A manipulacao cirurgica prossegue enquanto a PA e controlada farmacologicamente - o objetivo e resseccao do tumor, que resolvera definitivamente o problema. A alternativa A esta incorreta porque aumentar profundidade anestesica pode ajudar marginalmente, mas NAO e suficiente para controlar crise hipertensiva grave por liberacao catecolaminergica macica. Vasodilatador direto e mandatorio. A alternativa C esta incorreta porque hidralazina tem inicio de acao lento (10-20 min), duracao prolongada (3-8h) e nao e titulavel. Inadequada para crise aguda que requer controle rapido e preciso. A alternativa D esta incorreta porque betabloqueador (esmolol) controlara FC, mas NAO reduz PA adequadamente em crise catecolaminergica com vasoconstricao alfa intensa. Pode ate piorar PA por bloqueio beta-2 sem bloqueio alfa suficiente. A alternativa E esta incorreta porque interromper manipulacao pode ate ser considerado em casos extremos, mas o tratamento definitivo E a resseccao. Controlar PA farmacologicamente e prosseguir e a conduta habitual."
+      },
+      {
+        "enunciado": "Paciente masculino, 45 anos, submetido a adrenalectomia laparoscopica por feocromocitoma ha 15 minutos. Imediatamente apos ligadura da veia adrenal e remocao do tumor, evolui com hipotensao subita e grave (PA 60/35 mmHg) apesar de reposicao volemica adequada no intraoperatorio. Qual a causa mais provavel e a conduta IMEDIATA prioritaria?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Insuficiencia adrenal aguda por remocao da adrenal; hidrocortisona 100 mg IV.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Sangramento intra-abdominal macico; conversao para laparotomia exploradora urgente.",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "Vasodilatacao subita por cessacao de catecolaminas circulantes; noradrenalina em infusao + expansao volemica.",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "Pneumotorax hipertensivo por lesao diafragmatica; descomprimir com agulha.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Anafilaxia tardia a antibiotico; adrenalina 0,1-0,3 mg IV + anti-histaminicos.",
+            "correta": false
+          }
+        ],
+        "explicacao": "Hipotensao IMEDIATA apos ligadura da veia adrenal em feocromocitoma e complicacao ESPERADA e frequente, causada pela cessacao subita da liberacao de catecolaminas (noradrenalina/adrenalina) que mantinham vasoconstricao e PA elevada. Adicionalmente, a down-regulation cronica de receptores adrenergicos e a depletacao volemica cronica contribuem. A hipotensao geralmente responde a: (1) Expansao volemica AGRESSIVA com cristaloides/coloides (ja deve ter sido feita preventivamente, mas pode precisar de mais volume), (2) Infusao de vasopressores (noradrenalina 0,05-0,2 mcg/kg/min e primeira linha). A hipotensao costuma ser transitoria (minutos a horas). A expansao volemica PRE-operatoria adequada (pela alfabloqueio) reduz a gravidade desta complicacao. A alternativa A esta incorreta porque insuficiencia adrenal aguda nao causa hipotensao TAO SUBITA imediatamente apos ligadura vascular. Alem disso, em feocromocitoma unilateral, a adrenal contralateral esta funcionante (nao ha insuficiencia aguda). Hidrocortisona pode ser dada profilaticamente, mas nao e a causa primaria da hipotensao. A alternativa B esta incorreta porque sangramento deve ser considerado, mas a temporalidade (IMEDIATAMENTE apos ligadura da veia adrenal) e a previsibilidade da hipotensao pos-resseccao em feo tornam a causa hemodinamica (vasodilatacao) mais provavel. Verificar sangramento e prudente, mas nao e primeira linha. A alternativa D esta incorreta porque pneumotorax hipertensivo causaria hipotensao + hipoxemia + aumento de pressoes de via aerea. Nao ha mencao a esses achados. A alternativa E esta incorreta porque anafilaxia nao tem relacao temporal com ligadura vascular. Alem disso, hipotensao pos-ligadura em feocromocitoma e esperada e bem descrita."
+      },
+      {
+        "enunciado": "Paciente feminina, 52 anos, com historia de crises paroxisticas de hipertensao (PA ate 240/130 mmHg), cefaleia, sudorese profusa e palpitacoes ha 6 meses. TC de abdome nao mostrou lesoes adrenais. Cintilografia com MIBG negativa. Metanefrinas urinarias elevadas (5x o valor normal). Qual a hipotese diagnostica mais provavel e a localizacao MAIS COMUM deste tipo de tumor?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Feocromocitoma intra-adrenal bilateral pequeno (<1 cm), nao detectado pela TC.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Paraganglioma extra-adrenal abdominal, mais comumente no orgao de Zuckerkandl (bifurcacao aortica).",
+            "correta": true
+          },
+          {
+            "letra": "C",
+            "texto": "Feocromocitoma ectopico intratoracico, localizado no mediastino posterior.",
+            "correta": false
+          },
+          {
+            "letra": "D",
+            "texto": "Carcinoma adrenal maligno produtor de catecolaminas com metastases ocultas.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Paraganglioma de cabeca e pescoco (corpo carotideo ou jugular), geralmente nao secretor.",
+            "correta": false
+          }
+        ],
+        "explicacao": "Aproximadamente 10-15% dos feocromocitomas sao EXTRA-ADRENAIS (chamados de paragangliomas). Paragangliomas extra-adrenais secretores de catecolaminas ocorrem em tecido cromafim ao longo da cadeia simpatica. A localizacao MAIS COMUM de paraganglioma abdominal e o orgao de Zuckerkandl (tecido cromafim paravertebral na bifurcacao aortica, anterior a aorta ao nivel de L2-L4). Outras localizacoes: regiao para-aortica, bexiga (paraganglioma vesical - sintomas com miccao), mediastino posterior, pescoco. O diagnostico bioquimico e similar ao feocromocitoma (metanefrinas urinarias elevadas). TC/RNM abdominal estendida e cintilografia com MIBG ou PET com 18F-FDG ajudam na localizacao. A \"regra dos 10%\" classica: 10% extra-adrenal, 10% bilateral, 10% maligno, 10% pediatrico, 10% familiar. A alternativa A esta incorreta porque feocromocitomas intra-adrenais <1 cm sao raros. TC com cortes finos geralmente detecta lesoes >1 cm. Metanefrinas 5x elevadas sugerem tumor ativo, geralmente >2 cm. A alternativa C esta incorreta porque paraganglioma intratoracico (mediastino posterior) existe, mas e MENOS COMUM que abdominal (orgao de Zuckerkandl e para-aortico). A alternativa D esta incorreta porque feocromocitoma maligno e raro (10%) e geralmente se apresenta com lesao volumosa, invasao local ou metastases evidentes. Metanefrinas muito elevadas sem massa visivel nao sugere malignidade primaria. A alternativa E esta incorreta porque paragangliomas de cabeca e pescoco (corpo carotideo, jugular, timpanico) sao geralmente NAO SECRETORES (ou secretores minimos), causando sintomas compressivos locais, nao crises hipertensivas sistemicas."
+      },
+      {
+        "enunciado": "Paciente masculino, 28 anos, diabetes mellitus tipo 1 ha 15 anos, em uso de insulina NPH 20 UI pela manha e 12 UI a noite + insulina regular pre-refeicoes, sera submetido a apendicectomia de urgencia as 8h da manha. Ultima refeicao as 22h do dia anterior. Glicemia capilar as 6h: 180 mg/dL. Aplicou NPH 20 UI as 6h conforme rotina habitual. Qual a conduta MAIS apropriada para manejo da insulina e glicemia no perioperatorio?",
+        "alternativas": [
+          {
+            "letra": "A",
+            "texto": "Suspender NPH do dia da cirurgia completamente; iniciar infusao de glicose + insulina regular IV apenas se glicemia >180 mg/dL.",
+            "correta": false
+          },
+          {
+            "letra": "B",
+            "texto": "Administrar 50% da dose usual de NPH (10 UI) pela manha + infusao de glicose 5% durante jejum e cirurgia.",
+            "correta": false
+          },
+          {
+            "letra": "C",
+            "texto": "Administrar dose usual completa de NPH (20 UI) conforme ja feito + infusao de glicose 5-10% para prevenir hipoglicemia.",
+            "correta": true
+          },
+          {
+            "letra": "D",
+            "texto": "Suspender toda insulina; monitorizar glicemia e tratar apenas hiperglicemia >250 mg/dL com insulina regular.",
+            "correta": false
+          },
+          {
+            "letra": "E",
+            "texto": "Substituir esquema por infusao continua de insulina regular IV titulada para alvo 80-120 mg/dL.",
+            "correta": false
+          }
+        ],
+        "explicacao": "Pacientes com DM tipo 1 tem deficiencia ABSOLUTA de insulina e necessitam insulina basal continua para prevenir cetoacidose, mesmo em jejum. Na manha da cirurgia, recomenda-se: (1) Administrar insulina basal (NPH ou glargina/detemir) em dose usual (ou 50-100% da dose, dependendo do protocolo) para manter supressao de lipolise/cetogenese, (2) Infundir glicose 5-10% IV durante jejum para prevenir hipoglicemia pela acao da insulina basal sem ingestao oral, (3) Monitorizar glicemia capilar q1-2h e administrar insulina regular suplementar se >180-200 mg/dL. Como o paciente JA APLICOU NPH 20 UI as 6h (dose usual), deve-se infundir glicose 5-10% obrigatoriamente para evitar hipoglicemia. Alvo glicemico perioperatorio: 140-180 mg/dL. A alternativa A esta incorreta porque suspender insulina basal em DM tipo 1 pode causar cetoacidose diabetica, mesmo com jejum curto. Insulina basal e OBRIGATORIA. A alternativa B esta incorreta porque seria conduta razoavel se o paciente NAO tivesse aplicado NPH ainda. Mas como ja aplicou dose usual (20 UI), deve-se prosseguir com infusao de glicose, nao reaplicar metade da dose. A alternativa D esta incorreta porque suspender toda insulina em DM tipo 1 e ERRO GRAVE. Risco alto de cetoacidose nas proximas horas. Insulina basal e essencial. A alternativa E esta incorreta porque infusao continua de insulina IV e opcao valida (especialmente em cirurgias longas ou pacientes criticos), mas nao e obrigatoria em apendicectomia de urgencia com controle razoavel. Alem disso, alvo 80-120 mg/dL e muito restritivo - risco de hipoglicemia. Alvo perioperatorio e 140-180 mg/dL."
+      }
+    ]
+  }
